@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analytics &amp; Automation � Flashlab Creative</title>
+  <link rel="icon" type="image/png" href="../../images/flashlab-lightning-bolt-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700&family=Jost:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,600;1,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/global.css">
+  <link rel="stylesheet" href="../../css/services/service-category.css">
+
+<body data-page="analytics-automation">
+
+  <div class="site-logo-bar">
+    <a href="../../index.html">
+      <img src="../../images/logos/flashlab-logo.png" alt="Flashlab Creative" class="logo-light">
+      <img src="../../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" class="logo-dark">
+    </a>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../about.html">About Agency</a></li>
+        <li><a href="../../portfolio.html">Portfolio</a></li>
+        <li><a href="../../team.html">Team</a></li>
+        <li>
+          <a href="../../services.html" class="nav-active">Services</a>
+          <ul>
+            <li><a href="branding-strategy.html"><i class="ri-fingerprint-line"></i>Branding &amp; Strategy</a></li>
+            <li><a href="digital-marketing.html"><i class="ri-megaphone-line"></i>Digital Marketing</a></li>
+            <li><a href="social-media.html"><i class="ri-instagram-line"></i>Social Media</a></li>
+            <li><a href="content-creative.html"><i class="ri-palette-line"></i>Content &amp; Creative</a></li>
+            <li><a href="photography-video-animation.html"><i class="ri-camera-line"></i>Photography &amp; Video</a></li>
+            <li><a href="web-technology.html"><i class="ri-code-s-slash-line"></i>Web &amp; Technology</a></li>
+            <li><a href="advertising-media.html"><i class="ri-image-line"></i>Advertising &amp; Media</a></li>
+            <li><a href="events-experiences.html"><i class="ri-calendar-event-line"></i>Events &amp; Experiences</a></li>
+            <li><a href="public-relations.html"><i class="ri-broadcast-line"></i>Public Relations</a></li>
+            <li><a href="legal-business-support.html"><i class="ri-award-line"></i>Legal &amp; Business</a></li>
+            <li><a href="analytics-automation.html"><i class="ri-bar-chart-box-line"></i>Analytics &amp; Automation</a></li>
+            <li><a href="trademark-registration.html"><i class="ri-registered-line"></i>Trademark &amp; Registration</a></li>
+          </ul>
+        </li>
+        <li><a href="../../clients.html">Clients</a></li>
+        <li>
+          <a href="../../case-studies.html">Case Studies</a>
+          <ul>
+            <li><a href="../case-studies/story-1.html"><i class="ri-article-line"></i>Story 1</a></li>
+            <li><a href="../case-studies/story-2.html"><i class="ri-article-line"></i>Story 2</a></li>
+            <li><a href="../case-studies/story-3.html"><i class="ri-article-line"></i>Story 3</a></li>
+            <li><a href="../case-studies/story-4.html"><i class="ri-article-line"></i>Story 4</a></li>
+            <li><a href="../case-studies/story-5.html"><i class="ri-article-line"></i>Story 5</a></li>
+            <li><a href="../case-studies/story-6.html"><i class="ri-article-line"></i>Story 6</a></li>
+          </ul>
+        </li>
+                      <li>
+          <a href="../../career.html">Career</a>
+          <ul>
+            <li><a href="../career/internship.html"><i class="ri-user-add-line"></i>Internship</a></li>
+            <li><a href="../career/join-fulltime.html"><i class="ri-briefcase-4-line"></i>Join Full Time</a></li>
+            <li><a href="../career/freelance.html"><i class="ri-computer-line"></i>Freelance</a></li>
+            <li><a href="../career/influencer-signup.html"><i class="ri-star-line"></i>Influencer Sign Up</a></li>
+            <li><a href="../career/hr-policy.html"><i class="ri-file-list-3-line"></i>HR Policy</a></li>
+          </ul>
+        </li>
+        <li><a href="../../connect.html">Connect</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="../../connect.html" class="nav-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="ri-sun-line" id="themeIcon"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mob-overlay" id="mobOverlay"></div>
+  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+    <button class="mob-close" id="mobClose" aria-label="Close menu"><i class="ri-close-line"></i></button>
+    <ul class="mob-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About Agency</a></li>
+      <li><a href="../../portfolio.html">Portfolio</a></li>
+      <li><a href="../../team.html">Team</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-services">Services <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-services">
+          <li><a href="branding-strategy.html">Branding &amp; Strategy</a></li>
+          <li><a href="digital-marketing.html">Digital Marketing</a></li>
+          <li><a href="social-media.html">Social Media</a></li>
+          <li><a href="content-creative.html">Content &amp; Creative</a></li>
+          <li><a href="photography-video-animation.html">Photography &amp; Video</a></li>
+          <li><a href="web-technology.html">Web &amp; Technology</a></li>
+          <li><a href="advertising-media.html">Advertising &amp; Media</a></li>
+          <li><a href="events-experiences.html">Events &amp; Experiences</a></li>
+          <li><a href="public-relations.html">Public Relations</a></li>
+          <li><a href="legal-business-support.html">Legal &amp; Business</a></li>
+          <li><a href="analytics-automation.html">Analytics &amp; Automation</a></li>
+          <li><a href="trademark-registration.html">Trademark &amp; Registration</a></li>
+        </ul>
+      </li>
+      <li><a href="../../clients.html">Clients</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-case">Case Studies <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-case">
+          <li><a href="../case-studies/story-1.html">Story 1</a></li>
+          <li><a href="../case-studies/story-2.html">Story 2</a></li>
+          <li><a href="../case-studies/story-3.html">Story 3</a></li>
+          <li><a href="../case-studies/story-4.html">Story 4</a></li>
+          <li><a href="../case-studies/story-5.html">Story 5</a></li>
+          <li><a href="../case-studies/story-6.html">Story 6</a></li>
+        </ul>
+      </li>
+            <li>
+        <button class="mob-parent-btn" data-target="mob-sub-career">Career <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-career">
+          <li><a href="../career/internship.html">Internship</a></li>
+          <li><a href="../career/join-fulltime.html">Join Full Time</a></li>
+          <li><a href="../career/freelance.html">Freelance</a></li>
+          <li><a href="../career/influencer-signup.html">Influencer Sign Up</a></li>
+          <li><a href="../career/hr-policy.html">HR Policy</a></li>
+        </ul>
+      </li>
+      <li><a href="../../connect.html">Connect</a></li>
+    </ul>
+    <div class="mob-cta-wrap">
+      <a href="../../connect.html" class="mob-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+    </div>
+  </div>
+
+  <section class="page-hero" style="padding-top: 220px;">
+    <div class="wrap hero-inner">
+      <div class="hero-eyebrow reveal"><span></span>Service Detail</div>
+      <h1 class="reveal" style="transition-delay:0.1s">Analytics &amp;<br><em>Automation</em></h1>
+      <p class="page-hero-sub reveal" style="transition-delay:0.2s">
+        Turn data into decisions. We set up tracking, build dashboards, automate marketing workflows, and integrate CRM tools � so your business runs smarter.
+      </p>
+    </div>
+  </section>
+
+  <div class="marquee-strip">
+    <div class="marquee-track" id="marqueeTrack">
+      <span>Google Analytics Setup</span>
+      <span>Performance Dashboards</span>
+      <span>Marketing Automation</span>
+      <span>CRM Integration</span>
+      <span>Data-Driven Strategy</span>
+      <span>Conversion Tracking</span>
+      <span>Workflow Automation</span>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="overview-split">
+        <div class="overview-img-wrap reveal">
+          <img class="overview-img-main" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Analytics &amp; Automation">
+          <div class="img-badge"><strong>10+</strong><span>Years Exp.</span></div>
+        </div>
+        <div class="overview-content reveal" style="transition-delay:0.15s">
+          <div class="sec-eyebrow"><span></span>Service Overview</div>
+          <h2 class="sec-heading" style="margin-bottom:20px">Data That <em>Drives Growth</em></h2>
+          <p>Marketing without measurement is guesswork. Flashlab Creative sets up robust analytics infrastructure, builds reporting dashboards you can actually read, and automates repetitive marketing tasks � giving your team more time to focus on strategy.</p>
+          <p>From Google Analytics 4 setup to full CRM integration and automated lead nurturing, we build the data layer that powers smarter, faster business decisions.</p>
+          <a href="../../connect.html" class="btn-primary">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap" style="margin-bottom:48px">
+      <div class="centered reveal">
+        <div class="sec-eyebrow"><span></span>What We Offer</div>
+        <h2 class="sec-heading">Analytics &amp; <em>Automation Services</em></h2>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="design-grid reveal">
+        <div class="design-card">
+          <div class="design-card-icon"><i class="ri-google-line"></i></div>
+          <h4>Google Analytics Setup</h4>
+          <p>Full GA4 implementation including event tracking, conversion goals, funnel setup, and Google Tag Manager integration for accurate, actionable data.</p>
+        </div>
+        <div class="design-card">
+          <div class="design-card-icon"><i class="ri-dashboard-line"></i></div>
+          <h4>Performance Reporting &amp; Dashboards</h4>
+          <p>Custom marketing dashboards that pull data from across your channels into a single, clear view � built in Looker Studio, Google Sheets, or your preferred platform.</p>
+        </div>
+        <div class="design-card">
+          <div class="design-card-icon"><i class="ri-robot-line"></i></div>
+          <h4>Marketing Automation</h4>
+          <p>Automated email sequences, lead scoring, drip campaigns, and workflow automation that nurture prospects and convert leads without manual intervention.</p>
+        </div>
+        <div class="design-card">
+          <div class="design-card-icon"><i class="ri-user-settings-line"></i></div>
+          <h4>CRM Integration</h4>
+          <p>Connect your CRM (HubSpot, Zoho, Salesforce, or others) with your marketing tools � ensuring seamless data flow between your sales and marketing teams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="reveal" style="margin-bottom:48px">
+        <div class="sec-eyebrow"><span></span>Why Flashlab</div>
+        <h2 class="sec-heading">Analytics Built for <em>Real Decisions</em></h2>
+      </div>
+      <div class="why-grid reveal">
+        <div class="why-block">
+          <div class="why-block-icon"><i class="ri-bar-chart-2-line"></i></div>
+          <h4>Clean, Accurate Data</h4>
+          <p>We set up tracking correctly from the start � proper event naming, de-duplication, and goal configuration � so your numbers reflect reality, not guesswork.</p>
+        </div>
+        <div class="why-block">
+          <div class="why-block-icon"><i class="ri-eye-line"></i></div>
+          <h4>Dashboards You'll Actually Use</h4>
+          <p>We design reporting dashboards around your specific KPIs � not generic templates. Clear visualisations, plain-language summaries, and automated reporting on your schedule.</p>
+        </div>
+        <div class="why-block">
+          <div class="why-block-icon"><i class="ri-links-line"></i></div>
+          <h4>Full-Funnel Integration</h4>
+          <p>We connect your analytics and automation tools across the full marketing funnel � ads, website, email, and CRM � so you always know which channels drive results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" style="padding: 72px 0 88px">
+    <div class="wrap">
+      <div class="centered reveal" style="margin-bottom:40px">
+        <div class="sec-eyebrow"><span></span>Got Questions?</div>
+        <h2 class="sec-heading">Frequently Asked <em>Questions</em></h2>
+        <p class="sec-sub">Everything you need to know about our Analytics &amp; Automation service.</p>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q"><span>We already have Google Analytics � do we need a setup service?</span><div class="faq-icon"><i class="ri-add-line"></i></div></button>
+          <div class="faq-a"><p>Most GA installs we audit have significant gaps � missing conversion tracking, incorrect event configuration, or no goal funnels. We audit your existing setup first and fix what's broken before building on top of it � ensuring your historical and future data is reliable.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Which CRM platforms do you integrate with?</span><div class="faq-icon"><i class="ri-add-line"></i></div></button>
+          <div class="faq-a"><p>We work with HubSpot, Zoho CRM, Salesforce, Pipedrive, and other major CRM platforms. We also integrate with email platforms like Mailchimp, Klaviyo, and ActiveCampaign � connecting them with your website, ad campaigns, and sales team workflows.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Can you automate our email marketing sequences?</span><div class="faq-icon"><i class="ri-add-line"></i></div></button>
+          <div class="faq-a"><p>Yes. We map out your customer journey, design the automation logic, write the email content (or work with your existing content), and build the sequences in your chosen platform � including welcome flows, abandoned cart recovery, lead nurturing, and re-engagement campaigns.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact-band">
+    <h2>Ready to Make Your <em>Data Work Harder?</em></h2>
+    <p>Let's build the analytics and automation infrastructure that drives smarter growth decisions.</p>
+    <a href="../../connect.html" class="btn-dark">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="../../index.html">
+            <img src="../../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'font-family:Bebas Neue,sans-serif;font-size:1.5rem;letter-spacing:2px;color:#fff\'>FLASHLAB CREATIVE</span>'">
+          </a>
+        </div>
+        <p>Goa's leading creative &amp; digital marketing agency � where imagination meets reality. Born in Margao in 2016, we craft unforgettable digital experiences for brands that dare to stand out.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/flashlab.creative" target="_blank" rel="noopener"><i class="ri-instagram-fill"></i></a>
+          <a href="https://www.facebook.com/flashlab.creative/" target="_blank" rel="noopener"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.linkedin.com/company/flashlabcreative" target="_blank" rel="noopener"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://twitter.com/theflashlab" target="_blank" rel="noopener"><i class="ri-twitter-x-fill"></i></a>
+          <a href="https://www.youtube.com/channel/UCuFtcVt_Yp9CZ82UG6pm-pg" target="_blank" rel="noopener"><i class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="../../about.html"><i class="ri-arrow-right-s-line"></i>About</a></li>
+          <li><a href="../../services.html"><i class="ri-arrow-right-s-line"></i>Services</a></li>
+          <li><a href="../../portfolio.html"><i class="ri-arrow-right-s-line"></i>Portfolio</a></li>
+          <li><a href="../../clients.html"><i class="ri-arrow-right-s-line"></i>Clients</a></li>
+          <li><a href="../../case-studies.html"><i class="ri-arrow-right-s-line"></i>Case Studies</a></li>
+          <li><a href="../../team.html"><i class="ri-arrow-right-s-line"></i>Teams</a></li>
+          <li><a href="../../career.html"><i class="ri-arrow-right-s-line"></i>Career</a></li>
+          <li><a href="../../connect.html"><i class="ri-arrow-right-s-line"></i>Connect</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Services</h4>
+        <ul class="footer-list">
+          <li><a href="branding-strategy.html"><i class="ri-arrow-right-s-line"></i>Branding &amp; Strategy</a></li>
+          <li><a href="digital-marketing.html"><i class="ri-arrow-right-s-line"></i>Digital Marketing</a></li>
+          <li><a href="social-media.html"><i class="ri-arrow-right-s-line"></i>Social Media</a></li>
+          <li><a href="content-creative.html"><i class="ri-arrow-right-s-line"></i>Content &amp; Creative</a></li>
+          <li><a href="photography-video-animation.html"><i class="ri-arrow-right-s-line"></i>Photography &amp; Video</a></li>
+          <li><a href="web-technology.html"><i class="ri-arrow-right-s-line"></i>Web &amp; Technology</a></li>
+          <li><a href="advertising-media.html"><i class="ri-arrow-right-s-line"></i>Advertising &amp; Media</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Join Us</h4>
+        <ul class="footer-list">
+          <li><a href="../../career.html#open-positions" data-open-role="intern"><i class="ri-arrow-right-s-line"></i>Intern</a></li>
+          <li><a href="../../career.html#open-positions" data-open-role="seo-expert"><i class="ri-arrow-right-s-line"></i>SEO Expert</a></li>
+          <li><a href="../../career.html#open-positions" data-open-role="social-media-manager"><i class="ri-arrow-right-s-line"></i>Social Media Mgr</a></li>
+          <li><a href="../../career.html#open-positions" data-open-role="graphic-designer"><i class="ri-arrow-right-s-line"></i>Graphic Designer</a></li>
+          <li><a href="../../career.html#open-positions" data-open-role="web-developer"><i class="ri-arrow-right-s-line"></i>Web Developer</a></li>
+          <li><a href="../../career.html#open-positions" data-open-role="animation-designer"><i class="ri-arrow-right-s-line"></i>Animation Designer</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Service Links</h4>
+        <ul class="footer-list">
+          <li><a href="#"><i class="ri-arrow-right-s-line"></i>Team Blogs</a></li>
+          <li><a href="https://parashootstudio.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Production</a></li>
+          <li><a href="https://backstagexchange.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Event Management</a></li>
+          <li><a href="#"><i class="ri-arrow-right-s-line"></i>FNB Marketing</a></li>
+          <li><a href="https://stromenightlife.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Strobe Nightlife</a></li>
+          <li><a href="https://www.cybercreative.in" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Web Development &amp; IoT</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-head">Contact</h4>
+        <div class="footer-contact">
+          <p><i class="ri-map-pin-2-fill"></i><a href="https://www.google.com/maps/search/Flashlab+Creative+Margao+Goa" target="_blank" rel="noopener">G26 Vikrant Complex,<br>Margao, Goa, India</a></p>
+          <p><i class="ri-phone-fill"></i><a href="tel:+919923580023">+91 99235 80023</a></p>
+          <p><i class="ri-mail-fill"></i><a href="mailto:contact@flashlabcreative.com">contact@flashlabcreative.com</a></p>
+          <p><i class="ri-time-fill"></i><span>Mon &ndash; Sat: 9am &ndash; 6pm IST</span></p>
+          <a href="../../connect.html" class="footer-cta">Start a Project <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">Copyright &copy; 2026 <a href="../../index.html" class="flashlab-link">Flashlab Creative</a></p>
+      <p class="footer-credit">Website Crafted by <a href="https://cybercreative.in/" target="_blank" rel="noopener" class="cyber-link">Cyber Creative</a></p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top"><i class="ri-arrow-up-line"></i></button>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/pages/services.js"></script>
+</body>
+</html>
+
+
+
+

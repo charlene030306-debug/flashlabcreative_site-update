@@ -1,0 +1,495 @@
+?<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flashlab Creative</title>
+  <link rel="icon" type="image/png" href="../../images/flashlab-lightning-bolt-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700&family=Jost:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,600;1,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/global.css">
+  <link rel="stylesheet" href="../../css/services/product-design-strategies.css">
+
+
+
+<body data-page="product-design-strategies">
+  <!-- LOGO BAR -->
+  <div class="site-logo-bar">
+    <a href="../../index.html">
+      <img src="../../images/logos/flashlab-logo.png" alt="Flashlab Creative" class="logo-light" id="siteLogoImg">
+      <img src="../../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" class="logo-dark" id="siteLogoImg">
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../about.html">About Agency</a></li>
+        <li><a href="../../portfolio.html">Portfolio</a></li>
+        <li><a href="../../team.html">Team</a></li>
+        <li>
+          <a href="../../services.html" class="nav-active">Services</a>
+          <ul>
+            <li><a href="digital-advertising.html"><i class="ri-megaphone-line"></i>Digital Advertising</a></li>
+            <li><a href="seo-sem-marketing.html"><i class="ri-search-line"></i>SEO / SEM Marketing</a></li>
+            <li><a href="social-media-management.html"><i class="ri-instagram-line"></i>Social Media Management</a></li>
+            <li><a href="product-design-strategies.html"><i class="ri-pen-nib-line"></i>Product Design &amp; Strategies</a></li>
+            <li><a href="web-app-development.html"><i class="ri-code-s-slash-line"></i>Web &amp; App Development</a></li>
+            <li><a href="outdoor-print-ads.html"><i class="ri-image-line"></i>Outdoor &amp; Print Ads</a></li>
+            <li><a href="ecommerce.html"><i class="ri-shopping-cart-line"></i>E-Commerce</a></li>
+            <li><a href="trademark-registration.html"><i class="ri-shield-check-line"></i>Trademark Registration</a></li>
+            <li><a href="photography-video.html"><i class="ri-camera-line"></i>Photography &amp; Video</a></li>
+            <li><a href="event-production.html"><i class="ri-calendar-event-line"></i>Event Production</a></li>
+            <li><a href="media-consulting.html"><i class="ri-chat-voice-line"></i>Media Consulting</a></li>
+            <li><a href="animation-motion.html"><i class="ri-video-line"></i>Animation &amp; Motion</a></li>
+          </ul>
+        </li>
+        <li><a href="../../clients.html">Clients</a></li>
+        <li>
+                    <a href="../../career.html">Career</a>
+          <ul>
+            <li><a href="../career/internship.html"><i class="ri-user-add-line"></i>Internship</a></li>
+            <li><a href="../career/join-fulltime.html"><i class="ri-briefcase-4-line"></i>Join Full Time</a></li>
+            <li><a href="../career/freelance.html"><i class="ri-computer-line"></i>Freelance</a></li>
+            <li><a href="../career/influencer-signup.html"><i class="ri-star-line"></i>Influencer Sign Up</a></li>
+            <li><a href="../career/hr-policy.html"><i class="ri-file-list-3-line"></i>HR Policy</a></li>
+          </ul>
+</li>
+        <li><a href="../../connect.html">Connect</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="../../connect.html" class="nav-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-overlay" id="mobOverlay"></div>
+  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+    <button class="mob-close" id="mobClose" aria-label="Close menu"><i class="ri-close-line"></i></button>
+    <ul class="mob-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../about.html">About Agency</a></li>
+      <li><a href="../../portfolio.html">Portfolio</a></li>
+      <li><a href="../../team.html">Team</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-services">Services <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-services">
+          <li><a href="digital-advertising.html">Digital Advertising</a></li>
+          <li><a href="seo-sem-marketing.html">SEO / SEM Marketing</a></li>
+          <li><a href="social-media-management.html">Social Media Management</a></li>
+          <li><a href="product-design-strategies.html">Product Design &amp; Strategies</a></li>
+          <li><a href="web-app-development.html">Web &amp; App Development</a></li>
+          <li><a href="outdoor-print-ads.html">Outdoor &amp; Print Ads</a></li>
+          <li><a href="ecommerce.html">E-Commerce</a></li>
+          <li><a href="trademark-registration.html">Trademark Registration</a></li>
+          <li><a href="photography-video.html">Photography &amp; Video</a></li>
+          <li><a href="event-production.html">Event Production</a></li>
+          <li><a href="media-consulting.html">Media Consulting</a></li>
+          <li><a href="animation-motion.html">Animation &amp; Motion</a></li>
+        </ul>
+      </li>
+      <li><a href="../../clients.html">Clients</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-case">Case Studies <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-case">
+          <li><a href="../case-studies/story-1.html">Story 1</a></li>
+          <li><a href="../case-studies/story-2.html">Story 2</a></li>
+          <li><a href="../case-studies/story-3.html">Story 3</a></li>
+          <li><a href="../case-studies/story-4.html">Story 4</a></li>
+          <li><a href="../case-studies/story-5.html">Story 5</a></li>
+          <li><a href="../case-studies/story-6.html">Story 6</a></li>
+        </ul>
+      </li>
+            <li>
+        <button class="mob-parent-btn" data-target="mob-sub-career">Career <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-career">
+          <li><a href="../career/internship.html">Internship</a></li>
+          <li><a href="../career/join-fulltime.html">Join Full Time</a></li>
+          <li><a href="../career/freelance.html">Freelance</a></li>
+          <li><a href="../career/influencer-signup.html">Influencer Sign Up</a></li>
+          <li><a href="../career/hr-policy.html">HR Policy</a></li>
+        </ul>
+      </li>
+      <li><a href="../../connect.html">Connect</a></li>
+    </ul>
+    <div class="mob-cta-wrap">
+      <a href="../../connect.html" class="mob-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+    </div>
+  </div>
+
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="padding-top: 220px;">
+    <div class="wrap hero-inner">
+      <div class="hero-eyebrow reveal"><span></span>Service Detail</div>
+      <h1 class="reveal" style="transition-delay:0.1s">Product<br><em>Design</em> &amp; Strategies</h1>
+      <p class="page-hero-sub reveal" style="transition-delay:0.2s">
+        Great products don't happen by accident. From discovery through to a launch-ready product, we bring clarity,
+        creativity, and strategic direction &mdash; defining what to build, why to build it, and exactly how it should look
+        and feel.
+      </p>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip">
+    <div class="marquee-track" id="marqueeTrack">
+      <span>UX Research</span>
+      <span>Wireframing</span>
+      <span>UI Design</span>
+      <span>Prototyping</span>
+      <span>Design Systems</span>
+      <span>Product Strategy</span>
+      <span>User Testing</span>
+      <span>Brand Identity</span>
+      <span>Product Roadmaps</span>
+      <span>Interaction Design</span>
+    </div>
+  </div>
+
+  <!-- SERVICE OVERVIEW -->
+  <section class="section">
+    <div class="wrap">
+      <div class="overview-split">
+        <div class="overview-img-wrap reveal">
+          <img class="overview-img-main" src="https://www.flashlabcreative.com/wp-content/uploads/2026/04/procut-1.jpg"
+            alt="Product Design & Strategies"
+            onerror="this.src='https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80'">
+          <div class="img-badge">
+            <strong>15+</strong>
+            <span>Years Exp.</span>
+          </div>
+        </div>
+        <div class="overview-content reveal" style="transition-delay:0.15s">
+          <div class="sec-eyebrow"><span></span>Service Overview</div>
+          <h2 class="sec-heading" style="margin-bottom:20px">Great Products,<br><em>By Design</em></h2>
+          <p>At Flashlab Creative, great products don't happen by accident &mdash; they are the result of deep thinking, smart
+            strategy, and meticulous design. Our product design and strategy team works with startups, scale-ups, and
+            established businesses to define what to build, why to build it, and exactly how it should look and feel.
+          </p>
+          <p>From the very first discovery session through to a fully tested, launch-ready product, we are with you
+            every step of the way. Whether you are launching something brand new or redesigning an existing product, we
+            bring clarity, creativity, and strategic direction to every project we take on.</p>
+          <a href="../../connect.html" class="btn-primary">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO GRID -->
+  <section class="section section-alt">
+    <div class="wrap" style="margin-bottom:48px">
+      <div class="centered reveal">
+        <div class="sec-eyebrow"><span></span>What We Do</div>
+        <h2 class="sec-heading">Every Stage of Design, <em>Covered</em></h2>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="design-grid reveal">
+        <div class="design-card">
+          <div class="design-card-icon"><i class="ri-user-search-line"></i></div>
+          <h4>UX Research</h4>
+        </div>
+        <div class="design-card">
+          <div class="design-card-icon"><i class="ri-layout-masonry-line"></i></div>
+          <h4>Wireframing &amp; Prototyping</h4>
+        </div>
+        <div class="design-card">
+          <div class="design-card-icon"><i class="ri-palette-line"></i></div>
+          <h4>UI &amp; Visual Design</h4>
+        </div>
+        <div class="design-card">
+          <div class="design-card-icon"><i class="ri-dashboard-3-line"></i></div>
+          <h4>Design Systems</h4>
+        </div>
+        <div class="design-card">
+          <div class="design-card-icon"><i class="ri-compass-3-line"></i></div>
+          <h4>Product Strategy</h4>
+        </div>
+        <div class="design-card">
+          <div class="design-card-icon"><i class="ri-road-map-line"></i></div>
+          <h4>Product Roadmaps</h4>
+        </div>
+        <div class="design-card">
+          <div class="design-card-icon"><i class="ri-test-tube-line"></i></div>
+          <h4>Usability Testing</h4>
+        </div>
+        <div class="design-card">
+          <div class="design-card-icon"><i class="ri-refresh-line"></i></div>
+          <h4>Product Redesign</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT MAKES US DIFFERENT + DUAL IMAGE BLOCKS -->
+  <section class="section">
+    <div class="wrap">
+      <div class="reveal" style="margin-bottom:56px">
+        <div class="sec-eyebrow"><span></span>What Makes Us Different</div>
+        <h2 class="sec-heading" style="max-width:700px">Strategy First,<br><em>Design</em> Second</h2>
+        <p class="sec-sub">Unlike agencies that jump straight into design, Flashlab Creative always starts with
+          strategy. We dig deep into your users, your market, and your business goals before a single pixel is placed.
+          The result is a product that not only looks exceptional but solves real problems, retains users, and drives
+          long-term growth &mdash; designed with intention from the ground up.</p>
+      </div>
+
+      <!-- Image block 1 -->
+      <div class="dual-split reveal">
+        <img src="https://www.flashlabcreative.com/wp-content/uploads/2026/04/prouct-3.jpg"
+          alt="Strategy-led product design"
+          onerror="this.src='https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=700&q=80'">
+        <div class="dual-split-content">
+          <h3>Strategy-Led<br><em>From Day One</em></h3>
+          <p>Every product we design starts with a clear strategy &mdash; mapping out user journeys, defining key features,
+            and aligning every decision with your business goals before a single screen is designed. This means fewer
+            revisions, faster launches, and products that actually perform.</p>
+        </div>
+      </div>
+
+      <!-- Image block 2 -->
+      <div class="dual-split reveal" style="direction: rtl;">
+        <img src="https://www.flashlabcreative.com/wp-content/uploads/2026/04/prouct-4.jpg"
+          alt="Pixel-perfect UI design" style="direction: ltr;"
+          onerror="this.src='https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=700&q=80'">
+        <div class="dual-split-content" style="direction: ltr;">
+          <h3>Pixel-Perfect<br><em>Interfaces</em></h3>
+          <p>From wireframe to pixel-perfect UI, we craft interfaces that are as beautiful as they are functional &mdash;
+            designed to delight users, reduce friction, and keep them coming back. Every component, colour, and
+            interaction is considered, tested, and refined before delivery.</p>
+        </div>
+      </div>
+
+      <!-- Three content pillars -->
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:32px;" class="reveal">
+        <div style="padding:32px 28px; background:var(--bg2); border-radius:4px; border-top:3px solid var(--green);">
+          <div
+            style="width:42px; height:42px; border-radius:10px; background:rgba(168,232,50,0.12); display:flex; align-items:center; justify-content:center; font-size:1.3rem; color:var(--green); margin-bottom:16px;">
+            <i class="ri-eye-line"></i>
+          </div>
+          <h4
+            style="font-family:'Bebas Neue',sans-serif; font-size:1.15rem; letter-spacing:1px; text-transform:uppercase; color:var(--text); margin-bottom:10px;">
+            Real User Research
+          </h4>
+          <p style="font-size:0.86rem; color:var(--text2); line-height:1.68;">
+            We conduct interviews, usability testing, competitor analysis, and persona development to ensure every
+            design decision is grounded in real user needs and behaviours &mdash; not assumptions.
+          </p>
+        </div>
+        <div style="padding:32px 28px; background:var(--bg2); border-radius:4px; border-top:3px solid var(--green);">
+          <div
+            style="width:42px; height:42px; border-radius:10px; background:rgba(168,232,50,0.12); display:flex; align-items:center; justify-content:center; font-size:1.3rem; color:var(--green); margin-bottom:16px;">
+            <i class="ri-git-pull-request-line"></i>
+          </div>
+          <h4
+            style="font-family:'Bebas Neue',sans-serif; font-size:1.15rem; letter-spacing:1px; text-transform:uppercase; color:var(--text); margin-bottom:10px;">
+            Developer-Ready Delivery
+          </h4>
+          <p style="font-size:0.86rem; color:var(--text2); line-height:1.68;">
+            You receive fully documented, developer-ready design files, a complete design system, interactive
+            prototypes, and a clear product roadmap &mdash; everything your development team needs to build with confidence.
+          </p>
+        </div>
+        <div style="padding:32px 28px; background:var(--bg2); border-radius:4px; border-top:3px solid var(--green);">
+          <div
+            style="width:42px; height:42px; border-radius:10px; background:rgba(168,232,50,0.12); display:flex; align-items:center; justify-content:center; font-size:1.3rem; color:var(--green); margin-bottom:16px;">
+            <i class="ri-refresh-line"></i>
+          </div>
+          <h4
+            style="font-family:'Bebas Neue',sans-serif; font-size:1.15rem; letter-spacing:1px; text-transform:uppercase; color:var(--text); margin-bottom:10px;">
+            Redesigns Welcome
+          </h4>
+          <p style="font-size:0.86rem; color:var(--text2); line-height:1.68;">
+            We regularly work with businesses to audit, rethink, and redesign existing digital products. Whether your
+            product has usability issues, feels outdated, or simply isn't converting &mdash; we identify the problems and
+            design a better solution.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" style="padding: 72px 0 88px">
+    <div class="wrap">
+      <div class="centered reveal" style="margin-bottom:40px">
+        <div class="sec-eyebrow"><span></span>Got Questions?</div>
+        <h2 class="sec-heading">Frequently Asked <em>Questions</em></h2>
+        <p class="sec-sub">Here are the questions we get asked most about our Product Design &amp; Strategies service.
+        </p>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>What is product design and strategy?</span>
+            <div class="faq-icon"><i class="ri-add-line"></i></div>
+          </button>
+          <div class="faq-a">
+            <p>Product design and strategy is the process of defining what a digital product should do, who it is for,
+              and how it should look and work. It combines user research, business thinking, and design expertise to
+              create products that are both useful and commercially successful.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>Can you redesign an existing product?</span>
+            <div class="faq-icon"><i class="ri-add-line"></i></div>
+          </button>
+          <div class="faq-a">
+            <p>Yes. We regularly work with businesses to audit, rethink, and redesign existing digital products. Whether
+              your product has usability issues, feels outdated, or simply isn't converting &mdash; we can identify the
+              problems and design a better solution.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>Do you conduct user research?</span>
+            <div class="faq-icon"><i class="ri-add-line"></i></div>
+          </button>
+          <div class="faq-a">
+            <p>Yes. User research is a core part of our process. We conduct interviews, usability testing, competitor
+              analysis, and persona development to ensure every design decision is grounded in real user needs and
+              behaviours.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>What do we receive at the end of the project?</span>
+            <div class="faq-icon"><i class="ri-add-line"></i></div>
+          </button>
+          <div class="faq-a">
+            <p>You receive fully documented, developer-ready design files, a complete design system, interactive
+              prototypes, and a clear product roadmap &mdash; everything your development team needs to build with confidence.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>Do you work with clients outside Goa?</span>
+            <div class="faq-icon"><i class="ri-add-line"></i></div>
+          </button>
+          <div class="faq-a">
+            <p>Absolutely. While we are proudly based in Margao, Goa, we work with clients across India and
+              internationally. Our digital-first process means geography is never a barrier &mdash; everything from brief to
+              final delivery happens seamlessly online.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT BAND -->
+  <div class="contact-band">
+    <h2>Ready to Build Something<br><em>Remarkable?</em></h2>
+    <p>Let's design a product your users will love &mdash; and your business will grow from.</p>
+    <a href="../../connect.html" class="btn-dark">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+  </div>
+  <!-- FOOTER &mdash; links, services, contact, socials -->
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="../../index.html">
+            <img src="../../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative"
+              onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'font-family:Bebas Neue,sans-serif;font-size:1.5rem;letter-spacing:2px;color:#fff\'>FLASHLAB CREATIVE</span>'">
+          </a>
+        </div>
+        <p>Goa's leading creative &amp; digital marketing agency &mdash; where imagination meets reality. Born in Margao in 2016, we craft unforgettable digital experiences for brands that dare to stand out.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/flashlab.creative" target="_blank" rel="noopener"><i class="ri-instagram-fill"></i></a>
+          <a href="https://www.facebook.com/flashlab.creative/" target="_blank" rel="noopener"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.linkedin.com/company/flashlabcreative" target="_blank" rel="noopener"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://twitter.com/theflashlab" target="_blank" rel="noopener"><i class="ri-twitter-x-fill"></i></a>
+          <a href="https://www.youtube.com/channel/UCuFtcVt_Yp9CZ82UG6pm-pg" target="_blank" rel="noopener"><i class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="../../about.html"><i class="ri-arrow-right-s-line"></i>About</a></li>
+          <li><a href="../../services.html"><i class="ri-arrow-right-s-line"></i>Services</a></li>
+          <li><a href="../../portfolio.html"><i class="ri-arrow-right-s-line"></i>Portfolio</a></li>
+          <li><a href="../../clients.html"><i class="ri-arrow-right-s-line"></i>Clients</a></li>
+          <li><a href="../../case-studies.html"><i class="ri-arrow-right-s-line"></i>Case Studies</a></li>
+          <li><a href="../../team.html"><i class="ri-arrow-right-s-line"></i>Teams</a></li>
+          <li><a href="../../career.html"><i class="ri-arrow-right-s-line"></i>Career</a></li>
+          <li><a href="../../connect.html"><i class="ri-arrow-right-s-line"></i>Connect</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Services</h4>
+        <ul class="footer-list">
+          <li><a href="outdoor-print-ads.html"><i class="ri-arrow-right-s-line"></i>Outdoor &amp; Print</a></li>
+          <li><a href="digital-advertising.html"><i class="ri-arrow-right-s-line"></i>Digital Advertising</a></li>
+          <li><a href="seo-sem-marketing.html"><i class="ri-arrow-right-s-line"></i>SEO / SEM</a></li>
+          <li><a href="social-media-management.html"><i class="ri-arrow-right-s-line"></i>Social Media</a></li>
+          <li><a href="product-design-strategies.html"><i class="ri-arrow-right-s-line"></i>Product Design</a></li>
+          <li><a href="web-app-development.html"><i class="ri-arrow-right-s-line"></i>Web &amp; App Dev</a></li>
+          <li><a href="ecommerce.html"><i class="ri-arrow-right-s-line"></i>E-Commerce</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Join Us</h4>
+        <ul class="footer-list">
+          <li><a href="../../career.html#open-positions" data-open-role="intern"><i class="ri-arrow-right-s-line"></i>Intern</a></li>
+          <li><a href="../../career.html#open-positions" data-open-role="seo-expert"><i class="ri-arrow-right-s-line"></i>SEO Expert</a></li>
+          <li><a href="../../career.html#open-positions" data-open-role="social-media-manager"><i class="ri-arrow-right-s-line"></i>Social Media Mgr</a></li>
+          <li><a href="../../career.html#open-positions" data-open-role="graphic-designer"><i class="ri-arrow-right-s-line"></i>Graphic Designer</a></li>
+          <li><a href="../../career.html#open-positions" data-open-role="web-developer"><i class="ri-arrow-right-s-line"></i>Web Developer</a></li>
+          <li><a href="../../career.html#open-positions" data-open-role="animation-designer"><i class="ri-arrow-right-s-line"></i>Animation Designer</a></li>
+          <li><a href="../../career.html#open-positions" data-open-role="app-developer"><i class="ri-arrow-right-s-line"></i>App Developer</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Service Links</h4>
+        <ul class="footer-list">
+          <li><a href="#"><i class="ri-arrow-right-s-line"></i>Team Blogs</a></li>
+          <li><a href="https://parashootstudio.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Production</a></li>
+          <li><a href="https://backstagexchange.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Event Management</a></li>
+          <li><a href="#"><i class="ri-arrow-right-s-line"></i>FNB Marketing</a></li>
+          <li><a href="https://stromenightlife.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Strobe Nightlife</a></li>
+          <li><a href="https://www.cybercreative.in" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Web Development &amp; IoT</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-head">Contact</h4>
+        <div class="footer-contact">
+          <p><i class="ri-map-pin-2-fill"></i><a href="https://www.google.com/maps/search/Flashlab+Creative+Margao+Goa" target="_blank" rel="noopener">G26 Vikrant Complex,<br>Margao, Goa, India</a></p>
+          <p><i class="ri-phone-fill"></i><a href="tel:+919923580023">+91 99235 80023</a></p>
+          <p><i class="ri-mail-fill"></i><a href="mailto:contact@flashlabcreative.com">contact@flashlabcreative.com</a></p>
+          <p><i class="ri-time-fill"></i><span>Mon &ndash; Sat: 9am &ndash; 6pm IST</span></p>
+          <a href="../../connect.html" class="footer-cta">Start a Project <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">Copyright &copy; 2026 <a href="../../index.html" class="flashlab-link">Flashlab Creative</a></p>
+      <p class="footer-credit">Website Crafted by <a href="https://cybercreative.in/" target="_blank" rel="noopener" class="cyber-link">Cyber Creative</a></p>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="../../js/main.js"></script>
+  <script src="../../js/pages/services.js"></script>
+</body>
+
+</html>
+
+
+

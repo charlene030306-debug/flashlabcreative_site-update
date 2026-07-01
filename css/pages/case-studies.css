@@ -1,0 +1,86 @@
+﻿/* ============================================================
+   CASE STUDIES PAGE STYLES
+   ============================================================
+   This file imports the existing portfolio.css so the Case
+   Studies page inherits the exact same design system — colors,
+   typography, animations, card components, hero styles, footer,
+   and responsive breakpoints — without duplicating that CSS.
+
+   Add any Case-Studies-ONLY overrides below the @import.
+   ============================================================ */
+
+@import url("portfolio.css");
+
+/* ------------------------------------------------------------
+   PAGE-SPECIFIC OVERRIDES (optional)
+   Add custom tweaks here that should apply ONLY to the
+   Case Studies page, without touching portfolio.css.
+   Example patterns below — delete if not needed.
+   ------------------------------------------------------------ */
+
+/* Example: give the category cards section a touch more
+   bottom spacing before the CTA band on this page only */
+#case-categories {
+  padding-bottom: 40px;
+}
+
+/* Example: if you later want all 3 industry cards in one even
+   row on desktop instead of the 2+1 .wcard.half layout, you can
+   target them specifically here without editing portfolio.css */
+/*
+#caseCategoryGrid .wcard {
+  grid-column: span 4;
+}
+*/
+
+/* TODO: add further Case-Studies-only style overrides below as needed */
+
+/* ------------------------------------------------------------
+   MOBILE COMPRESSION (case-studies page)
+   Mirrors the body[data-page="portfolio"] mobile fixes in
+   portfolio.css, scoped to this page's own data-page value
+   so they keep working now that this page uses its own
+   stylesheet/identity instead of reusing "portfolio".
+   ------------------------------------------------------------ */
+@media (max-width: 1024px) {
+  body[data-page="case-studies"] .footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 16px;
+  }
+  body[data-page="case-studies"] .hide-on-mobile {
+    display: none;
+  }
+  body[data-page="case-studies"] .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  body[data-page="case-studies"] .footer-brand p {
+    margin: 0;
+  }
+  body[data-page="case-studies"] .footer-list a {
+    min-height: 24px;
+    font-size: 0.75rem;
+  }
+  body[data-page="case-studies"] .footer-head {
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+  }
+  body[data-page="case-studies"] section:not([class*="-hero"]):not(.hero) {
+    padding: 30px 0;
+  }
+  body[data-page="case-studies"] .sec-heading {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    font-size: clamp(2rem, 8vw, 2.5rem);
+    line-height: 1.1;
+  }
+  body[data-page="case-studies"] .sec-sub {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+  }
+}

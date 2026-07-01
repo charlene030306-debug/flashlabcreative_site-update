@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flashlab Creative</title>
+  <link rel="icon" type="image/png" href="images/flashlab-lightning-bolt-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700&family=Jost:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,600;1,700&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/pages/clients.css">
+
+</head>
+
+<body data-page="clients">
+
+  <!-- LOGO BAR -->
+  <div class="site-logo-bar">
+    <a href="index.html">
+      <img src="images/logos/flashlab-logo.png" alt="Flashlab Creative" class="logo-light" id="siteLogoImg">
+      <img src="images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" class="logo-dark" id="siteLogoImg">
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Agency</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li>
+          <a href="services.html">Services</a>
+          <ul>
+            <li><a href="html/services/digital-advertising.html"><i class="ri-megaphone-line"></i>Digital Advertising</a></li>
+            <li><a href="html/services/seo-sem-marketing.html"><i class="ri-search-line"></i>SEO / SEM Marketing</a></li>
+            <li><a href="html/services/social-media-management.html"><i class="ri-instagram-line"></i>Social Media Management</a></li>
+            <li><a href="html/services/product-design-strategies.html"><i class="ri-pen-nib-line"></i>Product Design &amp;
+                Strategies</a></li>
+            <li><a href="html/services/web-app-development.html"><i class="ri-code-s-slash-line"></i>Web &amp; App Development</a>
+            </li>
+            <li><a href="html/services/outdoor-print-ads.html"><i class="ri-image-line"></i>Outdoor &amp; Print Ads</a></li>
+            <li><a href="html/services/ecommerce.html"><i class="ri-shopping-cart-line"></i>E-Commerce</a></li>
+            <li><a href="html/services/trademark-registration.html"><i class="ri-shield-check-line"></i>Trademark Registration</a></li>
+            <li><a href="html/services/photography-video.html"><i class="ri-camera-line"></i>Photography &amp; Video</a></li>
+            <li><a href="html/services/event-production.html"><i class="ri-calendar-event-line"></i>Event Production</a></li>
+            <li><a href="html/services/media-consulting.html"><i class="ri-chat-voice-line"></i>Media Consulting</a></li>
+            <li><a href="html/services/animation-motion.html"><i class="ri-video-line"></i>Animation &amp; Motion</a></li>
+          </ul>
+        </li>
+        <li><a href="clients.html" class="nav-active">Clients</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+                      <li>
+          <a href="career.html">Careers</a>
+          <ul>
+            <li><a href="html/career/internship.html"><i class="ri-user-add-line"></i>Internship</a></li>
+            <li><a href="html/career/join-fulltime.html"><i class="ri-briefcase-4-line"></i>Join Full Time</a></li>
+            <li><a href="html/career/freelance.html"><i class="ri-computer-line"></i>Freelance</a></li>
+            <li><a href="html/career/influencer-signup.html"><i class="ri-star-line"></i>Influencer Sign Up</a></li>
+            <li><a href="html/career/hr-policy.html"><i class="ri-file-list-3-line"></i>HR Policy</a></li>
+          </ul>
+        </li>
+        <li><a href="connect.html">Connect</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="connect.html" class="nav-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-overlay" id="mobOverlay"></div>
+  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+    <button class="mob-close" id="mobClose" aria-label="Close menu"><i class="ri-close-line"></i></button>
+    <ul class="mob-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Agency</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-services">Services <i
+            class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-services">
+          <li><a href="html/services/digital-advertising.html">Digital Advertising</a></li>
+          <li><a href="html/services/seo-sem-marketing.html">SEO / SEM Marketing</a></li>
+          <li><a href="html/services/social-media-management.html">Social Media Management</a></li>
+          <li><a href="html/services/product-design-strategies.html">Product Design &amp; Strategies</a></li>
+          <li><a href="html/services/web-app-development.html">Web &amp; App Development</a></li>
+          <li><a href="html/services/outdoor-print-ads.html">Outdoor &amp; Print Ads</a></li>
+          <li><a href="html/services/ecommerce.html">E-Commerce</a></li>
+          <li><a href="html/services/trademark-registration.html">Trademark Registration</a></li>
+          <li><a href="html/services/photography-video.html">Photography &amp; Video</a></li>
+          <li><a href="html/services/event-production.html">Event Production</a></li>
+          <li><a href="html/services/media-consulting.html">Media Consulting</a></li>
+          <li><a href="html/services/animation-motion.html">Animation &amp; Motion</a></li>
+        </ul>
+      </li>
+      <li><a href="clients.html" class="nav-active">Clients</a></li>
+            <li>
+        <button class="mob-parent-btn" data-target="mob-sub-career">Careers <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-career">
+          <li><a href="html/career/internship.html">Internship</a></li>
+          <li><a href="html/career/join-fulltime.html">Join Full Time</a></li>
+          <li><a href="html/career/freelance.html">Freelance</a></li>
+          <li><a href="html/career/influencer-signup.html">Influencer Sign Up</a></li>
+          <li><a href="html/career/hr-policy.html">HR Policy</a></li>
+        </ul>
+      </li>
+      <li><a href="connect.html">Connect</a></li>
+    </ul>
+    <div class="mob-cta-wrap">
+      <a href="connect.html" class="mob-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="hero-full-wrap">
+      <div class="hero-full-bg"></div>
+      <div class="hero-ghost-text">CLIENTS</div>
+      <div class="hero-full-content">
+        <div class="hero-full-left">
+          <span class="hero-full-eyebrow">05 &mdash; Our Clients</span>
+          <h1 class="hero-full-heading">
+            Trusted By The <em>Best.</em>
+          </h1>
+          <p class="hero-full-sub">
+            A diverse family of brands &mdash; from Goa's beloved local spots to national names &mdash; who chose Flashlab Creative
+            to build,
+            grow, and tell their story.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="marquee-strip">
+      <div class="marquee-track">
+        <span>BRANDING</span>
+        <span>WEB DEV</span>
+        <span>SOCIAL MEDIA</span>
+        <span>SEO &amp; GROWTH</span>
+        <span>DIGITAL ADS</span>
+        <span>PHOTOGRAPHY</span>
+        <span>VIDEO PRODUCTION</span>
+        <span>ANIMATION</span>
+        <span>OUTDOOR &amp; PRINT</span>
+        <span>BRANDING</span>
+        <span>WEB DEV</span>
+        <span>SOCIAL MEDIA</span>
+        <span>SEO &amp; GROWTH</span>
+        <span>DIGITAL ADS</span>
+        <span>PHOTOGRAPHY</span>
+        <span>VIDEO PRODUCTION</span>
+        <span>ANIMATION</span>
+        <span>OUTDOOR &amp; PRINT</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM STORY SHOWCASE -->
+  <section class="stories-section">
+    <div class="wrap">
+      <div class="sec-header centered reveal">
+        <p class="sec-eyebrow">&mdash; Client Campaigns</p>
+        <h2 class="sec-heading">Stories We <em>Told</em></h2>
+        <p class="sec-sub">Real content we created for real brands &mdash; stories that stopped the scroll.</p>
+      </div>
+      <div class="stories-grid">
+        <div class="story-card reveal" style="--delay:0s"><img
+            src="http://www.flashlabcreative.com/wp-content/uploads/2025/11/06-Aug-2024-Its-a-Sweet-Deal-Story-Size-Caravela-1.png"
+            alt="Caravela Story" loading="lazy"
+            onerror="this.parentElement.style.background='linear-gradient(135deg,#1a0a0a,#4a2a2a)'"></div>
+        <div class="story-card reveal" style="--delay:0.07s"><img
+            src="http://www.flashlabcreative.com/wp-content/uploads/2025/11/Papiillion-week-offer-story-9-Aug-2024-1.png"
+            alt="Papiillon Story" loading="lazy"
+            onerror="this.parentElement.style.background='linear-gradient(135deg,#0a1a0a,#2a4a2a)'"></div>
+        <div class="story-card reveal" style="--delay:0.14s"><img
+            src="http://www.flashlabcreative.com/wp-content/uploads/2025/11/The-Origin-Olympics-story-6-August-2024-1.png"
+            alt="Origin Story" loading="lazy"
+            onerror="this.parentElement.style.background='linear-gradient(135deg,#0a0a1a,#2a2a4a)'"></div>
+        <div class="story-card reveal" style="--delay:0.21s"><img
+            src="http://www.flashlabcreative.com/wp-content/uploads/2025/11/Flashlab-x-Parashoot-Gandhi-Jayanti-story-1.png"
+            alt="Gandhi Jayanti Story" loading="lazy"
+            onerror="this.parentElement.style.background='linear-gradient(135deg,#1a0a00,#4a2a00)'"></div>
+        <div class="story-card reveal" style="--delay:0.28s"><img
+            src="http://www.flashlabcreative.com/wp-content/uploads/2025/11/Robins-Ark-Diwali-storyy-17-Oct-2024-1.png"
+            alt="Robins Ark Diwali Story" loading="lazy"
+            onerror="this.parentElement.style.background='linear-gradient(135deg,#1a0a00,#5a3a00)'"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND LOGOS -->
+  <section class="logos-section" id="brand-partners">
+    <div class="wrap">
+      <div class="sec-header centered reveal">
+        <p class="sec-eyebrow">&mdash; Our Brand Partners</p>
+        <h2 class="sec-heading">Trusted By <em>Leading Brands</em></h2>
+        <p class="sec-sub">Across Goa, India and beyond &mdash; a growing family of brands that chose Flashlab Creative.</p>
+      </div>
+      <!-- ── NEW LOGOS FROM DOCX ── -->
+      <div class="logos-free-grid reveal collapsed" id="logosGrid">
+
+        <!-- ── EXISTING LOGOS (from WP CDN) ── -->
+        <div class="logo-free-item "><img src="images/logos/caliber2.png" alt="Caliber Cafe"
+            loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Caliber</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="images/logos/Caravel-Logo.png" alt="Caravela"
+            loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Caravela</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="images/logos/Club-Rickys-Logo.png" alt="Club Ricky's"
+            loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Ricky\'s</span>'">
+        </div>
+      
+        <div class="logo-free-item"><img
+            src="images/logos/avtar-kitchen.png"
+            alt="Avtar Kitchen Bar" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Avtar</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="images/logos/caeiro.png" alt="Caeiro"
+            loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Caeiro</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="images/logos/cali-logo.png"
+            alt="Cali" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Cali</span>'">
+        </div>
+        <div class="logo-free-item white-to-dark"><img src="images/logos/Holi-Dhun.png" alt="Holi Dhun"
+            loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Holi Dhun</span>'">
+        </div>
+        <div class="logo-free-item white-to-dark"><img src="images/logos/Akshay green.png" alt="Akshay"
+            loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Akshay</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="images/logos/Crafted-Couches.png"
+            alt="Crafted Couches" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Crafted Couches</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="images/logos/Fomento-Reality.png"
+            alt="Fomento Reality" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Fomento</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="images/logos/Hide-Expo.png" alt="Hide Expo"
+            loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Hide Expo</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="images/logos/KOA.png"
+            alt="KOA Global" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>KOA Global</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="images/logos/labarca.png" alt="La Barraca"
+            loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>La Barraca</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="images/logos/Latin-Quarter-blue.png"
+            alt="Latin Quarter" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Latin Quarter</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="http://www.flashlabcreative.com/wp-content/uploads/2025/10/NB_FinalLogo_page-0001.jpg" alt="NB"
+            loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>NB</span>'">
+        </div>
+        <div class="logo-free-item"><img src="http://www.flashlabcreative.com/wp-content/uploads/2025/10/Orane-Logo.png"
+            alt="Orane" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Orane</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="images/logos/Papiillon-Logo.png" alt="Papiillon"
+            loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Papiillon</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="images/logos/pedros.png" alt="Pedro's"
+            loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Pedro\'s</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="http://www.flashlabcreative.com/wp-content/uploads/2025/10/Yellow-scaled.jpg" alt="Yellow"
+            loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Yellow</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="images/logos/reginaldo.png"
+            alt="Reginaldo Connect" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Reginaldo</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="images/logos/Robins-Ark.png" alt="Robins Ark"
+            loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Robins Ark</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="images/logos/Southern-cost.png"
+            alt="Southern Coast" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Southern Coast</span>'">
+        </div>
+        <div class="logo-free-item"><img
+            src="http://www.flashlabcreative.com/wp-content/uploads/2025/10/Screenshot-2025-10-28-152831.png"
+            alt="Partner" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Partner</span>'">
+        </div>
+        <div class="logo-free-item dark-invert"><img src="images/logos/Astro.png" alt="Astro" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Astro</span>'">
+        </div>
+
+        <!-- ── NEW LOGOS ── -->
+        <div class="logo-free-item"><img src="images/logos/armond - Edited.png" alt="Armond" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Armond</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/bab'shideout.png" alt="Babs Hideout" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Babs Hideout</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/backyard.png" alt="The Backyard Project" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>The Backyard Project</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/bakeshop.png" alt="The Vintage Bakeshop" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>The Vintage Bakeshop</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/bastil.png" alt="Bastil" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Bastil</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/Boleir.png" alt="Boleir" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Boleir</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/boltshift.png" alt="Boltshift" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Boltshift</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/Car-Glaze-black-bg.png" alt="Car Glaze" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Car Glaze</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/cloudwatch.png" alt="Cloud Watch" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Cloude Watch</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/colvaplaza.png" alt="Colva" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Colva</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/Deltin-casino.png" alt="Deltin Casino" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Deltin Casino</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/digit.png" alt="Digit" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Digit</span>'">
+        </div>
+        <div class="logo-free-item dark-invert"><img src="images/logos/dilige.png" alt="Diligent" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Diligent</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/Dwarka.png" alt="Dwarka" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Dwarka</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/ewater.png" alt="E-Water" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>E-Water</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/fc-goa.png" alt="FC Goa" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>FC Goa</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/featherdev.png" alt="Featherdev" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Featherdev</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/fifthflour.png" alt="Fifth Flour" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Fifth Flour</span>'">
+        </div>
+        <div class="logo-free-item dark-invert"><img src="images/logos/flowbase.png" alt="Flowbase" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Flowbase</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/gen.png" alt="Gen" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Gen</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/ghaas phoos.png" alt="Ghaas Phoos" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Ghaas Phoos</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/globalbank.png" alt="Global Bank" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Global Bank</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/heineken.png" alt="Heineken Krank Goa"
+            loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Heineken Krank Goa</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/lightbox.png" alt="Lightbox" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Lightbox</span>'">
+        </div>
+        <div class="logo-free-item dark-invert"><img src="images/logos/logoips.png" alt="Logoipsum" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Logoipsum</span>'">
+        </div>
+        <div class="logo-free-item dark-invert"><img src="images/logos/lumino.png" alt="Lumino" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Lumino</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/magzika.png" alt="Magzika" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Magzika</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/mikes.png" alt="Mike's" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Mike\'s</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/theorigin.png" alt="The Origin" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>The Origin</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/Papiillon-Logo.png" alt="Papiillon" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Papiillon</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/patisserie.png" alt="Patisserie" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Patisserie</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/Permaguard-final - Edited.png" alt="Permaguard India" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Permaguard India</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/Pipa-Bela.png" alt="Pipa Bela" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Pipa Bella</span>'">
+        </div>
+        <div class="logo-free-item dark-invert"><img src="images/logos/pronature.png" alt="ProNature" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>ProNature</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/the red ginger.png" alt="Red Ginger" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Red Ginger</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/renew.png" alt="Renew" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Renev</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/severos.png" alt="Severos" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Severos</span>'">
+        </div>
+        <div class="logo-free-item dark-invert"><img src="images/logos/siteman.png" alt="Siteman" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Siteman</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/spherule.png" alt="Spherule" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Spherule</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/Surf-house-logo.png" alt="Surf House" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Surf House</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/tataki.png" alt="Tataki" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Tataki</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/tikibab-final.png" alt="Tikibab" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Tikibab</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/tulum.png" alt="Tulum" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Tulumi</span>'">
+        </div>
+        <div class="logo-free-item dark-invert"><img src="images/logos/twitch.png" alt="Twitch" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Twitch</span>'">
+        </div>
+        <div class="logo-free-item dark-invert"><img src="images/logos/waveless.png" alt="Waveless" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Waveless</span>'">
+        </div>
+        <div class="logo-free-item dark-invert"><img src="images/logos/xfinity.png" alt="Xfinity" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Xfinity</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/YU hotel.png" alt="YU Hotel" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>YU Hotel</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/darkside.png" alt="Darkside Studios" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Darkside Studios</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/Modal.png" alt="Modal" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Modal</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/koso.png" alt="Kos" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>Koso</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/madrin.png" alt="Madrins" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>DMadrin</span>'">
+        </div>
+        <div class="logo-free-item"><img src="images/logos/EdgeWater.png" alt="Edge Water" loading="lazy"
+            onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'logo-name\'>EdgeWater</span>'">
+        </div>
+
+      </div>
+      <div class="load-more-wrap" id="loadMoreLogosWrap">
+        <button class="btn-ghost" id="loadMoreLogosBtn">Load More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL MEDIA FEED -->
+  <section class="feed-section section">
+    <div class="wrap">
+      <div class="sec-header centered reveal">
+        <p class="sec-eyebrow">&mdash; Social Media Marketing</p>
+        <h2 class="sec-heading">Instagram Feed <em>Design</em></h2>
+        <p class="sec-sub">Visually engaging feed designs crafted to elevate brand presence and drive real engagement.
+        </p>
+      </div>
+      <div class="feed-grid">
+        <div class="feed-card reveal" style="--delay:0s"><img
+            src="http://www.flashlabcreative.com/wp-content/uploads/2025/11/WhatsApp-Image-2024-10-18-at-10.56.20_acd906e8-1.png"
+            alt="Feed Design 1" loading="lazy"
+            onerror="this.parentElement.style.background='linear-gradient(135deg,#1a1a2e,#16213e)'"></div>
+        <div class="feed-card reveal" style="--delay:0.08s"><img
+            src="http://www.flashlabcreative.com/wp-content/uploads/2025/11/WhatsApp-Image-2024-10-18-at-10.56.19_43031032-1.png"
+            alt="Feed Design 2" loading="lazy"
+            onerror="this.parentElement.style.background='linear-gradient(135deg,#0f3460,#533483)'"></div>
+        <div class="feed-card reveal" style="--delay:0.16s"><img
+            src="http://www.flashlabcreative.com/wp-content/uploads/2025/11/WhatsApp-Image-2024-10-18-at-10.56.18_2675d496-1.png"
+            alt="Feed Design 3" loading="lazy"
+            onerror="this.parentElement.style.background='linear-gradient(135deg,#1a0a0a,#4a1a00)'"></div>
+        <div class="feed-card reveal" style="--delay:0.24s"><img
+            src="http://www.flashlabcreative.com/wp-content/uploads/2025/11/WhatsApp-Image-2024-10-18-at-10.56.19_ab6715cb-1.png"
+            alt="Feed Design 4" loading="lazy"
+            onerror="this.parentElement.style.background='linear-gradient(135deg,#0a1a0a,#1a4a1a)'"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRAPHIC DESIGN -->
+  <section class="graphic-section">
+    <div class="graphic-header-bar">
+      <div class="graphic-header-left reveal-left">
+        <span class="sec-eyebrow">&mdash; Product Design &amp; Illustration</span>
+        <h2>Graphic <em>Design</em><br>That Sells.</h2>
+      </div>
+      <div class="graphic-header-right reveal-right">
+        <p>Crafting visual identities and print-ready assets that communicate your brand story with clarity and impact.
+          From logos to full campaigns, we build design systems that scale.</p>
+        <div class="graphic-tabs" id="graphicTabs">
+          <button class="graphic-tab active" data-tab="brand-identity">Brand Identity</button>
+          <button class="graphic-tab" data-tab="print-collateral">Print Collateral</button>
+          <button class="graphic-tab" data-tab="outdoor-ads">Outdoor Ads</button>
+          <button class="graphic-tab" data-tab="menu-design">Menu Design</button>
+          <button class="graphic-tab" data-tab="product-packaging">Product Packaging</button>
+          <button class="graphic-tab" data-tab="ui-ux">UI / UX Design</button>
+        </div>
+        <a href="connect.html" class="btn-red">View Our Portfolio <i class="ri-arrow-right-up-line"></i></a>
+      </div>
+    </div>
+
+    <div class="graphic-showcase" id="graphicShowcase">
+      <div class="graphic-showcase-fallback active" id="tab-brand-identity"
+        style="background: linear-gradient(135deg, #0a1f0a 0%, #155a15 50%, #1f7a1f 100%);">
+        <i class="ri-palette-fill graphic-showcase-fallback-icon" style="color:rgba(168,232,50,0.5);"></i>
+        <span class="graphic-showcase-fallback-label">Brand Identity</span>
+      </div>
+      <div class="graphic-showcase-fallback" id="tab-print-collateral"
+        style="background: linear-gradient(135deg, #1a0505 0%, #7f1d1d 60%, #991b1b 100%);">
+        <i class="ri-printer-fill graphic-showcase-fallback-icon" style="color:rgba(252,165,165,0.5);"></i>
+        <span class="graphic-showcase-fallback-label">Print Collateral</span>
+      </div>
+      <div class="graphic-showcase-fallback" id="tab-outdoor-ads"
+        style="background: linear-gradient(135deg, #1a1a00 0%, #7a6a00 60%, #a89000 100%);">
+        <i class="ri-megaphone-fill graphic-showcase-fallback-icon" style="color:rgba(253,224,71,0.5);"></i>
+        <span class="graphic-showcase-fallback-label">Outdoor Ads</span>
+      </div>
+      <div class="graphic-showcase-fallback" id="tab-menu-design"
+        style="background: linear-gradient(135deg, #0a0a1a 0%, #1e3a8a 60%, #2563eb 100%);">
+        <i class="ri-restaurant-2-fill graphic-showcase-fallback-icon" style="color:rgba(147,197,253,0.5);"></i>
+        <span class="graphic-showcase-fallback-label">Menu Design</span>
+      </div>
+      <div class="graphic-showcase-fallback" id="tab-product-packaging"
+        style="background: linear-gradient(135deg, #1a0a1a 0%, #7e22ce 60%, #9333ea 100%);">
+        <i class="ri-gift-fill graphic-showcase-fallback-icon" style="color:rgba(216,180,254,0.5);"></i>
+        <span class="graphic-showcase-fallback-label">Product Packaging</span>
+      </div>
+      <div class="graphic-showcase-fallback" id="tab-ui-ux"
+        style="background: linear-gradient(135deg, #001a1a 0%, #0e7490 60%, #0891b2 100%);">
+        <i class="ri-layout-masonry-fill graphic-showcase-fallback-icon" style="color:rgba(103,232,249,0.5);"></i>
+        <span class="graphic-showcase-fallback-label">UI / UX Design</span>
+      </div>
+      <div class="graphic-caption-bar">
+        <div>
+          <span class="graphic-caption-tag" id="captionTag"><i class="ri-palette-fill"></i> Brand Identity</span>
+          <div class="graphic-caption-title" id="captionTitle">Brand Identity Design</div>
+        </div>
+        <div class="graphic-caption-desc" id="captionDesc">
+          Logos, color systems, typography, and visual language &mdash; cohesive identities built to leave a lasting mark.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEHIND THE LENS -->
+  <section class="media-section section">
+    <div class="wrap">
+      <div class="sec-header centered reveal">
+        <p class="sec-eyebrow">&mdash; Our Creative Work</p>
+        <h2 class="sec-heading">Behind The <em>Lens.</em></h2>
+        <p class="sec-sub">Campaigns, shoots, and cinematic productions we've delivered for our clients.</p>
+      </div>
+      <div class="media-grid">
+        <div class="media-item tall reveal" style="--delay:0s;">
+          <iframe src="https://www.youtube.com/embed/-6RnEd5wqaw" title="Mystras Assagao Property Shoot"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <span class="media-chip"><i class="ri-film-fill"></i> Mystras Assagao Property Shoot</span>
+        </div>
+        <div class="media-item wide reveal" style="--delay:0.1s;">
+          <iframe src="https://www.youtube.com/embed/pYqtiK4YCnw" title="Pipa Bella Fashion Film"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <span class="media-chip"><i class="ri-video-fill"></i> Pipa Bella Fashion Film</span>
+        </div>
+        <div class="media-item reveal" style="--delay:0.2s;">
+          <iframe src="https://www.youtube.com/embed/ySfFXkFDbiI" title="Ashely &amp; Melita Wedding Promo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <span class="media-chip"><i class="ri-instagram-fill"></i> Ashely &amp; Melita Wedding Promo</span>
+        </div>
+        <div class="media-item reveal" style="--delay:0.3s;">
+          <iframe src="https://www.youtube.com/embed/8oaB_G1o2zE" title="Cyrus Berne - Shape of You Cover"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <span class="media-chip"><i class="ri-calendar-event-fill"></i> Cyrus Berne - Shape of You Cover</span>
+        </div>
+        <div class="media-item reveal" style="--delay:0.4s;">
+          <iframe src="https://www.youtube.com/embed/7nO9kYs-dZE" title="The Southern Deck"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <span class="media-chip"><i class="ri-magic-fill"></i> The Southern Deck</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testi-section section">
+    <div class="wrap">
+      <div class="sec-header centered reveal">
+        <p class="sec-eyebrow">&mdash; What They Say</p>
+        <h2 class="sec-heading">Client <em>Voices</em></h2>
+        <p class="sec-sub">Real words from the brands we've helped grow.</p>
+      </div>
+      <div class="testi-slider-wrap reveal">
+        <div style="overflow:hidden;">
+          <div class="testi-slider" id="testiSlider">
+
+            <div class="testi-slide">
+              <a class="testi-card" href="https://share.google/12SKUPAO9LJvpC0LB" target="_blank"
+                rel="noopener noreferrer"
+                style="text-decoration:none;display:grid;grid-template-columns:auto 1fr auto;">
+                <div class="testi-card-stripe"></div>
+                <div class="testi-card-body">
+                  <div class="stars"><span class="star-rating"></span></div>
+                  <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                  <p>This guys do some amazing creative work.</p>
+                </div>
+                <div class="testi-card-author">
+                  <div class="testi-avatar" style="background:#a8e832;">BG</div>
+                  <strong>BIOMEDTRON Goa</strong>
+                  <span>Google Review <i class="ri-external-link-line" style="font-size:0.7rem;"></i></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="testi-slide">
+              <a class="testi-card" href="https://share.google/YVQT4x7dC5xI81MC4" target="_blank"
+                rel="noopener noreferrer"
+                style="text-decoration:none;display:grid;grid-template-columns:auto 1fr auto;">
+                <div class="testi-card-stripe"></div>
+                <div class="testi-card-body">
+                  <div class="stars"><span class="star-rating"></span></div>
+                  <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                  <p>Brilliant and creativity work! Highly recommended!</p>
+                </div>
+                <div class="testi-card-author">
+                  <div class="testi-avatar" style="background:#7c3aed;">RA</div>
+                  <strong>Rishabh Angle</strong>
+                  <span>Google Review <i class="ri-external-link-line" style="font-size:0.7rem;"></i></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="testi-slide">
+              <a class="testi-card" href="https://share.google/7hYvZLhbL0zk8rXCu" target="_blank"
+                rel="noopener noreferrer"
+                style="text-decoration:none;display:grid;grid-template-columns:auto 1fr auto;">
+                <div class="testi-card-stripe"></div>
+                <div class="testi-card-body">
+                  <div class="stars"><span class="star-rating"></span></div>
+                  <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                  <p>The team and their work, everything is spot on.</p>
+                </div>
+                <div class="testi-card-author">
+                  <div class="testi-avatar" style="background:#0891b2;">TD</div>
+                  <strong>Tinishya Dsouza</strong>
+                  <span>Google Review <i class="ri-external-link-line" style="font-size:0.7rem;"></i></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="testi-slide">
+              <a class="testi-card" href="https://share.google/uSHbRrVKFdda1zq06" target="_blank"
+                rel="noopener noreferrer"
+                style="text-decoration:none;display:grid;grid-template-columns:auto 1fr auto;">
+                <div class="testi-card-stripe"></div>
+                <div class="testi-card-body">
+                  <div class="stars"><span class="star-rating"></span></div>
+                  <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                  <p>Brilliant and creative work. Undoubtedly, the best in Goa.</p>
+                </div>
+                <div class="testi-card-author">
+                  <div class="testi-avatar" style="background:#15803d;">ML</div>
+                  <strong>Mayank Lotlikar</strong>
+                  <span>Google Review <i class="ri-external-link-line" style="font-size:0.7rem;"></i></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="testi-slide">
+              <a class="testi-card" href="https://share.google/nzM4sdpK2ReYlVaiF" target="_blank"
+                rel="noopener noreferrer"
+                style="text-decoration:none;display:grid;grid-template-columns:auto 1fr auto;">
+                <div class="testi-card-stripe"></div>
+                <div class="testi-card-body">
+                  <div class="stars"><span class="star-rating"></span></div>
+                  <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                  <p>Best place to grow your business and help it reach the maximum audience. Professional people
+                    Professional work.</p>
+                </div>
+                <div class="testi-card-author">
+                  <div class="testi-avatar" style="background:#b45309;">CS</div>
+                  <strong>Chirag Sawant</strong>
+                  <span>Google Review <i class="ri-external-link-line" style="font-size:0.7rem;"></i></span>
+                </div>
+              </a>
+            </div>
+
+            <div class="testi-slide">
+              <a class="testi-card" href="https://share.google/27XciGzXoyGrVyUAk" target="_blank"
+                rel="noopener noreferrer"
+                style="text-decoration:none;display:grid;grid-template-columns:auto 1fr auto;">
+                <div class="testi-card-stripe"></div>
+                <div class="testi-card-body">
+                  <div class="stars"><span class="star-rating"></span></div>
+                  <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                  <p>Positive, Responsiveness, Quality, Professionalism, Value</p>
+                </div>
+                <div class="testi-card-author">
+                  <div class="testi-avatar" style="background:#be185d;">DV</div>
+                  <strong>Dan Vaz</strong>
+                  <span>Google Review <i class="ri-external-link-line" style="font-size:0.7rem;"></i></span>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="testi-controls">
+          <button class="testi-btn" id="testiPrev" aria-label="Previous"><i class="ri-arrow-left-line"></i></button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-btn" id="testiNext" aria-label="Next"><i class="ri-arrow-right-line"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MERGED CTA -->
+  <section class="merged-cta">
+    <div class="merged-cta-inner">
+      <div class="mcta-col reveal-left">
+        <h3>The Work That <em>Speaks</em> For Itself</h3>
+        <p>Explore detailed case studies showing the real impact we've created for our clients across industries.</p>
+        <div class="mcta-btns">
+          <a href="case-studies.html" class="btn-red">View Case Studies <i class="ri-arrow-right-up-line"></i></a>
+          <a href="connect.html" class="btn-ghost">Start a Project <i class="ri-arrow-right-line"></i></a>
+          <a href="connect.html" class="btn-red">Let's Build Together <i class="ri-arrow-right-up-line"></i></a>
+          <a href="about.html" class="btn-ghost">Our Story <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER &mdash; links, services, contact, socials -->
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="index.html">
+            <img src="images/logos/flashlab-logo-dark.png" alt="Flashlab Creative"
+              onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'font-family:Bebas Neue,sans-serif;font-size:1.5rem;letter-spacing:2px;color:#fff\'>FLASHLAB CREATIVE</span>'">
+          </a>
+        </div>
+        <p>Goa's leading creative &amp; digital marketing agency &mdash; where imagination meets reality. Born in Margao in 2016, we craft unforgettable digital experiences for brands that dare to stand out.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/flashlab.creative" target="_blank" rel="noopener"><i class="ri-instagram-fill"></i></a>
+          <a href="https://www.facebook.com/flashlab.creative/" target="_blank" rel="noopener"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.linkedin.com/company/flashlabcreative" target="_blank" rel="noopener"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://twitter.com/theflashlab" target="_blank" rel="noopener"><i class="ri-twitter-x-fill"></i></a>
+          <a href="https://www.youtube.com/channel/UCuFtcVt_Yp9CZ82UG6pm-pg" target="_blank" rel="noopener"><i class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="about.html"><i class="ri-arrow-right-s-line"></i>About</a></li>
+          <li><a href="services.html"><i class="ri-arrow-right-s-line"></i>Services</a></li>
+          <li><a href="portfolio.html"><i class="ri-arrow-right-s-line"></i>Portfolio</a></li>
+          <li><a href="clients.html"><i class="ri-arrow-right-s-line"></i>Clients</a></li>
+          <li><a href="case-studies.html"><i class="ri-arrow-right-s-line"></i>Case Studies</a></li>
+          <li><a href="team.html"><i class="ri-arrow-right-s-line"></i>Teams</a></li>
+          <li><a href="career.html"><i class="ri-arrow-right-s-line"></i>Careers</a></li>
+          <li><a href="connect.html"><i class="ri-arrow-right-s-line"></i>Connect</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Services</h4>
+        <ul class="footer-list">
+          <li><a href="html/services/outdoor-print-ads.html"><i class="ri-arrow-right-s-line"></i>Outdoor &amp; Print</a></li>
+          <li><a href="html/services/digital-advertising.html"><i class="ri-arrow-right-s-line"></i>Digital Advertising</a></li>
+          <li><a href="html/services/seo-sem-marketing.html"><i class="ri-arrow-right-s-line"></i>SEO / SEM</a></li>
+          <li><a href="html/services/social-media-management.html"><i class="ri-arrow-right-s-line"></i>Social Media</a></li>
+          <li><a href="html/services/product-design-strategies.html"><i class="ri-arrow-right-s-line"></i>Product Design</a></li>
+          <li><a href="html/services/web-app-development.html"><i class="ri-arrow-right-s-line"></i>Web &amp; App Dev</a></li>
+          <li><a href="html/services/ecommerce.html"><i class="ri-arrow-right-s-line"></i>E-Commerce</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Join Us</h4>
+        <ul class="footer-list">
+          <li><a href="career.html#open-positions" data-open-role="intern"><i class="ri-arrow-right-s-line"></i>Intern</a></li>
+          <li><a href="career.html#open-positions" data-open-role="seo-expert"><i class="ri-arrow-right-s-line"></i>SEO Expert</a></li>
+          <li><a href="career.html#open-positions" data-open-role="social-media-manager"><i class="ri-arrow-right-s-line"></i>Social Media Mgr</a></li>
+          <li><a href="career.html#open-positions" data-open-role="graphic-designer"><i class="ri-arrow-right-s-line"></i>Graphic Designer</a></li>
+          <li><a href="career.html#open-positions" data-open-role="web-developer"><i class="ri-arrow-right-s-line"></i>Web Developer</a></li>
+          <li><a href="career.html#open-positions" data-open-role="animation-designer"><i class="ri-arrow-right-s-line"></i>Animation Designer</a></li>
+          <li><a href="career.html#open-positions" data-open-role="app-developer"><i class="ri-arrow-right-s-line"></i>App Developer</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Service Links</h4>
+        <ul class="footer-list">
+          <li><a href="#"><i class="ri-arrow-right-s-line"></i>Team Blogs</a></li>
+          <li><a href="https://parashootstudio.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Production</a></li>
+          <li><a href="https://backstagexchange.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Event Management</a></li>
+          <li><a href="#"><i class="ri-arrow-right-s-line"></i>FNB Marketing</a></li>
+          <li><a href="https://stromenightlife.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Strobe Nightlife</a></li>
+          <li><a href="https://www.cybercreative.in" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Web Development &amp; IoT</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-head">Contact</h4>
+        <div class="footer-contact">
+          <p><i class="ri-map-pin-2-fill"></i><a href="https://www.google.com/maps/search/Flashlab+Creative+Margao+Goa" target="_blank" rel="noopener">G26 Vikrant Complex,<br>Margao, Goa, India</a></p>
+          <p><i class="ri-phone-fill"></i><a href="tel:+919923580023">+91 99235 80023</a></p>
+          <p><i class="ri-mail-fill"></i><a href="mailto:contact@flashlabcreative.com">contact@flashlabcreative.com</a></p>
+          <p><i class="ri-time-fill"></i><span>Mon &ndash; Sat: 9am &ndash; 6pm IST</span></p>
+          <a href="connect.html" class="footer-cta">Start a Project <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">Copyright &copy; 2026 <a href="index.html" class="flashlab-link">Flashlab Creative</a></p>
+      <p class="footer-credit">Website Crafted by <a href="https://cybercreative.in/" target="_blank" rel="noopener" class="cyber-link">Cyber Creative</a></p>
+    </div>
+  </footer>
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/pages/clients.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const btn = document.getElementById('loadMoreLogosBtn');
+      const grid = document.getElementById('logosGrid');
+      const wrap = document.getElementById('loadMoreLogosWrap');
+      if(btn && grid) {
+        btn.addEventListener('click', function() {
+          if (grid.classList.contains('collapsed')) {
+            grid.classList.remove('collapsed');
+            btn.textContent = 'Show Less';
+          } else {
+            grid.classList.add('collapsed');
+            btn.textContent = 'Load More';
+            const y = grid.getBoundingClientRect().top + window.scrollY - 100;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+          }
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
+
+
+
+

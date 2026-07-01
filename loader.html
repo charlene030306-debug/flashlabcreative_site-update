@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashlab Creative — Loading</title>
+  <link rel="icon" type="image/png" href="images/flashlab-lightning-bolt-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/pages/loader.css">
+</head>
+<body>
+
+  <div class="loader" id="loader" role="status" aria-live="polite" aria-label="Loading Flashlab Creative">
+    <div class="aura"></div>
+    <div class="orbit o1"></div>
+    <div class="orbit o2"></div>
+    <div class="dot-far d1"></div>
+    <div class="dot-far d2"></div>
+
+    <div class="flask-stage">
+      <div class="flask-glow"></div>
+      <svg class="flask" viewBox="0 0 300 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="liqGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#b4d62a"/>
+            <stop offset="0.5" stop-color="#9dc209"/>
+            <stop offset="1" stop-color="#82a60a"/>
+          </linearGradient>
+          <linearGradient id="boltGrad" x1="0" y1="0" x2="0.35" y2="1">
+            <stop offset="0" stop-color="#ff9a52"/>
+            <stop offset="0.5" stop-color="#ed7d3a"/>
+            <stop offset="1" stop-color="#d9692c"/>
+          </linearGradient>
+          <clipPath id="cavity">
+            <path d="M133 62 L130 128 L54 322 Q53 339 70 339 L230 339 Q247 339 246 322 L170 128 L167 62 Z"/>
+          </clipPath>
+        </defs>
+
+        <!-- LIQUID -->
+        <g clip-path="url(#cavity)">
+          <g class="liquid-group">
+            <rect id="liquid" x="40" y="340" width="220" height="0" fill="url(#liqGrad)"/>
+            <ellipse id="surface" class="surface" cx="150" cy="340" rx="120" ry="6"/>
+            <ellipse cx="150" cy="340" rx="60" ry="60" fill="rgba(0,0,0,.06)" id="swirl"/>
+          </g>
+        </g>
+
+        <!-- LIGHTNING BOLT -->
+        <g class="bolt">
+          <path class="bolt-shadow" d="M172 161 L124 229 L154 229 L138 299 L184 217 L154 217 Z"/>
+          <path class="bolt-main" d="M168 154 L120 222 L150 222 L134 292 L180 210 L150 210 Z"/>
+        </g>
+
+        <!-- BUBBLES -->
+        <g fill="var(--green-lt)">
+          <circle cx="146" cy="150" r="0">
+            <animate attributeName="cy" values="150;-30" dur="3s" begin="0s" repeatCount="indefinite"/>
+            <animate attributeName="cx" values="146;152;142" dur="3s" begin="0s" repeatCount="indefinite"/>
+            <animate attributeName="r" values="3;6;5.5" dur="3s" begin="0s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;.95;.7;0" keyTimes="0;.15;.8;1" dur="3s" begin="0s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="158" cy="150" r="0">
+            <animate attributeName="cy" values="150;-30" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+            <animate attributeName="cx" values="158;150;160" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+            <animate attributeName="r" values="2;4;3.5" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;.9;.6;0" keyTimes="0;.15;.8;1" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="140" cy="150" r="0">
+            <animate attributeName="cy" values="150;-30" dur="3s" begin="1s" repeatCount="indefinite"/>
+            <animate attributeName="cx" values="140;146;138" dur="3s" begin="1s" repeatCount="indefinite"/>
+            <animate attributeName="r" values="2.5;5;4.5" dur="3s" begin="1s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;.95;.7;0" keyTimes="0;.15;.8;1" dur="3s" begin="1s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="155" cy="150" r="0">
+            <animate attributeName="cy" values="150;-30" dur="3s" begin="1.6s" repeatCount="indefinite"/>
+            <animate attributeName="cx" values="155;149;157" dur="3s" begin="1.6s" repeatCount="indefinite"/>
+            <animate attributeName="r" values="2;3.5;3" dur="3s" begin="1.6s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;.85;.6;0" keyTimes="0;.15;.8;1" dur="3s" begin="1.6s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="149" cy="150" r="0">
+            <animate attributeName="cy" values="150;-30" dur="3s" begin="2.2s" repeatCount="indefinite"/>
+            <animate attributeName="cx" values="149;154;145" dur="3s" begin="2.2s" repeatCount="indefinite"/>
+            <animate attributeName="r" values="3;5.5;5" dur="3s" begin="2.2s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;.95;.7;0" keyTimes="0;.15;.8;1" dur="3s" begin="2.2s" repeatCount="indefinite"/>
+          </circle>
+        </g>
+
+        <!-- GLASS -->
+        <g class="glass">
+          <path class="glass-base" d="M130 58 L127 128 L48 322 Q46 344 70 344 L230 344 Q254 344 252 322 L173 128 L170 58"/>
+          <rect class="glass-base" x="114" y="42" width="72" height="16" rx="8"/>
+          <path class="glass-hi" d="M170 60 L173 128 L252 322 Q254 344 230 344"/>
+          <path class="glass-shine" d="M126 152 L78 300"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="brand">
+      <img src="images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" class="brand-logo"
+        onerror="this.remove(); var f=document.getElementById('brandFallback'); if(f) f.style.display='block';">
+      <div class="brand-fallback" id="brandFallback">
+        <h1>FLASHLAB<span class="reg">&reg;</span></h1>
+        <div class="tag">Creative</div>
+      </div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="bar"><div class="bar-fill" id="barFill"></div></div>
+      <div class="meta">
+        <span class="status" id="statusText">Mixing the formula</span>
+        <span class="pct" id="pctText">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/pages/loader.js?v=2"></script>
+</body>
+</html>
+
+
+

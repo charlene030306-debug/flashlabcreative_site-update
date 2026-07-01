@@ -1,0 +1,43 @@
+/* ============================================================
+   story.css — Shared styles for all story / case-study pages
+   (story-1.html through story-6.html)
+   ============================================================ */
+
+.story-hero
+{
+    padding: 260px 5% 100px;
+    min-height: 100vh;
+    background: var(--bg);
+}
+
+@media (max-width: 960px)
+{
+    .story-hero
+    {
+        padding: 220px 5% 80px;
+    }
+}
+
+@media (max-width: 640px)
+{
+    .story-hero
+    {
+        padding: 170px 5% 60px;
+    }
+}
+
+@media (max-width: 400px)
+{
+    .story-hero
+    {
+        padding: 155px 4% 50px;
+    }
+}
+
+.story-cta-row
+{
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}

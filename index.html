@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>Flashlab Creative</title>
+  <link rel="icon" type="image/png" href="images/flashlab-lightning-bolt-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700&family=Jost:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,600;1,700&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css?v=2">
+  <link rel="stylesheet" href="css/pages/index.css?v=12">
+  <link rel="stylesheet" href="css/pages/loader.css">
+</head>
+
+<body data-page="index">
+
+  <!-- LOADER -->
+  <div class="loader" id="loader" role="status" aria-live="polite" aria-label="Loading Flashlab Creative">
+    <div class="aura"></div>
+    <div class="orbit o1"></div>
+    <div class="orbit o2"></div>
+    <div class="dot-far d1"></div>
+    <div class="dot-far d2"></div>
+    <div class="flask-stage">
+      <div class="flask-glow"></div>
+      <svg class="flask" viewBox="0 0 300 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="liqGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#b4d62a" />
+            <stop offset="0.5" stop-color="#9dc209" />
+            <stop offset="1" stop-color="#82a60a" />
+          </linearGradient>
+          <linearGradient id="boltGrad" x1="0" y1="0" x2="0.35" y2="1">
+            <stop offset="0" stop-color="#ff9a52" />
+            <stop offset="0.5" stop-color="#ed7d3a" />
+            <stop offset="1" stop-color="#d9692c" />
+          </linearGradient>
+          <clipPath id="cavity">
+            <path d="M133 62 L130 128 L54 322 Q53 339 70 339 L230 339 Q247 339 246 322 L170 128 L167 62 Z" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#cavity)">
+          <g class="liquid-group">
+            <rect id="liquid" x="40" y="340" width="220" height="0" fill="url(#liqGrad)" />
+            <ellipse id="surface" class="surface" cx="150" cy="340" rx="120" ry="6" />
+            <ellipse cx="150" cy="340" rx="60" ry="60" fill="rgba(0,0,0,.06)" id="swirl" />
+          </g>
+        </g>
+        <g class="bolt">
+          <path class="bolt-shadow" d="M172 161 L124 229 L154 229 L138 299 L184 217 L154 217 Z" />
+          <path class="bolt-main" d="M168 154 L120 222 L150 222 L134 292 L180 210 L150 210 Z" />
+        </g>
+        <g fill="var(--green-lt)">
+          <circle cx="146" cy="150" r="0">
+            <animate attributeName="cy" values="150;-30" dur="3s" begin="0s" repeatCount="indefinite" />
+            <animate attributeName="cx" values="146;152;142" dur="3s" begin="0s" repeatCount="indefinite" />
+            <animate attributeName="r" values="3;6;5.5" dur="3s" begin="0s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0;.95;.7;0" keyTimes="0;.15;.8;1" dur="3s" begin="0s"
+              repeatCount="indefinite" />
+          </circle>
+          <circle cx="158" cy="150" r="0">
+            <animate attributeName="cy" values="150;-30" dur="3s" begin="0.5s" repeatCount="indefinite" />
+            <animate attributeName="cx" values="158;150;160" dur="3s" begin="0.5s" repeatCount="indefinite" />
+            <animate attributeName="r" values="2;4;3.5" dur="3s" begin="0.5s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0;.9;.6;0" keyTimes="0;.15;.8;1" dur="3s" begin="0.5s"
+              repeatCount="indefinite" />
+          </circle>
+          <circle cx="140" cy="150" r="0">
+            <animate attributeName="cy" values="150;-30" dur="3s" begin="1s" repeatCount="indefinite" />
+            <animate attributeName="cx" values="140;146;138" dur="3s" begin="1s" repeatCount="indefinite" />
+            <animate attributeName="r" values="2.5;5;4.5" dur="3s" begin="1s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0;.95;.7;0" keyTimes="0;.15;.8;1" dur="3s" begin="1s"
+              repeatCount="indefinite" />
+          </circle>
+          <circle cx="155" cy="150" r="0">
+            <animate attributeName="cy" values="150;-30" dur="3s" begin="1.6s" repeatCount="indefinite" />
+            <animate attributeName="cx" values="155;149;157" dur="3s" begin="1.6s" repeatCount="indefinite" />
+            <animate attributeName="r" values="2;3.5;3" dur="3s" begin="1.6s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0;.85;.6;0" keyTimes="0;.15;.8;1" dur="3s" begin="1.6s"
+              repeatCount="indefinite" />
+          </circle>
+          <circle cx="149" cy="150" r="0">
+            <animate attributeName="cy" values="150;-30" dur="3s" begin="2.2s" repeatCount="indefinite" />
+            <animate attributeName="cx" values="149;154;145" dur="3s" begin="2.2s" repeatCount="indefinite" />
+            <animate attributeName="r" values="3;5.5;5" dur="3s" begin="2.2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0;.95;.7;0" keyTimes="0;.15;.8;1" dur="3s" begin="2.2s"
+              repeatCount="indefinite" />
+          </circle>
+        </g>
+        <g class="glass">
+          <path class="glass-base"
+            d="M130 58 L127 128 L48 322 Q46 344 70 344 L230 344 Q254 344 252 322 L173 128 L170 58" />
+          <rect class="glass-base" x="114" y="42" width="72" height="16" rx="8" />
+          <path class="glass-hi" d="M170 60 L173 128 L252 322 Q254 344 230 344" />
+          <path class="glass-shine" d="M126 152 L78 300" />
+        </g>
+      </svg>
+    </div>
+    <div class="brand">
+      <img src="images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" class="brand-logo"
+        onerror="this.remove(); var f=document.getElementById('brandFallback'); if(f) f.style.display='block';">
+      <div class="brand-fallback" id="brandFallback">
+        <h1>FLASHLAB<span class="reg">&reg;</span></h1>
+        <div class="tag">Creative</div>
+      </div>
+    </div>
+    <div class="progress-wrap">
+      <div class="bar">
+        <div class="bar-fill" id="barFill"></div>
+      </div>
+      <div class="meta">
+        <span class="status" id="statusText">Mixing the formula</span>
+        <span class="pct" id="pctText">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOGO BAR -->
+  <div class="site-logo-bar">
+    <a href="#">
+      <img src="images/logos/flashlab-logo.png" alt="Flashlab Creative" class="logo-light" id="siteLogoImgLight">
+      <img src="images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" class="logo-dark" id="siteLogoImgDark">
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-active">Home</a></li>
+        <li><a href="about.html">About Agency</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li>
+          <a href="services.html">Services</a>
+          <ul>
+            <li><a href="html/services/digital-advertising.html"><i class="ri-megaphone-line"></i>Digital
+                Advertising</a></li>
+            <li><a href="html/services/seo-sem-marketing.html"><i class="ri-search-line"></i>SEO / SEM Marketing</a>
+            </li>
+            <li><a href="html/services/social-media-management.html"><i class="ri-instagram-line"></i>Social Media
+                Management</a></li>
+            <li><a href="html/services/product-design-strategies.html"><i class="ri-pen-nib-line"></i>Product Design
+                &amp; Strategies</a></li>
+            <li><a href="html/services/web-app-development.html"><i class="ri-code-s-slash-line"></i>Web &amp; App
+                Development</a></li>
+            <li><a href="html/services/outdoor-print-ads.html"><i class="ri-image-line"></i>Outdoor &amp; Print Ads</a>
+            </li>
+            <li><a href="html/services/ecommerce.html"><i class="ri-shopping-cart-line"></i>E-Commerce</a></li>
+            <li><a href="html/services/trademark-registration.html"><i class="ri-shield-check-line"></i>Trademark
+                Registration</a></li>
+            <li><a href="html/services/photography-video.html"><i class="ri-camera-line"></i>Photography &amp; Video</a>
+            </li>
+            <li><a href="html/services/event-production.html"><i class="ri-calendar-event-line"></i>Event Production</a>
+            </li>
+            <li><a href="html/services/media-consulting.html"><i class="ri-chat-voice-line"></i>Media Consulting</a>
+            </li>
+            <li><a href="html/services/animation-motion.html"><i class="ri-video-line"></i>Animation &amp; Motion</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li>
+          <a href="career.html">Careers</a>
+          <ul>
+            <li><a href="html/career/internship.html"><i class="ri-user-add-line"></i>Internship</a></li>
+            <li><a href="html/career/join-fulltime.html"><i class="ri-briefcase-4-line"></i>Join Full Time</a></li>
+            <li><a href="html/career/freelance.html"><i class="ri-computer-line"></i>Freelance</a></li>
+            <li><a href="html/career/influencer-signup.html"><i class="ri-star-line"></i>Influencer Sign Up</a></li>
+            <li><a href="html/career/hr-policy.html"><i class="ri-file-list-3-line"></i>HR Policy</a></li>
+          </ul>
+        </li>
+        <li><a href="connect.html">Connect</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="connect.html" class="nav-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="themeIcon"></i>
+        </button>
+        <button type="button" class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-overlay" id="mobOverlay"></div>
+  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+    <button class="mob-close" id="mobClose" aria-label="Close menu"><i class="ri-close-line"></i></button>
+    <ul class="mob-links">
+      <li><a href="index.html" class="mob-active">Home</a></li>
+      <li><a href="about.html">About Agency</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-services">Services <i
+            class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-services">
+          <li><a href="html/services/digital-advertising.html">Digital Advertising</a></li>
+          <li><a href="html/services/seo-sem-marketing.html">SEO / SEM Marketing</a></li>
+          <li><a href="html/services/social-media-management.html">Social Media Management</a></li>
+          <li><a href="html/services/product-design-strategies.html">Product Design &amp; Strategies</a></li>
+          <li><a href="html/services/web-app-development.html">Web &amp; App Development</a></li>
+          <li><a href="html/services/outdoor-print-ads.html">Outdoor &amp; Print Ads</a></li>
+          <li><a href="html/services/ecommerce.html">E-Commerce</a></li>
+          <li><a href="html/services/trademark-registration.html">Trademark Registration</a></li>
+          <li><a href="html/services/photography-video.html">Photography &amp; Video</a></li>
+          <li><a href="html/services/event-production.html">Event Production</a></li>
+          <li><a href="html/services/media-consulting.html">Media Consulting</a></li>
+          <li><a href="html/services/animation-motion.html">Animation &amp; Motion</a></li>
+        </ul>
+      </li>
+      <li><a href="clients.html">Clients</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-career">Careers <i
+            class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-career">
+          <li><a href="html/career/internship.html">Internship</a></li>
+          <li><a href="html/career/join-fulltime.html">Join Full Time</a></li>
+          <li><a href="html/career/freelance.html">Freelance</a></li>
+          <li><a href="html/career/influencer-signup.html">Influencer Sign Up</a></li>
+          <li><a href="html/career/hr-policy.html">HR Policy</a></li>
+        </ul>
+      </li>
+      <li><a href="connect.html">Connect</a></li>
+    </ul>
+    <div class="mob-cta-wrap">
+      <a href="connect.html" class="mob-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <!-- Hidden images to force the browser to fully decode them into memory instantly -->
+    <div style="position: absolute; width: 0; height: 0; overflow: hidden; opacity: 0; pointer-events: none;">
+      <img src="images/testimonials-section-dark-background.png" alt="">
+      <img src="images/hero2.jpg" alt="">
+      <img src="images/social-index.png" alt="">
+      <img src="images/young-dev-team-laughing-macbook.png" alt="">
+    </div>
+    <div class="hero-bg-img"></div>
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-noise"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="hero-wrap">
+      <div class="dots" id="heroDots">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div class="hero-slider">
+        <div class="slide active" data-bg="images/testimonials-section-dark-background.png">
+          <h1 class="hero-heading">GOA'S MOST TRUSTED<br>CREATIVE AGENCY</h1>
+          <p class="hero-slide-small">With over a decade of experience in Goa, we have established benchmarks for
+            excellence across hospitality, real estate, lifestyle, and modern brands.</p>
+        </div>
+        <div class="slide" data-bg="images/hero2.jpg">
+          <h1 class="hero-heading">CREATIVE DESIGN<br>SOLUTIONS</h1>
+          <p class="hero-slide-small">Bold identities and meaningful storytelling crafted to connect with audiences and
+            leave a lasting impression.</p>
+        </div>
+        <div class="slide" data-bg="images/social-index.png" data-bg-pos="center 40%">
+          <h1 class="hero-heading">DIGITAL EXPERIENCES<br>THAT MATTER</h1>
+          <p class="hero-slide-small">Designers, strategists and marketers working together to create campaigns that
+            people remember and brands that grow from.</p>
+        </div>
+        <div class="slide" data-bg="images/young-dev-team-laughing-macbook.png" data-bg-pos="center 10%">
+          <h1 class="hero-heading">BUILDING BRANDS<br>THAT INSPIRE</h1>
+          <p class="hero-slide-small">Data-driven marketing across Meta, Google and other various digital platforms.
+            Focused on visibility, engagement and measurable growth.</p>
+        </div>
+      </div>
+      <div class="hero-btns reveal">
+        <a href="portfolio.html" class="btn-red">See Our Work <i class="ri-arrow-right-line"></i></a>
+        <a href="story.html" class="btn-ghost"
+          style="border-color:rgba(255,255,255,0.2); color:rgba(255,255,255,0.7);">Our Story</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="hstat"><strong>10+</strong><span>Years in Business</span></div>
+        <div class="hstat-divider"></div>
+        <div class="hstat"><strong>500+</strong><span>Projects Delivered</span></div>
+        <div class="hstat-divider"></div>
+        <div class="hstat"><strong>350+</strong><span>Brands Worked With</span></div>
+        <div class="hstat-divider"></div>
+        <div class="hstat"><strong>25+</strong><span>Creative Specialists</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE STRIP -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>GRAPHIC DESIGN</span>
+      <span>BRANDING</span>
+      <span>WEB DEVELOPMENT</span>
+      <span>SOCIAL MEDIA</span>
+      <span>SEO &amp; GROWTH</span>
+      <span>PHOTOGRAPHY</span>
+      <span>ANIMATION</span>
+      <span>VIDEO PRODUCTION</span>
+      <span>DIGITAL ADVERTISING</span>
+      <span>EVENT MANAGEMENT</span>
+      <span>OUTDOOR &amp; PRINT ADS</span>
+      <span>PERFORMANCE MARKETING</span>
+      <span>PRINT MEDIA</span>
+      <span>LINE PRODUCTION</span>
+      <span>DRONE SERVICES</span>
+      <span>CAMERA RENTALS &amp; GROWTH</span>
+      <span>DOP</span>
+      <span>CREATIVE DIRECTION</span>
+      <span>AD FILMS</span>
+    </div>
+  </div>
+
+  <!-- FEATURED SERVICES -->
+  <section class="services-section">
+    <div class="wrap">
+      <div class="services-header reveal" style="text-align: center; margin-bottom: 44px;">
+        <div class="sec-eyebrow"><span></span>Featured Offerings</div>
+        <h2 class="sec-heading">Digital <em>SOLUTIONS</em></h2>
+      </div>
+
+      <div class="svc-grid-bottom reveal">
+        <!-- 01 Product Design & Strategies -->
+        <a class="svc-card" href="html/services/product-design-strategies.html">
+          <div class="svc-bg"
+            style="background-image:url('https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80')">
+          </div>
+          <div class="svc-gradient"></div>
+          <div class="svc-accent"></div>
+          <div class="svc-num-badge">01</div>
+          <div class="svc-content">
+            <span class="svc-tag">Design &amp; Strategy</span>
+            <h3 class="svc-title">Product Design<br>&amp; Strategies</h3>
+            <p class="svc-desc">User-centric product design backed by strategic roadmaps that drive growth and
+              differentiation.</p>
+            <span class="svc-explore">Explore <i class="ri-arrow-right-line"></i></span>
+          </div>
+        </a>
+
+        <!-- 02 Web & App Development -->
+        <a class="svc-card" href="html/services/web-app-development.html">
+          <div class="svc-bg"
+            style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80')">
+          </div>
+          <div class="svc-gradient"></div>
+          <div class="svc-accent"></div>
+          <div class="svc-num-badge">02</div>
+          <div class="svc-content">
+            <span class="svc-tag">Development</span>
+            <h3 class="svc-title">Web &amp; App<br>Development</h3>
+            <p class="svc-desc">Modern, fast, and conversion-focused websites and applications custom-built for your
+              business.</p>
+            <span class="svc-explore">Explore <i class="ri-arrow-right-line"></i></span>
+          </div>
+        </a>
+
+        <!-- 03 E-Commerce Solutions -->
+        <a class="svc-card" href="html/services/ecommerce.html">
+          <div class="svc-bg"
+            style="background-image:url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80')">
+          </div>
+          <div class="svc-gradient"></div>
+          <div class="svc-accent"></div>
+          <div class="svc-num-badge">03</div>
+          <div class="svc-content">
+            <span class="svc-tag">E-Commerce</span>
+            <h3 class="svc-title">E-Commerce<br>Solutions</h3>
+            <p class="svc-desc">End-to-end online stores built to sell &mdash; beautiful storefronts, seamless checkout,
+              and growth-focused features.</p>
+            <span class="svc-explore">Explore <i class="ri-arrow-right-line"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-img-col reveal-left">
+          <div class="about-img-frame">
+            <div class="about-img-ph">
+              <div class="img-overlay-text">Since 2016</div>
+            </div>
+          </div>
+          <div class="about-img-small">
+            <div class="about-img-ph2"></div>
+          </div>
+        </div>
+        <div class="about-text-col reveal-right">
+          <p class="sec-eyebrow">&mdash; About Agency</p>
+          <h2 class="sec-heading">Your Vision.<br><em>Our Creation.</em></h2>
+          <p class="sec-body">Founded in the heart of Margao, Flashlab Creative started with one goal, to build brands
+            that people remember. What began as a small team of passionate creatives has grown into one of Goa's leading
+            creative agencies, partnering with brands across hospitality, real estate, lifestyle, and beyond. We combine
+            strategy, design, content, and performance to create work that not only looks good but delivers real impact.
+            Every project is built with purpose, backed by creativity, and driven by results.</p>
+          <ul class="about-list">
+            <li><i class="ri-checkbox-circle-fill"></i> Creative solutions tailored for modern brands</li>
+            <li><i class="ri-checkbox-circle-fill"></i> Strategies focused on growth, visibility and engagement</li>
+            <li><i class="ri-checkbox-circle-fill"></i> Strong emphasis on performance and long-term scalability</li>
+            <li><i class="ri-checkbox-circle-fill"></i> Expertise across branding, content, digital and web</li>
+            <li><i class="ri-checkbox-circle-fill"></i> Insight-led decisions that drive measurable impact</li>
+          </ul>
+          <a href="about.html" class="btn-red mt-btn">Know More <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+
+      <!-- Our Work band -->
+      <div class="outstanding-section">
+        <!-- aurora rendered inside the photo band so it fits the slant exactly -->
+        <div class="outstanding-bg">
+          <canvas id="flAurora"></canvas>
+          <canvas id="flDust"></canvas>
+        </div>
+        <div class="outstanding-overlay"></div>
+        <div class="outstanding-slant-top"></div>
+
+        <div class="outstanding-inner">
+          <div class="outstanding-text reveal-left">
+            <p class="sec-eyebrow" style="color:rgba(255,255,255,0.6)">&mdash; Our Work</p>
+            <h2 class="outstanding-heading">Crafted By <em>Our Team</em></h2>
+            <p class="outstanding-body">A showcase of ideas brought to life through strategy, creativity, and execution.
+              Every project reflects the passion, detail, and impact behind the brands we build.</p>
+          </div>
+          <div class="outstanding-video-col reveal-right">
+            <button class="video-play-btn" id="videoPlayBtn" aria-label="Play video">
+              <span class="video-play-icon"><i class="ri-play-fill"></i></span>
+              <span class="video-play-label">Watch Our Story</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEO MODAL -->
+      <div class="video-modal" id="videoModal">
+        <div class="video-modal-backdrop" id="videoModalBackdrop"></div>
+        <div class="video-modal-box">
+          <div class="video-modal-header">
+            <span class="video-modal-title">Flashlab Creative</span>
+            <div class="video-modal-actions">
+              <a href="https://www.youtube.com/watch?v=H2MknxI6G2E" target="_blank" rel="noopener" class="video-yt-link"
+                id="videoYtLink">
+                <i class="ri-youtube-fill"></i> Open in YouTube
+              </a>
+              <button class="video-modal-close" id="videoModalClose" aria-label="Close">
+                <i class="ri-close-line"></i>
+              </button>
+            </div>
+          </div>
+          <div class="video-embed-wrap">
+            <!-- self-hosted file plays first (works everywhere); YouTube is the fallback -->
+            <video id="videoFile" controls playsinline preload="metadata"
+              style="position:absolute; inset:0; width:100%; height:100%; background:#000; display:none;"></video>
+            <iframe id="videoIframe" src="" title="Flashlab Creative" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section" id="stats">
+    <div class="stats-noise"></div>
+    <div class="wrap">
+      <div class="sec-header centered reveal" style="margin-bottom:40px">
+        <p class="sec-eyebrow">&mdash; Numbers That Speak</p>
+        <h2 class="sec-heading"><span class="impact-our">Our</span> <em>IMPACT.</em></h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-item reveal" style="--delay:0s">
+          <div class="stat-top">
+            <div class="stat-num-wrap"><span class="stat-num counter" data-target="25">0</span><span
+                class="stat-suf">M+</span></div>
+            <img src="images/stat-icon-audience-reached.png" alt="" class="stat-icon">
+          </div>
+          <p>Audience Reached</p>
+          <div class="stat-bar"></div>
+        </div>
+        <div class="stat-item reveal" style="--delay:0.1s">
+          <div class="stat-top">
+            <div class="stat-num-wrap"><span class="stat-num counter" data-target="5">0</span><span
+                class="stat-suf">M+</span></div>
+            <img src="images/stat-icon-meaningful-engagements.png" alt="" class="stat-icon">
+          </div>
+          <p>Meaningful Engagements</p>
+          <div class="stat-bar"></div>
+        </div>
+        <div class="stat-item reveal" style="--delay:0.2s">
+          <div class="stat-top">
+            <div class="stat-num-wrap"><span class="stat-num counter" data-target="10">0</span><span
+                class="stat-suf">K+</span></div>
+            <img src="images/stat-icon-creative-assets-produced.png" alt="" class="stat-icon">
+          </div>
+          <p>Creative Assets Produced</p>
+          <div class="stat-bar"></div>
+        </div>
+        <div class="stat-item reveal" style="--delay:0.3s">
+          <div class="stat-top">
+            <div class="stat-num-wrap"><span class="stat-num counter" data-target="500">0</span><span
+                class="stat-suf">+</span></div>
+            <img src="images/stat-icon-campaigns-executed.png" alt="" class="stat-icon">
+          </div>
+          <p>Campaigns Executed</p>
+          <div class="stat-bar"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO MADE IT — FOUNDERS -->
+  <section class="made-it" id="made">
+    <div class="wrap">
+      <div class="sec-header centered reveal" style="margin-bottom:36px;">
+        <p class="sec-eyebrow">&mdash; Who Made It</p>
+        <h2 class="sec-heading" style="margin-bottom:14px;">The Founders</h2>
+        <p style="color:var(--muted); font-size:0.97rem; margin:0;">The people who brought this vision to life.</p>
+      </div>
+      <div class="made-grid">
+        <div class="founder-card reveal" style="--delay:0s">
+          <div class="founder-photo"><img src="images/ankith-team-portrait-1.jpg" alt="Ankith Kedar"></div>
+          <div class="founder-info">
+            <h4>Ankith Kedar</h4>
+            <p>Founder &amp; Creative Director</p>
+            <p>15+ years in Media, Web, Graphic &amp; UI/UX Design, Data Analytics, and Passionate DJ &amp; Producer.
+              The creative backbone of Flashlab Creative</p>
+            <div class="founder-socials">
+              <a href="mailto:ankith@flashlabcreative.com"><span class="s-icon"><i class="ri-mail-fill"></i></span><span
+                  class="s-label">Email</span></a>
+              <a href="https://wa.me/919923580023" target="_blank" rel="noopener"><span class="s-icon"><i
+                    class="ri-whatsapp-fill"></i></span><span class="s-label">WhatsApp</span></a>
+              <a href="https://www.linkedin.com/in/ankithkedar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank" rel="noopener"><span class="s-icon"><i class="ri-linkedin-fill"></i></span><span
+                  class="s-label">LinkedIn</span></a>
+              <a href="https://www.instagram.com/ankith.kedar?igsh=MW8zdXMxdGg2bTN5aw==" target="_blank"
+                rel="noopener"><span class="s-icon"><i class="ri-instagram-fill"></i></span><span
+                  class="s-label">Instagram</span></a>
+              <a href="https://www.facebook.com/ankith.kedar" target="_blank" rel="noopener"><span class="s-icon"><i
+                    class="ri-facebook-fill"></i></span><span class="s-label">Facebook</span></a>
+              <a href="https://www.snapchat.com/add/ankithkedar" target="_blank" rel="noopener"><span class="s-icon"><i
+                    class="ri-snapchat-fill"></i></span><span class="s-label">Snapchat</span></a>
+              <a href="https://www.behance.net/ankithkedar" target="_blank" rel="noopener"><span class="s-icon"><i
+                    class="ri-behance-fill"></i></span><span class="s-label">Behance</span></a>
+              <a href="#" target="_blank" rel="noopener"><span class="s-icon"><i class="ri-global-line"></i></span><span
+                  class="s-label">Website</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="founder-card reveal" style="--delay:0.12s">
+          <div class="founder-photo"><img src="images/anuraj-team-portrait.jpg" alt="Anuraj Kedar"></div>
+          <div class="founder-info">
+            <h4>Anuraj Kedar</h4>
+            <p>Co-Founder &amp; Strategy Lead</p>
+            <p>The strategic force at Flashlab Creative. Expert in brand positioning, client relations, and scaling
+              businesses through creative digital strategies.</p>
+            <div class="founder-socials">
+              <a href="https://www.instagram.com/anurajkedar?igsh=MXB5bTB3dzY0YmdubA==" target="_blank"
+                rel="noopener"><span class="s-icon"><i class="ri-instagram-fill"></i></span><span
+                  class="s-label">Instagram</span></a>
+              <a href="https://www.linkedin.com/in/anurajkedar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank" rel="noopener"><span class="s-icon"><i class="ri-linkedin-fill"></i></span><span
+                  class="s-label">LinkedIn</span></a>
+              <a href="https://x.com/AnurajKedar" target="_blank" rel="noopener"><span class="s-icon"><i
+                    class="ri-twitter-x-fill"></i></span><span class="s-label">Twitter</span></a>
+              <a href="https://www.facebook.com/anurajkedar" target="_blank" rel="noopener"><span class="s-icon"><i
+                    class="ri-facebook-fill"></i></span><span class="s-label">Facebook</span></a>
+              <a href="https://www.youtube.com/@anurajkedar" target="_blank" rel="noopener"><span class="s-icon"><i
+                    class="ri-youtube-fill"></i></span><span class="s-label">YouTube</span></a>
+              <a href="https://www.behance.net/anurajkedar" target="_blank" rel="noopener"><span class="s-icon"><i
+                    class="ri-behance-fill"></i></span><span class="s-label">Behance</span></a>
+              <a href="https://wa.me/91ANURAJ_NUMBER_HERE" target="_blank" rel="noopener"><span class="s-icon"><i
+                    class="ri-whatsapp-fill"></i></span><span class="s-label">WhatsApp</span></a>
+              <a href="mailto:anuraj@flashlabcreative.com"><span class="s-icon"><i class="ri-mail-fill"></i></span><span
+                  class="s-label">Email</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3RD FOUNDER — update src, name, role, bio & social links when ready -->
+        <div class="founder-card reveal" style="--delay:0.24s">
+          <div class="founder-photo"
+            style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%); display:flex; align-items:center; justify-content:center;">
+            <img src="images/founder3.jpg" alt="Team Member" onerror="this.style.display='none'">
+            <div style="text-align:center; color:rgba(255,255,255,0.22); pointer-events:none;">
+              <i class="ri-user-line" style="font-size:4.5rem; display:block; margin-bottom:10px;"></i>
+              <span
+                style="font-size:0.68rem; letter-spacing:4px; text-transform:uppercase; font-family:var(--font-head);">Photo
+                Coming Soon</span>
+            </div>
+          </div>
+          <div class="founder-info">
+            <h4>Uday Kedar</h4>
+            <p>Finance Controller & Administration</p>
+            <p>More details about this team member will be shared soon. Stay tuned for updates from Flashlab Creative.
+            </p>
+            <div class="founder-socials">
+              <a href="#"><span class="s-icon"><i class="ri-instagram-fill"></i></span><span
+                  class="s-label">Instagram</span></a>
+              <a href="#"><span class="s-icon"><i class="ri-linkedin-fill"></i></span><span
+                  class="s-label">LinkedIn</span></a>
+              <a href="#"><span class="s-icon"><i class="ri-twitter-x-fill"></i></span><span
+                  class="s-label">Twitter</span></a>
+              <a href="#"><span class="s-icon"><i class="ri-facebook-fill"></i></span><span
+                  class="s-label">Facebook</span></a>
+              <a href="#"><span class="s-icon"><i class="ri-youtube-fill"></i></span><span
+                  class="s-label">YouTube</span></a>
+              <a href="#"><span class="s-icon"><i class="ri-behance-fill"></i></span><span
+                  class="s-label">Behance</span></a>
+              <a href="#"><span class="s-icon"><i class="ri-whatsapp-fill"></i></span><span
+                  class="s-label">WhatsApp</span></a>
+              <a href="#"><span class="s-icon"><i class="ri-mail-fill"></i></span><span class="s-label">Email</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS -->
+  <section class="clients-section">
+    <div class="clients-header">
+      <span class="clients-main-title">Our Clients</span>
+      <p class="clients-sub-title">Across Goa &amp; India</p>
+    </div>
+    <hr class="clients-header-divider">
+    <div class="clients-belt-wrapper">
+      <div class="clients-row clients-row-1">
+        <div class="clients-belt-track belt-fwd" id="cl-row1-track"></div>
+      </div>
+      <div class="clients-row clients-row-2">
+        <div class="clients-belt-track belt-rev" id="cl-row2-track"></div>
+      </div>
+    </div>
+    <div class="clients-view-all">
+      <a href="clients.html#brand-partners">View All Brand Partnerships <i class="ri-arrow-right-up-line"></i></a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testi-section" id="testimonials">
+    <div class="testi-bg"></div>
+    <div class="testi-overlay"></div>
+    <div class="wrap">
+      <div class="sec-header centered reveal">
+        <p class="sec-eyebrow">&mdash; Kind Words</p>
+        <h2 class="sec-heading">Client <em>Testimonials</em></h2>
+        <p class="sec-sub">Don't just take our word for it &mdash; hear from the brands we've helped grow.</p>
+      </div>
+    </div>
+    <div class="testi-carousel-outer">
+      <div class="testi-carousel-viewport">
+        <div class="testi-carousel-track" id="testiCarouselTrack"></div>
+      </div>
+    </div>
+    <div class="testi-carousel-nav">
+      <button class="testi-nav-btn" id="testiPrev" aria-label="Previous">&#8592;</button>
+      <div class="testi-nav-dots" id="testiDots"></div>
+      <button class="testi-nav-btn" id="testiNext" aria-label="Next">&#8594;</button>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-noise"></div>
+    <div class="cta-blob"></div>
+    <div class="wrap cta-inner">
+      <div class="reveal">
+        <p class="sec-eyebrow" style="color:var(--text)">&mdash; Ready to Begin?</p>
+        <h2 class="cta-heading">Have a project<br>in mind? <em>Let's talk.</em></h2>
+        <p style="color:var(--text); margin-top:14px; font-size:0.95rem;">Based in Margao, Goa &mdash; serving clients
+          locally and nationally.</p>
+      </div>
+      <div class="cta-actions reveal">
+        <a href="connect.html" class="btn-white">Start a Project <i class="ri-arrow-right-line"></i></a>
+        <a href="#work" class="btn-white">See Our Work <i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER QUOTES -->
+  <div class="founder-quote-section" id="founderQuoteSlider">
+    <div class="founder-quote reveal">
+      <div class="fq-accent-bar"></div>
+      <div class="fq-icon"><i class="ri-double-quotes-l"></i></div>
+      <blockquote>At Flashlab Creative, we believe in creativity, collaboration, and consistency. We are a team of
+        artists, strategists, and creators with one shared objective: to work together and deliver quality work to our
+        clients.</blockquote>
+      <div class="fq-author">
+        <div class="fq-avatar"><img src="images/ankith-team-portrait-1.jpg" alt="Ankith Kedar"></div>
+        <div>
+          <strong>Ankith Kedar</strong>
+          <span>Founder, Flashlab Creative</span>
+        </div>
+      </div>
+    </div>
+    <div class="fq-vdivider"></div>
+    <div class="founder-quote reveal">
+      <div class="fq-accent-bar"></div>
+      <div class="fq-icon"><i class="ri-double-quotes-l"></i></div>
+      <blockquote>Every brand has a story worth telling. At Flashlab Creative, we make sure that story is heard &mdash;
+        with clarity, passion, and a strategy that turns vision into lasting impact.</blockquote>
+      <div class="fq-author">
+        <div class="fq-avatar"><img src="images/anuraj-team-portrait.jpg" alt="Anuraj Kedar"></div>
+        <div>
+          <strong>Anuraj Kedar</strong>
+          <span>Co-Founder, Flashlab Creative</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="index.html" class="nav-active">
+            <img src="images/logos/flashlab-logo-dark.png" alt="Flashlab Creative"
+              onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'font-family:Bebas Neue,sans-serif;font-size:1.5rem;letter-spacing:2px;color:#fff\'>FLASHLAB CREATIVE</span>'">
+          </a>
+        </div>
+        <p>Goa's leading creative &amp; digital marketing agency &mdash; where imagination meets reality. Born in Margao
+          in 2016, we craft unforgettable digital experiences for brands that dare to stand out.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/flashlab.creative" target="_blank" rel="noopener"><i
+              class="ri-instagram-fill"></i></a>
+          <a href="https://www.facebook.com/flashlab.creative/" target="_blank" rel="noopener"><i
+              class="ri-facebook-fill"></i></a>
+          <a href="https://www.linkedin.com/company/flashlabcreative" target="_blank" rel="noopener"><i
+              class="ri-linkedin-fill"></i></a>
+          <a href="https://twitter.com/theflashlab" target="_blank" rel="noopener"><i class="ri-twitter-x-fill"></i></a>
+          <a href="https://www.youtube.com/channel/UCuFtcVt_Yp9CZ82UG6pm-pg" target="_blank" rel="noopener"><i
+              class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="index.html" class="nav-active"><i class="ri-arrow-right-s-line"></i>Home</a></li>
+          <li><a href="about.html"><i class="ri-arrow-right-s-line"></i>About</a></li>
+          <li><a href="services.html"><i class="ri-arrow-right-s-line"></i>Services</a></li>
+          <li><a href="portfolio.html"><i class="ri-arrow-right-s-line"></i>Portfolio</a></li>
+          <li><a href="clients.html"><i class="ri-arrow-right-s-line"></i>Clients</a></li>
+          <li><a href="case-studies.html"><i class="ri-arrow-right-s-line"></i>Case Studies</a></li>
+          <li><a href="team.html"><i class="ri-arrow-right-s-line"></i>Teams</a></li>
+          <li><a href="career.html"><i class="ri-arrow-right-s-line"></i>Career</a></li>
+          <li><a href="connect.html"><i class="ri-arrow-right-s-line"></i>Connect</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Services</h4>
+        <ul class="footer-list">
+          <li><a href="html/services/outdoor-print-ads.html"><i class="ri-arrow-right-s-line"></i>Outdoor &amp;
+              Print</a></li>
+          <li><a href="html/services/digital-advertising.html"><i class="ri-arrow-right-s-line"></i>Digital
+              Advertising</a></li>
+          <li><a href="html/services/seo-sem-marketing.html"><i class="ri-arrow-right-s-line"></i>SEO / SEM</a></li>
+          <li><a href="html/services/social-media-management.html"><i class="ri-arrow-right-s-line"></i>Social Media</a>
+          </li>
+          <li><a href="html/services/product-design-strategies.html"><i class="ri-arrow-right-s-line"></i>Product
+              Design</a></li>
+          <li><a href="html/services/web-app-development.html"><i class="ri-arrow-right-s-line"></i>Web &amp; App
+              Dev</a></li>
+          <li><a href="html/services/ecommerce.html"><i class="ri-arrow-right-s-line"></i>E-Commerce</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Join Us</h4>
+        <ul class="footer-list">
+          <li><a href="career.html#open-positions" data-open-role="intern"><i
+                class="ri-arrow-right-s-line"></i>Intern</a></li>
+          <li><a href="career.html#open-positions" data-open-role="seo-expert"><i class="ri-arrow-right-s-line"></i>SEO
+              Expert</a></li>
+          <li><a href="career.html#open-positions" data-open-role="social-media-manager"><i
+                class="ri-arrow-right-s-line"></i>Social Media Mgr</a></li>
+          <li><a href="career.html#open-positions" data-open-role="graphic-designer"><i
+                class="ri-arrow-right-s-line"></i>Graphic Designer</a></li>
+          <li><a href="career.html#open-positions" data-open-role="web-developer"><i
+                class="ri-arrow-right-s-line"></i>Web Developer</a></li>
+          <li><a href="career.html#open-positions" data-open-role="animation-designer"><i
+                class="ri-arrow-right-s-line"></i>Animation Designer</a></li>
+          <li><a href="career.html#open-positions" data-open-role="app-developer"><i
+                class="ri-arrow-right-s-line"></i>App Developer</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Service Links</h4>
+        <ul class="footer-list">
+          <li><a href="#"><i class="ri-arrow-right-s-line"></i>Team Blogs</a></li>
+          <li><a href="https://parashootstudio.com" target="_blank" rel="noopener"><i
+                class="ri-arrow-right-s-line"></i>Production</a></li>
+          <li><a href="https://backstagexchange.com" target="_blank" rel="noopener"><i
+                class="ri-arrow-right-s-line"></i>Event Management</a></li>
+          <li><a href="#"><i class="ri-arrow-right-s-line"></i>FNB Marketing</a></li>
+          <li><a href="https://stromenightlife.com" target="_blank" rel="noopener"><i
+                class="ri-arrow-right-s-line"></i>Strobe Nightlife</a></li>
+          <li><a href="https://www.cybercreative.in" target="_blank" rel="noopener"><i
+                class="ri-arrow-right-s-line"></i>Web Development &amp; IoT</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-head">Contact</h4>
+        <div class="footer-contact">
+          <p><i class="ri-map-pin-2-fill"></i><a href="https://www.google.com/maps/search/Flashlab+Creative+Margao+Goa"
+              target="_blank" rel="noopener">G26 Vikrant Complex,<br>Margao, Goa, India</a></p>
+          <p><i class="ri-phone-fill"></i><a href="tel:+919923580023">+91 99235 80023</a></p>
+          <p><i class="ri-mail-fill"></i><a href="mailto:contact@flashlabcreative.com">contact@flashlabcreative.com</a>
+          </p>
+          <p><i class="ri-time-fill"></i><span>Mon &ndash; Sat: 9am &ndash; 6pm IST</span></p>
+          <a href="connect.html" class="footer-cta">Start a Project <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">Copyright &copy; 2026 <a href="index.html" class="flashlab-link">Flashlab Creative</a></p>
+      <p class="footer-credit">Website Crafted by <a href="https://cybercreative.in/" target="_blank" rel="noopener"
+          class="cyber-link">Cyber Creative</a></p>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="js/pages/loader.js?v=2"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pages/index.js"></script>
+  <script src="js/pages/founder-quote-slider.js"></script>
+
+</body>
+
+</html>

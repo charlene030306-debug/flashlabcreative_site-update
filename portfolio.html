@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flashlab Creative</title>
+  <link rel="icon" type="image/png" href="images/flashlab-lightning-bolt-icon.png">
+  <meta name="description"
+    content="A decade of creative work &mdash; campaigns, brands, and digital experiences crafted in Goa and loved by clients across India.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700&family=Jost:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,600;1,700&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/pages/portfolio.css">
+</head>
+
+<body data-page="portfolio">
+
+  <!-- LOGO BAR -->
+  <div class="site-logo-bar">
+    <a href="index.html">
+      <img src="images/logos/flashlab-logo.png" alt="Flashlab Creative" class="logo-light" id="siteLogoImg">
+      <img src="images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" class="logo-dark" id="siteLogoImg">
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Agency</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li>
+          <a href="services.html">Services</a>
+          <ul>
+            <li><a href="html/services/digital-advertising.html"><i class="ri-megaphone-line"></i>Digital Advertising</a></li>
+            <li><a href="html/services/seo-sem-marketing.html"><i class="ri-search-line"></i>SEO / SEM Marketing</a></li>
+            <li><a href="html/services/social-media-management.html"><i class="ri-instagram-line"></i>Social Media Management</a></li>
+            <li><a href="html/services/product-design-strategies.html"><i class="ri-pen-nib-line"></i>Product Design &amp; Strategies</a></li>
+            <li><a href="html/services/web-app-development.html"><i class="ri-code-s-slash-line"></i>Web &amp; App Development</a></li>
+            <li><a href="html/services/outdoor-print-ads.html"><i class="ri-image-line"></i>Outdoor &amp; Print Ads</a></li>
+            <li><a href="html/services/ecommerce.html"><i class="ri-shopping-cart-line"></i>E-Commerce</a></li>
+            <li><a href="html/services/trademark-registration.html"><i class="ri-shield-check-line"></i>Trademark Registration</a></li>
+            <li><a href="html/services/photography-video.html"><i class="ri-camera-line"></i>Photography &amp; Video</a></li>
+            <li><a href="html/services/event-production.html"><i class="ri-calendar-event-line"></i>Event Production</a></li>
+            <li><a href="html/services/media-consulting.html"><i class="ri-chat-voice-line"></i>Media Consulting</a></li>
+            <li><a href="html/services/animation-motion.html"><i class="ri-video-line"></i>Animation &amp; Motion</a></li>
+          </ul>
+        </li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+                      <li>
+          <a href="career.html">Careers</a>
+          <ul>
+            <li><a href="html/career/internship.html"><i class="ri-user-add-line"></i>Internship</a></li>
+            <li><a href="html/career/join-fulltime.html"><i class="ri-briefcase-4-line"></i>Join Full Time</a></li>
+            <li><a href="html/career/freelance.html"><i class="ri-computer-line"></i>Freelance</a></li>
+            <li><a href="html/career/influencer-signup.html"><i class="ri-star-line"></i>Influencer Sign Up</a></li>
+            <li><a href="html/career/hr-policy.html"><i class="ri-file-list-3-line"></i>HR Policy</a></li>
+          </ul>
+        </li>
+        <li><a href="connect.html">Connect</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="connect.html" class="nav-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-overlay" id="mobOverlay"></div>
+  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+    <button class="mob-close" id="mobClose" aria-label="Close menu"><i class="ri-close-line"></i></button>
+    <ul class="mob-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Agency</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-services">Services <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-services">
+          <li><a href="html/services/digital-advertising.html">Digital Advertising</a></li>
+          <li><a href="html/services/seo-sem-marketing.html">SEO / SEM Marketing</a></li>
+          <li><a href="html/services/social-media-management.html">Social Media Management</a></li>
+          <li><a href="html/services/product-design-strategies.html">Product Design &amp; Strategies</a></li>
+          <li><a href="html/services/web-app-development.html">Web &amp; App Development</a></li>
+          <li><a href="html/services/outdoor-print-ads.html">Outdoor &amp; Print Ads</a></li>
+          <li><a href="html/services/ecommerce.html">E-Commerce</a></li>
+          <li><a href="html/services/trademark-registration.html">Trademark Registration</a></li>
+          <li><a href="html/services/photography-video.html">Photography &amp; Video</a></li>
+          <li><a href="html/services/event-production.html">Event Production</a></li>
+          <li><a href="html/services/media-consulting.html">Media Consulting</a></li>
+          <li><a href="html/services/animation-motion.html">Animation &amp; Motion</a></li>
+        </ul>
+      </li>
+      <li><a href="clients.html">Clients</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
+            <li>
+        <button class="mob-parent-btn" data-target="mob-sub-career">Careers <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-career">
+          <li><a href="html/career/internship.html">Internship</a></li>
+          <li><a href="html/career/join-fulltime.html">Join Full Time</a></li>
+          <li><a href="html/career/freelance.html">Freelance</a></li>
+          <li><a href="html/career/influencer-signup.html">Influencer Sign Up</a></li>
+          <li><a href="html/career/hr-policy.html">HR Policy</a></li>
+        </ul>
+      </li>
+      <li><a href="connect.html">Connect</a></li>
+    </ul>
+    <div class="mob-cta-wrap">
+      <a href="connect.html" class="mob-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO &mdash; no grid lines, reduced padding -->
+    <section id="port-hero">
+      <div class="hero-bg">
+        <div class="orb1"></div>
+        <div class="orb2"></div>
+        <!-- grid-lines removed -->
+      </div>
+      <div class="hero-layout">
+        <div class="hero-inner">
+          <div class="hero-eyebrow">
+            <span class="pulse-dot"></span>
+            Our Portfolio
+          </div>
+          <h1 class="hero-heading">
+            <span class="line1">Our Work,</span>
+            <span class="line2">Loved by Clients.</span>
+          </h1>
+          <p class="hero-sub-text">
+            A decade of campaigns, brand identities, and digital experiences crafted in Goa
+            &mdash; trusted by businesses across India and beyond.
+          </p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num" data-count="200">0</span>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num" data-count="10">0</span>
+              <span class="stat-label">Years Active</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num" data-count="98">0</span>
+              <span class="stat-label">% Client Retention</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num">4.9<i class="ri-star-fill" style="font-size:1.5rem; color:inherit; vertical-align:middle;"></i></span>
+              <span class="stat-label">Google Rating</span>
+            </div>
+          </div>
+          <div class="hero-btns">
+            <a href="connect.html" class="btn-primary">Start a Project <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+        <div class="hero-img-box">
+          <img src="images/portfolio_hero.png" alt="Portfolio" id="portfolioHeroImg">
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-strip">
+      <div class="marquee-track" id="marqueeTrack">
+        <span>BRANDING</span>
+        <span>DIGITAL ADVERTISING</span>
+        <span>SOCIAL MEDIA</span>
+        <span>WEB &amp; APP DEV</span>
+        <span>SEO / SEM</span>
+        <span>E-COMMERCE</span>
+        <span>OUTDOOR &amp; PRINT</span>
+        <span>PRODUCT DESIGN</span>
+        <span>CONTENT PRODUCTION</span>
+        <span>EVENT ACTIVATION</span>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO WORKS -->
+    <section class="port-section" id="port-works">
+      <div class="sr">
+        <span class="sec-eyebrow"> Best Work</span>
+        <h2 class="sec-heading">2017 &ndash; <em>2026</em></h2>
+        <p class="sec-sub">Our finest campaigns, identities, and digital products &mdash; a decade of creative excellence from Goa.</p>
+      </div>
+
+      <div class="filter-bar sr">
+        <button class="filter-btn active" data-filter="all"><span>All Work</span></button>
+        <button class="filter-btn" data-filter="branding"><span>Branding</span></button>
+        <button class="filter-btn" data-filter="digital"><span>Digital</span></button>
+        <button class="filter-btn" data-filter="social"><span>Social Media</span></button>
+        <button class="filter-btn" data-filter="web"><span>Web &amp; App</span></button>
+        <button class="filter-btn" data-filter="print"><span>Print &amp; OOH</span></button>
+        <button class="filter-btn" data-filter="ecommerce"><span>E-Commerce</span></button>
+      </div>
+
+      <div class="works-grid" id="worksGrid">
+        <!-- Card 1 FEATURED -->
+        <div class="wcard feat" data-cats="branding,digital,social">
+          <div class="work-card">
+            <div class="work-img">
+              <div class="work-img-inner bg-a"><img src="images/beach-chairs-sunset-scenic.png" alt="Coastal Hospitality Group" style="width:100%; height:100%; object-fit:cover;"></div>
+              <span class="year-marker">2024 &middot; Featured</span>
+              <div class="work-overlay">
+                <span class="overlay-tag"><i class="ri-award-line"></i> Featured Project</span>
+                <div class="overlay-title">360&deg; Rebrand &mdash; Coastal Hospitality Group</div>
+                <span class="overlay-cta">View Project <i class="ri-arrow-right-line"></i></span>
+              </div>
+              <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
+            </div>
+            <div class="work-body">
+              <div class="work-year">2024 &middot; Featured</div>
+              <div class="work-title">360&deg; Brand Relaunch &mdash; Coastal Hospitality Group</div>
+              <div class="work-desc">Full rebrand covering identity, digital strategy, social media, and performance ads &mdash; resulting in 3&times; revenue growth in 12 months.</div>
+              <div class="work-tags"><span class="wtag">Branding</span><span class="wtag">Digital</span><span class="wtag">Social</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="wcard" data-cats="ecommerce,web">
+          <div class="work-card">
+            <div class="work-img">
+              <div class="work-img-inner bg-b"><img src="images/grow-business-online-laptop-mockup.png" alt="Goa Real Estate E-Commerce" style="width:100%; height:100%; object-fit:cover;"></div>
+              <div class="work-overlay">
+                <span class="overlay-tag">E-Commerce</span>
+                <div class="overlay-title">Goa Real Estate D2C Platform</div>
+                <span class="overlay-cta">View Project <i class="ri-arrow-right-line"></i></span>
+              </div>
+              <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
+            </div>
+            <div class="work-body">
+              <div class="work-year">2023</div>
+              <div class="work-title">Real Estate D2C E-Commerce Build</div>
+              <div class="work-desc">End-to-end e-commerce with SEO, performance ads, and CRM integration.</div>
+              <div class="work-tags"><span class="wtag">E-Commerce</span><span class="wtag">Web Dev</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="wcard" data-cats="digital">
+          <div class="work-card">
+            <div class="work-img">
+              <div class="work-img-inner bg-c"><img src="images/designer-creating-social-media-ad.png" alt="Pan-India FMCG Campaign" style="width:100%; height:100%; object-fit:cover;"></div>
+              <div class="work-overlay">
+                <span class="overlay-tag">Digital Ads</span>
+                <div class="overlay-title">Pan-India Campaign &mdash; FMCG Brand</div>
+                <span class="overlay-cta">View Project <i class="ri-arrow-right-line"></i></span>
+              </div>
+              <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
+            </div>
+            <div class="work-body">
+              <div class="work-year">2023</div>
+              <div class="work-title">Pan-India Campaign &mdash; FMCG Brand</div>
+              <div class="work-desc">Google + Meta strategy delivering 5M+ impressions in 30 days.</div>
+              <div class="work-tags"><span class="wtag">Digital Ads</span><span class="wtag">SEM</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="wcard" data-cats="branding,print">
+          <div class="work-card">
+            <div class="work-img">
+              <div class="work-img-inner bg-d"><img src="images/restaurant-menu-viva-panjim.jpeg" alt="Luxury Resort Brand Identity" style="width:100%; height:100%; object-fit:cover;"></div>
+              <div class="work-overlay">
+                <span class="overlay-tag">Branding</span>
+                <div class="overlay-title">Luxury Resort Identity Suite</div>
+                <span class="overlay-cta">View Project <i class="ri-arrow-right-line"></i></span>
+              </div>
+              <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
+            </div>
+            <div class="work-body">
+              <div class="work-year">2022</div>
+              <div class="work-title">Luxury Resort Brand Identity &amp; Print Suite</div>
+              <div class="work-desc">Logo, guidelines, stationery, menus, and outdoor signage.</div>
+              <div class="work-tags"><span class="wtag">Branding</span><span class="wtag">Print</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 FEATURED -->
+        <div class="wcard feat" data-cats="web,social,digital">
+          <div class="work-card">
+            <div class="work-img">
+              <div class="work-img-inner bg-e"><img src="images/social-index.png" alt="Mobile App FinTech Startup" style="width:100%; height:100%; object-fit:cover;"></div>
+              <span class="year-marker">2022 &middot; Featured</span>
+              <div class="work-overlay">
+                <span class="overlay-tag"><i class="ri-award-line"></i> Featured</span>
+                <div class="overlay-title">Mobile App Launch &mdash; FinTech Startup</div>
+                <span class="overlay-cta">View Project <i class="ri-arrow-right-line"></i></span>
+              </div>
+              <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
+            </div>
+            <div class="work-body">
+              <div class="work-year">2022 &middot; Featured</div>
+              <div class="work-title">Mobile App Campaign &mdash; FinTech Startup</div>
+              <div class="work-desc">App UI/UX design, launch video, social rollout, and 60-day growth strategy achieving 50K+ downloads.</div>
+              <div class="work-tags"><span class="wtag">App Dev</span><span class="wtag">Social</span><span class="wtag">Video</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="wcard half" data-cats="branding,print">
+          <div class="work-card">
+            <div class="work-img">
+              <div class="work-img-inner bg-f"><img src="images/outdoor-advertising-billboard-mockup.jpg" alt="Construction Co. Billboard" style="width:100%; height:100%; object-fit:cover;"></div>
+              <div class="work-overlay">
+                <span class="overlay-tag">OOH</span>
+                <div class="overlay-title">Construction Co. Identity + Billboard</div>
+                <span class="overlay-cta">View Project <i class="ri-arrow-right-line"></i></span>
+              </div>
+              <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
+            </div>
+            <div class="work-body">
+              <div class="work-year">2020</div>
+              <div class="work-title">Corporate Identity &mdash; South Goa Construction Co.</div>
+              <div class="work-desc">Brand strategy, visual identity, and OOH billboard campaign across South Goa.</div>
+              <div class="work-tags"><span class="wtag">Branding</span><span class="wtag">OOH</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="wcard half" data-cats="social">
+          <div class="work-card">
+            <div class="work-img">
+              <div class="work-img-inner bg-g"><img src="images/event-production-restaurant-shoot.png" alt="Restaurant Chain Social Media" style="width:100%; height:100%; object-fit:cover;"></div>
+              <div class="work-overlay">
+                <span class="overlay-tag">Social Media</span>
+                <div class="overlay-title">Restaurant Chain &mdash; 12-Month Growth</div>
+                <span class="overlay-cta">View Project <i class="ri-arrow-right-line"></i></span>
+              </div>
+              <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
+            </div>
+            <div class="work-body">
+              <div class="work-year">2019</div>
+              <div class="work-title">Social Media Growth &mdash; Restaurant Chain</div>
+              <div class="work-desc">12-month management growing followers from 800 to 42K organically.</div>
+              <div class="work-tags"><span class="wtag">Social Media</span><span class="wtag">Content</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="wcard" data-cats="branding,digital">
+          <div class="work-card">
+            <div class="work-img">
+              <div class="work-img-inner bg-h"><img src="images/timeline/2020-mystras.png" alt="Goa Heritage Co. Tourism Brand" style="width:100%; height:100%; object-fit:cover;"></div>
+              <div class="work-overlay">
+                <span class="overlay-tag">Branding</span>
+                <div class="overlay-title">Tourism Brand &mdash; Goa Heritage</div>
+                <span class="overlay-cta">View Project <i class="ri-arrow-right-line"></i></span>
+              </div>
+              <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
+            </div>
+            <div class="work-body">
+              <div class="work-year">2018</div>
+              <div class="work-title">Tourism Brand &mdash; Goa Heritage Co.</div>
+              <div class="work-desc">Full identity, website, and campaign targeting domestic &amp; international travellers.</div>
+              <div class="work-tags"><span class="wtag">Branding</span><span class="wtag">Digital</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 9 -->
+        <div class="wcard" data-cats="web">
+          <div class="work-card">
+            <div class="work-img">
+              <div class="work-img-inner bg-a" style="filter:hue-rotate(180deg)"><img src="images/service-page.png" alt="Flashlab's First Web Launch" style="width:100%; height:100%; object-fit:cover;"></div>
+              <div class="work-overlay">
+                <span class="overlay-tag">Web Dev</span>
+                <div class="overlay-title">Flashlab's First Web Launch</div>
+                <span class="overlay-cta">View Project <i class="ri-arrow-right-line"></i></span>
+              </div>
+              <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
+            </div>
+            <div class="work-body">
+              <div class="work-year">2017</div>
+              <div class="work-title">Flashlab's First Major Web Launch</div>
+              <div class="work-desc">The website and brand that put Flashlab Creative on Goa's digital map.</div>
+              <div class="work-tags"><span class="wtag">Web Dev</span><span class="wtag">Branding</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="load-more-wrap" id="portShowMoreWrap" style="display: none;">
+        <button class="btn-ghost" id="portShowMoreBtn">Show More <i class="ri-arrow-down-s-line"></i></button>
+      </div>
+    </section>
+
+    <!-- FOUNDER WORKS &mdash; compact redesign -->
+    <section class="port-section alt" id="port-founders">
+
+      <!-- ANKITH KEDAR -->
+      <div class="founder-block">
+        <div class="sr" style="margin-bottom:28px;">
+          <span class="sec-eyebrow"> Before Flashlab</span>
+          <h2 class="sec-heading">Ankith Kedar &nbsp;<em>2013 &ndash; 2016</em></h2>
+          <p class="sec-sub">The groundwork years &mdash; creative projects that shaped the DNA of everything Flashlab became.</p>
+        </div>
+
+        <div class="founder-row sr">
+          <div class="founder-portrait-sm">
+            <img src="images/ankith-team-portrait-1.jpg" alt="Ankith Kedar" style="width: 100%; height: 100%; object-fit: cover; position: relative; z-index: 1;">
+          </div>
+          <div class="founder-info-compact">
+            <div class="founder-header">
+              <div class="founder-name-sm">Ankith<br>Kedar</div>
+              <div class="founder-badge-sm"><i class="ri-award-line"></i> Co-Founder &amp; Creative Director</div>
+            </div>
+            <div class="founder-role-sm">Founder &middot; Creative Director &middot; Brand Strategist</div>
+            <p class="founder-bio-sm">With a background rooted in design and brand strategy, Ankith spent 2013&ndash;2016 building his portfolio through agency stints and freelance projects across Goa and beyond. These formative years built the bold, results-first philosophy that defines every Flashlab project to this day.</p>
+            <div class="founder-meta-row">
+              <div class="founder-meta-item"><i class="ri-calendar-check-line"></i> Active since 2013</div>
+              <div class="founder-meta-item"><i class="ri-map-pin-2-line"></i> Margao, Goa</div>
+              <div class="founder-meta-item"><i class="ri-briefcase-4-line"></i> 4 years pre-Flashlab</div>
+              <div class="founder-meta-item"><i class="ri-palette-line"></i> Brand &amp; Visual Design</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="founder-works-label sr"><span>Selected Early Works &middot; 2013&ndash;2016</span></div>
+        <div class="founder-grid sr">
+          <div class="f-card">
+            <div class="f-img bg-b"><img src="images/timeline/2020-bartend.png" alt="Cafe Brand Identity" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="f-body">
+              <div class="f-year">2016</div>
+              <div class="f-title">Cafe Brand Identity &mdash; North Goa</div>
+              <div class="f-cat">Branding &middot; Print</div>
+            </div>
+          </div>
+          <div class="f-card">
+            <div class="f-img bg-c"><img src="images/timeline/mambo1.jpg" alt="Event Collateral" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="f-body">
+              <div class="f-year">2015</div>
+              <div class="f-title">Event Collateral &mdash; Sunburn Pre-Party</div>
+              <div class="f-cat">Print &middot; Event Design</div>
+            </div>
+          </div>
+          <div class="f-card">
+            <div class="f-img bg-d"><img src="images/timeline/southdeck3.jpg" alt="Portfolio Website" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="f-body">
+              <div class="f-year">2015</div>
+              <div class="f-title">Portfolio Website &mdash; Personal</div>
+              <div class="f-cat">Web Design</div>
+            </div>
+          </div>
+          <div class="f-card">
+            <div class="f-img bg-e"><img src="images/timeline/southdeck4.jpg" alt="Visual Identity" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="f-body">
+              <div class="f-year">2013</div>
+              <div class="f-title">Visual Identity &mdash; Local Retailer</div>
+              <div class="f-cat">Branding &middot; Signage</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="founder-divider">
+        <div class="founder-divider-icon"><i class="ri-heart-line"></i></div>
+      </div>
+
+      <!-- ANURAJ KEDAR -->
+      <div class="founder-block">
+        <div class="sr" style="margin-bottom:28px;">
+          <span class="sec-eyebrow"> Co-Founder's Work</span>
+          <h2 class="sec-heading">Anuraj Kedar &nbsp;<em>Early Highlights</em></h2>
+          <p class="sec-sub">The technical and strategic mind behind Flashlab's digital offering &mdash; from code to campaigns.</p>
+        </div>
+
+        <div class="founder-row reverse sr">
+          <div class="founder-portrait-sm">
+            <img src="images/anuraj-team-portrait.jpg" alt="Anuraj Kedar" style="width: 100%; height: 100%; object-fit: cover; position: relative; z-index: 1;">
+          </div>
+          <div class="founder-info-compact">
+            <div class="founder-header">
+              <div class="founder-name-sm">Anuraj<br>Kedar</div>
+              <div class="founder-badge-sm"><i class="ri-code-s-slash-line"></i> Co-Founder &amp; Tech Lead</div>
+            </div>
+            <div class="founder-role-sm">Co-Founder &middot; Digital Strategist &middot; Dev Lead</div>
+            <p class="founder-bio-sm">Anuraj blends technical depth with a marketer's instinct. His early projects spanned web development, SEO strategy, and digital advertising &mdash; forging the rare skill set that makes Flashlab unique as both a creative and a performance agency.</p>
+            <div class="founder-meta-row">
+              <div class="founder-meta-item"><i class="ri-calendar-check-line"></i> Active since 2014</div>
+              <div class="founder-meta-item"><i class="ri-map-pin-2-line"></i> Margao, Goa</div>
+              <div class="founder-meta-item"><i class="ri-code-line"></i> Full-stack &amp; Growth</div>
+              <div class="founder-meta-item"><i class="ri-bar-chart-2-line"></i> SEO &middot; Ads &middot; Analytics</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="founder-works-label sr"><span>Selected Early Works &middot; 2014&ndash;2016</span></div>
+        <div class="founder-grid sr">
+          <div class="f-card">
+            <div class="f-img bg-f"><img src="images/timeline/2019-deltin-life.png" alt="SEO Strategy" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="f-body">
+              <div class="f-year">2016</div>
+              <div class="f-title">SEO Strategy &mdash; Hospitality Client</div>
+              <div class="f-cat">SEO &middot; Analytics</div>
+            </div>
+          </div>
+          <div class="f-card">
+            <div class="f-img bg-g"><img src="images/timeline/2019pipa.png" alt="Mobile Web App" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="f-body">
+              <div class="f-year">2015</div>
+              <div class="f-title">Mobile Web App &mdash; Ticketing System</div>
+              <div class="f-cat">Web Dev &middot; UX</div>
+            </div>
+          </div>
+          <div class="f-card">
+            <div class="f-img bg-h"><img src="images/timeline/2018-cyrus.png" alt="Google Ads Campaign" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="f-body">
+              <div class="f-year">2015</div>
+              <div class="f-title">Google Ads Campaign &mdash; Retail Brand</div>
+              <div class="f-cat">Digital Ads &middot; SEM</div>
+            </div>
+          </div>
+          <div class="f-card">
+            <div class="f-img bg-a" style="filter:hue-rotate(90deg)"><img src="images/timeline/2018-blasterjaxx.png" alt="First CMS Website" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div class="f-body">
+              <div class="f-year">2014</div>
+              <div class="f-title">First CMS Website &mdash; Services Co.</div>
+              <div class="f-cat">Web Dev</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL PROOF -->
+    <section class="port-section" id="port-social">
+      <div class="proof-intro sr">
+        <span class="sec-eyebrow"> Out in the World</span>
+        <h2 class="sec-heading">See Our Work<br><em>Everywhere.</em></h2>
+        <p class="sec-sub">Our work lives on LinkedIn, Behance, and in the words of clients who've trusted us with their brands.</p>
+      </div>
+      <div class="proof-grid">
+        <!-- LinkedIn -->
+        <div class="proof-panel sr" style="transition-delay:.1s;">
+          <div class="proof-header">
+            <div class="proof-icon-wrap li"><i class="ri-linkedin-fill"></i></div>
+            <div>
+              <div class="proof-platform">LinkedIn</div>
+              <div class="proof-count">8.2K Followers</div>
+            </div>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="li-post">
+            <div class="li-post-text">"Proud to share our latest 360&deg; campaign for a hospitality brand in Goa. From concept to billboards &mdash; 8 weeks, 4 cups of chai per day &#9749; #flashlabcreative"</div>
+            <div class="li-post-meta"><span><i class="ri-thumb-up-fill" style="color:#0a88cc;"></i> 312 reactions</span><span><i class="ri-chat-3-line"></i> 47 comments</span></div>
+          </div>
+          <div class="li-post">
+            <div class="li-post-text">"We crossed 200 projects this year. Grateful to every client who trusted us with their brand. Here's to 200 more &#127881; #200projects"</div>
+            <div class="li-post-meta"><span><i class="ri-thumb-up-fill" style="color:#0a88cc;"></i> 589 reactions</span><span><i class="ri-chat-3-line"></i> 91 comments</span></div>
+          </div>
+          <a href="https://www.linkedin.com/company/flashlabcreative" target="_blank" rel="noopener" class="proof-cta">Follow on LinkedIn <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <!-- Behance -->
+        <div class="proof-panel sr" style="transition-delay:.2s;">
+          <div class="proof-header">
+            <div class="proof-icon-wrap be"><i class="ri-behance-fill"></i></div>
+            <div>
+              <div class="proof-platform">Behance</div>
+              <div class="proof-count">4.1K Appreciations</div>
+            </div>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="be-grid">
+            <div class="be-thumb bg-b"><i class="ri-pen-nib-line"></i><div class="be-thumb-overlay"><i class="ri-eye-line"></i></div></div>
+            <div class="be-thumb bg-c"><i class="ri-store-line"></i><div class="be-thumb-overlay"><i class="ri-eye-line"></i></div></div>
+            <div class="be-thumb bg-d"><i class="ri-image-line"></i><div class="be-thumb-overlay"><i class="ri-eye-line"></i></div></div>
+            <div class="be-thumb bg-e"><i class="ri-smartphone-line"></i><div class="be-thumb-overlay"><i class="ri-eye-line"></i></div></div>
+          </div>
+          <p style="font-size:.8rem;color:var(--muted);line-height:1.7;margin-bottom:6px;">Browse our curated case studies &mdash; brand identities to full campaign breakdowns &mdash; on Behance.</p>
+          <a href="https://www.behance.net/flashlacreative" target="_blank" rel="noopener" class="proof-cta">View on Behance <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+         <!-- instagram -->
+          <div class="proof-panel sr" style="transition-delay:.3s;">
+          <div class="proof-header">
+            <div class="proof-icon-wrap ig"><i class="ri-instagram-line"></i></div>
+            <div>
+              <div class="proof-platform">Instagram</div>
+              <div class="proof-count">12.4K Followers</div>
+            </div>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="be-grid">
+            <div class="be-thumb bg-b"><i class="ri-camera-line"></i><div class="be-thumb-overlay"><i class="ri-eye-line"></i></div></div>
+            <div class="be-thumb bg-c"><i class="ri-palette-line"></i><div class="be-thumb-overlay"><i class="ri-eye-line"></i></div></div>
+            <div class="be-thumb bg-d"><i class="ri-movie-line"></i><div class="be-thumb-overlay"><i class="ri-eye-line"></i></div></div>
+            <div class="be-thumb bg-e"><i class="ri-magic-line"></i><div class="be-thumb-overlay"><i class="ri-eye-line"></i></div></div>
+          </div>
+          <p style="font-size:.8rem;color:var(--muted);line-height:1.7;margin-bottom:6px;">Follow our daily design drops &mdash; reels, behind-the-scenes, and brand stories &mdash; on Instagram.</p>
+          <a href="https://www.instagram.com/flashlabcreative" target="_blank" rel="noopener" class="proof-cta">View on Instagram <i class="ri-arrow-right-line"></i></a>
+        </div>
+        
+        <!-- Google Reviews -->
+        <div class="proof-panel sr" style="transition-delay:.3s;">
+          <div class="proof-header">
+            <div class="proof-icon-wrap go"><i class="ri-google-fill"></i></div>
+            <div>
+              <div class="proof-platform">Google Reviews</div>
+              <div class="proof-count">4.9 <i class="ri-star-fill" style="color:inherit;"></i> 60+ Reviews</div>
+            </div>
+          </div>
+          <div class="proof-divider"></div>
+          <div class="review-list">
+            <div class="review-item">
+              <div class="review-stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+              <div class="review-text">"Flashlab completely transformed our brand presence. Creative, responsive, and they truly deliver results."</div>
+              <div class="review-author">&mdash; Rajesh M., Hospitality Owner</div>
+            </div>
+            <div class="review-item">
+              <div class="review-stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+              <div class="review-text">"Best digital agency in Goa &mdash; no contest. Our social media following tripled in under 6 months."</div>
+              <div class="review-author">&mdash; Priya D., F&amp;B Brand</div>
+            </div>
+            <div class="review-item">
+              <div class="review-stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-half-fill"></i></div>
+              <div class="review-text">"Highly professional team with genuine passion for their craft. Very happy with both the website and campaign."</div>
+              <div class="review-author">&mdash; Sunil F., Real Estate</div>
+            </div>
+          </div>
+          <a href="https://www.google.com/maps/search/Flashlab+Creative+Margao+Goa" target="_blank" rel="noopener" class="proof-cta">Read All Reviews <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+
+      <!-- CASE STUDIES — new section, sits above the CTA band.
+           Reuses .works-grid / .wcard / .work-card exactly like the
+           Portfolio works section above, so the look, hover states,
+           and responsive grid behavior are identical. Three uniform
+           cards (no feat/half sizing) + a centered button at the
+           bottom linking to the dedicated Case Studies page. -->
+      <div class="proof-intro sr" style="margin-top:64px;">
+        <span class="sec-eyebrow"> Deep Dives</span>
+        <h2 class="sec-heading">Case<br><em>Studies.</em></h2>
+        <p class="sec-sub">A closer look at the strategy, process, and results behind a few of our favourite projects.</p>
+      </div>
+
+      <div class="works-grid" id="caseStudiesPreviewGrid">
+
+        <!-- Case Study Card 1 -->
+        <!-- TODO: replace bg-a / image with the real case study cover image -->
+        <div class="wcard" data-cats="case-study">
+          <div class="work-card">
+            <div class="work-img">
+<div class="work-img-inner bg-a">
+  <img src="images/case-studies/nextlevel.jpeg" alt="Gym & Fitness Case Study" style="width:100%; height:100%; object-fit:cover;">
+</div>              <div class="work-overlay">
+                <span class="overlay-tag">Gym &amp; Fitness</span>
+                <!-- TODO: replace placeholder title -->
+                <div class="overlay-title">Fitness &amp; Wellness &mdash; : Next Level Gym & Fitness </div>
+                <span class="overlay-cta">View Case Study <i class="ri-arrow-right-line"></i></span>
+              </div>
+              <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
+            </div>
+            <div class="work-body">
+              <div class="work-year">Gym &amp; Fitness</div>
+              <!-- TODO: replace placeholder title -->
+              <div class="work-title">Fitness &amp; Wellness &mdash; : Next Level Gym & Fitness </div>
+              <!-- TODO: replace placeholder description -->
+              <div class="work-desc">Placeholder description for a Gym &amp; Fitness case study &mdash; branding, campaigns, and growth strategy.</div>
+              <div class="work-tags"><span class="wtag">Branding</span><span class="wtag">Digital</span></div>
+              <!-- TODO: link to the real, individual case study page once created -->
+              <a href="case-studies.html#gym-fitness" class="proof-cta" style="margin-top:14px;">View Case Study <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study Card 2 -->
+        <!-- TODO: replace bg-c / image with the real case study cover image -->
+        <div class="wcard" data-cats="case-study">
+        <div class="work-card">
+  <div class="work-img">
+    <div class="work-img-inner bg-a">
+      <img src="images/case-studies/magzika.jpeg" alt="Restaurant & Hospitality Case Study" style="width:100%; height:100%; object-fit:cover;">
+    </div>
+    <div class="work-overlay">
+      <span class="overlay-tag">Restaurant &amp; Hospitality</span>
+      <div class="overlay-title">Restaurant &amp; Hospitality &mdash; Magzika Beach Shack</div>
+      <span class="overlay-cta">View Case Study <i class="ri-arrow-right-line"></i></span>
+    </div>
+    <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
+  </div>
+  <div class="work-body">
+              <div class="work-year">Restaurant &amp; Hospitality</div>
+              <!-- TODO: replace placeholder title -->
+              <div class="work-title">Restaurant &amp; Hospitality &mdash; Magzika Beach Shack</div>
+              <!-- TODO: replace placeholder description -->
+              <div class="work-desc">Placeholder description for a Restaurant &amp; Hospitality case study &mdash; menus, branding, and social growth.</div>
+              <div class="work-tags"><span class="wtag">Branding</span><span class="wtag">Print</span></div>
+              <!-- TODO: link to the real, individual case study page once created -->
+              <a href="case-studies.html#restaurant-hospitality" class="proof-cta" style="margin-top:14px;">View Case Study <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study Card 3 -->
+        <!-- TODO: replace bg-e / image with the real case study cover image -->
+        <div class="wcard" data-cats="case-study">
+         <div class="work-card">
+  <div class="work-img">
+    <div class="work-img-inner bg-a">
+      <img src="images/case-studies/surfhouse.jpeg" alt="Tourism Case Study" style="width:100%; height:100%; object-fit:cover;">
+    </div>
+    <div class="work-overlay">
+      <span class="overlay-tag">Tourism</span>
+      <div class="overlay-title">Tourism &amp; Hospitality &mdash; Surf House Resort</div>
+      <span class="overlay-cta">View Case Study <i class="ri-arrow-right-line"></i></span>
+    </div>
+    <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
+  </div>
+  <div class="work-body">
+              <div class="work-year">Tourism</div>
+              <!-- TODO: replace placeholder title -->
+              <div class="work-title">Tourism &amp; Hospitality &mdash; Surf House Resort</div>
+              <!-- TODO: replace placeholder description -->
+              <div class="work-desc">Placeholder description for a Tourism case study &mdash; destination branding and travel campaigns.</div>
+              <div class="work-tags"><span class="wtag">Branding</span><span class="wtag">Digital</span></div>
+              <!-- TODO: link to the real, individual case study page once created -->
+              <a href="case-studies.html#tourism" class="proof-cta" style="margin-top:14px;">View Case Study <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- TODO: add more case study preview cards here following the same .wcard pattern -->
+      </div>
+
+      <!-- Button linking to the full Case Studies page -->
+      <div class="load-more-wrap" style="margin-top:40px;">
+        <a href="case-studies.html" class="btn-primary">View All Case Studies <i class="ri-arrow-right-line"></i></a>
+      </div>
+
+      <!-- CTA Band -->
+      <div class="cta-band sr" style="transition-delay:.1s;">
+        <h2>Ready to be<br><em>Our Next Case Study?</em></h2>
+        <p>Let's build something remarkable together &mdash; a campaign, a brand, or a digital experience that your audience won't forget.</p>
+        <div class="cta-band-btns">
+          <a href="connect.html" class="btn-primary">Start a Project <i class="ri-arrow-right-line"></i></a>
+          <a href="case-studies.html" class="btn-ghost">Browse Case Studies <i class="ri-article-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="index.html">
+            <img src="images/logos/flashlab-logo-dark.png" alt="Flashlab Creative"
+              onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'font-family:Bebas Neue,sans-serif;font-size:1.5rem;letter-spacing:2px;color:#fff\'>FLASHLAB CREATIVE</span>'">
+          </a>
+        </div>
+        <p>Goa's leading creative &amp; digital marketing agency &mdash; where imagination meets reality. Born in Margao in 2016, we craft unforgettable digital experiences for brands that dare to stand out.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/flashlab.creative" target="_blank" rel="noopener"><i class="ri-instagram-fill"></i></a>
+          <a href="https://www.facebook.com/flashlab.creative/" target="_blank" rel="noopener"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.linkedin.com/company/flashlabcreative" target="_blank" rel="noopener"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://twitter.com/theflashlab" target="_blank" rel="noopener"><i class="ri-twitter-x-fill"></i></a>
+          <a href="https://www.youtube.com/channel/UCuFtcVt_Yp9CZ82UG6pm-pg" target="_blank" rel="noopener"><i class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="about.html"><i class="ri-arrow-right-s-line"></i>About</a></li>
+          <li><a href="services.html"><i class="ri-arrow-right-s-line"></i>Services</a></li>
+          <li><a href="portfolio.html"><i class="ri-arrow-right-s-line"></i>Portfolio</a></li>
+          <li><a href="clients.html"><i class="ri-arrow-right-s-line"></i>Clients</a></li>
+          <li><a href="case-studies.html"><i class="ri-arrow-right-s-line"></i>Case Studies</a></li>
+          <li><a href="team.html"><i class="ri-arrow-right-s-line"></i>Teams</a></li>
+          <li><a href="career.html"><i class="ri-arrow-right-s-line"></i>Careers</a></li>
+          <li><a href="connect.html"><i class="ri-arrow-right-s-line"></i>Connect</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Services</h4>
+        <ul class="footer-list">
+          <li><a href="html/services/outdoor-print-ads.html"><i class="ri-arrow-right-s-line"></i>Outdoor &amp; Print</a></li>
+          <li><a href="html/services/digital-advertising.html"><i class="ri-arrow-right-s-line"></i>Digital Advertising</a></li>
+          <li><a href="html/services/seo-sem-marketing.html"><i class="ri-arrow-right-s-line"></i>SEO / SEM</a></li>
+          <li><a href="html/services/social-media-management.html"><i class="ri-arrow-right-s-line"></i>Social Media</a></li>
+          <li><a href="html/services/product-design-strategies.html"><i class="ri-arrow-right-s-line"></i>Product Design</a></li>
+          <li><a href="html/services/web-app-development.html"><i class="ri-arrow-right-s-line"></i>Web &amp; App Dev</a></li>
+          <li><a href="html/services/ecommerce.html"><i class="ri-arrow-right-s-line"></i>E-Commerce</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Join Us</h4>
+        <ul class="footer-list">
+          <li><a href="career.html#open-positions" data-open-role="intern"><i class="ri-arrow-right-s-line"></i>Intern</a></li>
+          <li><a href="career.html#open-positions" data-open-role="seo-expert"><i class="ri-arrow-right-s-line"></i>SEO Expert</a></li>
+          <li><a href="career.html#open-positions" data-open-role="social-media-manager"><i class="ri-arrow-right-s-line"></i>Social Media Mgr</a></li>
+          <li><a href="career.html#open-positions" data-open-role="graphic-designer"><i class="ri-arrow-right-s-line"></i>Graphic Designer</a></li>
+          <li><a href="career.html#open-positions" data-open-role="web-developer"><i class="ri-arrow-right-s-line"></i>Web Developer</a></li>
+          <li><a href="career.html#open-positions" data-open-role="animation-designer"><i class="ri-arrow-right-s-line"></i>Animation Designer</a></li>
+          <li><a href="career.html#open-positions" data-open-role="app-developer"><i class="ri-arrow-right-s-line"></i>App Developer</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Service Links</h4>
+        <ul class="footer-list">
+          <li><a href="#"><i class="ri-arrow-right-s-line"></i>Team Blogs</a></li>
+          <li><a href="https://parashootstudio.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Production</a></li>
+          <li><a href="https://backstagexchange.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Event Management</a></li>
+          <li><a href="#"><i class="ri-arrow-right-s-line"></i>FNB Marketing</a></li>
+          <li><a href="https://stromenightlife.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Strobe Nightlife</a></li>
+          <li><a href="https://www.cybercreative.in" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Web Development &amp; IoT</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-head">Contact</h4>
+        <div class="footer-contact">
+          <p><i class="ri-map-pin-2-fill"></i><a href="https://www.google.com/maps/search/Flashlab+Creative+Margao+Goa" target="_blank" rel="noopener">G26 Vikrant Complex,<br>Margao, Goa, India</a></p>
+          <p><i class="ri-phone-fill"></i><a href="tel:+919923580023">+91 99235 80023</a></p>
+          <p><i class="ri-mail-fill"></i><a href="mailto:contact@flashlabcreative.com">contact@flashlabcreative.com</a></p>
+          <p><i class="ri-time-fill"></i><span>Mon &ndash; Sat: 9am &ndash; 6pm IST</span></p>
+          <a href="connect.html" class="footer-cta">Start a Project <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">Copyright &copy; 2026 <a href="index.html" class="flashlab-link">Flashlab Creative</a></p>
+      <p class="footer-credit">Website Crafted by <a href="https://cybercreative.in/" target="_blank" rel="noopener" class="cyber-link">Cyber Creative</a></p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

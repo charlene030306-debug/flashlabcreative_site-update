@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flashlab Creative</title>
+  <link rel="icon" type="image/png" href="images/flashlab-lightning-bolt-icon.png">
+
+  <!-- -- GOOGLE FONTS -- -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700&family=Jost:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,600;1,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- -- REMIX ICONS -- -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- -- GLOBAL STYLESHEET -- -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/pages/services.css">
+
+</head>
+
+<body data-page="services">
+
+  <!-- --------------------------------------
+       LOGO BAR
+  -------------------------------------- -->
+  <div class="site-logo-bar">
+    <a href="index.html">
+      <img src="images/logos/flashlab-logo.png" alt="Flashlab Creative" class="logo-light" id="siteLogoImg">
+      <img src="images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" class="logo-dark" id="siteLogoImg">
+    </a>
+  </div>
+
+  <!-- --------------------------------------
+       NAVBAR
+  -------------------------------------- -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Agency</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li>
+          <a href="services.html" class="nav-active">Services</a>
+          <ul>
+            <li><a href="html/services/digital-advertising.html"><i class="ri-megaphone-line"></i>Digital Advertising</a></li>
+            <li><a href="html/services/seo-sem-marketing.html"><i class="ri-search-line"></i>SEO / SEM Marketing</a></li>
+            <li><a href="html/services/social-media-management.html"><i class="ri-instagram-line"></i>Social Media Management</a></li>
+            <li><a href="html/services/product-design-strategies.html"><i class="ri-pen-nib-line"></i>Product Design &amp; Strategies</a></li>
+            <li><a href="html/services/web-app-development.html"><i class="ri-code-s-slash-line"></i>Web &amp; App Development</a></li>
+            <li><a href="html/services/outdoor-print-ads.html"><i class="ri-image-line"></i>Outdoor &amp; Print Ads</a></li>
+            <li><a href="html/services/ecommerce.html"><i class="ri-shopping-cart-line"></i>E-Commerce</a></li>
+            <li><a href="html/services/trademark-registration.html"><i class="ri-shield-check-line"></i>Trademark Registration</a></li>
+            <li><a href="html/services/photography-video.html"><i class="ri-camera-line"></i>Photography &amp; Video</a></li>
+            <li><a href="html/services/event-production.html"><i class="ri-calendar-event-line"></i>Event Production</a></li>
+            <li><a href="html/services/media-consulting.html"><i class="ri-chat-voice-line"></i>Media Consulting</a></li>
+            <li><a href="html/services/animation-motion.html"><i class="ri-video-line"></i>Animation &amp; Motion</a></li>
+          </ul>
+        </li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+                      <li>
+          <a href="career.html">Careers</a>
+          <ul>
+            <li><a href="html/career/internship.html"><i class="ri-user-add-line"></i>Internship</a></li>
+            <li><a href="html/career/join-fulltime.html"><i class="ri-briefcase-4-line"></i>Join Full Time</a></li>
+            <li><a href="html/career/freelance.html"><i class="ri-computer-line"></i>Freelance</a></li>
+            <li><a href="html/career/influencer-signup.html"><i class="ri-star-line"></i>Influencer Sign Up</a></li>
+            <li><a href="html/career/hr-policy.html"><i class="ri-file-list-3-line"></i>HR Policy</a></li>
+          </ul>
+        </li>
+        <li><a href="connect.html">Connect</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="connect.html" class="nav-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- --------------------------------------
+       MOBILE MENU
+  -------------------------------------- -->
+  <div class="mob-overlay" id="mobOverlay"></div>
+  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+    <button class="mob-close" id="mobClose" aria-label="Close menu"><i class="ri-close-line"></i></button>
+    <ul class="mob-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Agency</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-services">Services <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-services">
+          <li><a href="html/services/digital-advertising.html">Digital Advertising</a></li>
+          <li><a href="html/services/seo-sem-marketing.html">SEO / SEM Marketing</a></li>
+          <li><a href="html/services/social-media-management.html">Social Media Management</a></li>
+          <li><a href="html/services/product-design-strategies.html">Product Design &amp; Strategies</a></li>
+          <li><a href="html/services/web-app-development.html">Web &amp; App Development</a></li>
+          <li><a href="html/services/outdoor-print-ads.html">Outdoor &amp; Print Ads</a></li>
+          <li><a href="html/services/ecommerce.html">E-Commerce</a></li>
+          <li><a href="html/services/trademark-registration.html">Trademark Registration</a></li>
+          <li><a href="html/services/photography-video.html">Photography &amp; Video</a></li>
+          <li><a href="html/services/event-production.html">Event Production</a></li>
+          <li><a href="html/services/media-consulting.html">Media Consulting</a></li>
+          <li><a href="html/services/animation-motion.html">Animation &amp; Motion</a></li>
+        </ul>
+      </li>
+      <li><a href="clients.html">Clients</a></li>
+            <li>
+        <button class="mob-parent-btn" data-target="mob-sub-career">Careers <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-career">
+          <li><a href="html/career/internship.html">Internship</a></li>
+          <li><a href="html/career/join-fulltime.html">Join Full Time</a></li>
+          <li><a href="html/career/freelance.html">Freelance</a></li>
+          <li><a href="html/career/influencer-signup.html">Influencer Sign Up</a></li>
+          <li><a href="html/career/hr-policy.html">HR Policy</a></li>
+        </ul>
+      </li>
+      <li><a href="connect.html">Connect</a></li>
+    </ul>
+    <div class="mob-cta-wrap">
+      <a href="connect.html" class="mob-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+    </div>
+  </div>
+
+  <!-- --------------------------------------
+       PAGE HERO
+  -------------------------------------- -->
+  <section class="page-hero">
+    <div class="wrap hero-inner">
+      <div class="hero-eyebrow reveal"><span></span>02 &mdash; What We Do</div>
+      <h1 class="reveal" style="transition-delay:0.1s">
+        Creating<br><em>Impactful Ideas</em><br>For Your Business
+      </h1>
+      <p class="page-hero-sub reveal" style="transition-delay:0.2s">
+        Backed by 15+ years of expertise, Flashlab Creative builds engaging campaigns across social, outdoor, radio, and event PR that strengthen brand presence and audience connection.
+      </p>
+      <div class="hero-stats-row reveal" style="transition-delay:0.3s">
+        <div class="hstat"><strong>350+</strong><span>Satisfied Clients</span></div>
+        <div class="hero-divider"></div>
+        <div class="hstat"><strong>500+</strong><span>Successful Projects</span></div>
+        <div class="hero-divider"></div>
+        <div class="hstat"><strong>25+</strong><span>Creative Experts</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --------------------------------------
+       MARQUEE STRIP &mdash; green background, black text
+  -------------------------------------- -->
+  <div class="marquee-strip" style="background-color: var(--green);">
+    <div class="marquee-track" id="marqueeTrack">
+      <span>Brand Identity</span>
+      <span>Digital Advertising</span>
+      <span>Social Media Management</span>
+      <span>Outdoor &amp; Print Ads</span>
+      <span>Web &amp; App Development</span>
+      <span>SEO / SEM Marketing</span>
+      <span>Product Design</span>
+      <span>Event Production</span>
+      <span>Media Consulting</span>
+      <span>Performance Marketing</span>
+    </div>
+  </div>
+
+  <!-- --------------------------------------
+       ABOUT SERVICES &mdash; intro split
+  -------------------------------------- -->
+  <section class="section">
+    <div class="wrap">
+      <div class="intro-split">
+        <div class="intro-img reveal">
+          <img class="intro-img-main" src="images/service-page.png" alt="About Services"
+            onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80'">
+        </div>
+        <div class="intro-content reveal" style="transition-delay:0.15s">
+          <div class="sec-eyebrow"><span></span>About Services</div>
+          <h2 class="sec-heading" style="margin-bottom:20px">Impactful Ideas<br>For Your <em>Business</em></h2>
+          <p>Backed by 15+ years of expertise, Flashlab Creative builds engaging campaigns across social, outdoor, radio, and event PR that strengthen brand presence and audience connection.</p>
+          <p>Our team of storytellers and innovators ensures every campaign stands out, combining smart planning with elegant execution to help brands grow and shine.</p>
+          <a href="connect.html" class="btn-primary">Get In Touch <i class="ri-arrow-right-up-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --------------------------------------
+       THREE PILLARS &mdash; Our Approach
+  -------------------------------------- -->
+  <section class="section section-alt pillars-section">
+    <div class="wrap">
+      <div class="centered reveal" style="margin-bottom:52px">
+        <div class="sec-eyebrow"><span></span>Our Approach</div>
+        <h2 class="sec-heading pillars-big-heading">Three Pillars of<br><em>Excellence</em></h2>
+      </div>
+      <div class="pillars-grid reveal">
+
+        <!-- Pillar 1 — Brand Identity -->
+        <div class="pillar-box">
+          <div class="pillar-icon"><i class="ri-award-fill"></i></div>
+          <h3>Brand Identity</h3>
+          <ul class="pillar-lines">
+            <li>Letterheads, brochures &amp; business cards</li>
+            <li>Logo design &amp; visual language systems</li>
+            <li>Email signatures &amp; brand guidelines</li>
+            <li>Packaging, envelopes &amp; stationery</li>
+          </ul>
+        </div>
+
+        <!-- Pillar 2 — Online Presence -->
+        <div class="pillar-box">
+          <div class="pillar-icon"><i class="ri-global-line"></i></div>
+          <h3>Online Presence</h3>
+          <ul class="pillar-lines">
+            <li>Custom websites &amp; web applications</li>
+            <li>Social media setup &amp; management</li>
+            <li>SEO-optimised content strategy</li>
+            <li>Digital marketing &amp; paid campaigns</li>
+          </ul>
+        </div>
+
+        <!-- Pillar 3 — Advertising -->
+        <div class="pillar-box">
+          <div class="pillar-icon"><i class="ri-megaphone-fill"></i></div>
+          <h3>Advertising</h3>
+          <ul class="pillar-lines">
+            <li>PPC ads, radio &amp; theater campaigns</li>
+            <li>Billboard &amp; outdoor advertising</li>
+            <li>Traditional print &amp; media buying</li>
+            <li>Performance tracking &amp; optimisation</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- --------------------------------------
+       WHAT WE OFFER &mdash; service cards
+  -------------------------------------- -->
+  <section class="services-section" id="services">
+    <div class="wrap">
+      <div class="services-header reveal">
+        <div class="sec-eyebrow"><span></span>What We Offer</div>
+        <h2 class="sec-heading">Wide Range of <em>Services</em></h2>
+        <p class="sec-sub" style="text-align:center; margin-left:auto; margin-right:auto; max-width:100%;">
+          Wide Range of Media Services encompasses our diverse offerings, including graphic design, video production, social media content, and digital marketing.<br>
+          We deliver creative, high-impact solutions tailored to elevate your brand across multiple platforms.
+        </p>
+      </div>
+
+      <!-- Top row: 4 cards -->
+      <div class="svc-grid-top reveal" style="transition-delay:0.1s">
+
+        <!-- 01 Print & OOH -->
+        <a class="svc-card" href="html/services/outdoor-print-ads.html">
+          <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="svc-gradient"></div>
+          <div class="svc-accent"></div>
+          <div class="svc-num-badge">01</div>
+          <div class="svc-content">
+            <span class="svc-tag">Print &amp; OOH</span>
+            <h3 class="svc-title">Outdoor &amp;<br>Print Ads</h3>
+            <p class="svc-desc">Billboards, banners, brochures and more &mdash; real-world campaigns that make your brand impossible to miss.</p>
+            <span class="svc-explore">Explore <i class="ri-arrow-right-line"></i></span>
+          </div>
+        </a>
+
+        <!-- 02 Digital Advertising -->
+        <a class="svc-card" href="html/services/digital-advertising.html">
+          <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="svc-gradient"></div>
+          <div class="svc-accent"></div>
+          <div class="svc-num-badge">02</div>
+          <div class="svc-content">
+            <span class="svc-tag">Paid Media</span>
+            <h3 class="svc-title">Digital<br>Advertising</h3>
+            <p class="svc-desc">Targeted online ads across social, search and display networks built for visibility and conversions.</p>
+            <span class="svc-explore">Explore <i class="ri-arrow-right-line"></i></span>
+          </div>
+        </a>
+
+        <!-- 03 SEO / SEM -->
+        <a class="svc-card" href="html/services/seo-sem-marketing.html">
+          <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="svc-gradient"></div>
+          <div class="svc-accent"></div>
+          <div class="svc-num-badge">03</div>
+          <div class="svc-content">
+            <span class="svc-tag">Search Marketing</span>
+            <h3 class="svc-title">SEO / SEM<br>Marketing</h3>
+            <p class="svc-desc">Organic rankings and high-ROI paid campaigns that drive qualified traffic and real business growth.</p>
+            <span class="svc-explore">Explore <i class="ri-arrow-right-line"></i></span>
+          </div>
+        </a>
+
+        <!-- 04 Social Media -->
+        <a class="svc-card" href="html/services/social-media-management.html">
+          <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="svc-gradient"></div>
+          <div class="svc-accent"></div>
+          <div class="svc-num-badge">04</div>
+          <div class="svc-content">
+            <span class="svc-tag">Socials</span>
+            <h3 class="svc-title">Social Media<br>Management</h3>
+            <p class="svc-desc">Consistent content, community management, and analytics across all major platforms.</p>
+            <span class="svc-explore">Explore <i class="ri-arrow-right-line"></i></span>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Bottom row: 4 cards (was 3) -->
+      <div class="svc-grid-top reveal" style="transition-delay:0.2s; margin-top:24px;">
+
+        <!-- 05 Product Design & Strategies -->
+        <a class="svc-card" href="html/services/product-design-strategies.html">
+          <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="svc-gradient"></div>
+          <div class="svc-accent"></div>
+          <div class="svc-num-badge">05</div>
+          <div class="svc-content">
+            <span class="svc-tag">Design &amp; Strategy</span>
+            <h3 class="svc-title">Product Design<br>&amp; Strategies</h3>
+            <p class="svc-desc">User-centric product design backed by strategic roadmaps that drive growth and differentiation.</p>
+            <span class="svc-explore">Explore <i class="ri-arrow-right-line"></i></span>
+          </div>
+        </a>
+
+        <!-- 06 Web & App Development -->
+        <a class="svc-card" href="html/services/web-app-development.html">
+          <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="svc-gradient"></div>
+          <div class="svc-accent"></div>
+          <div class="svc-num-badge">06</div>
+          <div class="svc-content">
+            <span class="svc-tag">Development</span>
+            <h3 class="svc-title">Web &amp; App<br>Development</h3>
+            <p class="svc-desc">Modern, fast, and conversion-focused websites and applications custom-built for your business.</p>
+            <span class="svc-explore">Explore <i class="ri-arrow-right-line"></i></span>
+          </div>
+        </a>
+
+        <!-- 07 E-Commerce -->
+        <a class="svc-card" href="html/services/ecommerce.html">
+          <div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80')"></div>
+          <div class="svc-gradient"></div>
+          <div class="svc-accent"></div>
+          <div class="svc-num-badge">07</div>
+          <div class="svc-content">
+            <span class="svc-tag">E-Commerce</span>
+            <h3 class="svc-title">E-Commerce<br>Solutions</h3>
+            <p class="svc-desc">End-to-end online stores built to sell &mdash; beautiful storefronts, seamless checkout, and growth-focused features.</p>
+            <span class="svc-explore">Explore <i class="ri-arrow-right-line"></i></span>
+          </div>
+        </a>
+
+        <!-- 08 PLACEHOLDER — replace image, tag, title, desc, href, and number -->
+        <a class="svc-card" href="#">
+          <div class="svc-bg" style="background-image:url('YOUR-IMAGE-PATH-HERE.jpg')"></div>
+          <div class="svc-gradient"></div>
+          <div class="svc-accent"></div>
+          <div class="svc-num-badge">08</div>
+          <div class="svc-content">
+            <span class="svc-tag">Your Tag Here</span>
+            <h3 class="svc-title">Your Service<br>Title Here</h3>
+            <p class="svc-desc">Your service description goes here — keep it to 1–2 lines for visual consistency with the other cards.</p>
+            <span class="svc-explore">Explore <i class="ri-arrow-right-line"></i></span>
+          </div>
+        </a>
+
+      </div>
+            </div>
+  </section>
+
+  <!-- --------------------------------------
+       PROCESS &mdash; how we work
+  -------------------------------------- -->
+  <section class="section" style="padding: 52px 0 56px">
+    <div class="wrap">
+      <div class="centered reveal" style="margin-bottom:44px">
+        <div class="sec-eyebrow"><span></span>Our Process</div>
+        <h2 class="sec-heading">How We <em>Work</em></h2>
+        <p class="sec-sub">A thoughtful and collaborative approach designed to bring your vision to life with creativity and precision.</p>
+      </div>
+      <div class="process-steps reveal">
+
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <h4>Discovery</h4>
+          <p>We deep-dive into your brand, audience, and goals to build a complete picture before a single pixel is touched.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <h4>Strategy</h4>
+          <p>Our team develops focused creative strategies that align messaging, platforms, and execution with your business objectives.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <h4>Creation</h4>
+          <p>We create impactful visual assets that combine creativity, precision, and a strong understanding of your brand.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-num">04</div>
+          <h4>Deliver &amp; Grow</h4>
+          <p>We launch, monitor, and refine every campaign to ensure long-term growth and lasting brand impact.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- --------------------------------------
+       FAQ &mdash; accordion
+  -------------------------------------- -->
+  <section class="section section-alt" id="faq" style="padding: 52px 0 72px">
+    <div class="wrap">
+      <div class="centered reveal" style="margin-bottom:36px">
+        <div class="sec-eyebrow"><span></span>Got Questions?</div>
+        <h2 class="sec-heading">Frequently Asked <em>Questions</em></h2>
+        <p class="sec-sub">Everything you need to know about working with Flashlab Creative.</p>
+      </div>
+      <div class="faq-list reveal">
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>What services does Flashlab Creative offer?</span>
+            <div class="faq-icon"><i class="ri-add-line"></i></div>
+          </button>
+          <div class="faq-a">
+            <p>We offer a comprehensive range of media and marketing services including brand identity design, digital advertising, social media management, outdoor &amp; print ads, web &amp; app development, SEO/SEM marketing, product design &amp; strategy, event production, and more.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>How long has Flashlab Creative been operating?</span>
+            <div class="faq-icon"><i class="ri-add-line"></i></div>
+          </button>
+          <div class="faq-a">
+            <p>FlashLab Creative has been building impactful brand experiences since 2018, backed by years of expertise in creative marketing and digital communication. Founder Ankith Kedar brings over 15 years of industry experience across media, events, branding, UI/UX, web design, and marketing strategy.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>Do you work with businesses outside Goa?</span>
+            <div class="faq-icon"><i class="ri-add-line"></i></div>
+          </button>
+          <div class="faq-a">
+            <p>Absolutely. While we're proudly based in Margao, Goa, we work with clients across India and internationally. Our digital-first approach means geography is never a barrier.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>What industries do you specialise in?</span>
+            <div class="faq-icon"><i class="ri-add-line"></i></div>
+          </button>
+          <div class="faq-a">
+            <p>We have deep expertise across hospitality, restaurants &amp; food, real estate, retail &amp; e-commerce, fitness &amp; wellness, sports &amp; events, lifestyle brands, and professional services. Our portfolio spans 350+ clients and 500+ projects.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>How do I start a project with Flashlab?</span>
+            <div class="faq-icon"><i class="ri-add-line"></i></div>
+          </button>
+          <div class="faq-a">
+            <p>Simply connect with us through our Contact page or email us at contact@flashlabcreative.com. We'll schedule a discovery call to understand your goals, timeline, and vision before crafting a tailored proposal within 48 hours.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>How long does a typical project take?</span>
+            <div class="faq-icon"><i class="ri-add-line"></i></div>
+          </button>
+          <div class="faq-a">
+            <p>Timelines vary by scope. A brand identity package typically takes 2&ndash;3 weeks. A website ranges from 4&ndash;8 weeks. Social media management is an ongoing engagement. Digital advertising campaigns can launch in as little as 1&ndash;2 weeks.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- --------------------------------------
+       FOOTER
+  -------------------------------------- -->
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="index.html">
+            <img src="images/logos/flashlab-logo-dark.png" alt="Flashlab Creative"
+              onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'font-family:Bebas Neue,sans-serif;font-size:1.5rem;letter-spacing:2px;color:#fff\'>FLASHLAB CREATIVE</span>'">
+          </a>
+        </div>
+        <p>Goa's leading creative &amp; digital marketing agency &mdash; where imagination meets reality. Born in Margao in 2016, we craft unforgettable digital experiences for brands that dare to stand out.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/flashlab.creative" target="_blank" rel="noopener"><i class="ri-instagram-fill"></i></a>
+          <a href="https://www.facebook.com/flashlab.creative/" target="_blank" rel="noopener"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.linkedin.com/company/flashlabcreative" target="_blank" rel="noopener"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://twitter.com/theflashlab" target="_blank" rel="noopener"><i class="ri-twitter-x-fill"></i></a>
+          <a href="https://www.youtube.com/channel/UCuFtcVt_Yp9CZ82UG6pm-pg" target="_blank" rel="noopener"><i class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="about.html"><i class="ri-arrow-right-s-line"></i>About</a></li>
+          <li><a href="services.html"><i class="ri-arrow-right-s-line"></i>Services</a></li>
+          <li><a href="portfolio.html"><i class="ri-arrow-right-s-line"></i>Portfolio</a></li>
+          <li><a href="clients.html"><i class="ri-arrow-right-s-line"></i>Clients</a></li>
+          <li><a href="case-studies.html"><i class="ri-arrow-right-s-line"></i>Case Studies</a></li>
+          <li><a href="team.html"><i class="ri-arrow-right-s-line"></i>Teams</a></li>
+          <li><a href="career.html"><i class="ri-arrow-right-s-line"></i>Careers</a></li>
+          <li><a href="connect.html"><i class="ri-arrow-right-s-line"></i>Connect</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Services</h4>
+        <ul class="footer-list">
+          <li><a href="html/services/outdoor-print-ads.html"><i class="ri-arrow-right-s-line"></i>Outdoor &amp; Print</a></li>
+          <li><a href="html/services/digital-advertising.html"><i class="ri-arrow-right-s-line"></i>Digital Advertising</a></li>
+          <li><a href="html/services/seo-sem-marketing.html"><i class="ri-arrow-right-s-line"></i>SEO / SEM</a></li>
+          <li><a href="html/services/social-media-management.html"><i class="ri-arrow-right-s-line"></i>Social Media</a></li>
+          <li><a href="html/services/product-design-strategies.html"><i class="ri-arrow-right-s-line"></i>Product Design</a></li>
+          <li><a href="html/services/web-app-development.html"><i class="ri-arrow-right-s-line"></i>Web &amp; App Dev</a></li>
+          <li><a href="html/services/ecommerce.html"><i class="ri-arrow-right-s-line"></i>E-Commerce</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Join Us</h4>
+        <ul class="footer-list">
+          <li><a href="career.html#open-positions" data-open-role="intern"><i class="ri-arrow-right-s-line"></i>Intern</a></li>
+          <li><a href="career.html#open-positions" data-open-role="seo-expert"><i class="ri-arrow-right-s-line"></i>SEO Expert</a></li>
+          <li><a href="career.html#open-positions" data-open-role="social-media-manager"><i class="ri-arrow-right-s-line"></i>Social Media Mgr</a></li>
+          <li><a href="career.html#open-positions" data-open-role="graphic-designer"><i class="ri-arrow-right-s-line"></i>Graphic Designer</a></li>
+          <li><a href="career.html#open-positions" data-open-role="web-developer"><i class="ri-arrow-right-s-line"></i>Web Developer</a></li>
+          <li><a href="career.html#open-positions" data-open-role="animation-designer"><i class="ri-arrow-right-s-line"></i>Animation Designer</a></li>
+          <li><a href="career.html#open-positions" data-open-role="app-developer"><i class="ri-arrow-right-s-line"></i>App Developer</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Service Links</h4>
+        <ul class="footer-list">
+          <li><a href="#"><i class="ri-arrow-right-s-line"></i>Team Blogs</a></li>
+          <li><a href="https://parashootstudio.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Production</a></li>
+          <li><a href="https://backstagexchange.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Event Management</a></li>
+          <li><a href="#"><i class="ri-arrow-right-s-line"></i>FNB Marketing</a></li>
+          <li><a href="https://stromenightlife.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Strobe Nightlife</a></li>
+          <li><a href="https://www.cybercreative.in" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Web Development &amp; IoT</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-head">Contact</h4>
+        <div class="footer-contact">
+          <p><i class="ri-map-pin-2-fill"></i><a href="https://www.google.com/maps/search/Flashlab+Creative+Margao+Goa" target="_blank" rel="noopener">G26 Vikrant Complex,<br>Margao, Goa, India</a></p>
+          <p><i class="ri-phone-fill"></i><a href="tel:+919923580023">+91 99235 80023</a></p>
+          <p><i class="ri-mail-fill"></i><a href="mailto:contact@flashlabcreative.com">contact@flashlabcreative.com</a></p>
+          <p><i class="ri-time-fill"></i><span>Mon &ndash; Sat: 9am &ndash; 6pm IST</span></p>
+          <a href="connect.html" class="footer-cta">Start a Project <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">Copyright &copy; 2026 <a href="index.html" class="flashlab-link">Flashlab Creative</a></p>
+      <p class="footer-credit">Website Crafted by <a href="https://cybercreative.in/" target="_blank" rel="noopener" class="cyber-link">Cyber Creative</a></p>
+    </div>
+  </footer>
+
+  <!-- --------------------------------------
+       BACK TO TOP BUTTON
+  -------------------------------------- -->
+  <button class="back-top" id="backTop"><i class="ri-arrow-up-line"></i></button>
+
+  <!-- --------------------------------------
+       SCRIPTS
+  -------------------------------------- -->
+  <script src="js/main.js"></script>
+  <script src="js/pages/services.js"></script>
+
+</body>
+</html>
