@@ -188,7 +188,7 @@ li, blockquote, input, textarea { cursor: text; }
   display:         flex;
   align-items:     center;
   height:          44px;
-  gap:             28px;
+  gap:             20px;
   font-size:       .92rem;
   font-weight:     600;
   letter-spacing:  .6px;
@@ -198,8 +198,6 @@ li, blockquote, input, textarea { cursor: text; }
   list-style:      none;
   margin:          0;
   padding:         0;
-  margin-right:    auto;
-  margin-left:     -120px;
 }
 .nav-links > li {
   position:  relative;
@@ -209,7 +207,9 @@ li, blockquote, input, textarea { cursor: text; }
   align-items: center;
 }
 .nav-links > li > ul { position: absolute !important; }
-.nav-links > li > a {
+.nav-links > li > a,
+.nav-links > li > a:focus,
+.nav-links > li > a:active {
   color:      #0a0a0f !important;
   display:    inline-block;
   transition: opacity .2s;
@@ -229,7 +229,9 @@ li, blockquote, input, textarea { cursor: text; }
 .nav-links > li > a:hover::after { width: 100%; }
 
 /* Active states */
-.nav-links > li > a.nav-active {
+.nav-links > li > a.nav-active,
+.nav-links > li > a.nav-active:focus,
+.nav-links > li > a.nav-active:active {
   color: #0a0a0f !important;
   opacity: 1 !important;
 }
@@ -248,7 +250,9 @@ li, blockquote, input, textarea { cursor: text; }
   border-radius: 50%;
   background: #0a0a0f;
 }
-.nav-links > li.nav-parent-active > a {
+.nav-links > li.nav-parent-active > a,
+.nav-links > li.nav-parent-active > a:focus,
+.nav-links > li.nav-parent-active > a:active {
   color: #0a0a0f !important;
   opacity: 1 !important;
 }
@@ -388,12 +392,11 @@ li, blockquote, input, textarea { cursor: text; }
    8. NAV CONTROLS
    ============================================================ */
 .nav-controls {
-  position:    absolute;
-  right:       0;
   display:     flex !important;
   align-items: center;
   gap:         10px;
   flex-shrink: 0;
+  margin-left: auto;
 }
 
 .theme-toggle {
@@ -1133,6 +1136,7 @@ li, blockquote, input, textarea { cursor: text; }
     width: 100%;
     justify-content: space-between;
     gap: 10px;
+    margin-left: 0;
   }
   .nav-wrap { justify-content: space-between; }
 
@@ -1306,6 +1310,7 @@ html, body {
     width: 100%;
     justify-content: space-between;
     gap: 10px;
+    margin-left: 0;
   }
   .nav-wrap { justify-content: space-between; }
 
