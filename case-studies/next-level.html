@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Next Level Gym &amp; Fitness — Case Study | Flashlab Creative</title>
+  <link rel="icon" type="image/png" href="../images/flashlab-lightning-bolt-icon.png">
+  <meta name="description" content="How Flashlab Creative helped Next Level Gym & Fitness achieve a 104% increase in engagement, 42% follower growth, and 3.5x video views through a strategic social media transformation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/pages/case-studies.css">
+  <link rel="stylesheet" href="../css/pages/next-level.css">
+</head>
+
+<body data-page="case-studies">
+
+  <!-- LOGO BAR -->
+  <div class="site-logo-bar">
+    <a href="../index.html">
+      <img src="../images/logos/flashlab-logo.png" alt="Flashlab Creative" class="logo-light">
+      <img src="../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" class="logo-dark">
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About Agency</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../team.html">Team</a></li>
+        <li>
+          <a href="../services.html">Services</a>
+          <ul>
+            <li><a href="../html/services/digital-advertising.html"><i class="ri-megaphone-line"></i>Digital Advertising</a></li>
+            <li><a href="../html/services/seo-sem-marketing.html"><i class="ri-search-line"></i>SEO / SEM Marketing</a></li>
+            <li><a href="../html/services/social-media-management.html"><i class="ri-instagram-line"></i>Social Media Management</a></li>
+            <li><a href="../html/services/product-design-strategies.html"><i class="ri-pen-nib-line"></i>Product Design &amp; Strategies</a></li>
+            <li><a href="../html/services/web-app-development.html"><i class="ri-code-s-slash-line"></i>Web &amp; App Development</a></li>
+            <li><a href="../html/services/outdoor-print-ads.html"><i class="ri-image-line"></i>Outdoor &amp; Print Ads</a></li>
+            <li><a href="../html/services/ecommerce.html"><i class="ri-shopping-cart-line"></i>E-Commerce</a></li>
+            <li><a href="../html/services/trademark-registration.html"><i class="ri-shield-check-line"></i>Trademark Registration</a></li>
+            <li><a href="../html/services/photography-video.html"><i class="ri-camera-line"></i>Photography &amp; Video</a></li>
+            <li><a href="../html/services/event-production.html"><i class="ri-calendar-event-line"></i>Event Production</a></li>
+            <li><a href="../html/services/media-consulting.html"><i class="ri-chat-voice-line"></i>Media Consulting</a></li>
+            <li><a href="../html/services/animation-motion.html"><i class="ri-video-line"></i>Animation &amp; Motion</a></li>
+          </ul>
+        </li>
+        <li><a href="../clients.html">Clients</a></li>
+        <li><a href="../case-studies.html" class="nav-active">Case Studies</a></li>
+        <li>
+          <a href="../career.html">Careers</a>
+          <ul>
+            <li><a href="../html/career/internship.html"><i class="ri-user-add-line"></i>Internship</a></li>
+            <li><a href="../html/career/join-fulltime.html"><i class="ri-briefcase-4-line"></i>Join Full Time</a></li>
+            <li><a href="../html/career/freelance.html"><i class="ri-computer-line"></i>Freelance</a></li>
+            <li><a href="../html/career/influencer-signup.html"><i class="ri-star-line"></i>Influencer Sign Up</a></li>
+            <li><a href="../html/career/hr-policy.html"><i class="ri-file-list-3-line"></i>HR Policy</a></li>
+          </ul>
+        </li>
+        <li><a href="../connect.html">Connect</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="../connect.html" class="nav-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-overlay" id="mobOverlay"></div>
+  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+    <button class="mob-close" id="mobClose" aria-label="Close menu"><i class="ri-close-line"></i></button>
+    <ul class="mob-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About Agency</a></li>
+      <li><a href="../portfolio.html">Portfolio</a></li>
+      <li><a href="../team.html">Team</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-services">Services <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-services">
+          <li><a href="../html/services/social-media-management.html">Social Media Management</a></li>
+          <li><a href="../html/services/digital-advertising.html">Digital Advertising</a></li>
+          <li><a href="../html/services/seo-sem-marketing.html">SEO / SEM Marketing</a></li>
+          <li><a href="../html/services/product-design-strategies.html">Product Design &amp; Strategies</a></li>
+          <li><a href="../html/services/web-app-development.html">Web &amp; App Development</a></li>
+        </ul>
+      </li>
+      <li><a href="../clients.html">Clients</a></li>
+      <li><a href="../case-studies.html" class="nav-active">Case Studies</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-career">Careers <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-career">
+          <li><a href="../html/career/internship.html">Internship</a></li>
+          <li><a href="../html/career/join-fulltime.html">Join Full Time</a></li>
+          <li><a href="../html/career/freelance.html">Freelance</a></li>
+        </ul>
+      </li>
+      <li><a href="../connect.html">Connect</a></li>
+    </ul>
+    <div class="mob-cta-wrap">
+      <a href="../connect.html" class="mob-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="cs-hero">
+      <div class="hero-bg">
+        <div class="orb1"></div>
+        <div class="orb2"></div>
+      </div>
+      <div class="cs-hero-inner sr">
+        <!-- Breadcrumb -->
+        <div class="cs-breadcrumb">
+          <a href="../case-studies.html">Case Studies</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>Gym &amp; Fitness</span>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>Next Level Gym &amp; Fitness</span>
+        </div>
+
+        <div class="cs-hero-eyebrow">
+          <span class="pulse-dot"></span>
+          Fitness &amp; Wellness
+        </div>
+
+        <h1>Next Level<br><em>Gym &amp; Fitness</em></h1>
+
+        <p class="cs-hero-intro">
+          Next Level Gym &amp; Fitness offers comprehensive fitness solutions including gym memberships,
+          personal training, strength and conditioning, weight loss programs, muscle gain programs, HIIT
+          workouts, Zumba classes, and overall health and wellness coaching. The gym had an established
+          presence in the local fitness market and a loyal member base, but its social media lacked a
+          structured content strategy and consistent branding. Next Level wanted to increase visibility,
+          attract new members, showcase its facilities and trainers, and build a stronger online community.
+        </p>
+
+        <!-- Meta strip -->
+        <div class="cs-meta-row">
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Client</span>
+            <span class="cs-meta-value">Next Level Gym &amp; Fitness</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Industry</span>
+            <span class="cs-meta-value">Fitness &amp; Wellness</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Service</span>
+            <span class="cs-meta-value">Social Media Management</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Channels</span>
+            <span class="cs-meta-value">Instagram &amp; Facebook</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COVER IMAGE -->
+    <div class="cs-cover">
+      <img src="../images/case-studies/next-level/nll1.jpg"
+           alt="Next Level Gym & Fitness">
+    </div>
+
+    <!-- MAIN BODY + SIDEBAR -->
+    <div class="cs-body">
+
+      <!-- LEFT: MAIN CONTENT -->
+      <div class="cs-main">
+
+        <!-- 01 — THE CHALLENGE -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">The Challenge</span>
+          <h2>What Wasn't <em>WORKING</em></h2>
+          <p>
+            While Next Level offered quality equipment, experienced trainers, Zumba classes, and a motivating
+            workout environment, these strengths were not being communicated effectively online.
+          </p>
+          <p>
+            The content focused primarily on promotional posts and missed opportunities to educate, entertain,
+            and engage the audience.
+          </p>
+
+          <!-- TODO: replace placeholder with a real image showing the gym/previous content state -->
+          <div class="cs-img-block tall">
+            <img src="../images/case-studies/next-level/nl2.png"
+                 alt="Next Level Gym previous content state">
+          </div>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:32px;">Key <em>OBSTACLES</em></h2>
+          <ul class="cs-list">
+            <li>Content lacked a clear and consistent strategy.</li>
+            <li>The gym's facilities, equipment, trainers, and member success stories were not being showcased effectively.</li>
+            <li>Engagement levels were lower than expected.</li>
+            <li>Educational fitness content was limited.</li>
+            <li>Social media was not fully contributing to membership enquiries.</li>
+            <li>Limited brand differentiation from competing gyms.</li>
+            <li>Inconsistent content themes.</li>
+            <li>Underutilisation of trainer expertise.</li>
+            <li>Lack of engaging community-focused content.</li>
+            <li>Low use of member-generated content and testimonials.</li>
+          </ul>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:32px;">Missed <em>OPPORTUNITIES</em></h2>
+          <ul class="cs-list">
+            <li>Educational trainer-led content.</li>
+            <li>Vox-pop and member interaction reels.</li>
+            <li>Storytelling and transformation-focused content.</li>
+            <li>Showcasing specialised equipment and training methods.</li>
+            <li>Building stronger community engagement through interactive content.</li>
+            <li>Generating enquiries through targeted fitness-focused campaigns.</li>
+          </ul>
+        </div>
+
+        <!-- 02 — THE OBJECTIVES -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Objectives</span>
+          <h2>What They Wanted to <em>ACHIEVE</em></h2>
+          <p>
+            The key business goals were to build a stronger online presence, increase audience engagement and
+            community interaction, improve follower growth, generate more enquiries and membership leads, and
+            establish authority through fitness education and trainer-led content.
+          </p>
+          <ul class="cs-list">
+            <li>Increase brand awareness in the local market.</li>
+            <li>Generate more membership enquiries.</li>
+            <li>Improve engagement across Instagram and Facebook.</li>
+            <li>Showcase gym facilities, trainers, equipment, and classes.</li>
+            <li>Position Next Level as a trusted fitness destination.</li>
+          </ul>
+
+          <!-- TODO: replace placeholder with objectives/strategy board or content plan image -->
+          <div class="cs-img-block tall">
+            <img src="../images/case-studies/next-level/nl3.png"
+                 alt="Next Level Gym objectives and strategy plan">
+          </div>
+        </div>
+
+        <!-- 03 — THE STRATEGY -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Strategy</span>
+          <h2>How We <em>APPROACHED IT</em></h2>
+          <p>
+            We identified that audiences responded best to authentic fitness content, trainer expertise, and real
+            member experiences. Rather than relying solely on promotional posts, we shifted towards educational,
+            motivational, and community-driven content.
+          </p>
+          <p>
+            We positioned Next Level Gym &amp; Fitness as <strong style="color:var(--text);">"more than just a gym,
+            a community focused on fitness, discipline, transformation, and expert guidance."</strong>
+          </p>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:28px;">Channels <em>PRIORITISED</em></h2>
+          <div class="cs-tags">
+            <span class="cs-tag">Instagram</span>
+            <span class="cs-tag">Facebook</span>
+            <span class="cs-tag">Instagram Stories</span>
+            <span class="cs-tag">Instagram Reels</span>
+            <span class="cs-tag">Paid Instagram Advertising</span>
+          </div>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:28px;">Content <em>APPROACH</em></h2>
+          <ul class="cs-list">
+            <li>Trainer-led educational reels.</li>
+            <li>Fitness tips and workout tutorials.</li>
+            <li>Fat loss and muscle gain advice.</li>
+            <li>Equipment showcase content.</li>
+            <li>Member Vox-pop interviews and rapid-fire reels.</li>
+            <li>Motivational and discipline-focused content.</li>
+            <li>Zumba class promotions.</li>
+            <li>Workout exercise carousels.</li>
+            <li>Story-based engagement content and polls.</li>
+            <li>Consistent monthly content shoots.</li>
+            <li>Strategic reel boosting and paid promotions.</li>
+          </ul>
+          <p>
+            A key focus was creating relatable content that gym-goers could save, share, and engage with, while
+            simultaneously positioning the trainers as trusted fitness experts.
+          </p>
+
+          <!-- BEFORE / AFTER comparison -->
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:32px;">Before &amp; <em>After</em></h2>
+          <div class="cs-img-grid">
+            <div class="cs-img-grid-item">
+              <div class="cs-img-block tall">
+                <img src="../images/case-studies/next-level/Before%20feed.jpeg"
+                     alt="Next Level Gym Instagram feed before Flashlab's strategy">
+              </div>
+              <span class="cs-img-grid-caption">Before</span>
+            </div>
+            <div class="cs-img-grid-item">
+              <div class="cs-img-block tall">
+                <img src="../images/case-studies/next-level/After%20feed.jpeg"
+                     alt="Next Level Gym Instagram feed after Flashlab's strategy">
+              </div>
+              <span class="cs-img-grid-caption">After</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 — THE RESULTS -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Results</span>
+          <h2>What We <em>ACHIEVED</em></h2>
+          <p>
+            The strategic shift to authentic, trainer-led, and community-driven content delivered
+            measurable results across every key metric within the campaign period.
+          </p>
+
+          <!-- Stats grid -->
+          <div class="cs-results-grid">
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">104%</div>
+              <div class="cs-stat-label">Increase in Engagement</div>
+              <div class="cs-stat-desc">Trainer-led educational content, Vox-style reels, and fitness tips drove stronger audience interaction and content engagement.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">104%</div>
+              <div class="cs-stat-label">Increase in Reach &amp; Impressions</div>
+              <div class="cs-stat-desc">Boosted reels and consistent content significantly expanded the brand's visibility, reaching a much wider audience across Instagram.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">42%</div>
+              <div class="cs-stat-label">Increase in Profile Visits</div>
+              <div class="cs-stat-desc">Improved content quality and strategic promotions led to a substantial increase in profile visits and brand discovery.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">42%</div>
+              <div class="cs-stat-label">Increase in Followers</div>
+              <div class="cs-stat-desc">The account experienced steady follower growth through a combination of organic content, community engagement, and paid promotions.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">14%</div>
+              <div class="cs-stat-label">Increase in Enquiries &amp; Lead Generation</div>
+              <div class="cs-stat-desc">Targeted campaigns and engaging content contributed to more membership enquiries, website visits, and direct messages from potential customers.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">3.5x</div>
+              <div class="cs-stat-label">Increase in Video Views</div>
+              <div class="cs-stat-desc">High-performing reels generated over 100,000 views, significantly increasing brand awareness and audience reach.</div>
+            </div>
+          </div>
+
+          <!-- TODO: replace with analytics screenshots / results dashboard image -->
+          <div class="cs-img-block">
+            <img src="../images/case-studies/next-level/nll4.png"
+                 alt="Instagram Reel performance">
+          </div>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:8px;">Best Performing <em>CONTENT</em></h2>
+          <div class="cs-performing-grid">
+            <div class="cs-performing-item"><i class="ri-video-line"></i> Trainer Educational Reels</div>
+            <div class="cs-performing-item"><i class="ri-fire-line"></i> Fat Loss &amp; Muscle Gain Tips</div>
+            <div class="cs-performing-item"><i class="ri-mic-line"></i> Member Vox-Pop Reels</div>
+            <div class="cs-performing-item"><i class="ri-heart-pulse-line"></i> Motivational Gym Content</div>
+            <div class="cs-performing-item"><i class="ri-music-line"></i> Zumba Class Promotions</div>
+            <div class="cs-performing-item"><i class="ri-layout-grid-line"></i> Workout Exercise Carousels</div>
+            <div class="cs-performing-item"><i class="ri-boxing-line"></i> Equipment Showcase Reels</div>
+            <div class="cs-performing-item"><i class="ri-question-line"></i> Fitness Myth-Busting Videos</div>
+          </div>
+        </div>
+
+        <!-- 05 — CLIENT FEEDBACK -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Client Feedback</span>
+          <h2>What the Client <em>SAID</em></h2>
+
+          <div class="cs-testimonial">
+            <p>
+              "Next Level Gym &amp; Fitness has been highly satisfied with the improvement in content quality,
+              engagement, and overall brand presentation. Trainer-led educational content and member-focused
+              reels delivered particularly strong results, helping establish a stronger connection with the audience."
+            </p>
+            <div class="cs-testimonial-author">— Next Level Gym &amp; Fitness</div>
+          </div>
+
+          <!-- TODO: replace placeholder with client photo or team photo from the gym -->
+        </div>
+      </div><!-- /cs-main -->
+
+      <!-- SIDEBAR CARDS — now a row below the main content, not a side column -->
+      <div class="cs-sidebar">
+
+        <!-- Services delivered -->
+        <div class="cs-sidebar-card sr">
+          <h4>Services Delivered</h4>
+          <ul class="cs-sidebar-list">
+            <li><i class="ri-instagram-line"></i> Social Media Management</li>
+            <li><i class="ri-video-line"></i> Reels &amp; Video Strategy</li>
+            <li><i class="ri-megaphone-line"></i> Paid Instagram Advertising</li>
+            <li><i class="ri-camera-line"></i> Monthly Content Shoots</li>
+            <li><i class="ri-bar-chart-2-line"></i> Analytics &amp; Reporting</li>
+            <li><i class="ri-community-line"></i> Community Management</li>
+          </ul>
+        </div>
+
+        <!-- KPIs tracked -->
+        <div class="cs-sidebar-card sr">
+          <h4>KPIs Tracked</h4>
+          <ul class="cs-sidebar-list">
+            <li><i class="ri-user-add-line"></i> Follower Growth</li>
+            <li><i class="ri-eye-line"></i> Reach &amp; Impressions</li>
+            <li><i class="ri-thumb-up-line"></i> Engagement Rate</li>
+            <li><i class="ri-profile-line"></i> Profile Visits</li>
+            <li><i class="ri-message-line"></i> Membership Enquiries</li>
+            <li><i class="ri-play-circle-line"></i> Reel Performance</li>
+            <li><i class="ri-funds-line"></i> Paid Advertising Results</li>
+            <li><i class="ri-group-line"></i> Community Growth</li>
+          </ul>
+        </div>
+
+        <!-- CTA -->
+        <div class="cs-sidebar-card sr">
+          <h4>Work With Us</h4>
+          <p style="font-size:.82rem; color:var(--muted); line-height:1.65; margin-bottom:16px;">
+            Want results like these for your brand? Let's talk about what Flashlab can do for you.
+          </p>
+          <div class="cs-sidebar-cta">
+            <a href="../connect.html" class="btn-primary" style="justify-content:center;">Start a Project <i class="ri-arrow-right-line"></i></a>
+            <a href="../case-studies.html" class="btn-ghost" style="justify-content:center;">All Case Studies <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+      </div><!-- /cs-sidebar -->
+
+    </div><!-- /cs-body -->
+
+    <!-- SIMILAR WORK -->
+    <section class="cs-similar">
+      <div style="max-width:1200px; margin:0 auto;">
+        <span class="sec-eyebrow"> More Work</span>
+        <h2 class="sec-heading">Similar <em>Case Studies</em></h2>
+
+        <div class="cs-similar-grid">
+
+          <!-- TODO: replace with real similar case study cards once those pages exist -->
+          <a href="robins-ark.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/robinsark.jpeg"
+                   alt="Robin's Ark">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Restaurant &amp; Hospitality</div>
+              <div class="cs-similar-title">Robin's Ark</div>
+              <div class="cs-similar-desc">Brand identity and social media strategy for a popular Goa restaurant.</div>
+            </div>
+          </a>
+
+          <a href="surf-house.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/surfhouse.jpeg"
+                   alt="Surf House Resort">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Tourism</div>
+              <div class="cs-similar-title">Surf House Resort</div>
+              <div class="cs-similar-desc">Destination branding and digital campaigns for a Goa surf resort.</div>
+            </div>
+          </a>
+
+          <a href="magzika.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/magzika.jpeg"
+                   alt="Magzika Beach Shack">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Restaurant &amp; Hospitality</div>
+              <div class="cs-similar-title">Magzika Beach Shack</div>
+              <div class="cs-similar-desc">Social media growth and brand strategy for a beachside shack in Goa.</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="port-section">
+      <div class="cta-band sr">
+        <h2>Ready to be<br><em>Our Next Case Study?</em></h2>
+        <p>Let's build something remarkable together &mdash; a campaign, a brand, or a digital experience your audience won't forget.</p>
+        <div class="cta-band-btns">
+          <a href="../connect.html" class="btn-primary">Start a Project <i class="ri-arrow-right-line"></i></a>
+          <a href="../case-studies.html" class="btn-ghost">Browse Case Studies <i class="ri-article-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="../index.html">
+            <img src="../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative"
+              onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'font-family:Bebas Neue,sans-serif;font-size:1.5rem;letter-spacing:2px;color:#fff\'>FLASHLAB CREATIVE</span>'">
+          </a>
+        </div>
+        <p>Goa's leading creative &amp; digital marketing agency &mdash; where imagination meets reality. Born in Margao in 2016, we craft unforgettable digital experiences for brands that dare to stand out.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/flashlab.creative" target="_blank" rel="noopener"><i class="ri-instagram-fill"></i></a>
+          <a href="https://www.facebook.com/flashlab.creative/" target="_blank" rel="noopener"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.linkedin.com/company/flashlabcreative" target="_blank" rel="noopener"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://twitter.com/theflashlab" target="_blank" rel="noopener"><i class="ri-twitter-x-fill"></i></a>
+          <a href="https://www.youtube.com/channel/UCuFtcVt_Yp9CZ82UG6pm-pg" target="_blank" rel="noopener"><i class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="../about.html"><i class="ri-arrow-right-s-line"></i>About</a></li>
+          <li><a href="../services.html"><i class="ri-arrow-right-s-line"></i>Services</a></li>
+          <li><a href="../portfolio.html"><i class="ri-arrow-right-s-line"></i>Portfolio</a></li>
+          <li><a href="../clients.html"><i class="ri-arrow-right-s-line"></i>Clients</a></li>
+          <li><a href="../case-studies.html"><i class="ri-arrow-right-s-line"></i>Case Studies</a></li>
+          <li><a href="../team.html"><i class="ri-arrow-right-s-line"></i>Teams</a></li>
+          <li><a href="../career.html"><i class="ri-arrow-right-s-line"></i>Careers</a></li>
+          <li><a href="../connect.html"><i class="ri-arrow-right-s-line"></i>Connect</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-head">Contact</h4>
+        <div class="footer-contact">
+          <p><i class="ri-map-pin-2-fill"></i><a href="https://www.google.com/maps/search/Flashlab+Creative+Margao+Goa" target="_blank" rel="noopener">G26 Vikrant Complex,<br>Margao, Goa, India</a></p>
+          <p><i class="ri-phone-fill"></i><a href="tel:+919923580023">+91 99235 80023</a></p>
+          <p><i class="ri-mail-fill"></i><a href="mailto:contact@flashlabcreative.com">contact@flashlabcreative.com</a></p>
+          <p><i class="ri-time-fill"></i><span>Mon &ndash; Sat: 9am &ndash; 6pm IST</span></p>
+          <a href="../connect.html" class="footer-cta">Start a Project <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">Copyright &copy; 2026 <a href="../index.html" class="flashlab-link">Flashlab Creative</a></p>
+      <p class="footer-credit">Website Crafted by <a href="https://cybercreative.in/" target="_blank" rel="noopener" class="cyber-link">Cyber Creative</a></p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

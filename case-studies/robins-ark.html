@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robin's Ark — Case Study | Flashlab Creative</title>
+  <link rel="icon" type="image/png" href="../images/flashlab-lightning-bolt-icon.png">
+  <meta name="description" content="How Flashlab Creative helped Robin's Ark reach 1.1M+ accounts and grow followers by 300%+ over four years of social media management, content creation, and Google Business Profile management.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/pages/case-studies.css">
+  <link rel="stylesheet" href="../css/pages/robins-ark.css">
+</head>
+
+<body data-page="case-studies">
+
+  <!-- LOGO BAR -->
+  <div class="site-logo-bar">
+    <a href="../index.html">
+      <img src="../images/logos/flashlab-logo.png" alt="Flashlab Creative" class="logo-light">
+      <img src="../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" class="logo-dark">
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About Agency</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../team.html">Team</a></li>
+        <li>
+          <a href="../services.html">Services</a>
+          <ul>
+            <li><a href="../html/services/digital-advertising.html"><i class="ri-megaphone-line"></i>Digital Advertising</a></li>
+            <li><a href="../html/services/seo-sem-marketing.html"><i class="ri-search-line"></i>SEO / SEM Marketing</a></li>
+            <li><a href="../html/services/social-media-management.html"><i class="ri-instagram-line"></i>Social Media Management</a></li>
+            <li><a href="../html/services/product-design-strategies.html"><i class="ri-pen-nib-line"></i>Product Design &amp; Strategies</a></li>
+            <li><a href="../html/services/web-app-development.html"><i class="ri-code-s-slash-line"></i>Web &amp; App Development</a></li>
+            <li><a href="../html/services/outdoor-print-ads.html"><i class="ri-image-line"></i>Outdoor &amp; Print Ads</a></li>
+            <li><a href="../html/services/ecommerce.html"><i class="ri-shopping-cart-line"></i>E-Commerce</a></li>
+            <li><a href="../html/services/trademark-registration.html"><i class="ri-shield-check-line"></i>Trademark Registration</a></li>
+            <li><a href="../html/services/photography-video.html"><i class="ri-camera-line"></i>Photography &amp; Video</a></li>
+            <li><a href="../html/services/event-production.html"><i class="ri-calendar-event-line"></i>Event Production</a></li>
+            <li><a href="../html/services/media-consulting.html"><i class="ri-chat-voice-line"></i>Media Consulting</a></li>
+            <li><a href="../html/services/animation-motion.html"><i class="ri-video-line"></i>Animation &amp; Motion</a></li>
+          </ul>
+        </li>
+        <li><a href="../clients.html">Clients</a></li>
+        <li><a href="../case-studies.html" class="nav-active">Case Studies</a></li>
+        <li>
+          <a href="../career.html">Careers</a>
+          <ul>
+            <li><a href="../html/career/internship.html"><i class="ri-user-add-line"></i>Internship</a></li>
+            <li><a href="../html/career/join-fulltime.html"><i class="ri-briefcase-4-line"></i>Join Full Time</a></li>
+            <li><a href="../html/career/freelance.html"><i class="ri-computer-line"></i>Freelance</a></li>
+            <li><a href="../html/career/influencer-signup.html"><i class="ri-star-line"></i>Influencer Sign Up</a></li>
+            <li><a href="../html/career/hr-policy.html"><i class="ri-file-list-3-line"></i>HR Policy</a></li>
+          </ul>
+        </li>
+        <li><a href="../connect.html">Connect</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="../connect.html" class="nav-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-overlay" id="mobOverlay"></div>
+  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+    <button class="mob-close" id="mobClose" aria-label="Close menu"><i class="ri-close-line"></i></button>
+    <ul class="mob-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About Agency</a></li>
+      <li><a href="../portfolio.html">Portfolio</a></li>
+      <li><a href="../team.html">Team</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-services">Services <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-services">
+          <li><a href="../html/services/social-media-management.html">Social Media Management</a></li>
+          <li><a href="../html/services/digital-advertising.html">Digital Advertising</a></li>
+          <li><a href="../html/services/seo-sem-marketing.html">SEO / SEM Marketing</a></li>
+          <li><a href="../html/services/product-design-strategies.html">Product Design &amp; Strategies</a></li>
+          <li><a href="../html/services/web-app-development.html">Web &amp; App Development</a></li>
+        </ul>
+      </li>
+      <li><a href="../clients.html">Clients</a></li>
+      <li><a href="../case-studies.html" class="nav-active">Case Studies</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-career">Careers <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-career">
+          <li><a href="../html/career/internship.html">Internship</a></li>
+          <li><a href="../html/career/join-fulltime.html">Join Full Time</a></li>
+          <li><a href="../html/career/freelance.html">Freelance</a></li>
+        </ul>
+      </li>
+      <li><a href="../connect.html">Connect</a></li>
+    </ul>
+    <div class="mob-cta-wrap">
+      <a href="../connect.html" class="mob-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="cs-hero">
+      <div class="hero-bg">
+        <div class="orb1"></div>
+        <div class="orb2"></div>
+      </div>
+      <div class="cs-hero-inner sr">
+        <!-- Breadcrumb -->
+        <div class="cs-breadcrumb">
+          <a href="../case-studies.html">Case Studies</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>Restaurant &amp; Hospitality</span>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>Robin's Ark</span>
+        </div>
+
+        <div class="cs-hero-eyebrow">
+          <span class="pulse-dot"></span>
+          Restaurant &amp; Hospitality
+        </div>
+
+        <h1>Robin's<br><em>Ark</em></h1>
+
+        <p class="cs-hero-intro">
+          Robin's Ark is a popular dining destination known for its vibrant ambience, seasonal experiences, and regular live music events. For the past four years, we have partnered with the brand to build and maintain a strong digital presence that reflects its unique personality and customer experience. Our role has evolved from managing Instagram content to overseeing a broader digital strategy, including Google Business Profile management and online reputation building.
+        </p>
+
+        <!-- Meta strip -->
+        <div class="cs-meta-row">
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Client</span>
+            <span class="cs-meta-value">Robin's Ark</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Industry</span>
+            <span class="cs-meta-value">Restaurant &amp; Hospitality</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Service</span>
+            <span class="cs-meta-value">Social Media Management</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Channels</span>
+            <span class="cs-meta-value">Instagram &amp; Google Business Profile</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COVER IMAGE -->
+    <div class="cs-cover">
+      <img src="../images/case-studies/robins-ark/ra1.png"
+           alt="Robin's Ark">
+    </div>
+
+    <!-- MAIN BODY + SIDEBAR -->
+    <div class="cs-body">
+
+      <!-- LEFT: MAIN CONTENT -->
+      <div class="cs-main">
+
+        <!-- 01 — THE CHALLENGE -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">The Challenge</span>
+          <h2>What Wasn't <em>WORKING</em></h2>
+          <p>
+            When Robin's Ark approached us, the brand needed a more structured and consistent social media strategy. While the restaurant offered memorable dining experiences, seasonal promotions, and regular live entertainment, these experiences were not being communicated effectively online.
+          </p>
+          <p>
+            The Instagram profile lacked a clear content direction, highlights were not organised, and the bio required optimisation to improve customer experience and brand positioning. There was also an opportunity to better leverage customer interactions, staff personalities, and influencer collaborations to create more engaging and authentic content.
+          </p>
+          <p>
+            Additionally, the Google Business Profile was underutilised, limiting the brand's visibility in local search results and reducing opportunities to strengthen its online reputation.
+          </p>
+
+          <!-- TODO: replace placeholder with a real image showing the restaurant/previous content state -->
+          <div class="cs-img-block tall">
+            <img src="../images/case-studies/robins-ark/ra2.jpg"
+                 alt="Robin's Ark previous content state">
+          </div>
+        </div>
+
+        <!-- 02 — THE OBJECTIVES -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Objectives</span>
+          <h2>What They Wanted to <em>ACHIEVE</em></h2>
+          <p>
+            The primary objective was to establish a strong and engaging digital presence that accurately reflected the Robin's Ark experience.
+          </p>
+          <p>
+            The brand wanted to promote seasonal campaigns, increase customer engagement, showcase new menu launches, strengthen customer relationships, and build a recognisable online identity. Additional goals included improving local visibility through Google Business Profile management, increasing customer enquiries, and driving greater awareness of live music events and special promotions.
+          </p>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:32px;">Key Performance <em>INDICATORS</em></h2>
+          <ul class="cs-list">
+            <li>Engagement rate</li>
+            <li>Reach and impressions</li>
+            <li>Reel performance</li>
+            <li>Profile visits</li>
+            <li>Customer interactions</li>
+            <li>Follower growth</li>
+            <li>Review growth</li>
+            <li>Overall brand visibility</li>
+          </ul>
+
+          <!-- TODO: replace placeholder with objectives/strategy board or restaurant lifestyle shot -->
+          <div class="cs-img-block">
+            <img src="../images/case-studies/robins-ark/ra4.png"
+                 alt="Robin's Ark objectives and strategy">
+          </div>
+        </div>
+
+        <!-- 03 — THE STRATEGY -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Strategy</span>
+          <h2>How We <em>APPROACHED IT</em></h2>
+          <p>
+            Over the past four years, we have developed and implemented a long-term content strategy focused on consistency, creativity, and community engagement.
+          </p>
+          <p>
+            We optimised the Instagram profile by refining the bio and creating organised story highlights to improve navigation and user experience.
+          </p>
+          <p>
+            Regular photography and videography shoots ensured a steady flow of high-quality content showcasing the restaurant's ambience, food, beverages, live entertainment, and customer experiences. Seasonal campaigns were planned and executed throughout the year, including summer campaigns, monsoon promotions, Valentine's Day specials, and other key occasions.
+          </p>
+          <p>
+            To maintain excitement and encourage repeat visits, we introduced monthly menu launch campaigns featuring new dishes. This included creating table tent cards, in-house promotional materials, social media creatives, and detailed reels highlighting ingredients, preparation methods, and signature offerings.
+          </p>
+          <p>
+            Live music events, held every Thursday through Sunday, were supported with professionally designed promotional posters and regular content updates to maximise visibility and attendance.
+          </p>
+          <p>
+            Influencer collaborations and co-branded reels were incorporated to expand the restaurant's reach and connect with new audiences.
+          </p>
+          <p>
+            One of the most impactful aspects of the strategy was creating authentic staff-led content. Over the years, we have produced and edited numerous behind-the-scenes videos, staff reels, and light-hearted content that showcased the team's personality and created a stronger connection with the audience. These reels consistently delivered high engagement and helped build a loyal online community.
+          </p>
+          <p>
+            Alongside Instagram management, we expanded our services to include Google Business Profile management. This involved regularly posting updates, responding to customer reviews, maintaining accurate business information, and improving the brand's local search presence.
+          </p>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:28px;">Channels <em>PRIORITISED</em></h2>
+          <div class="cs-tags">
+            <span class="cs-tag">Instagram</span>
+            <span class="cs-tag">Instagram Stories &amp; Highlights</span>
+            <span class="cs-tag">Google Business Profile</span>
+            <span class="cs-tag">Influencer Collaborations</span>
+          </div>
+
+          <!-- BEFORE / AFTER comparison -->
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:28px;">Before &amp; <em>After</em></h2>
+          <div class="cs-img-grid">
+            <div class="cs-img-grid-item">
+              <div class="cs-img-block tall">
+                <img src="../images/case-studies/robins-ark/before.jpg"
+                     alt="Robin's Ark Instagram feed before Flashlab's strategy">
+              </div>
+              <span class="cs-img-grid-caption">Before</span>
+            </div>
+            <div class="cs-img-grid-item">
+              <div class="cs-img-block tall">
+                <img src="../images/case-studies/robins-ark/after.jpg"
+                     alt="Robin's Ark Instagram feed after Flashlab's strategy">
+              </div>
+              <span class="cs-img-grid-caption">After</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 — THE RESULTS -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Results</span>
+          <h2>What We <em>ACHIEVED</em></h2>
+          <p>
+            Our long-term strategy helped Robin's Ark establish a strong and recognisable digital presence across Instagram and Google.
+          </p>
+
+          <!-- Stats grid -->
+          <div class="cs-results-grid">
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">1.1M+</div>
+              <div class="cs-stat-label">Accounts Reached</div>
+              <div class="cs-stat-desc">Through consistent content creation, trend-led reels, seasonal campaigns, influencer collaborations, staff-led content, and strategic paid promotions, Robin's Ark reached more than 1.1 million accounts.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">300%+</div>
+              <div class="cs-stat-label">Growth in Followers</div>
+              <div class="cs-stat-desc">Instagram followers grew from approximately 2,000 to over 8,000 followers over four years through a combination of engaging content, community management, influencer collaborations, and targeted boosting campaigns.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num"><i class="ri-video-line"></i></div>
+              <div class="cs-stat-label">High-Performing Staff-Led Content</div>
+              <div class="cs-stat-desc">Behind-the-scenes videos, staff reels, and light-hearted content consistently generated strong engagement, helping build a stronger connection with the audience and increasing content shareability.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange"><i class="ri-line-chart-line"></i></div>
+              <div class="cs-stat-label">Increased Engagement &amp; Reach</div>
+              <div class="cs-stat-desc">Seasonal campaigns, live music promotions, customer-focused content, and monthly menu launch campaigns contributed to sustained growth in reach, impressions, and audience engagement.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num"><i class="ri-megaphone-line"></i></div>
+              <div class="cs-stat-label">Stronger Brand Visibility</div>
+              <div class="cs-stat-desc">Influencer collaborations and co-branded reels expanded the restaurant's reach and introduced Robin's Ark to new audiences.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange"><i class="ri-music-2-line"></i></div>
+              <div class="cs-stat-label">Improved Event Awareness</div>
+              <div class="cs-stat-desc">Consistent promotion of live music events from Thursday to Sunday helped increase awareness and maintain regular customer interest in weekly experiences.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num"><i class="ri-user-smile-line"></i></div>
+              <div class="cs-stat-label">Enhanced Customer Experience</div>
+              <div class="cs-stat-desc">An optimised bio, organised highlights, detailed food reels, and in-house promotional materials improved customer interaction and made it easier for visitors to discover key information.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange"><i class="ri-map-pin-2-line"></i></div>
+              <div class="cs-stat-label">Stronger Local Presence</div>
+              <div class="cs-stat-desc">Ongoing management of the Google Business Profile, including regular content updates and review management, improved customer engagement and strengthened local search visibility.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num"><i class="ri-award-line"></i></div>
+              <div class="cs-stat-label">Consistent Brand Authority</div>
+              <div class="cs-stat-desc">A combination of creative campaigns, authentic storytelling, and active platform management has helped position Robin's Ark as a recognised and engaging hospitality brand.</div>
+            </div>
+          </div>
+
+          <!-- TODO: replace with analytics screenshots / results dashboard image -->
+          <div class="cs-img-block">
+            <img src="../images/case-studies/robins-ark/ra1.jpg"
+                 alt="Instagram Reel performance">
+          </div>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:8px;">Visual <em>HIGHLIGHTS</em></h2>
+          <p>
+            This case study is supported by seasonal campaign creatives, live music posters, influencer collaborations, customer experience content, staff reels, food photography, menu launch campaigns, table tent cards, Google Business Profile updates, and before-and-after screenshots of the Instagram profile.
+          </p>
+          <div class="cs-performing-grid">
+            <div class="cs-performing-item"><i class="ri-sun-cloudy-line"></i> Seasonal Campaign Creatives</div>
+            <div class="cs-performing-item"><i class="ri-music-2-line"></i> Live Music Posters</div>
+            <div class="cs-performing-item"><i class="ri-user-star-line"></i> Influencer Collaborations</div>
+            <div class="cs-performing-item"><i class="ri-emotion-happy-line"></i> Customer Experience Content</div>
+            <div class="cs-performing-item"><i class="ri-video-line"></i> Staff Reels</div>
+            <div class="cs-performing-item"><i class="ri-camera-line"></i> Food Photography</div>
+            <div class="cs-performing-item"><i class="ri-restaurant-line"></i> Menu Launch Campaigns</div>
+            <div class="cs-performing-item"><i class="ri-file-list-3-line"></i> Table Tent Cards</div>
+            <div class="cs-performing-item"><i class="ri-google-line"></i> Google Business Profile Updates</div>
+            <div class="cs-performing-item"><i class="ri-contrast-2-line"></i> Before-and-After Feed Comparisons</div>
+          </div>
+        </div>
+
+        <!-- 05 — CLIENT FEEDBACK -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Client Feedback</span>
+          <h2>What the Client <em>SAID</em></h2>
+
+          <div class="cs-testimonial">
+            <p>
+              "We've had a fantastic experience with Flashlab Creative. Their social media strategies are creative and impactful, and our engagement and reach have grown steadily since we started working with them. Anuraj and his team are professional, easy to communicate with, and always on top of the latest trends. Highly recommended!"
+            </p>
+            <div class="cs-testimonial-author">— Robin's Ark</div>
+          </div>
+
+          <!-- TODO: replace placeholder with client photo or restaurant team photo -->
+        </div>
+
+      </div><!-- /cs-main -->
+
+      <!-- SIDEBAR CARDS — now a row below the main content, not a side column -->
+      <div class="cs-sidebar">
+
+        <!-- Services delivered -->
+        <div class="cs-sidebar-card sr">
+          <h4>Services Delivered</h4>
+          <ul class="cs-sidebar-list">
+            <li><i class="ri-instagram-line"></i> Social Media Management</li>
+            <li><i class="ri-user-settings-line"></i> Instagram Management</li>
+            <li><i class="ri-google-line"></i> Google Business Profile Management</li>
+            <li><i class="ri-quill-pen-line"></i> Content Creation</li>
+            <li><i class="ri-camera-line"></i> Photography</li>
+            <li><i class="ri-video-line"></i> Videography</li>
+            <li><i class="ri-movie-line"></i> Reels Production</li>
+            <li><i class="ri-pen-nib-line"></i> Graphic Design</li>
+            <li><i class="ri-user-star-line"></i> Influencer Collaborations</li>
+            <li><i class="ri-community-line"></i> Community Management</li>
+            <li><i class="ri-bookmark-line"></i> Story &amp; Highlight Management</li>
+            <li><i class="ri-restaurant-line"></i> Menu Launch Campaigns</li>
+            <li><i class="ri-calendar-event-line"></i> Event Promotions</li>
+            <li><i class="ri-shield-star-line"></i> Reputation Management</li>
+          </ul>
+        </div>
+
+        <!-- KPIs tracked -->
+        <div class="cs-sidebar-card sr">
+          <h4>KPIs Tracked</h4>
+          <ul class="cs-sidebar-list">
+            <li><i class="ri-thumb-up-line"></i> Engagement Rate</li>
+            <li><i class="ri-eye-line"></i> Reach and Impressions</li>
+            <li><i class="ri-play-circle-line"></i> Reel Performance</li>
+            <li><i class="ri-profile-line"></i> Profile Visits</li>
+            <li><i class="ri-chat-3-line"></i> Customer Interactions</li>
+            <li><i class="ri-user-add-line"></i> Follower Growth</li>
+            <li><i class="ri-star-line"></i> Review Growth</li>
+            <li><i class="ri-bar-chart-2-line"></i> Overall Brand Visibility</li>
+          </ul>
+        </div>
+
+        <!-- CTA -->
+        <div class="cs-sidebar-card sr">
+          <h4>Work With Us</h4>
+          <p style="font-size:.82rem; color:var(--muted); line-height:1.65; margin-bottom:16px;">
+            Want results like these for your brand? Let's talk about what Flashlab can do for you.
+          </p>
+          <div class="cs-sidebar-cta">
+            <a href="../connect.html" class="btn-primary" style="justify-content:center;">Start a Project <i class="ri-arrow-right-line"></i></a>
+            <a href="../case-studies.html" class="btn-ghost" style="justify-content:center;">All Case Studies <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+      </div><!-- /cs-sidebar -->
+
+    </div><!-- /cs-body -->
+
+    <!-- SIMILAR WORK -->
+    <section class="cs-similar">
+      <div style="max-width:1200px; margin:0 auto;">
+        <span class="sec-eyebrow"> More Work</span>
+        <h2 class="sec-heading">Similar <em>Case Studies</em></h2>
+
+        <div class="cs-similar-grid">
+
+          <!-- TODO: replace with real similar case study cards once those pages exist -->
+          <a href="next-level.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/nextlevel.jpeg"
+                   alt="Next Level Gym & Fitness">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Fitness &amp; Wellness</div>
+              <div class="cs-similar-title">Next Level Gym &amp; Fitness</div>
+              <div class="cs-similar-desc">Social media transformation driving engagement, followers, and video views for a Goa gym.</div>
+            </div>
+          </a>
+
+          <a href="surf-house.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/surfhouse.jpeg"
+                   alt="Surf House Resort">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Tourism</div>
+              <div class="cs-similar-title">Surf House Resort</div>
+              <div class="cs-similar-desc">Destination branding and digital campaigns for a Goa surf resort.</div>
+            </div>
+          </a>
+
+          <a href="magzika.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/magzika.jpeg"
+                   alt="Magzika Beach Shack">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Restaurant &amp; Hospitality</div>
+              <div class="cs-similar-title">Magzika Beach Shack</div>
+              <div class="cs-similar-desc">Social media growth and brand strategy for a beachside shack in Goa.</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="port-section">
+      <div class="cta-band sr">
+        <h2>Ready to be<br><em>Our Next Case Study?</em></h2>
+        <p>Let's build something remarkable together &mdash; a campaign, a brand, or a digital experience your audience won't forget.</p>
+        <div class="cta-band-btns">
+          <a href="../connect.html" class="btn-primary">Start a Project <i class="ri-arrow-right-line"></i></a>
+          <a href="../case-studies.html" class="btn-ghost">Browse Case Studies <i class="ri-article-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="../index.html">
+            <img src="../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative"
+              onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'font-family:Bebas Neue,sans-serif;font-size:1.5rem;letter-spacing:2px;color:#fff\'>FLASHLAB CREATIVE</span>'">
+          </a>
+        </div>
+        <p>Goa's leading creative &amp; digital marketing agency &mdash; where imagination meets reality. Born in Margao in 2016, we craft unforgettable digital experiences for brands that dare to stand out.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/flashlab.creative" target="_blank" rel="noopener"><i class="ri-instagram-fill"></i></a>
+          <a href="https://www.facebook.com/flashlab.creative/" target="_blank" rel="noopener"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.linkedin.com/company/flashlabcreative" target="_blank" rel="noopener"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://twitter.com/theflashlab" target="_blank" rel="noopener"><i class="ri-twitter-x-fill"></i></a>
+          <a href="https://www.youtube.com/channel/UCuFtcVt_Yp9CZ82UG6pm-pg" target="_blank" rel="noopener"><i class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="../about.html"><i class="ri-arrow-right-s-line"></i>About</a></li>
+          <li><a href="../services.html"><i class="ri-arrow-right-s-line"></i>Services</a></li>
+          <li><a href="../portfolio.html"><i class="ri-arrow-right-s-line"></i>Portfolio</a></li>
+          <li><a href="../clients.html"><i class="ri-arrow-right-s-line"></i>Clients</a></li>
+          <li><a href="../case-studies.html"><i class="ri-arrow-right-s-line"></i>Case Studies</a></li>
+          <li><a href="../team.html"><i class="ri-arrow-right-s-line"></i>Teams</a></li>
+          <li><a href="../career.html"><i class="ri-arrow-right-s-line"></i>Careers</a></li>
+          <li><a href="../connect.html"><i class="ri-arrow-right-s-line"></i>Connect</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-head">Contact</h4>
+        <div class="footer-contact">
+          <p><i class="ri-map-pin-2-fill"></i><a href="https://www.google.com/maps/search/Flashlab+Creative+Margao+Goa" target="_blank" rel="noopener">G26 Vikrant Complex,<br>Margao, Goa, India</a></p>
+          <p><i class="ri-phone-fill"></i><a href="tel:+919923580023">+91 99235 80023</a></p>
+          <p><i class="ri-mail-fill"></i><a href="mailto:contact@flashlabcreative.com">contact@flashlabcreative.com</a></p>
+          <p><i class="ri-time-fill"></i><span>Mon &ndash; Sat: 9am &ndash; 6pm IST</span></p>
+          <a href="../connect.html" class="footer-cta">Start a Project <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">Copyright &copy; 2026 <a href="../index.html" class="flashlab-link">Flashlab Creative</a></p>
+      <p class="footer-credit">Website Crafted by <a href="https://cybercreative.in/" target="_blank" rel="noopener" class="cyber-link">Cyber Creative</a></p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

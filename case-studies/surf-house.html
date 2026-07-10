@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surf House Resort — Case Study | Flashlab Creative</title>
+  <link rel="icon" type="image/png" href="../images/flashlab-lightning-bolt-icon.png">
+  <meta name="description" content="How Flashlab Creative helped Surf House Resort achieve 327% follower growth, 71K+ reel views, and stronger digital visibility through social media management, content creation, and paid advertising.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/pages/case-studies.css">
+  <link rel="stylesheet" href="../css/pages/surf-house.css">
+</head>
+
+<body data-page="case-studies">
+
+  <!-- LOGO BAR -->
+  <div class="site-logo-bar">
+    <a href="../index.html">
+      <img src="../images/logos/flashlab-logo.png" alt="Flashlab Creative" class="logo-light">
+      <img src="../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" class="logo-dark">
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About Agency</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../team.html">Team</a></li>
+        <li>
+          <a href="../services.html">Services</a>
+          <ul>
+            <li><a href="../html/services/digital-advertising.html"><i class="ri-megaphone-line"></i>Digital Advertising</a></li>
+            <li><a href="../html/services/seo-sem-marketing.html"><i class="ri-search-line"></i>SEO / SEM Marketing</a></li>
+            <li><a href="../html/services/social-media-management.html"><i class="ri-instagram-line"></i>Social Media Management</a></li>
+            <li><a href="../html/services/product-design-strategies.html"><i class="ri-pen-nib-line"></i>Product Design &amp; Strategies</a></li>
+            <li><a href="../html/services/web-app-development.html"><i class="ri-code-s-slash-line"></i>Web &amp; App Development</a></li>
+            <li><a href="../html/services/outdoor-print-ads.html"><i class="ri-image-line"></i>Outdoor &amp; Print Ads</a></li>
+            <li><a href="../html/services/ecommerce.html"><i class="ri-shopping-cart-line"></i>E-Commerce</a></li>
+            <li><a href="../html/services/trademark-registration.html"><i class="ri-shield-check-line"></i>Trademark Registration</a></li>
+            <li><a href="../html/services/photography-video.html"><i class="ri-camera-line"></i>Photography &amp; Video</a></li>
+            <li><a href="../html/services/event-production.html"><i class="ri-calendar-event-line"></i>Event Production</a></li>
+            <li><a href="../html/services/media-consulting.html"><i class="ri-chat-voice-line"></i>Media Consulting</a></li>
+            <li><a href="../html/services/animation-motion.html"><i class="ri-video-line"></i>Animation &amp; Motion</a></li>
+          </ul>
+        </li>
+        <li><a href="../clients.html">Clients</a></li>
+        <li><a href="../case-studies.html" class="nav-active">Case Studies</a></li>
+        <li>
+          <a href="../career.html">Careers</a>
+          <ul>
+            <li><a href="../html/career/internship.html"><i class="ri-user-add-line"></i>Internship</a></li>
+            <li><a href="../html/career/join-fulltime.html"><i class="ri-briefcase-4-line"></i>Join Full Time</a></li>
+            <li><a href="../html/career/freelance.html"><i class="ri-computer-line"></i>Freelance</a></li>
+            <li><a href="../html/career/influencer-signup.html"><i class="ri-star-line"></i>Influencer Sign Up</a></li>
+            <li><a href="../html/career/hr-policy.html"><i class="ri-file-list-3-line"></i>HR Policy</a></li>
+          </ul>
+        </li>
+        <li><a href="../connect.html">Connect</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="../connect.html" class="nav-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-overlay" id="mobOverlay"></div>
+  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+    <button class="mob-close" id="mobClose" aria-label="Close menu"><i class="ri-close-line"></i></button>
+    <ul class="mob-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About Agency</a></li>
+      <li><a href="../portfolio.html">Portfolio</a></li>
+      <li><a href="../team.html">Team</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-services">Services <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-services">
+          <li><a href="../html/services/social-media-management.html">Social Media Management</a></li>
+          <li><a href="../html/services/digital-advertising.html">Digital Advertising</a></li>
+          <li><a href="../html/services/seo-sem-marketing.html">SEO / SEM Marketing</a></li>
+          <li><a href="../html/services/product-design-strategies.html">Product Design &amp; Strategies</a></li>
+          <li><a href="../html/services/web-app-development.html">Web &amp; App Development</a></li>
+        </ul>
+      </li>
+      <li><a href="../clients.html">Clients</a></li>
+      <li><a href="../case-studies.html" class="nav-active">Case Studies</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-career">Careers <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-career">
+          <li><a href="../html/career/internship.html">Internship</a></li>
+          <li><a href="../html/career/join-fulltime.html">Join Full Time</a></li>
+          <li><a href="../html/career/freelance.html">Freelance</a></li>
+        </ul>
+      </li>
+      <li><a href="../connect.html">Connect</a></li>
+    </ul>
+    <div class="mob-cta-wrap">
+      <a href="../connect.html" class="mob-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="cs-hero">
+      <div class="hero-bg">
+        <div class="orb1"></div>
+        <div class="orb2"></div>
+      </div>
+      <div class="cs-hero-inner sr">
+        <!-- Breadcrumb -->
+        <div class="cs-breadcrumb">
+          <a href="../case-studies.html">Case Studies</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>Tourism</span>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>Surf House Resort</span>
+        </div>
+
+        <div class="cs-hero-eyebrow">
+          <span class="pulse-dot"></span>
+          Hospitality &amp; Tourism
+        </div>
+
+        <h1>Surf House<br><em>Resort</em></h1>
+
+        <p class="cs-hero-intro">
+          Located in Baga, Goa, Surf House Resort is a lifestyle destination offering premium accommodation, curated experiences, and an in-house restaurant, Pescaria, known for its food, cocktails, and relaxed coastal atmosphere. The brand approached us to build a stronger social media presence, improve visual storytelling, increase brand awareness, and showcase the complete Surf House experience across its rooms, dining spaces, events, and lifestyle offerings. At the start of our partnership, the resort had a limited social media presence with 328 followers and lacked a consistent content strategy and visual identity.
+        </p>
+
+        <!-- Meta strip -->
+        <div class="cs-meta-row">
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Client</span>
+            <span class="cs-meta-value">Surf House Resort</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Industry</span>
+            <span class="cs-meta-value">Hospitality &amp; Tourism</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Service</span>
+            <span class="cs-meta-value">Social Media Management</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Channels</span>
+            <span class="cs-meta-value">Instagram, Google &amp; Zomato</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COVER IMAGE -->
+    <div class="cs-cover">
+      <img src="../images/case-studies/surf-house/shcover.png"
+           alt="Surf House Resort">
+    </div>
+
+    <!-- MAIN BODY + SIDEBAR -->
+    <div class="cs-body">
+
+      <!-- LEFT: MAIN CONTENT -->
+      <div class="cs-main">
+
+        <!-- 01 — THE CHALLENGE -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">The Challenge</span>
+          <h2>What Wasn't <em>WORKING</em></h2>
+          <p>
+            Despite offering a unique hospitality experience, Surf House Resort was not effectively communicating its brand online. The existing social media presence lacked consistency, and the content did not fully showcase the resort's rooms, ambience, dining experiences, or lifestyle appeal.
+          </p>
+          <p>
+            There was an opportunity to better position the resort as a destination rather than simply an accommodation provider. Seasonal campaigns, events, and the in-house restaurant were also underutilised from a content and marketing perspective.
+          </p>
+          <p>
+            Additionally, the brand required stronger visibility across multiple digital touchpoints, including Instagram, Google Search, and Zomato.
+          </p>
+
+          <!-- TODO: replace placeholder with a real image showing the resort/previous content state -->
+          <div class="cs-img-block tall">
+            <img src="../images/case-studies/surf-house/sh1.jpg"
+                 alt="Surf House Resort previous content state">
+          </div>
+        </div>
+
+        <!-- 02 — THE OBJECTIVES -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Objectives</span>
+          <h2>What They Wanted to <em>ACHIEVE</em></h2>
+          <p>
+            The primary objective was to establish a cohesive and visually appealing digital presence that reflected the Surf House Resort experience.
+          </p>
+          <p>
+            The client wanted to increase brand awareness, grow its follower base, improve engagement, showcase its accommodation categories and in-house restaurant, and drive enquiries through social media and paid advertising.
+          </p>
+          <p>
+            Additional goals included promoting seasonal campaigns, increasing website traffic, improving visibility on Zomato, and strengthening the resort's overall digital presence.
+          </p>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:32px;">Key Performance <em>INDICATORS</em></h2>
+          <ul class="cs-list">
+            <li>Follower growth</li>
+            <li>Reach and impressions</li>
+            <li>Reel performance</li>
+            <li>Website traffic</li>
+            <li>Enquiries</li>
+            <li>Paid advertising performance</li>
+            <li>Overall brand awareness</li>
+          </ul>
+
+          <!-- TODO: replace placeholder with objectives/strategy board or resort lifestyle shot -->
+          <div class="cs-img-block">
+            <img src="../images/case-studies/surf-house/sh2.jpg"
+                 alt="Surf House Resort objectives and strategy">
+          </div>
+        </div>
+
+        <!-- 03 — THE STRATEGY -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Strategy</span>
+          <h2>How We <em>APPROACHED IT</em></h2>
+          <p>
+            We developed a content strategy focused on highlighting every aspect of the Surf House Resort experience, from accommodation and dining to lifestyle and seasonal events.
+          </p>
+          <p>
+            To build a strong visual identity, we conducted professional shoots across the property, capturing all four room categories, resort spaces, amenities, and guest experiences.
+          </p>
+          <p>
+            Dedicated food and cocktail shoots were planned for Pescaria, the resort's in-house restaurant, creating high-quality content that showcased signature dishes and beverages. We also executed a lifestyle shoot featuring a model to bring a more aspirational and experiential feel to the brand.
+          </p>
+          <p>
+            Seasonal campaigns played a key role in our strategy. We developed and executed monsoon campaigns, Valentine's Day promotions, holiday campaigns, and Independence Week event creatives to keep the brand relevant throughout the year.
+          </p>
+          <p>
+            Alongside regular content creation, we maintained a clean and aesthetically consistent feed with scheduled posts, trend-led reels, and engaging carousel content aligned with current social media trends.
+          </p>
+          <p>
+            We also managed and optimised the resort's Zomato presence by creating food-focused content that enhanced the brand's online appeal and supported customer discovery.
+          </p>
+          <p>
+            To maximise reach and generate enquiries, we implemented targeted Instagram advertising campaigns and Google Ads campaigns focused on increasing visibility and driving high-intent traffic.
+          </p>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:28px;">Channels <em>PRIORITISED</em></h2>
+          <div class="cs-tags">
+            <span class="cs-tag">Instagram</span>
+            <span class="cs-tag">Google Search</span>
+            <span class="cs-tag">Google Ads</span>
+            <span class="cs-tag">Zomato</span>
+            <span class="cs-tag">Instagram Advertising</span>
+          </div>
+
+          <!-- TODO: replace placeholder with room photography / food shoots / lifestyle shoot screenshots
+          <div class="cs-img-grid">
+            <div class="cs-img-block" style="margin:0; aspect-ratio:1/1;">
+              <div class="cs-img-placeholder">
+                <i class="ri-image-add-line"></i>
+                <span>Room photography sample</span>
+              </div>
+            </div>
+            <div class="cs-img-block" style="margin:0; aspect-ratio:1/1;">
+              <div class="cs-img-placeholder">
+                <i class="ri-image-add-line"></i>
+                <span>Pescaria food &amp; cocktail shoot sample</span>
+              </div>
+            </div>
+          </div>
+          -->
+        </div>
+
+        <!-- 04 — THE RESULTS -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Results</span>
+          <h2>What We <em>ACHIEVED</em></h2>
+          <p>
+            Our strategy helped Surf House Resort establish a stronger and more engaging digital presence within the first year of partnership.
+          </p>
+
+          <!-- Stats grid -->
+          <div class="cs-results-grid">
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">327%</div>
+              <div class="cs-stat-label">Growth in Followers</div>
+              <div class="cs-stat-desc">Instagram followers increased from 328 to more than 1,400 followers within one year through a combination of consistent content creation and strategic paid promotions.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">71K+</div>
+              <div class="cs-stat-label">Reel Views</div>
+              <div class="cs-stat-desc">Paid and organic reel campaigns generated more than 71,000 views, significantly increasing brand awareness and visibility.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">₹2.38</div>
+              <div class="cs-stat-label">Instagram Ads CPC</div>
+              <div class="cs-stat-desc">Strategic boosting campaigns delivered cost-effective results while expanding reach and engagement.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">38.5K</div>
+              <div class="cs-stat-label">Google Ad Impressions</div>
+              <div class="cs-stat-desc">Google Ads campaigns generated 38,500 impressions, helping Surf House Resort connect with high-intent audiences actively searching for accommodation and dining experiences.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">2.01K</div>
+              <div class="cs-stat-label">Website Clicks</div>
+              <div class="cs-stat-desc">Google Ads drove over 2,010 clicks, increasing traffic to the resort's digital platforms and supporting customer enquiries.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">₹1.62</div>
+              <div class="cs-stat-label">Average Google Ads CPC</div>
+              <div class="cs-stat-desc">Campaigns maintained strong cost efficiency while delivering high-quality traffic.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">5.22%</div>
+              <div class="cs-stat-label">Click-Through Rate</div>
+              <div class="cs-stat-desc">Google Ads achieved an estimated CTR of 5.22%, demonstrating strong ad relevance and audience targeting.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange"><i class="ri-map-pin-2-line"></i></div>
+              <div class="cs-stat-label">Enhanced Brand Visibility</div>
+              <div class="cs-stat-desc">Consistent content creation, seasonal campaigns, room showcases, and food-focused storytelling helped position Surf House Resort as a sought-after hospitality destination in Baga.</div>
+            </div>
+          </div>
+
+          <!-- TODO: replace with analytics screenshots / results dashboard image -->
+          <div class="cs-img-block">
+            <img src="../images/case-studies/surf-house/sh3.png"
+                 alt="Surf House Resort analytics and results">
+          </div>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:8px;">Visual <em>HIGHLIGHTS</em></h2>
+          <p>
+            This case study is supported by room photography across all four accommodation categories, food and cocktail shoots at Pescaria, lifestyle content featuring models, seasonal campaign creatives, event posters, trend-led reels, Zomato visuals, and before-and-after Instagram feed comparisons.
+          </p>
+          <div class="cs-performing-grid">
+            <div class="cs-performing-item"><i class="ri-hotel-bed-line"></i> Room Photography — All 4 Categories</div>
+            <div class="cs-performing-item"><i class="ri-restaurant-line"></i> Pescaria Food &amp; Cocktail Shoots</div>
+            <div class="cs-performing-item"><i class="ri-user-star-line"></i> Lifestyle Content Featuring Models</div>
+            <div class="cs-performing-item"><i class="ri-sun-cloudy-line"></i> Seasonal Campaign Creatives</div>
+            <div class="cs-performing-item"><i class="ri-calendar-event-line"></i> Event Posters</div>
+            <div class="cs-performing-item"><i class="ri-video-line"></i> Trend-Led Reels</div>
+            <div class="cs-performing-item"><i class="ri-restaurant-2-line"></i> Zomato Visuals</div>
+            <div class="cs-performing-item"><i class="ri-contrast-2-line"></i> Before-and-After Feed Comparisons</div>
+          </div>
+        </div>
+
+        <!-- 05 — CLIENT FEEDBACK -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Client Feedback</span>
+          <h2>What the Client <em>SAID</em></h2>
+
+          <div class="cs-testimonial">
+            <p>
+              "Surf House Resort has been highly satisfied with the transformation of its digital presence over the past year. The client particularly values the quality of the reels, photography, creative designs, seasonal campaigns, and trend-led carousel content. The combination of strategic content creation, social media management, Instagram advertising, and Google Ads has helped establish a stronger online presence that accurately reflects the Surf House Resort experience."
+            </p>
+            <div class="cs-testimonial-author">— Surf House Resort</div>
+          </div>
+
+          <!-- TODO: replace placeholder with client photo or resort team photo -->
+        </div>
+
+      </div><!-- /cs-main -->
+
+      <!-- SIDEBAR CARDS — now a row below the main content, not a side column -->
+      <div class="cs-sidebar">
+
+        <!-- Services delivered -->
+        <div class="cs-sidebar-card sr">
+          <h4>Services Delivered</h4>
+          <ul class="cs-sidebar-list">
+            <li><i class="ri-instagram-line"></i> Social Media Management</li>
+            <li><i class="ri-user-settings-line"></i> Instagram Management</li>
+            <li><i class="ri-quill-pen-line"></i> Content Creation</li>
+            <li><i class="ri-camera-line"></i> Photography</li>
+            <li><i class="ri-video-line"></i> Videography</li>
+            <li><i class="ri-movie-line"></i> Reels Production</li>
+            <li><i class="ri-pen-nib-line"></i> Graphic Design</li>
+            <li><i class="ri-calendar-todo-line"></i> Campaign Planning</li>
+            <li><i class="ri-user-star-line"></i> Influencer Content</li>
+            <li><i class="ri-megaphone-line"></i> Paid Advertising</li>
+            <li><i class="ri-google-line"></i> Google Ads Management</li>
+            <li><i class="ri-restaurant-2-line"></i> Zomato Content Management</li>
+            <li><i class="ri-calendar-event-line"></i> Event Promotions</li>
+            <li><i class="ri-community-line"></i> Community Management</li>
+          </ul>
+        </div>
+
+        <!-- KPIs tracked -->
+        <div class="cs-sidebar-card sr">
+          <h4>KPIs Tracked</h4>
+          <ul class="cs-sidebar-list">
+            <li><i class="ri-user-add-line"></i> Follower Growth</li>
+            <li><i class="ri-eye-line"></i> Reach and Impressions</li>
+            <li><i class="ri-play-circle-line"></i> Reel Performance</li>
+            <li><i class="ri-global-line"></i> Website Traffic</li>
+            <li><i class="ri-message-line"></i> Enquiries</li>
+            <li><i class="ri-funds-line"></i> Paid Advertising Performance</li>
+            <li><i class="ri-bar-chart-2-line"></i> Overall Brand Awareness</li>
+          </ul>
+        </div>
+
+        <!-- CTA -->
+        <div class="cs-sidebar-card sr">
+          <h4>Work With Us</h4>
+          <p style="font-size:.82rem; color:var(--muted); line-height:1.65; margin-bottom:16px;">
+            Want results like these for your brand? Let's talk about what Flashlab can do for you.
+          </p>
+          <div class="cs-sidebar-cta">
+            <a href="../connect.html" class="btn-primary" style="justify-content:center;">Start a Project <i class="ri-arrow-right-line"></i></a>
+            <a href="../case-studies.html" class="btn-ghost" style="justify-content:center;">All Case Studies <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+      </div><!-- /cs-sidebar -->
+
+    </div><!-- /cs-body -->
+
+    <!-- SIMILAR WORK -->
+    <section class="cs-similar">
+      <div style="max-width:1200px; margin:0 auto;">
+        <span class="sec-eyebrow"> More Work</span>
+        <h2 class="sec-heading">Similar <em>Case Studies</em></h2>
+
+        <div class="cs-similar-grid">
+
+          <!-- TODO: replace with real similar case study cards once those pages exist -->
+          <a href="next-level.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/nextlevel.jpeg"
+                   alt="Next Level Gym & Fitness">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Fitness &amp; Wellness</div>
+              <div class="cs-similar-title">Next Level Gym &amp; Fitness</div>
+              <div class="cs-similar-desc">Social media transformation driving engagement, followers, and video views for a Goa gym.</div>
+            </div>
+          </a>
+
+          <a href="robins-ark.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/robinsark.jpeg"
+                   alt="Robin's Ark">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Restaurant &amp; Hospitality</div>
+              <div class="cs-similar-title">Robin's Ark</div>
+              <div class="cs-similar-desc">Brand identity and social media strategy for a popular Goa restaurant.</div>
+            </div>
+          </a>
+
+          <a href="magzika.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/magzika.jpeg"
+                   alt="Magzika Beach Shack">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Restaurant &amp; Hospitality</div>
+              <div class="cs-similar-title">Magzika Beach Shack</div>
+              <div class="cs-similar-desc">Social media growth and brand strategy for a beachside shack in Goa.</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="port-section">
+      <div class="cta-band sr">
+        <h2>Ready to be<br><em>Our Next Case Study?</em></h2>
+        <p>Let's build something remarkable together &mdash; a campaign, a brand, or a digital experience your audience won't forget.</p>
+        <div class="cta-band-btns">
+          <a href="../connect.html" class="btn-primary">Start a Project <i class="ri-arrow-right-line"></i></a>
+          <a href="../case-studies.html" class="btn-ghost">Browse Case Studies <i class="ri-article-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="../index.html">
+            <img src="../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative"
+              onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'font-family:Bebas Neue,sans-serif;font-size:1.5rem;letter-spacing:2px;color:#fff\'>FLASHLAB CREATIVE</span>'">
+          </a>
+        </div>
+        <p>Goa's leading creative &amp; digital marketing agency &mdash; where imagination meets reality. Born in Margao in 2016, we craft unforgettable digital experiences for brands that dare to stand out.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/flashlab.creative" target="_blank" rel="noopener"><i class="ri-instagram-fill"></i></a>
+          <a href="https://www.facebook.com/flashlab.creative/" target="_blank" rel="noopener"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.linkedin.com/company/flashlabcreative" target="_blank" rel="noopener"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://twitter.com/theflashlab" target="_blank" rel="noopener"><i class="ri-twitter-x-fill"></i></a>
+          <a href="https://www.youtube.com/channel/UCuFtcVt_Yp9CZ82UG6pm-pg" target="_blank" rel="noopener"><i class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="../about.html"><i class="ri-arrow-right-s-line"></i>About</a></li>
+          <li><a href="../services.html"><i class="ri-arrow-right-s-line"></i>Services</a></li>
+          <li><a href="../portfolio.html"><i class="ri-arrow-right-s-line"></i>Portfolio</a></li>
+          <li><a href="../clients.html"><i class="ri-arrow-right-s-line"></i>Clients</a></li>
+          <li><a href="../case-studies.html"><i class="ri-arrow-right-s-line"></i>Case Studies</a></li>
+          <li><a href="../team.html"><i class="ri-arrow-right-s-line"></i>Teams</a></li>
+          <li><a href="../career.html"><i class="ri-arrow-right-s-line"></i>Careers</a></li>
+          <li><a href="../connect.html"><i class="ri-arrow-right-s-line"></i>Connect</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-head">Contact</h4>
+        <div class="footer-contact">
+          <p><i class="ri-map-pin-2-fill"></i><a href="https://www.google.com/maps/search/Flashlab+Creative+Margao+Goa" target="_blank" rel="noopener">G26 Vikrant Complex,<br>Margao, Goa, India</a></p>
+          <p><i class="ri-phone-fill"></i><a href="tel:+919923580023">+91 99235 80023</a></p>
+          <p><i class="ri-mail-fill"></i><a href="mailto:contact@flashlabcreative.com">contact@flashlabcreative.com</a></p>
+          <p><i class="ri-time-fill"></i><span>Mon &ndash; Sat: 9am &ndash; 6pm IST</span></p>
+          <a href="../connect.html" class="footer-cta">Start a Project <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">Copyright &copy; 2026 <a href="../index.html" class="flashlab-link">Flashlab Creative</a></p>
+      <p class="footer-credit">Website Crafted by <a href="https://cybercreative.in/" target="_blank" rel="noopener" class="cyber-link">Cyber Creative</a></p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

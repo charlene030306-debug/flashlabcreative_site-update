@@ -912,8 +912,6 @@
       overflow: hidden;
       transition: transform .4s cubic-bezier(.22,1,.36,1), border-color .4s, box-shadow .4s;
       animation: borderPulse 4s ease-in-out infinite;
-      display: flex;
-      flex-direction: column;
     }
     .proof-panel:hover {
       transform: translateY(-6px);
@@ -1084,8 +1082,7 @@
     }
 
     .proof-cta {
-      margin-top: auto;
-      padding-top: 16px;
+      margin-top: 16px;
       display: inline-flex;
       align-items: center;
       gap: 7px;
