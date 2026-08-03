@@ -63,10 +63,10 @@ document.querySelectorAll('.pcard').forEach(card => {
       year: '2021', title: 'Parashoot Studios Launch', tag: 'New Venture',
       body: 'Launched Parashoot Studios &mdash; a dedicated content production arm specialising in weddings, food, aerial, and commercial photography. Armed with cinema-grade cameras, professional studio setups, and advanced drones, Parashoot quickly became the go-to photography and film partner for Goa\'s premium hospitality and lifestyle brands.',
       images: [
-        { c: 'yr-c4', s: 'images/timeline/2021-1.jpg', cap: 'Parashoot Studios Launch' },
-        { c: 'yr-c3', s: 'images/timeline/2021-2.jpg', cap: 'Aerial & Drone Work' },
-        { c: 'yr-c6', s: 'images/timeline/2021-3.jpg', cap: 'Food Photography' },
-        { c: 'yr-c8', s: 'images/timeline/2021-4.jpg', cap: 'Wedding Coverage' }
+       { c: 'yr-c4', s: 'images/timeline/f1.jpg', cap: 'Parashoot Studios Launch' },
+        { c: 'yr-c3', s: 'images/timeline/f2.jpg', cap: 'Aerial & Drone Work' },
+        { c: 'yr-c6', s: 'images/timeline/f3.jpg', cap: 'Food Photography' },
+        { c: 'yr-c8', s: 'images/timeline/f4.jpg', cap: 'Wedding Coverage' }
       ]
     },
     {

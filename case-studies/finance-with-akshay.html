@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finance with Akshay — Case Study | Flashlab Creative</title>
+  <link rel="icon" type="image/png" href="../images/flashlab-lightning-bolt-icon.png">
+  <meta name="description" content="How Flashlab Creative helped financial advisor Akshay Gautam build a strong personal brand, achieving 267K+ content views and a cohesive digital ecosystem.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/pages/case-studies.css">
+  <link rel="stylesheet" href="../css/pages/tikibab.css"> <!-- Reusing exact layout CSS -->
+</head>
+
+<body data-page="case-studies">
+
+  <!-- LOGO BAR -->
+  <div class="site-logo-bar">
+    <a href="../index.html">
+      <img src="../images/logos/flashlab-logo.png" alt="Flashlab Creative" class="logo-light">
+      <img src="../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" class="logo-dark">
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About Agency</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../team.html">Team</a></li>
+        <li>
+          <a href="../services.html">Services</a>
+          <ul>
+            <li><a href="../html/services/digital-advertising.html"><i class="ri-megaphone-line"></i>Digital Advertising</a></li>
+            <li><a href="../html/services/seo-sem-marketing.html"><i class="ri-search-line"></i>SEO / SEM Marketing</a></li>
+            <li><a href="../html/services/social-media-management.html"><i class="ri-instagram-line"></i>Social Media Management</a></li>
+            <li><a href="../html/services/product-design-strategies.html"><i class="ri-pen-nib-line"></i>Product Design &amp; Strategies</a></li>
+            <li><a href="../html/services/web-app-development.html"><i class="ri-code-s-slash-line"></i>Web &amp; App Development</a></li>
+            <li><a href="../html/services/outdoor-print-ads.html"><i class="ri-image-line"></i>Outdoor &amp; Print Ads</a></li>
+            <li><a href="../html/services/ecommerce.html"><i class="ri-shopping-cart-line"></i>E-Commerce</a></li>
+            <li><a href="../html/services/trademark-registration.html"><i class="ri-shield-check-line"></i>Trademark Registration</a></li>
+            <li><a href="../html/services/photography-video.html"><i class="ri-camera-line"></i>Photography &amp; Video</a></li>
+            <li><a href="../html/services/event-production.html"><i class="ri-calendar-event-line"></i>Event Production</a></li>
+            <li><a href="../html/services/media-consulting.html"><i class="ri-chat-voice-line"></i>Media Consulting</a></li>
+            <li><a href="../html/services/animation-motion.html"><i class="ri-video-line"></i>Animation &amp; Motion</a></li>
+          </ul>
+        </li>
+        <li><a href="../clients.html">Clients</a></li>
+        <li><a href="../case-studies.html" class="nav-active">Case Studies</a></li>
+        <li>
+          <a href="../career.html">Careers</a>
+          <ul>
+            <li><a href="../html/career/internship.html"><i class="ri-user-add-line"></i>Internship</a></li>
+            <li><a href="../html/career/join-fulltime.html"><i class="ri-briefcase-4-line"></i>Join Full Time</a></li>
+            <li><a href="../html/career/freelance.html"><i class="ri-computer-line"></i>Freelance</a></li>
+            <li><a href="../html/career/influencer-signup.html"><i class="ri-star-line"></i>Influencer Sign Up</a></li>
+            <li><a href="../html/career/hr-policy.html"><i class="ri-file-list-3-line"></i>HR Policy</a></li>
+          </ul>
+        </li>
+        <li><a href="../connect.html">Connect</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="../connect.html" class="nav-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-overlay" id="mobOverlay"></div>
+  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+    <button class="mob-close" id="mobClose" aria-label="Close menu"><i class="ri-close-line"></i></button>
+    <ul class="mob-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About Agency</a></li>
+      <li><a href="../portfolio.html">Portfolio</a></li>
+      <li><a href="../team.html">Team</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-services">Services <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-services">
+          <li><a href="../html/services/social-media-management.html">Social Media Management</a></li>
+          <li><a href="../html/services/digital-advertising.html">Digital Advertising</a></li>
+          <li><a href="../html/services/seo-sem-marketing.html">SEO / SEM Marketing</a></li>
+          <li><a href="../html/services/product-design-strategies.html">Product Design &amp; Strategies</a></li>
+          <li><a href="../html/services/web-app-development.html">Web &amp; App Development</a></li>
+        </ul>
+      </li>
+      <li><a href="../clients.html">Clients</a></li>
+      <li><a href="../case-studies.html" class="nav-active">Case Studies</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-career">Careers <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-career">
+          <li><a href="../html/career/internship.html">Internship</a></li>
+          <li><a href="../html/career/join-fulltime.html">Join Full Time</a></li>
+          <li><a href="../html/career/freelance.html">Freelance</a></li>
+        </ul>
+      </li>
+      <li><a href="../connect.html">Connect</a></li>
+    </ul>
+    <div class="mob-cta-wrap">
+      <a href="../connect.html" class="mob-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="cs-hero">
+      <div class="hero-bg">
+        <div class="orb1"></div>
+        <div class="orb2"></div>
+      </div>
+      <div class="cs-hero-inner sr">
+        <!-- Breadcrumb -->
+        <div class="cs-breadcrumb">
+          <a href="../case-studies.html">Case Studies</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>Financial Services</span>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>Finance with Akshay</span>
+        </div>
+
+        <div class="cs-hero-eyebrow">
+          <span class="pulse-dot"></span>
+          Personal Brand
+        </div>
+
+        <h1>Finance<br><em>with Akshay</em></h1>
+
+        <p class="cs-hero-intro">
+          Finance With Akshay is the personal brand of financial advisor Akshay Gautam, focused on simplifying finance, investing, and wealth creation. Akshay approached us to develop his digital presence into a stronger, more recognisable personal brand. The objective was to create a complete digital ecosystem that presented his expertise professionally, built trust, and converted content into genuine enquiries for his financial services.
+        </p>
+
+        <!-- Meta strip -->
+        <div class="cs-meta-row">
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Client</span>
+            <span class="cs-meta-value">Akshay Gautam</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Industry</span>
+            <span class="cs-meta-value">Financial Services</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Service</span>
+            <span class="cs-meta-value">Social Media &amp; Brand Positioning</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Channels</span>
+            <span class="cs-meta-value">Instagram, LinkedIn, Meta Ads</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COVER IMAGE -->
+    <div class="cs-cover">
+      <img src="../images/case-studies/finance-akshay/cover.jpg"
+           alt="Finance with Akshay Gautam Brand Identity">
+    </div>
+
+    <!-- MAIN BODY + SIDEBAR -->
+    <div class="cs-body">
+
+      <!-- LEFT: MAIN CONTENT -->
+      <div class="cs-main">
+
+        <!-- 01 — THE CHALLENGE -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">The Challenge</span>
+          <h2>What Wasn't <em>WORKING</em></h2>
+          <p>
+            Despite having strong financial expertise and valuable insights to share, Akshay’s digital presence lacked a clear personal-brand identity, consistent content direction, and a recognisable visual style. 
+          </p>
+          <p>
+            Content was not planned around defined audience needs, shoots were not organised strategically, and there was limited integration between social media, events, lead generation, and his wider online presence.
+          </p>
+          <p>
+            His seminars, knowledge, and services were not being presented through a structured system across social media, LinkedIn, Google, and the website, making it much harder to build recall, establish authority, and generate quality enquiries.
+          </p>
+
+          <div class="cs-img-block tall">
+            <img src="../images/case-studies/finance-akshay/p1.jpg"
+                 alt="Akshay Gautam previous digital presence">
+          </div>
+        </div>
+
+        <!-- 02 — THE OBJECTIVES -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Objectives</span>
+          <h2>What They Wanted to <em>ACHIEVE</em></h2>
+          <p>
+            The objective was to build Finance With Akshay into a strong and recognisable personal brand in the finance space. The focus was on creating a consistent brand identity, developing strategic and engaging content, and presenting Akshay’s expertise in a clear, credible, and approachable way across digital platforms.
+          </p>
+          <p>
+            The overarching goal was to strengthen his authority, improve visibility across Instagram, LinkedIn, Google, and his website, generate quality leads through Meta ads, and create a complete digital presence that could seamlessly turn audience interest into genuine enquiries for his financial services.
+          </p>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:32px;">Key Performance <em>INDICATORS</em></h2>
+          <ul class="cs-list">
+            <li>Content Views &amp; Reach</li>
+            <li>New Audience Acquisition</li>
+            <li>Follower Retention</li>
+            <li>Content Interactions</li>
+            <li>Lead Generation (Enquiries)</li>
+          </ul>
+
+          <div class="cs-img-block">
+            <img src="../images/case-studies/finance-akshay/c1.jpg"
+                 alt="Finance with Akshay strategy planning">
+          </div>
+        </div>
+
+        <!-- 03 — THE STRATEGY -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Strategy</span>
+          <h2>How We <em>APPROACHED IT</em></h2>
+          <p>
+            To build Finance With Akshay as a credible and recognisable personal brand, we developed a strategy that combined expert-led content with a consistent visual and communication style. The focus was to simplify financial topics, highlight Akshay’s personality and expertise, and create content that felt informative, relatable, and trustworthy.
+          </p>
+          <p>
+            We introduced structured content planning, regular photography and video shoots, educational reels, carousels, seminar coverage, and platform-specific content for Instagram and LinkedIn. 
+          </p>
+          <p>
+            Alongside this, we strengthened the complete digital ecosystem through comprehensive website development, Google Business Profile management, and Meta lead-generation campaigns, ensuring every platform worked together to improve visibility, build authority, and generate relevant enquiries.
+          </p>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:28px;">Channels <em>PRIORITISED</em></h2>
+          <div class="cs-tags">
+            <span class="cs-tag">Instagram Feed &amp; Reels</span>
+            <span class="cs-tag">LinkedIn Platform Mgmt</span>
+            <span class="cs-tag">Google Business Profile</span>
+            <span class="cs-tag">Meta Ads Lead Gen</span>
+          </div>
+
+          <!-- BEFORE / AFTER comparison -->
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:28px;">Before &amp; <em>After</em></h2>
+          <div class="cs-img-grid">
+            <div class="cs-img-grid-item">
+              <div class="cs-img-block tall">
+                <img src="../images/case-studies/finance-akshay/before.jpeg"
+                     alt="Finance with Akshay feed before Flashlab">
+              </div>
+              <span class="cs-img-grid-caption">Before</span>
+            </div>
+            <div class="cs-img-grid-item">
+              <div class="cs-img-block tall">
+                <img src="../images/case-studies/finance-akshay/after.jpeg"
+                     alt="Finance with Akshay feed after Flashlab management">
+              </div>
+              <span class="cs-img-grid-caption">After</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 — THE RESULTS -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Results</span>
+          <h2>What We <em>ACHIEVED</em></h2>
+          <p>
+            The integrated personal branding strategy successfully positioned Akshay Gautam as a credible authority, resulting in significant growth and engagement over the last 90 days.
+          </p>
+
+          <!-- Stats grid -->
+          <div class="cs-results-grid">
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">267K+</div>
+              <div class="cs-stat-label">Content Views</div>
+              <div class="cs-stat-desc">Generated immense visibility through simplified, educational video content.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">47K+</div>
+              <div class="cs-stat-label">Accounts Reached</div>
+              <div class="cs-stat-desc">Substantial expansion of the brand's footprint across digital platforms.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">6.3K+</div>
+              <div class="cs-stat-label">Content Interactions</div>
+              <div class="cs-stat-desc">High engagement rates proving the content resonated with audience needs.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">46.6%</div>
+              <div class="cs-stat-label">New Audience Reached</div>
+              <div class="cs-stat-desc">Nearly half of all reach came from users discovering the brand for the first time.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">53.4%</div>
+              <div class="cs-stat-label">Views from Followers</div>
+              <div class="cs-stat-desc">Demonstrated excellent retention and loyalty from the existing community.</div>
+            </div>
+          </div>
+
+          <div class="cs-img-block">
+            <img src="../images/case-studies/finance-akshay/p3.jpeg"
+                 alt="Finance with Akshay analytics and results">
+          </div>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:8px;">Visual <em>Highlights</em></h2>
+          <p>
+            Our content production transformed Akshay's digital presence through a cohesive visual language. Key assets included:
+          </p>
+          <div class="cs-performing-grid">
+            <div class="cs-performing-item"><i class="ri-contrast-2-line"></i> <span>Before-and-After Feed Layout</span></div>
+            <div class="cs-performing-item"><i class="ri-video-line"></i> <span>Educational Reels Production</span></div>
+            <div class="cs-performing-item"><i class="ri-slideshow-line"></i> <span>Seminar Event Coverage</span></div>
+            <div class="cs-performing-item"><i class="ri-layout-grid-line"></i> <span>Finance Carousel Designs</span></div>
+            <div class="cs-performing-item"><i class="ri-linkedin-box-line"></i> <span>Platform-Specific LinkedIn Content</span></div>
+          </div>
+        </div>
+
+      <!--Reels-->
+        <section class="reels-section">
+
+    <h2>Latest Reels</h2>
+
+    <div class="reels-container">
+
+        <a href="https://www.instagram.com/reel/CzGY3OpJXeC/?igsh=dnN0dXZ2bmwwdDdk" target="_blank">
+
+            <video autoplay muted loop playsinline preload="metadata">
+
+                <source src="../video/akshay1.mp4" type="video/mp4">
+
+            </video>
+
+        </a>
+
+        <a href="https://www.instagram.com/reel/DaxtYH4qsXT/?igsh=MTFnaHQwdDZ2czNkcw==" target="_blank">
+
+            <video autoplay muted loop playsinline preload="metadata">
+
+                <source src="../video/akshay2.mp4" type="video/mp4">
+
+            </video>
+
+        </a>
+
+        <a href="https://www.instagram.com/reel/DPghAQKAVr2/?igsh=a291eGxpbzZtZDI=" target="_blank">
+
+            <video autoplay muted loop playsinline preload="metadata">
+
+                <source src="../video/akshay3.mp4" type="video/mp4">
+
+            </video>
+
+        </a>
+
+    </div>
+
+</section>
+</div><!-- /cs-main -->
+
+      <!-- SIDEBAR CARDS -->
+      <div class="cs-sidebar">
+
+        <!-- Services delivered -->
+        <div class="cs-sidebar-card sr">
+          <h4>Services Delivered</h4>
+          <ul class="cs-sidebar-list">
+            <li><i class="ri-instagram-line"></i> Instagram &amp; FB Management</li>
+            <li><i class="ri-linkedin-line"></i> LinkedIn Management</li>
+            <li><i class="ri-google-fill"></i> GMB Management</li>
+            <li><i class="ri-quill-pen-line"></i> Content Creation</li>
+            <li><i class="ri-camera-line"></i> Photography &amp; Videography</li>
+            <li><i class="ri-movie-line"></i> Reels Production</li>
+            <li><i class="ri-pen-nib-line"></i> Graphic Design</li>
+            <li><i class="ri-bookmark-line"></i> Story &amp; Highlight Mgmt</li>
+            <li><i class="ri-calendar-event-line"></i> Event Promotions</li>
+            <li><i class="ri-focus-3-line"></i> Personal Branding</li>
+            <li><i class="ri-megaphone-line"></i> Paid Advertising</li>
+          </ul>
+        </div>
+
+        <!-- KPIs tracked -->
+        <div class="cs-sidebar-card sr">
+          <h4>KPIs Tracked</h4>
+          <ul class="cs-sidebar-list">
+            <li><i class="ri-eye-line"></i> Content Views</li>
+            <li><i class="ri-global-line"></i> Accounts Reached</li>
+            <li><i class="ri-thumb-up-line"></i> Content Interactions</li>
+            <li><i class="ri-user-add-line"></i> New Audience Acquisition</li>
+            <li><i class="ri-group-line"></i> Follower Retention</li>
+            <li><i class="ri-message-3-line"></i> Lead Generation Quality</li>
+          </ul>
+        </div>
+
+        <!-- CTA -->
+        <div class="cs-sidebar-card sr">
+          <h4>Work With Us</h4>
+          <p style="font-size:.82rem; color:var(--muted); line-height:1.65; margin-bottom:16px;">
+            Want to build authority and results for your personal brand? Let's talk about what Flashlab can do for you.
+          </p>
+          <div class="cs-sidebar-cta">
+            <a href="../connect.html" class="btn-primary" style="justify-content:center;">Start a Project <i class="ri-arrow-right-line"></i></a>
+            <a href="../case-studies.html" class="btn-ghost" style="justify-content:center;">All Case Studies <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+      </div><!-- /cs-sidebar -->
+
+    </div><!-- /cs-body -->
+
+    <!-- SIMILAR WORK -->
+    <section class="cs-similar">
+      <div style="max-width:1200px; margin:0 auto;">
+        <span class="sec-eyebrow"> More Work</span>
+        <h2 class="sec-heading">Similar <em>Case Studies</em></h2>
+
+        <div class="cs-similar-grid">
+
+          <a href="susegad.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/susegad/logo.jpg"
+                   alt="Susegad The Fragrance of Goa">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Retail &amp; Lifestyle</div>
+              <div class="cs-similar-title">Susegad The Fragrance of Goa</div>
+              <div class="cs-similar-desc">Increasing brand awareness and product visibility through an active, trend-led digital presence.</div>
+            </div>
+          </a>
+
+          <a href="babs-hideout.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/next-level/cover.jpg"
+                   alt="Next Level Gym & Fitness">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Fitness &amp; Wellness</div>
+              <div class="cs-similar-title">Next Level Gym &amp; Fitness</div>
+              <div class="cs-similar-desc">Social media transformation driving engagement, followers, and video views for a Goa gym.</div>
+            </div>
+          </a>
+
+          <a href="robins-ark.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/robinsark.jpeg"
+                   alt="Robin's Ark">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Restaurant &amp; Hospitality</div>
+              <div class="cs-similar-title">Robin's Ark</div>
+              <div class="cs-similar-desc">Brand identity and social media strategy for a popular Goa restaurant.</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="port-section">
+      <div class="cta-band sr">
+        <h2>Ready to be<br><em>Our Next Case Study?</em></h2>
+        <p>Let's build something remarkable together &mdash; a campaign, a brand, or a digital experience your audience won't forget.</p>
+        <div class="cta-band-btns">
+          <a href="../connect.html" class="btn-primary">Start a Project <i class="ri-arrow-right-line"></i></a>
+          <a href="../case-studies.html" class="btn-ghost">Browse Case Studies <i class="ri-article-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="../index.html">
+            <img src="../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative"
+              onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'font-family:Bebas Neue,sans-serif;font-size:1.5rem;letter-spacing:2px;color:#fff\'>FLASHLAB CREATIVE</span>'">
+          </a>
+        </div>
+        <p>Goa's leading creative &amp; digital marketing agency &mdash; where imagination meets reality. Born in Margao in 2016, we craft unforgettable digital experiences for brands that dare to stand out.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/flashlab.creative" target="_blank" rel="noopener"><i class="ri-instagram-fill"></i></a>
+          <a href="https://www.facebook.com/flashlab.creative/" target="_blank" rel="noopener"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.linkedin.com/company/flashlabcreative" target="_blank" rel="noopener"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://twitter.com/theflashlab" target="_blank" rel="noopener"><i class="ri-twitter-x-fill"></i></a>
+          <a href="https://www.youtube.com/channel/UCuFtcVt_Yp9CZ82UG6pm-pg" target="_blank" rel="noopener"><i class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="../about.html"><i class="ri-arrow-right-s-line"></i>About</a></li>
+          <li><a href="../services.html"><i class="ri-arrow-right-s-line"></i>Services</a></li>
+          <li><a href="../portfolio.html"><i class="ri-arrow-right-s-line"></i>Portfolio</a></li>
+          <li><a href="../clients.html"><i class="ri-arrow-right-s-line"></i>Clients</a></li>
+          <li><a href="../case-studies.html"><i class="ri-arrow-right-s-line"></i>Case Studies</a></li>
+          <li><a href="../team.html"><i class="ri-arrow-right-s-line"></i>Teams</a></li>
+          <li><a href="../career.html"><i class="ri-arrow-right-s-line"></i>Careers</a></li>
+          <li><a href="../connect.html"><i class="ri-arrow-right-s-line"></i>Connect</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Services</h4>
+        <ul class="footer-list">
+          <li><a href="../html/services/outdoor-print-ads.html"><i class="ri-arrow-right-s-line"></i>Outdoor &amp; Print</a></li>
+          <li><a href="../html/services/digital-advertising.html"><i class="ri-arrow-right-s-line"></i>Digital Advertising</a></li>
+          <li><a href="../html/services/seo-sem-marketing.html"><i class="ri-arrow-right-s-line"></i>SEO / SEM</a></li>
+          <li><a href="../html/services/social-media-management.html"><i class="ri-arrow-right-s-line"></i>Social Media</a></li>
+          <li><a href="../html/services/product-design-strategies.html"><i class="ri-arrow-right-s-line"></i>Product Design</a></li>
+          <li><a href="../html/services/web-app-development.html"><i class="ri-arrow-right-s-line"></i>Web &amp; App Dev</a></li>
+          <li><a href="../html/services/ecommerce.html"><i class="ri-arrow-right-s-line"></i>E-Commerce</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Join Us</h4>
+        <ul class="footer-list">
+          <li><a href="../career.html#open-positions" data-open-role="intern"><i class="ri-arrow-right-s-line"></i>Intern</a></li>
+          <li><a href="../career.html#open-positions" data-open-role="seo-expert"><i class="ri-arrow-right-s-line"></i>SEO Expert</a></li>
+          <li><a href="../career.html#open-positions" data-open-role="social-media-manager"><i class="ri-arrow-right-s-line"></i>Social Media Mgr</a></li>
+          <li><a href="../career.html#open-positions" data-open-role="graphic-designer"><i class="ri-arrow-right-s-line"></i>Graphic Designer</a></li>
+          <li><a href="../career.html#open-positions" data-open-role="web-developer"><i class="ri-arrow-right-s-line"></i>Web Developer</a></li>
+          <li><a href="../career.html#open-positions" data-open-role="animation-designer"><i class="ri-arrow-right-s-line"></i>Animation Designer</a></li>
+          <li><a href="../career.html#open-positions" data-open-role="app-developer"><i class="ri-arrow-right-s-line"></i>App Developer</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Service Links</h4>
+        <ul class="footer-list">
+          <li><a href="#"><i class="ri-arrow-right-s-line"></i>Team Blogs</a></li>
+          <li><a href="https://parashootstudio.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Production</a></li>
+          <li><a href="https://backstagexchange.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Event Management</a></li>
+          <li><a href="#"><i class="ri-arrow-right-s-line"></i>FNB Marketing</a></li>
+          <li><a href="https://stromenightlife.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Strobe Nightlife</a></li>
+          <li><a href="https://www.cybercreative.in" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Web Development &amp; IoT</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-head">Contact</h4>
+        <div class="footer-contact">
+          <p><i class="ri-map-pin-2-fill"></i><a href="https://www.google.com/maps/search/Flashlab+Creative+Margao+Goa" target="_blank" rel="noopener">G26 Vikrant Complex,<br>Margao, Goa, India</a></p>
+          <p><i class="ri-phone-fill"></i><a href="tel:+919923580023">+91 99235 80023</a></p>
+          <p><i class="ri-mail-fill"></i><a href="mailto:contact@flashlabcreative.com">contact@flashlabcreative.com</a></p>
+          <p><i class="ri-time-fill"></i><span>Mon &ndash; Sat: 9am &ndash; 6pm IST</span></p>
+          <a href="../connect.html" class="footer-cta">Start a Project <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">Copyright &copy; 2026 <a href="../index.html" class="flashlab-link">Flashlab Creative</a></p>
+      <p class="footer-credit">Website Crafted by <a href="https://cybercreative.in/" target="_blank" rel="noopener" class="cyber-link">Cyber Creative</a></p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

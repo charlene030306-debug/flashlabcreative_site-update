@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Origin — Case Study | Flashlab Creative</title>
+  <link rel="icon" type="image/png" href="../images/flashlab-lightning-bolt-icon.png">
+  <meta name="description" content="How Flashlab Creative built the social media presence for The Origin, a football bar and restaurant in Seraulim, Goa, from the ground up over 4+ years.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/pages/case-studies.css">
+  <link rel="stylesheet" href="../css/pages/the-origin.css">
+</head>
+
+<body data-page="case-studies">
+
+  <!-- LOGO BAR -->
+  <div class="site-logo-bar">
+    <a href="../index.html">
+      <img src="../images/logos/flashlab-logo.png" alt="Flashlab Creative" class="logo-light">
+      <img src="../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" class="logo-dark">
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About Agency</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../team.html">Team</a></li>
+        <li>
+          <a href="../services.html">Services</a>
+          <ul>
+            <li><a href="../html/services/digital-advertising.html"><i class="ri-megaphone-line"></i>Digital Advertising</a></li>
+            <li><a href="../html/services/seo-sem-marketing.html"><i class="ri-search-line"></i>SEO / SEM Marketing</a></li>
+            <li><a href="../html/services/social-media-management.html"><i class="ri-instagram-line"></i>Social Media Management</a></li>
+            <li><a href="../html/services/product-design-strategies.html"><i class="ri-pen-nib-line"></i>Product Design &amp; Strategies</a></li>
+            <li><a href="../html/services/web-app-development.html"><i class="ri-code-s-slash-line"></i>Web &amp; App Development</a></li>
+            <li><a href="../html/services/outdoor-print-ads.html"><i class="ri-image-line"></i>Outdoor &amp; Print Ads</a></li>
+            <li><a href="../html/services/ecommerce.html"><i class="ri-shopping-cart-line"></i>E-Commerce</a></li>
+            <li><a href="../html/services/trademark-registration.html"><i class="ri-shield-check-line"></i>Trademark Registration</a></li>
+            <li><a href="../html/services/photography-video.html"><i class="ri-camera-line"></i>Photography &amp; Video</a></li>
+            <li><a href="../html/services/event-production.html"><i class="ri-calendar-event-line"></i>Event Production</a></li>
+            <li><a href="../html/services/media-consulting.html"><i class="ri-chat-voice-line"></i>Media Consulting</a></li>
+            <li><a href="../html/services/animation-motion.html"><i class="ri-video-line"></i>Animation &amp; Motion</a></li>
+          </ul>
+        </li>
+        <li><a href="../clients.html">Clients</a></li>
+        <li><a href="../case-studies.html" class="nav-active">Case Studies</a></li>
+        <li>
+          <a href="../career.html">Careers</a>
+          <ul>
+            <li><a href="../html/career/internship.html"><i class="ri-user-add-line"></i>Internship</a></li>
+            <li><a href="../html/career/join-fulltime.html"><i class="ri-briefcase-4-line"></i>Join Full Time</a></li>
+            <li><a href="../html/career/freelance.html"><i class="ri-computer-line"></i>Freelance</a></li>
+            <li><a href="../html/career/influencer-signup.html"><i class="ri-star-line"></i>Influencer Sign Up</a></li>
+            <li><a href="../html/career/hr-policy.html"><i class="ri-file-list-3-line"></i>HR Policy</a></li>
+          </ul>
+        </li>
+        <li><a href="../connect.html">Connect</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="../connect.html" class="nav-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-overlay" id="mobOverlay"></div>
+  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+    <button class="mob-close" id="mobClose" aria-label="Close menu"><i class="ri-close-line"></i></button>
+    <ul class="mob-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About Agency</a></li>
+      <li><a href="../portfolio.html">Portfolio</a></li>
+      <li><a href="../team.html">Team</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-services">Services <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-services">
+          <li><a href="../html/services/social-media-management.html">Social Media Management</a></li>
+          <li><a href="../html/services/digital-advertising.html">Digital Advertising</a></li>
+          <li><a href="../html/services/seo-sem-marketing.html">SEO / SEM Marketing</a></li>
+          <li><a href="../html/services/product-design-strategies.html">Product Design &amp; Strategies</a></li>
+          <li><a href="../html/services/web-app-development.html">Web &amp; App Development</a></li>
+        </ul>
+      </li>
+      <li><a href="../clients.html">Clients</a></li>
+      <li><a href="../case-studies.html" class="nav-active">Case Studies</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-career">Careers <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-career">
+          <li><a href="../html/career/internship.html">Internship</a></li>
+          <li><a href="../html/career/join-fulltime.html">Join Full Time</a></li>
+          <li><a href="../html/career/freelance.html">Freelance</a></li>
+        </ul>
+      </li>
+      <li><a href="../connect.html">Connect</a></li>
+    </ul>
+    <div class="mob-cta-wrap">
+      <a href="../connect.html" class="mob-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="cs-hero">
+      <div class="hero-bg">
+        <div class="orb1"></div>
+        <div class="orb2"></div>
+      </div>
+      <div class="cs-hero-inner sr">
+        <!-- Breadcrumb -->
+        <div class="cs-breadcrumb">
+          <a href="../case-studies.html">Case Studies</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>Restaurant &amp; Football Bar</span>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>The Origin</span>
+        </div>
+
+        <div class="cs-hero-eyebrow">
+          <span class="pulse-dot"></span>
+          Restaurant &amp; Football Bar
+        </div>
+
+        <h1>The<br><em>Origin</em></h1>
+
+        <p class="cs-hero-intro">
+          Origin is a football bar and restaurant based in Seraulim, Goa. The restaurant is known for hosting regular events, football and cricket screenings, and attractive offers for customers. We started working with Origin from scratch, right from the time the restaurant started. Our association with the brand has continued for around 4+ years, during which we helped build and manage its social media presence through regular content, event promotions, and paid campaign support.
+        </p>
+
+        <!-- Meta strip -->
+        <div class="cs-meta-row">
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Client</span>
+            <span class="cs-meta-value">The Origin</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Industry</span>
+            <span class="cs-meta-value">Restaurant &amp; Football Bar</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Service</span>
+            <span class="cs-meta-value">Social Media Management</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Duration</span>
+            <span class="cs-meta-value">4+ Years</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COVER IMAGE -->
+    <div class="cs-cover">
+      <img src="../images/case-studies/the-origin/cover.jpg"
+           alt="The Origin Restaurant & Football Bar">
+    </div>
+
+    <!-- MAIN BODY + SIDEBAR -->
+    <div class="cs-body">
+
+      <!-- LEFT: MAIN CONTENT -->
+      <div class="cs-main">
+
+        <!-- 01 — THE CHALLENGE -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">The Challenge</span>
+          <h2>What Wasn't <em>WORKING</em></h2>
+          <p>
+            As Origin was a new restaurant, the main challenge was to build its social media presence from the ground up and create awareness for the brand, its offers, and its events.
+          </p>
+          <p>
+            The restaurant regularly hosted screenings, offers, and events, but these needed to be promoted consistently through stories, reels, and event creatives. There was also a critical need to maintain regular engagement on the page, increase followers, and attract more people for specific events in a competitive hospitality space.
+          </p>
+
+          <div class="cs-img-block tall">
+            <img src="../images/case-studies/the-origin/d1.jpg"
+                 alt="The Origin challenges and initial stage">
+          </div>
+        </div>
+
+        <!-- 02 — THE OBJECTIVES -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Objectives</span>
+          <h2>What They Wanted to <em>ACHIEVE</em></h2>
+          <p>
+            The primary objective was to create awareness for Origin and promote its regular offers, events, and live screenings more effectively.
+          </p>
+          <p>
+            The client wanted to showcase its offers through regular story postings, create promo reels for selected events, and build visibility around football and cricket screenings. Another key goal was to increase page engagement, grow the follower base, and bring in more crowd for specific events through paid boosting.
+          </p>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:32px;">Key Performance <em>INDICATORS</em></h2>
+          <ul class="cs-list">
+            <li>Follower growth</li>
+            <li>Overall engagement</li>
+            <li>Content reach</li>
+            <li>Reel performance</li>
+            <li>Story interactions</li>
+            <li>Event awareness</li>
+            <li>Paid campaign performance</li>
+          </ul>
+
+          <div class="cs-img-block">
+            <img src="../images/case-studies/the-origin/ppl1.jpg"
+                 alt="The Origin objectives and strategy planning">
+          </div>
+        </div>
+
+        <!-- 03 — THE STRATEGY -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Strategy</span>
+          <h2>How We <em>APPROACHED IT</em></h2>
+          <p>
+            We developed a social media strategy focused on the regular and timely promotion of Origin’s offers, events, and screenings to establish them as a go-to entertainment destination.
+          </p>
+          <p>
+            Regular story postings were created to keep the audience updated about offers and ongoing activities at the restaurant. Promo reels were produced for selected events where the client wanted to attract a larger crowd and create stronger awareness.
+          </p>
+          <p>
+            We also covered events such as football and cricket screenings to accurately showcase the live experience at the restaurant. Since we started with the brand from scratch, we carried out comprehensive shoots, including drone footage, to help build strong visual content for the page.
+          </p>
+          <p>
+            To increase visibility for key events, selected reels and story posters were boosted through targeted paid promotions. This helped create awareness for specific events and reach a larger audience beyond existing followers.
+          </p>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:28px;">Channels <em>PRIORITISED</em></h2>
+          <div class="cs-tags">
+            <span class="cs-tag">Instagram Feed</span>
+            <span class="cs-tag">Instagram Stories</span>
+            <span class="cs-tag">Instagram Reels</span>
+            <span class="cs-tag">Meta Ads</span>
+          </div>
+
+          <!-- BEFORE / AFTER comparison -->
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:28px;">Before &amp; <em>After</em></h2>
+          <div class="cs-img-grid">
+            <div class="cs-img-grid-item">
+              <div class="cs-img-block tall">
+                <img src="../images/case-studies/the-origin/before.jpeg"
+                     alt="The Origin Instagram feed before Flashlab">
+              </div>
+              <span class="cs-img-grid-caption">Before</span>
+            </div>
+            <div class="cs-img-grid-item">
+              <div class="cs-img-block tall">
+                <img src="../images/case-studies/the-origin/after.jpeg"
+                     alt="The Origin Instagram feed after Flashlab management">
+              </div>
+              <span class="cs-img-grid-caption">After</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 — THE RESULTS -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Results</span>
+          <h2>What We <em>ACHIEVED</em></h2>
+          <p>
+            Our from-scratch strategy helped The Origin transform into a well-recognized local brand with a highly engaged digital community over our 4-year partnership.
+          </p>
+
+          <!-- Stats grid -->
+          <div class="cs-results-grid">
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">4+</div>
+              <div class="cs-stat-label">Years of Partnership</div>
+              <div class="cs-stat-desc">A long-term successful relationship managing the brand since day one.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">4,199+</div>
+              <div class="cs-stat-label">Followers Built</div>
+              <div class="cs-stat-desc">A dedicated, local audience grown completely from the ground up.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">21K+</div>
+              <div class="cs-stat-label">Profile Visits</div>
+              <div class="cs-stat-desc">Consistent traffic driven to the profile via story and event promotions.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">14K+</div>
+              <div class="cs-stat-label">Content Interactions</div>
+              <div class="cs-stat-desc">High engagement rates reflecting the community's interest in offers and events.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">90%+</div>
+              <div class="cs-stat-label">Organic Engagement</div>
+              <div class="cs-stat-desc">Vast majority of interactions happened purely through high-quality content.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">48%</div>
+              <div class="cs-stat-label">New Audience Reached</div>
+              <div class="cs-stat-desc">Successfully expanded visibility beyond existing followers via boosting.</div>
+            </div>
+          </div>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:32px;">Visual <em>Highlights</em></h2>
+          <p>
+            Explore the content we produced for The Origin, categorized by product photography, event coverage, and high-performing promotional reels.
+          </p>
+          <div class="cs-performing-grid">
+            <!-- Drinks -->
+            <div class="cs-performing-item"><i class="ri-goblet-line"></i> <a href="https://drive.google.com/file/d/1sLVykDpo0OnYQM7WzEYerPb3msioViy9/view?usp=drive_link" target="_blank" style="color:inherit;">Drink: Bukul</a></div>
+            <div class="cs-performing-item"><i class="ri-goblet-line"></i> <a href="https://drive.google.com/file/d/1BiwQaQa3a_te99bblTlMs4W5spjjW8Mq/view?usp=drive_link" target="_blank" style="color:inherit;">Drink: Mambo</a></div>
+            <div class="cs-performing-item"><i class="ri-goblet-line"></i> <a href="https://drive.google.com/file/d/1bplLc7KQFR9NGm9ClHxSlUFsxgPg1DKg/view?usp=drive_link" target="_blank" style="color:inherit;">Drink: The Pink Panther</a></div>
+            <div class="cs-performing-item"><i class="ri-goblet-line"></i> <a href="https://drive.google.com/file/d/17SpK4inE9H2aqgdWVAyjV9OkXdg8VKl7/view?usp=sharing" target="_blank" style="color:inherit;">Drink: Spagetti &amp; Blue drink</a></div>
+            <div class="cs-performing-item"><i class="ri-goblet-line"></i> <a href="https://drive.google.com/file/d/1YrAfwYqpFqgAQLKiVqDyc5wSBLvtti0O/view?usp=drive_link" target="_blank" style="color:inherit;">Drink: Bukul 2.0</a></div>
+            <!-- Food -->
+            <div class="cs-performing-item"><i class="ri-restaurant-line"></i> <a href="https://drive.google.com/file/d/1E27sMBd8W5elHZa53Wc5zrKYsLaHEvxI/view?usp=sharing" target="_blank" style="color:inherit;">Food: Churos</a></div>
+            <div class="cs-performing-item"><i class="ri-restaurant-line"></i> <a href="https://drive.google.com/file/d/1xvW-u_ifOkgyqWr_OKMuF4gL5S5iCf2d/view?usp=drive_link" target="_blank" style="color:inherit;">Food: Burger</a></div>
+            <div class="cs-performing-item"><i class="ri-restaurant-line"></i> <a href="https://drive.google.com/file/d/1SuxsPqUBCx0wVccbc3c79tcHGpAym37r/view?usp=drive_link" target="_blank" style="color:inherit;">Food: Tacos</a></div>
+            <!-- People/Vibe -->
+            <div class="cs-performing-item"><i class="ri-group-line"></i> <a href="https://drive.google.com/file/d/165u0SppryMQUN5M6ZVdjQfVFmWlvGt5N/view?usp=sharing" target="_blank" style="color:inherit;">Vibe Check 1</a></div>
+            <div class="cs-performing-item"><i class="ri-group-line"></i> <a href="https://drive.google.com/file/d/1BVmSsqPF2A9feaqUaqTRnHGid6WiK4sh/view?usp=drive_link" target="_blank" style="color:inherit;">Vibe Check 2</a></div>
+            <div class="cs-performing-item"><i class="ri-group-line"></i> <a href="https://drive.google.com/file/d/13hRjlIX2_1bdZKnHt0zw2O_SF3vu_LAD/view?usp=sharing" target="_blank" style="color:inherit;">Vibe Check 3</a></div>
+            <div class="cs-performing-item"><i class="ri-group-line"></i> <a href="https://drive.google.com/file/d/1QWwioURlCotHpgFoZN6NLTX5z0QtX1gE/view?usp=drive_link" target="_blank" style="color:inherit;">Vibe Check 4</a></div>
+            <!-- Reels -->
+            <div class="cs-performing-item"><i class="ri-film-line"></i> <a href="https://www.instagram.com/reel/DV8dPkhEq-_/?igsh=b3ExYnNjNzZxd283" target="_blank" style="color:inherit;">Bollywood Quiz Night Promo</a></div>
+            <div class="cs-performing-item"><i class="ri-film-line"></i> <a href="https://www.instagram.com/reel/DWyjUDWiKz7/?igsh=eXBkaXU0NzF0d3R5" target="_blank" style="color:inherit;">Urrak Making Reel</a></div>
+            <div class="cs-performing-item"><i class="ri-film-line"></i> <a href="https://www.instagram.com/reel/DQZAhwXknSa/?igsh=MWYxMXo3Zzk4cmdjZQ==" target="_blank" style="color:inherit;">Trending Reel</a></div>
+            <div class="cs-performing-item"><i class="ri-film-line"></i> <a href="https://www.instagram.com/reel/DC9OWUWtZUn/?igsh=MXhrM3N5ZXMycWY2YQ==" target="_blank" style="color:inherit;">Quiz Night Promo</a></div>
+            <div class="cs-performing-item"><i class="ri-film-line"></i> <a href="https://www.instagram.com/reel/DG5iyElpCEE/?igsh=ejV4N3NhdGRsaWI4" target="_blank" style="color:inherit;">Cricket Match Promo</a></div>
+          </div>
+        </div>
+
+        
+      <!-- Reels -->
+        <section class="reels-section">
+
+    <h2>Latest Reels</h2>
+
+    <div class="reels-container">
+
+        <a href="https://www.instagram.com/reel/DV8dPkhEq-_/?igsh=b3ExYnNjNzZxd283" target="_blank">
+
+            <video autoplay muted loop playsinline preload="metadata">
+
+                <source src="../video/origin1.mp4" type="video/mp4">
+
+            </video>
+
+        </a>
+
+        <a href="https://www.instagram.com/reel/DWyjUDWiKz7/?igsh=eXBkaXU0NzF0d3R5" target="_blank">
+
+            <video autoplay muted loop playsinline preload="metadata">
+
+                <source src="../video/origin2.mp4" type="video/mp4">
+
+            </video>
+
+        </a>
+
+        <a href="https://www.instagram.com/reel/DQZAhwXknSa/?igsh=MWYxMXo3Zzk4cmdjZQ==" target="_blank">
+
+            <video autoplay muted loop playsinline preload="metadata">
+
+                <source src="../video/origin3.mp4" type="video/mp4">
+
+            </video>
+
+        </a>
+
+    </div>
+
+</section>
+
+        <!-- 05 — CLIENT FEEDBACK -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Client Feedback</span>
+          <h2>What the Client <em>SAID</em></h2>
+
+          <div class="cs-testimonial" style="background: transparent; border: none; padding: 0;">
+            <a href="URL_TO_FEEDBACK_IMAGE" target="_blank" style="display: block; overflow: hidden; border-radius: 12px; border: 1px solid var(--border);">
+              <!-- Replace the src with the actual feedback image path -->
+              <img src="../images/case-studies/the-origin/feedback.jpg" alt="Client Feedback from The Origin" style="width: 100%; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+            </a>
+          </div>
+        </div>
+      </div><!-- /cs-main -->
+
+      <!-- SIDEBAR CARDS -->
+      <div class="cs-sidebar">
+
+        <!-- Services delivered -->
+        <div class="cs-sidebar-card sr">
+          <h4>Services Delivered</h4>
+          <ul class="cs-sidebar-list">
+            <li><i class="ri-instagram-line"></i> Social Media Management</li>
+            <li><i class="ri-lightbulb-flash-line"></i> Content Strategy</li>
+            <li><i class="ri-bookmark-line"></i> Regular Story Posting</li>
+            <li><i class="ri-movie-line"></i> Promo Reels</li>
+            <li><i class="ri-calendar-event-line"></i> Event Coverage &amp; Promo</li>
+            <li><i class="ri-flight-takeoff-line"></i> Drone Shoot</li>
+            <li><i class="ri-megaphone-line"></i> Paid Boosting</li>
+            <li><i class="ri-chat-smile-3-line"></i> Community Engagement</li>
+          </ul>
+        </div>
+
+        <!-- KPIs tracked -->
+        <div class="cs-sidebar-card sr">
+          <h4>KPIs Tracked</h4>
+          <ul class="cs-sidebar-list">
+            <li><i class="ri-user-add-line"></i> Follower Growth</li>
+            <li><i class="ri-thumb-up-line"></i> Engagement Rates</li>
+            <li><i class="ri-eye-line"></i> Reach &amp; Impressions</li>
+            <li><i class="ri-play-circle-line"></i> Reel Performance</li>
+            <li><i class="ri-chat-3-line"></i> Story Interactions</li>
+            <li><i class="ri-flag-2-line"></i> Event Awareness</li>
+            <li><i class="ri-funds-line"></i> Paid Campaign Metrics</li>
+          </ul>
+        </div>
+
+        <!-- CTA -->
+        <div class="cs-sidebar-card sr">
+          <h4>Work With Us</h4>
+          <p style="font-size:.82rem; color:var(--muted); line-height:1.65; margin-bottom:16px;">
+            Want results like these for your brand? Let's talk about what Flashlab can do for you.
+          </p>
+          <div class="cs-sidebar-cta">
+            <a href="../connect.html" class="btn-primary" style="justify-content:center;">Start a Project <i class="ri-arrow-right-line"></i></a>
+            <a href="../case-studies.html" class="btn-ghost" style="justify-content:center;">All Case Studies <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+      </div><!-- /cs-sidebar -->
+
+    </div><!-- /cs-body -->
+
+    <!-- SIMILAR WORK -->
+    <section class="cs-similar">
+      <div style="max-width:1200px; margin:0 auto;">
+        <span class="sec-eyebrow"> More Work</span>
+        <h2 class="sec-heading">Similar <em>Case Studies</em></h2>
+
+        <div class="cs-similar-grid">
+
+          <a href="club-rickys.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/club-rickys.jpeg"
+                   alt="Club Ricky's">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Nightlife &amp; Entertainment</div>
+              <div class="cs-similar-title">Club Ricky's</div>
+              <div class="cs-similar-desc">Building a 5.6K+ community and driving 1.63L+ organic views for a vibrant poolside venue.</div>
+            </div>
+          </a>
+
+          <a href="magzika.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/magzika.jpeg"
+                   alt="Magzika Beach Shack">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Restaurant &amp; Hospitality</div>
+              <div class="cs-similar-title">Magzika Beach Shack</div>
+              <div class="cs-similar-desc">Social media overhaul achieving 15K organic views and 70K+ paid reach for a seafront venue.</div>
+            </div>
+          </a>
+
+          <a href="robins-ark.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/robinsark.jpeg"
+                   alt="Robin's Ark">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Restaurant &amp; Hospitality</div>
+              <div class="cs-similar-title">Robin's Ark</div>
+              <div class="cs-similar-desc">Brand identity and social media strategy for a popular Goa restaurant.</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="port-section">
+      <div class="cta-band sr">
+        <h2>Ready to be<br><em>Our Next Case Study?</em></h2>
+        <p>Let's build something remarkable together &mdash; a campaign, a brand, or a digital experience your audience won't forget.</p>
+        <div class="cta-band-btns">
+          <a href="../connect.html" class="btn-primary">Start a Project <i class="ri-arrow-right-line"></i></a>
+          <a href="../case-studies.html" class="btn-ghost">Browse Case Studies <i class="ri-article-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="../index.html">
+            <img src="../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative"
+              onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'font-family:Bebas Neue,sans-serif;font-size:1.5rem;letter-spacing:2px;color:#fff\'>FLASHLAB CREATIVE</span>'">
+          </a>
+        </div>
+        <p>Goa's leading creative &amp; digital marketing agency &mdash; where imagination meets reality. Born in Margao in 2016, we craft unforgettable digital experiences for brands that dare to stand out.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/flashlab.creative" target="_blank" rel="noopener"><i class="ri-instagram-fill"></i></a>
+          <a href="https://www.facebook.com/flashlab.creative/" target="_blank" rel="noopener"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.linkedin.com/company/flashlabcreative" target="_blank" rel="noopener"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://twitter.com/theflashlab" target="_blank" rel="noopener"><i class="ri-twitter-x-fill"></i></a>
+          <a href="https://www.youtube.com/channel/UCuFtcVt_Yp9CZ82UG6pm-pg" target="_blank" rel="noopener"><i class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="../about.html"><i class="ri-arrow-right-s-line"></i>About</a></li>
+          <li><a href="../services.html"><i class="ri-arrow-right-s-line"></i>Services</a></li>
+          <li><a href="../portfolio.html"><i class="ri-arrow-right-s-line"></i>Portfolio</a></li>
+          <li><a href="../clients.html"><i class="ri-arrow-right-s-line"></i>Clients</a></li>
+          <li><a href="../case-studies.html"><i class="ri-arrow-right-s-line"></i>Case Studies</a></li>
+          <li><a href="../team.html"><i class="ri-arrow-right-s-line"></i>Teams</a></li>
+          <li><a href="../career.html"><i class="ri-arrow-right-s-line"></i>Careers</a></li>
+          <li><a href="../connect.html"><i class="ri-arrow-right-s-line"></i>Connect</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-head">Contact</h4>
+        <div class="footer-contact">
+          <p><i class="ri-map-pin-2-fill"></i><a href="https://www.google.com/maps/search/Flashlab+Creative+Margao+Goa" target="_blank" rel="noopener">G26 Vikrant Complex,<br>Margao, Goa, India</a></p>
+          <p><i class="ri-phone-fill"></i><a href="tel:+919923580023">+91 99235 80023</a></p>
+          <p><i class="ri-mail-fill"></i><a href="mailto:contact@flashlabcreative.com">contact@flashlabcreative.com</a></p>
+          <p><i class="ri-time-fill"></i><span>Mon &ndash; Sat: 9am &ndash; 6pm IST</span></p>
+          <a href="../connect.html" class="footer-cta">Start a Project <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">Copyright &copy; 2026 <a href="../index.html" class="flashlab-link">Flashlab Creative</a></p>
+      <p class="footer-credit">Website Crafted by <a href="https://cybercreative.in/" target="_blank" rel="noopener" class="cyber-link">Cyber Creative</a></p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

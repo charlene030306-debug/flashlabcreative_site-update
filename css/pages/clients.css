@@ -1077,3 +1077,28 @@
 .graphic-header-left h2 {
   text-transform: uppercase !important;
 }
+/* ===== MOBILE MARQUEE FIX ===== */
+@media (max-width: 768px) {
+
+    .marquee-strip{
+        padding: 12px 0;
+    }
+
+    .marquee-track{
+        gap: 28px;          /* space between items */
+    }
+
+    .marquee-track span{
+        font-size: 0.62rem;
+        letter-spacing: 1.5px;
+        padding: 0 8px;
+        white-space: nowrap;
+        position: relative;
+    }
+
+    /* Separator dot */
+    .marquee-track span::after{
+        right: -16px;
+    }
+
+}

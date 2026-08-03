@@ -382,7 +382,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link =>
             const isMatch = filter === 'all' || cats.includes(filter);
             
             if (isMatch) {
-                const shouldDisplay = expanded || matchingIndex < 4;
+                const shouldDisplay = true;
                 if (shouldDisplay) {
                     card.style.display = '';
                     if (animate) {

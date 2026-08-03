@@ -548,3 +548,77 @@
   .cs-meta-row { gap: 20px; }
   .cs-cover { aspect-ratio: 16/8; }
 }
+
+/* ---------- Reels Section ---------- */
+
+.reels-section{
+    width:100%;
+    padding:60px 8%;
+}
+
+.reels-section h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.reels-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.reels-container a{
+
+    display:block;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+}
+
+.reels-container video{
+
+    width:100%;
+
+    height:500px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+.reels-container video:hover{
+
+    transform:scale(1.05);
+
+}
+
+@media(max-width:992px){
+
+.reels-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.reels-container{
+
+grid-template-columns:1fr;
+
+}
+
+}

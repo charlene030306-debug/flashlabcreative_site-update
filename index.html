@@ -15,111 +15,10 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="css/global.css?v=2">
   <link rel="stylesheet" href="css/pages/index.css?v=12">
-  <link rel="stylesheet" href="css/pages/loader.css">
+ 
+  
 </head>
 
-<body data-page="index">
-
-  <!-- LOADER -->
-  <div class="loader" id="loader" role="status" aria-live="polite" aria-label="Loading Flashlab Creative">
-    <div class="aura"></div>
-    <div class="orbit o1"></div>
-    <div class="orbit o2"></div>
-    <div class="dot-far d1"></div>
-    <div class="dot-far d2"></div>
-    <div class="flask-stage">
-      <div class="flask-glow"></div>
-      <svg class="flask" viewBox="0 0 300 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <defs>
-          <linearGradient id="liqGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#b4d62a" />
-            <stop offset="0.5" stop-color="#9dc209" />
-            <stop offset="1" stop-color="#82a60a" />
-          </linearGradient>
-          <linearGradient id="boltGrad" x1="0" y1="0" x2="0.35" y2="1">
-            <stop offset="0" stop-color="#ff9a52" />
-            <stop offset="0.5" stop-color="#ed7d3a" />
-            <stop offset="1" stop-color="#d9692c" />
-          </linearGradient>
-          <clipPath id="cavity">
-            <path d="M133 62 L130 128 L54 322 Q53 339 70 339 L230 339 Q247 339 246 322 L170 128 L167 62 Z" />
-          </clipPath>
-        </defs>
-        <g clip-path="url(#cavity)">
-          <g class="liquid-group">
-            <rect id="liquid" x="40" y="340" width="220" height="0" fill="url(#liqGrad)" />
-            <ellipse id="surface" class="surface" cx="150" cy="340" rx="120" ry="6" />
-            <ellipse cx="150" cy="340" rx="60" ry="60" fill="rgba(0,0,0,.06)" id="swirl" />
-          </g>
-        </g>
-        <g class="bolt">
-          <path class="bolt-shadow" d="M172 161 L124 229 L154 229 L138 299 L184 217 L154 217 Z" />
-          <path class="bolt-main" d="M168 154 L120 222 L150 222 L134 292 L180 210 L150 210 Z" />
-        </g>
-        <g fill="var(--green-lt)">
-          <circle cx="146" cy="150" r="0">
-            <animate attributeName="cy" values="150;-30" dur="3s" begin="0s" repeatCount="indefinite" />
-            <animate attributeName="cx" values="146;152;142" dur="3s" begin="0s" repeatCount="indefinite" />
-            <animate attributeName="r" values="3;6;5.5" dur="3s" begin="0s" repeatCount="indefinite" />
-            <animate attributeName="opacity" values="0;.95;.7;0" keyTimes="0;.15;.8;1" dur="3s" begin="0s"
-              repeatCount="indefinite" />
-          </circle>
-          <circle cx="158" cy="150" r="0">
-            <animate attributeName="cy" values="150;-30" dur="3s" begin="0.5s" repeatCount="indefinite" />
-            <animate attributeName="cx" values="158;150;160" dur="3s" begin="0.5s" repeatCount="indefinite" />
-            <animate attributeName="r" values="2;4;3.5" dur="3s" begin="0.5s" repeatCount="indefinite" />
-            <animate attributeName="opacity" values="0;.9;.6;0" keyTimes="0;.15;.8;1" dur="3s" begin="0.5s"
-              repeatCount="indefinite" />
-          </circle>
-          <circle cx="140" cy="150" r="0">
-            <animate attributeName="cy" values="150;-30" dur="3s" begin="1s" repeatCount="indefinite" />
-            <animate attributeName="cx" values="140;146;138" dur="3s" begin="1s" repeatCount="indefinite" />
-            <animate attributeName="r" values="2.5;5;4.5" dur="3s" begin="1s" repeatCount="indefinite" />
-            <animate attributeName="opacity" values="0;.95;.7;0" keyTimes="0;.15;.8;1" dur="3s" begin="1s"
-              repeatCount="indefinite" />
-          </circle>
-          <circle cx="155" cy="150" r="0">
-            <animate attributeName="cy" values="150;-30" dur="3s" begin="1.6s" repeatCount="indefinite" />
-            <animate attributeName="cx" values="155;149;157" dur="3s" begin="1.6s" repeatCount="indefinite" />
-            <animate attributeName="r" values="2;3.5;3" dur="3s" begin="1.6s" repeatCount="indefinite" />
-            <animate attributeName="opacity" values="0;.85;.6;0" keyTimes="0;.15;.8;1" dur="3s" begin="1.6s"
-              repeatCount="indefinite" />
-          </circle>
-          <circle cx="149" cy="150" r="0">
-            <animate attributeName="cy" values="150;-30" dur="3s" begin="2.2s" repeatCount="indefinite" />
-            <animate attributeName="cx" values="149;154;145" dur="3s" begin="2.2s" repeatCount="indefinite" />
-            <animate attributeName="r" values="3;5.5;5" dur="3s" begin="2.2s" repeatCount="indefinite" />
-            <animate attributeName="opacity" values="0;.95;.7;0" keyTimes="0;.15;.8;1" dur="3s" begin="2.2s"
-              repeatCount="indefinite" />
-          </circle>
-        </g>
-        <g class="glass">
-          <path class="glass-base"
-            d="M130 58 L127 128 L48 322 Q46 344 70 344 L230 344 Q254 344 252 322 L173 128 L170 58" />
-          <rect class="glass-base" x="114" y="42" width="72" height="16" rx="8" />
-          <path class="glass-hi" d="M170 60 L173 128 L252 322 Q254 344 230 344" />
-          <path class="glass-shine" d="M126 152 L78 300" />
-        </g>
-      </svg>
-    </div>
-    <div class="brand">
-      <img src="images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" class="brand-logo"
-        onerror="this.remove(); var f=document.getElementById('brandFallback'); if(f) f.style.display='block';">
-      <div class="brand-fallback" id="brandFallback">
-        <h1>FLASHLAB<span class="reg">&reg;</span></h1>
-        <div class="tag">Creative</div>
-      </div>
-    </div>
-    <div class="progress-wrap">
-      <div class="bar">
-        <div class="bar-fill" id="barFill"></div>
-      </div>
-      <div class="meta">
-        <span class="status" id="statusText">Mixing the formula</span>
-        <span class="pct" id="pctText">0%</span>
-      </div>
-    </div>
-  </div>
 
   <!-- LOGO BAR -->
   <div class="site-logo-bar">
@@ -199,6 +98,7 @@
       <li><a href="index.html" class="mob-active">Home</a></li>
       <li><a href="about.html">About Agency</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
       <li><a href="team.html">Team</a></li>
       <li>
         <button class="mob-parent-btn" data-target="mob-sub-services">Services <i
@@ -237,63 +137,73 @@
     </div>
   </div>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <!-- Hidden images to force the browser to fully decode them into memory instantly -->
-    <div style="position: absolute; width: 0; height: 0; overflow: hidden; opacity: 0; pointer-events: none;">
-      <img src="images/testimonials-section-dark-background.png" alt="">
-      <img src="images/hero2.jpg" alt="">
-      <img src="images/social-index.png" alt="">
-      <img src="images/young-dev-team-laughing-macbook.png" alt="">
+ <!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-img" id="heroBgImg"></div>
+  <div class="hero-bg-overlay"></div>
+  <div class="hero-noise"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <!-- Arrow navigation (NEW) -->
+  <button class="hero-arrow hero-arrow-prev" id="heroArrowPrev" aria-label="Previous slide">&#8592;</button>
+  <button class="hero-arrow hero-arrow-next" id="heroArrowNext" aria-label="Next slide">&#8594;</button>
+
+  <div class="hero-wrap">
+
+    <!-- Progress dots -->
+    <div class="dots" id="heroDots">
+      <span></span><span></span><span></span><span></span>
     </div>
-    <div class="hero-bg-img"></div>
-    <div class="hero-bg-overlay"></div>
-    <div class="hero-noise"></div>
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-    <div class="hero-wrap">
-      <div class="dots" id="heroDots">
-        <span></span><span></span><span></span><span></span>
+
+    <!-- Slide counter (NEW) -->
+    <div class="hero-counter" id="heroCounter">01 &nbsp;/&nbsp; 04</div>
+
+
+    <!-- Slides -->
+    <div class="hero-slider">
+      <div class="slide active" data-bg="images/hero1.png">
+        <h1 class="hero-heading">GOA'S MOST TRUSTED<br>CREATIVE AGENCY</h1>
+        <p class="hero-slide-small">With over a decade of experience in Goa, we have established benchmarks for
+          excellence across hospitality, real estate, lifestyle, and modern brands.</p>
       </div>
-      <div class="hero-slider">
-        <div class="slide active" data-bg="images/testimonials-section-dark-background.png">
-          <h1 class="hero-heading">GOA'S MOST TRUSTED<br>CREATIVE AGENCY</h1>
-          <p class="hero-slide-small">With over a decade of experience in Goa, we have established benchmarks for
-            excellence across hospitality, real estate, lifestyle, and modern brands.</p>
-        </div>
-        <div class="slide" data-bg="images/hero2.jpg">
-          <h1 class="hero-heading">CREATIVE DESIGN<br>SOLUTIONS</h1>
-          <p class="hero-slide-small">Bold identities and meaningful storytelling crafted to connect with audiences and
-            leave a lasting impression.</p>
-        </div>
-        <div class="slide" data-bg="images/social-index.png" data-bg-pos="center 40%">
-          <h1 class="hero-heading">DIGITAL EXPERIENCES<br>THAT MATTER</h1>
-          <p class="hero-slide-small">Designers, strategists and marketers working together to create campaigns that
-            people remember and brands that grow from.</p>
-        </div>
-        <div class="slide" data-bg="images/young-dev-team-laughing-macbook.png" data-bg-pos="center 10%">
-          <h1 class="hero-heading">BUILDING BRANDS<br>THAT INSPIRE</h1>
-          <p class="hero-slide-small">Data-driven marketing across Meta, Google and other various digital platforms.
-            Focused on visibility, engagement and measurable growth.</p>
-        </div>
+      <div class="slide" data-bg="images/hero-slide-2.jpg">
+        <h1 class="hero-heading">CREATIVE DESIGN<br>SOLUTIONS</h1>
+        <p class="hero-slide-small">Bold identities and meaningful storytelling crafted to connect with audiences and
+          leave a lasting impression.</p>
       </div>
-      <div class="hero-btns reveal">
-        <a href="portfolio.html" class="btn-red">See Our Work <i class="ri-arrow-right-line"></i></a>
-        <a href="story.html" class="btn-ghost"
-          style="border-color:rgba(255,255,255,0.2); color:rgba(255,255,255,0.7);">Our Story</a>
+      <div class="slide" data-bg="images/hero3.png" data-bg-pos="center 40%">
+        <h1 class="hero-heading">DIGITAL EXPERIENCES<br>THAT MATTER</h1>
+        <p class="hero-slide-small">Designers, strategists and marketers working together to create campaigns that
+          people remember and brands that grow from.</p>
       </div>
-      <div class="hero-stats reveal">
-        <div class="hstat"><strong>10+</strong><span>Years in Business</span></div>
-        <div class="hstat-divider"></div>
-        <div class="hstat"><strong>500+</strong><span>Projects Delivered</span></div>
-        <div class="hstat-divider"></div>
-        <div class="hstat"><strong>350+</strong><span>Brands Worked With</span></div>
-        <div class="hstat-divider"></div>
-        <div class="hstat"><strong>25+</strong><span>Creative Specialists</span></div>
+      <div class="slide" data-bg="images/hero4.png" data-bg-pos="center 10%">
+        <h1 class="hero-heading">BUILDING BRANDS<br>THAT INSPIRE</h1>
+        <p class="hero-slide-small">Data-driven marketing across Meta, Google and other various digital platforms.
+          Focused on visibility, engagement and measurable growth.</p>
       </div>
     </div>
-  </section>
+
+    <!-- CTAs -->
+    <div class="hero-btns reveal">
+      <a href="portfolio.html" class="btn-red">See Our Work <i class="ri-arrow-right-line"></i></a>
+      <a href="story.html" class="btn-ghost" style="border-color:rgba(255,255,255,0.2); color:rgba(255,255,255,0.7);">Our Story</a>
+    </div>
+
+    <!-- Stats -->
+    <div class="hero-stats reveal">
+      <div class="hstat"><strong>10+</strong><span>Years in Business</span></div>
+      <div class="hstat-divider"></div>
+      <div class="hstat"><strong>500+</strong><span>Projects Delivered</span></div>
+      <div class="hstat-divider"></div>
+      <div class="hstat"><strong>350+</strong><span>Brands Worked With</span></div>
+      <div class="hstat-divider"></div>
+      <div class="hstat"><strong>25+</strong><span>Creative Specialists</span></div>
+    </div>
+
+  </div>
+</section>
 
   <!-- MARQUEE STRIP -->
   <div class="marquee-strip">
@@ -320,6 +230,7 @@
     </div>
   </div>
 
+  
   <!-- FEATURED SERVICES -->
   <section class="services-section">
     <div class="wrap">
@@ -588,42 +499,6 @@
           </div>
         </div>
 
-        <!-- 3RD FOUNDER — update src, name, role, bio & social links when ready -->
-        <div class="founder-card reveal" style="--delay:0.24s">
-          <div class="founder-photo"
-            style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%); display:flex; align-items:center; justify-content:center;">
-            <img src="images/founder3.jpg" alt="Team Member" onerror="this.style.display='none'">
-            <div style="text-align:center; color:rgba(255,255,255,0.22); pointer-events:none;">
-              <i class="ri-user-line" style="font-size:4.5rem; display:block; margin-bottom:10px;"></i>
-              <span
-                style="font-size:0.68rem; letter-spacing:4px; text-transform:uppercase; font-family:var(--font-head);">Photo
-                Coming Soon</span>
-            </div>
-          </div>
-          <div class="founder-info">
-            <h4>Uday Kedar</h4>
-            <p>Finance Controller & Administration</p>
-            <p>More details about this team member will be shared soon. Stay tuned for updates from Flashlab Creative.
-            </p>
-            <div class="founder-socials">
-              <a href="#"><span class="s-icon"><i class="ri-instagram-fill"></i></span><span
-                  class="s-label">Instagram</span></a>
-              <a href="#"><span class="s-icon"><i class="ri-linkedin-fill"></i></span><span
-                  class="s-label">LinkedIn</span></a>
-              <a href="#"><span class="s-icon"><i class="ri-twitter-x-fill"></i></span><span
-                  class="s-label">Twitter</span></a>
-              <a href="#"><span class="s-icon"><i class="ri-facebook-fill"></i></span><span
-                  class="s-label">Facebook</span></a>
-              <a href="#"><span class="s-icon"><i class="ri-youtube-fill"></i></span><span
-                  class="s-label">YouTube</span></a>
-              <a href="#"><span class="s-icon"><i class="ri-behance-fill"></i></span><span
-                  class="s-label">Behance</span></a>
-              <a href="#"><span class="s-icon"><i class="ri-whatsapp-fill"></i></span><span
-                  class="s-label">WhatsApp</span></a>
-              <a href="#"><span class="s-icon"><i class="ri-mail-fill"></i></span><span class="s-label">Email</span></a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>

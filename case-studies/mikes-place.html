@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mike's Place — Case Study | Flashlab Creative</title>
+  <link rel="icon" type="image/png" href="../images/flashlab-lightning-bolt-icon.png">
+  <meta name="description" content="How Flashlab Creative helped Mike's Place increase followers by 33% and generate 20K+ organic reel views through a comprehensive social media strategy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/pages/case-studies.css">
+  <link rel="stylesheet" href="../css/pages/mikes-place.css">
+</head>
+
+<body data-page="case-studies">
+
+  <!-- LOGO BAR -->
+  <div class="site-logo-bar">
+    <a href="../index.html">
+      <img src="../images/logos/flashlab-logo.png" alt="Flashlab Creative" class="logo-light">
+      <img src="../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" class="logo-dark">
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About Agency</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../team.html">Team</a></li>
+        <li>
+          <a href="../services.html">Services</a>
+          <ul>
+            <li><a href="../html/services/digital-advertising.html"><i class="ri-megaphone-line"></i>Digital Advertising</a></li>
+            <li><a href="../html/services/seo-sem-marketing.html"><i class="ri-search-line"></i>SEO / SEM Marketing</a></li>
+            <li><a href="../html/services/social-media-management.html"><i class="ri-instagram-line"></i>Social Media Management</a></li>
+            <li><a href="../html/services/product-design-strategies.html"><i class="ri-pen-nib-line"></i>Product Design &amp; Strategies</a></li>
+            <li><a href="../html/services/web-app-development.html"><i class="ri-code-s-slash-line"></i>Web &amp; App Development</a></li>
+            <li><a href="../html/services/outdoor-print-ads.html"><i class="ri-image-line"></i>Outdoor &amp; Print Ads</a></li>
+            <li><a href="../html/services/ecommerce.html"><i class="ri-shopping-cart-line"></i>E-Commerce</a></li>
+            <li><a href="../html/services/trademark-registration.html"><i class="ri-shield-check-line"></i>Trademark Registration</a></li>
+            <li><a href="../html/services/photography-video.html"><i class="ri-camera-line"></i>Photography &amp; Video</a></li>
+            <li><a href="../html/services/event-production.html"><i class="ri-calendar-event-line"></i>Event Production</a></li>
+            <li><a href="../html/services/media-consulting.html"><i class="ri-chat-voice-line"></i>Media Consulting</a></li>
+            <li><a href="../html/services/animation-motion.html"><i class="ri-video-line"></i>Animation &amp; Motion</a></li>
+          </ul>
+        </li>
+        <li><a href="../clients.html">Clients</a></li>
+        <li><a href="../case-studies.html" class="nav-active">Case Studies</a></li>
+        <li>
+          <a href="../career.html">Careers</a>
+          <ul>
+            <li><a href="../html/career/internship.html"><i class="ri-user-add-line"></i>Internship</a></li>
+            <li><a href="../html/career/join-fulltime.html"><i class="ri-briefcase-4-line"></i>Join Full Time</a></li>
+            <li><a href="../html/career/freelance.html"><i class="ri-computer-line"></i>Freelance</a></li>
+            <li><a href="../html/career/influencer-signup.html"><i class="ri-star-line"></i>Influencer Sign Up</a></li>
+            <li><a href="../html/career/hr-policy.html"><i class="ri-file-list-3-line"></i>HR Policy</a></li>
+          </ul>
+        </li>
+        <li><a href="../connect.html">Connect</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="../connect.html" class="nav-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-overlay" id="mobOverlay"></div>
+  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+    <button class="mob-close" id="mobClose" aria-label="Close menu"><i class="ri-close-line"></i></button>
+    <ul class="mob-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About Agency</a></li>
+      <li><a href="../portfolio.html">Portfolio</a></li>
+      <li><a href="../team.html">Team</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-services">Services <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-services">
+          <li><a href="../html/services/social-media-management.html">Social Media Management</a></li>
+          <li><a href="../html/services/digital-advertising.html">Digital Advertising</a></li>
+          <li><a href="../html/services/seo-sem-marketing.html">SEO / SEM Marketing</a></li>
+          <li><a href="../html/services/product-design-strategies.html">Product Design &amp; Strategies</a></li>
+          <li><a href="../html/services/web-app-development.html">Web &amp; App Development</a></li>
+        </ul>
+      </li>
+      <li><a href="../clients.html">Clients</a></li>
+      <li><a href="../case-studies.html" class="nav-active">Case Studies</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-career">Careers <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-career">
+          <li><a href="../html/career/internship.html">Internship</a></li>
+          <li><a href="../html/career/join-fulltime.html">Join Full Time</a></li>
+          <li><a href="../html/career/freelance.html">Freelance</a></li>
+        </ul>
+      </li>
+      <li><a href="../connect.html">Connect</a></li>
+    </ul>
+    <div class="mob-cta-wrap">
+      <a href="../connect.html" class="mob-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="cs-hero">
+      <div class="hero-bg">
+        <div class="orb1"></div>
+        <div class="orb2"></div>
+      </div>
+      <div class="cs-hero-inner sr">
+        <!-- Breadcrumb -->
+        <div class="cs-breadcrumb">
+          <a href="../case-studies.html">Case Studies</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>Restaurant &amp; Hospitality</span>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>Mike's Place</span>
+        </div>
+
+        <div class="cs-hero-eyebrow">
+          <span class="pulse-dot"></span>
+          Restaurant &amp; Hospitality
+        </div>
+
+        <h1>Mike's<br><em>Place</em></h1>
+
+        <p class="cs-hero-intro">
+          Mike’s Place is a vibrant restaurant known for its quality food, refreshing drinks, lively ambience, and regular live music events. The brand approached us with the goal of strengthening its social media presence, promoting live entertainment more effectively, growing its follower base, and showcasing its overall dining experience through high-quality content.
+        </p>
+
+        <!-- Meta strip -->
+        <div class="cs-meta-row">
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Client</span>
+            <span class="cs-meta-value">Mike's Place</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Industry</span>
+            <span class="cs-meta-value">Restaurant &amp; Hospitality</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Service</span>
+            <span class="cs-meta-value">Social Media Management</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Channels</span>
+            <span class="cs-meta-value">Instagram, Facebook, Meta Ads</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COVER IMAGE -->
+    <div class="cs-cover">
+      <!-- Ensure you have a placeholder or actual image at this path -->
+      <img src="../images/case-studies/mikes-place/cover.jpeg"
+           alt="Mike's Place Ambience and Food">
+    </div>
+
+    <!-- MAIN BODY + SIDEBAR -->
+    <div class="cs-body">
+
+      <!-- LEFT: MAIN CONTENT -->
+      <div class="cs-main">
+
+        <!-- 01 — THE CHALLENGE -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">The Challenge</span>
+          <h2>What Wasn't <em>WORKING</em></h2>
+          <p>
+            Despite offering a memorable dining experience and popular live music events, Mike’s Place was not fully reflecting these strengths online. While the restaurant already had an active social media presence, there was no clear content strategy, the feed lacked consistency, and the brand experience was not being communicated effectively across digital platforms.
+          </p>
+          <p>
+            The existing feed lacked a consistent visual identity, and food and beverage content did not properly showcase the quality of the restaurant experience. Stories and highlights were underutilised, and event promotions lacked a cohesive creative direction. 
+          </p>
+          <p>
+            Furthermore, Facebook was not being actively managed alongside Instagram. As a result, opportunities to build stronger brand recognition, increase engagement, showcase customer experiences, and leverage trending content formats were being missed.
+          </p>
+
+          <div class="cs-img-block">
+            <img src="../images/case-studies/mikes-place/p3.jpeg"
+                 alt="Mike's Place previous digital presence challenges">
+          </div>
+        </div>
+
+        <!-- 02 — THE OBJECTIVES -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Objectives</span>
+          <h2>What They Wanted to <em>ACHIEVE</em></h2>
+          <p>
+            The primary objective was to create a stronger and more professional online presence that accurately represented the true Mike’s Place experience.
+          </p>
+          <p>
+            The client wanted to improve the overall appearance of its social media platforms, increase followers and engagement, and create more effective promotions for live music events. Additional goals included showcasing food, drinks, ambience, and customer experiences through high-quality content while increasing website traffic, customer enquiries, and brand awareness across both Instagram and Facebook.
+          </p>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:32px;">Key Performance <em>INDICATORS</em></h2>
+          <ul class="cs-list">
+            <li>Follower growth</li>
+            <li>Engagement rate</li>
+            <li>Reach and impressions</li>
+            <li>Reel performance</li>
+            <li>Story interactions</li>
+            <li>Website traffic &amp; enquiries generated</li>
+            <li>Paid campaign performance</li>
+          </ul>
+
+          <div class="cs-img-block">
+            <img src="../images/case-studies/mikes-place/p1.jpg"
+                 alt="Mike's Place strategy planning">
+          </div>
+        </div>
+
+        <!-- 03 — THE STRATEGY -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Strategy</span>
+          <h2>How We <em>APPROACHED IT</em></h2>
+          <p>
+            Following a detailed review of the existing social media presence, we developed a content strategy focused on creating a cleaner, more cohesive, and visually appealing brand identity.
+          </p>
+          <p>
+            We introduced a structured feed design supported by regular monthly content shoots to ensure a consistent flow of high-quality photography and videography. Content focused on showcasing the restaurant’s food, drinks, ambience, live music events, and customer experiences through engaging reels and static creatives.
+          </p>
+          <p>
+            Live music promotions were redesigned with a more consistent visual approach, while testimonial content and customer-generated content were incorporated to build credibility and strengthen community engagement. Instagram highlights were reorganised and regularly updated, and customer stories were actively reposted to increase interaction and social proof.
+          </p>
+          <p>
+            Alongside Instagram management, we maintained and updated the Facebook page with consistent content to create a unified brand presence. Paid campaigns were strategically implemented to expand reach and improve visibility, while content planning remained aligned with current Instagram trends and algorithm updates.
+          </p>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:28px;">Channels <em>PRIORITISED</em></h2>
+          <div class="cs-tags">
+            <span class="cs-tag">Instagram Feed</span>
+            <span class="cs-tag">Facebook Page</span>
+            <span class="cs-tag">Instagram Reels</span>
+            <span class="cs-tag">Meta Ads</span>
+          </div>
+
+          <!-- BEFORE / AFTER comparison -->
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:28px;">Before &amp; <em>After</em></h2>
+          <div class="cs-img-grid">
+            <div class="cs-img-grid-item">
+              <div class="cs-img-block tall">
+                <img src="../images/case-studies/mikes-place/before.jpg"
+                     alt="Mike's Place Instagram feed before Flashlab">
+              </div>
+              <span class="cs-img-grid-caption">Before</span>
+            </div>
+            <div class="cs-img-grid-item">
+              <div class="cs-img-block tall">
+                <img src="../images/case-studies/mikes-place/after.jpg"
+                     alt="Mike's Place Instagram feed after Flashlab management">
+              </div>
+              <span class="cs-img-grid-caption">After</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 — THE RESULTS -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Results</span>
+          <h2>What We <em>ACHIEVED</em></h2>
+          <p>
+            The new strategy helped Mike’s Place establish a stronger and more professional digital presence across Instagram and Facebook.
+          </p>
+
+          <!-- Stats grid -->
+          <div class="cs-results-grid">
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">33%</div>
+              <div class="cs-stat-label">Increase in Followers</div>
+              <div class="cs-stat-desc">Instagram followers grew from 3,000 to 4,000 through organic content, trend-led reels, community engagement, and targeted promotions.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">20K+</div>
+              <div class="cs-stat-label">Organic Reel Views</div>
+              <div class="cs-stat-desc">Concept-based organic reels consistently performed well, reaching between 15,000 and 20,000 views without paid support.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">₹0.99</div>
+              <div class="cs-stat-label">Average CPC</div>
+              <div class="cs-stat-desc">Maintained a highly efficient Average Cost Per Click during strategic paid event promotion campaigns.</div>
+            </div>
+          </div>
+
+          <div class="cs-img-block">
+            <img src="../images/case-studies/mikes-place/p2.jpg"
+                 alt="Mike's Place analytics and creatives">
+          </div>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:8px;">Visual <em>Highlights</em></h2>
+          <p>
+            The brand transformation was supported by comprehensive visual deliverables including before-and-after feed comparisons, food photography, event creatives, customer testimonial reels, and trend-based content.
+          </p>
+          <div class="cs-performing-grid">
+            <div class="cs-performing-item"><i class="ri-contrast-2-line"></i> Feed Layout Makeovers</div>
+            <div class="cs-performing-item"><i class="ri-camera-lens-line"></i> Food Photography</div>
+            <div class="cs-performing-item"><i class="ri-music-2-line"></i> Live Music Promotions</div>
+            <div class="cs-performing-item"><i class="ri-calendar-event-line"></i> Event Creatives</div>
+            <div class="cs-performing-item"><i class="ri-chat-smile-3-line"></i> Customer Testimonial Reels</div>
+            <div class="cs-performing-item"><i class="ri-fire-line"></i> Trend-Based Content</div>
+            <div class="cs-performing-item"><i class="ri-facebook-circle-line"></i> Cross-Platform FB Execution</div>
+          </div>
+        </div>
+
+         <section class="reels-section">
+
+    <h2>Latest Reels</h2>
+
+    <div class="reels-container">
+
+        <a href="https://www.instagram.com/reel/DVLb-OKDVXH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+
+            <video autoplay muted loop playsinline preload="metadata">
+
+                <source src="../video/mp1.mp4" type="video/mp4">
+
+            </video>
+
+        </a>
+
+        <a href="https://www.instagram.com/reel/DSw8NJIiI4r/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+
+            <video autoplay muted loop playsinline preload="metadata">
+
+                <source src="../video/mp2.mp4" type="video/mp4">
+
+            </video>
+
+        </a>
+
+        <a href="https://www.instagram.com/reel/DJ9ElkHoYUE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+
+            <video autoplay muted loop playsinline preload="metadata">
+
+                <source src="../video/mp3.mp4" type="video/mp4">
+
+            </video>
+
+        </a>
+
+    </div>
+
+</section>
+
+        <!-- 05 — CLIENT FEEDBACK -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Client Feedback</span>
+          <h2>What the Client <em>SAID</em></h2>
+
+          <div class="cs-testimonial">
+            <p>
+              "Mike’s Place has been highly satisfied with the transformation of its social media presence. The client particularly valued the quality of the photography, reels, creative designs, event promotions, testimonial content, and the overall consistency of the feed. The results achieved through ongoing content creation, active platform management, and targeted paid campaigns have helped establish a stronger and more engaging online presence that accurately reflects the Mike’s Place experience."
+            </p>
+            <div class="cs-testimonial-author">— Mike's Place Management</div>
+          </div>
+        </div>
+      </div><!-- /cs-main -->
+
+      <!-- SIDEBAR CARDS -->
+      <div class="cs-sidebar">
+
+        <!-- Services delivered -->
+        <div class="cs-sidebar-card sr">
+          <h4>Services Delivered</h4>
+          <ul class="cs-sidebar-list">
+            <li><i class="ri-instagram-line"></i> Instagram &amp; FB Management</li>
+            <li><i class="ri-quill-pen-line"></i> Content Creation</li>
+            <li><i class="ri-camera-line"></i> Photography &amp; Videography</li>
+            <li><i class="ri-movie-line"></i> Reels Production</li>
+            <li><i class="ri-pen-nib-line"></i> Graphic Design</li>
+            <li><i class="ri-music-2-line"></i> Live Music Promotions</li>
+            <li><i class="ri-bookmark-line"></i> Story &amp; Highlight Mgmt</li>
+            <li><i class="ri-calendar-event-line"></i> Event Promotions</li>
+            <li><i class="ri-community-line"></i> Community Management</li>
+            <li><i class="ri-megaphone-line"></i> Paid Advertising</li>
+          </ul>
+        </div>
+
+        <!-- KPIs tracked -->
+        <div class="cs-sidebar-card sr">
+          <h4>KPIs Tracked</h4>
+          <ul class="cs-sidebar-list">
+            <li><i class="ri-user-add-line"></i> Follower Growth</li>
+            <li><i class="ri-thumb-up-line"></i> Engagement Rate</li>
+            <li><i class="ri-play-circle-line"></i> Reel Performance</li>
+            <li><i class="ri-eye-line"></i> Reach &amp; Impressions</li>
+            <li><i class="ri-chat-3-line"></i> Story Interactions</li>
+            <li><i class="ri-global-line"></i> Website Traffic</li>
+            <li><i class="ri-funds-line"></i> Paid Campaign Stats</li>
+          </ul>
+        </div>
+
+        <!-- CTA -->
+        <div class="cs-sidebar-card sr">
+          <h4>Work With Us</h4>
+          <p style="font-size:.82rem; color:var(--muted); line-height:1.65; margin-bottom:16px;">
+            Want results like these for your brand? Let's talk about what Flashlab can do for you.
+          </p>
+          <div class="cs-sidebar-cta">
+            <a href="../connect.html" class="btn-primary" style="justify-content:center;">Start a Project <i class="ri-arrow-right-line"></i></a>
+            <a href="../case-studies.html" class="btn-ghost" style="justify-content:center;">All Case Studies <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+      </div><!-- /cs-sidebar -->
+
+    </div><!-- /cs-body -->
+
+    <!-- SIMILAR WORK -->
+    <section class="cs-similar">
+      <div style="max-width:1200px; margin:0 auto;">
+        <span class="sec-eyebrow"> More Work</span>
+        <h2 class="sec-heading">Similar <em>Case Studies</em></h2>
+
+        <div class="cs-similar-grid">
+
+          <a href="tikibab.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/tikibab/cover.jpeg"
+                   alt="Tikibab Beach Shack">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Restaurant &amp; Hospitality</div>
+              <div class="cs-similar-title">Tikibab Beach Shack</div>
+              <div class="cs-similar-desc">Long-term strategy building a 5.2K+ follower community and driving 293K+ content views.</div>
+            </div>
+          </a>
+
+          <a href="the-origin.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/the-origin/cover.jpg"
+                   alt="The Origin">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Restaurant &amp; Football Bar</div>
+              <div class="cs-similar-title">The Origin</div>
+              <div class="cs-similar-desc">From scratch social media build-out and 4-year long event marketing strategy.</div>
+            </div>
+          </a>
+
+          <a href="robins-ark.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/robinsark.jpeg"
+                   alt="Robin's Ark">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Restaurant &amp; Hospitality</div>
+              <div class="cs-similar-title">Robin's Ark</div>
+              <div class="cs-similar-desc">Brand identity and social media strategy for a popular Goa restaurant.</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="port-section">
+      <div class="cta-band sr">
+        <h2>Ready to be<br><em>Our Next Case Study?</em></h2>
+        <p>Let's build something remarkable together &mdash; a campaign, a brand, or a digital experience your audience won't forget.</p>
+        <div class="cta-band-btns">
+          <a href="../connect.html" class="btn-primary">Start a Project <i class="ri-arrow-right-line"></i></a>
+          <a href="../case-studies.html" class="btn-ghost">Browse Case Studies <i class="ri-article-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="../index.html">
+            <img src="../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative"
+              onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'font-family:Bebas Neue,sans-serif;font-size:1.5rem;letter-spacing:2px;color:#fff\'>FLASHLAB CREATIVE</span>'">
+          </a>
+        </div>
+        <p>Goa's leading creative &amp; digital marketing agency &mdash; where imagination meets reality. Born in Margao in 2016, we craft unforgettable digital experiences for brands that dare to stand out.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/flashlab.creative" target="_blank" rel="noopener"><i class="ri-instagram-fill"></i></a>
+          <a href="https://www.facebook.com/flashlab.creative/" target="_blank" rel="noopener"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.linkedin.com/company/flashlabcreative" target="_blank" rel="noopener"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://twitter.com/theflashlab" target="_blank" rel="noopener"><i class="ri-twitter-x-fill"></i></a>
+          <a href="https://www.youtube.com/channel/UCuFtcVt_Yp9CZ82UG6pm-pg" target="_blank" rel="noopener"><i class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="../about.html"><i class="ri-arrow-right-s-line"></i>About</a></li>
+          <li><a href="../services.html"><i class="ri-arrow-right-s-line"></i>Services</a></li>
+          <li><a href="../portfolio.html"><i class="ri-arrow-right-s-line"></i>Portfolio</a></li>
+          <li><a href="../clients.html"><i class="ri-arrow-right-s-line"></i>Clients</a></li>
+          <li><a href="../case-studies.html"><i class="ri-arrow-right-s-line"></i>Case Studies</a></li>
+          <li><a href="../team.html"><i class="ri-arrow-right-s-line"></i>Teams</a></li>
+          <li><a href="../career.html"><i class="ri-arrow-right-s-line"></i>Careers</a></li>
+          <li><a href="../connect.html"><i class="ri-arrow-right-s-line"></i>Connect</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-head">Contact</h4>
+        <div class="footer-contact">
+          <p><i class="ri-map-pin-2-fill"></i><a href="https://www.google.com/maps/search/Flashlab+Creative+Margao+Goa" target="_blank" rel="noopener">G26 Vikrant Complex,<br>Margao, Goa, India</a></p>
+          <p><i class="ri-phone-fill"></i><a href="tel:+919923580023">+91 99235 80023</a></p>
+          <p><i class="ri-mail-fill"></i><a href="mailto:contact@flashlabcreative.com">contact@flashlabcreative.com</a></p>
+          <p><i class="ri-time-fill"></i><span>Mon &ndash; Sat: 9am &ndash; 6pm IST</span></p>
+          <a href="../connect.html" class="footer-cta">Start a Project <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">Copyright &copy; 2026 <a href="../index.html" class="flashlab-link">Flashlab Creative</a></p>
+      <p class="footer-credit">Website Crafted by <a href="https://cybercreative.in/" target="_blank" rel="noopener" class="cyber-link">Cyber Creative</a></p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

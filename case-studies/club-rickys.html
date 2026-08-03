@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Club Ricky's — Case Study | Flashlab Creative</title>
+  <link rel="icon" type="image/png" href="../images/flashlab-lightning-bolt-icon.png">
+  <meta name="description" content="How Flashlab Creative helped Club Ricky's build a 5.6K+ Instagram community and achieve 1.63L+ organic views through a robust poolside nightlife content strategy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/pages/case-studies.css">
+  <link rel="stylesheet" href="../css/pages/club-rickys.css">
+</head>
+
+<body data-page="case-studies">
+
+  <div class="site-logo-bar">
+    <a href="../index.html">
+      <img src="../images/logos/flashlab-logo.png" alt="Flashlab Creative" class="logo-light">
+      <img src="../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" class="logo-dark">
+    </a>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About Agency</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../team.html">Team</a></li>
+        <li>
+          <a href="../services.html">Services</a>
+          <ul>
+            <li><a href="../html/services/digital-advertising.html"><i class="ri-megaphone-line"></i>Digital Advertising</a></li>
+            <li><a href="../html/services/seo-sem-marketing.html"><i class="ri-search-line"></i>SEO / SEM Marketing</a></li>
+            <li><a href="../html/services/social-media-management.html"><i class="ri-instagram-line"></i>Social Media Management</a></li>
+            <li><a href="../html/services/product-design-strategies.html"><i class="ri-pen-nib-line"></i>Product Design & Strategies</a></li>
+            <li><a href="../html/services/web-app-development.html"><i class="ri-code-s-slash-line"></i>Web & App Development</a></li>
+            <li><a href="../html/services/outdoor-print-ads.html"><i class="ri-image-line"></i>Outdoor & Print Ads</a></li>
+            <li><a href="../html/services/ecommerce.html"><i class="ri-shopping-cart-line"></i>E-Commerce</a></li>
+            <li><a href="../html/services/trademark-registration.html"><i class="ri-shield-check-line"></i>Trademark Registration</a></li>
+            <li><a href="../html/services/photography-video.html"><i class="ri-camera-line"></i>Photography & Video</a></li>
+            <li><a href="../html/services/event-production.html"><i class="ri-calendar-event-line"></i>Event Production</a></li>
+            <li><a href="../html/services/media-consulting.html"><i class="ri-chat-voice-line"></i>Media Consulting</a></li>
+            <li><a href="../html/services/animation-motion.html"><i class="ri-video-line"></i>Animation & Motion</a></li>
+          </ul>
+        </li>
+        <li><a href="../clients.html">Clients</a></li>
+        <li><a href="../case-studies.html" class="nav-active">Case Studies</a></li>
+        <li>
+          <a href="../career.html">Careers</a>
+          <ul>
+            <li><a href="../html/career/internship.html"><i class="ri-user-add-line"></i>Internship</a></li>
+            <li><a href="../html/career/join-fulltime.html"><i class="ri-briefcase-4-line"></i>Join Full Time</a></li>
+            <li><a href="../html/career/freelance.html"><i class="ri-computer-line"></i>Freelance</a></li>
+            <li><a href="../html/career/influencer-signup.html"><i class="ri-star-line"></i>Influencer Sign Up</a></li>
+            <li><a href="../html/career/hr-policy.html"><i class="ri-file-list-3-line"></i>HR Policy</a></li>
+          </ul>
+        </li>
+        <li><a href="../connect.html">Connect</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="../connect.html" class="nav-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mob-overlay" id="mobOverlay"></div>
+  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+    <button class="mob-close" id="mobClose" aria-label="Close menu"><i class="ri-close-line"></i></button>
+    <ul class="mob-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About Agency</a></li>
+      <li><a href="../portfolio.html">Portfolio</a></li>
+      <li><a href="../team.html">Team</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-services">Services <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-services">
+          <li><a href="../html/services/social-media-management.html">Social Media Management</a></li>
+          <li><a href="../html/services/digital-advertising.html">Digital Advertising</a></li>
+          <li><a href="../html/services/seo-sem-marketing.html">SEO / SEM Marketing</a></li>
+          <li><a href="../html/services/product-design-strategies.html">Product Design & Strategies</a></li>
+          <li><a href="../html/services/web-app-development.html">Web & App Development</a></li>
+        </ul>
+      </li>
+      <li><a href="../clients.html">Clients</a></li>
+      <li><a href="../case-studies.html" class="nav-active">Case Studies</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-career">Careers <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-career">
+          <li><a href="../html/career/internship.html">Internship</a></li>
+          <li><a href="../html/career/join-fulltime.html">Join Full Time</a></li>
+          <li><a href="../html/career/freelance.html">Freelance</a></li>
+        </ul>
+      </li>
+      <li><a href="../connect.html">Connect</a></li>
+    </ul>
+    <div class="mob-cta-wrap">
+      <a href="../connect.html" class="mob-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+    </div>
+  </div>
+
+  <main>
+
+    <section class="cs-hero">
+      <div class="hero-bg">
+        <div class="orb1"></div>
+        <div class="orb2"></div>
+      </div>
+      <div class="cs-hero-inner sr">
+        <div class="cs-breadcrumb">
+          <a href="../case-studies.html">Case Studies</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>Nightlife & Entertainment</span>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>Club Ricky's</span>
+        </div>
+
+        <div class="cs-hero-eyebrow">
+          <span class="pulse-dot"></span>
+          Nightlife & Entertainment
+        </div>
+
+        <h1>Club<br><em>Ricky's</em></h1>
+
+        <p class="cs-hero-intro">
+          Club Ricky's is a poolside nightlife destination in Baga, Goa, known for its energetic atmosphere, themed events, and vibrant party experience. With the pool as one of its key highlights, the venue offers a lively setting for people looking to enjoy Goa's nightlife. The client approached us to build a stronger online presence through quality shoots, consistent social media content, sharper event promotions, and a more effective way of showcasing the overall nightlife experience.
+        </p>
+
+        <div class="cs-meta-row">
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Client</span>
+            <span class="cs-meta-value">Club Ricky's</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Industry</span>
+            <span class="cs-meta-value">Hospitality & Entertainment</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Service</span>
+            <span class="cs-meta-value">Social Media Management</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Channels</span>
+            <span class="cs-meta-value">Instagram, Facebook, YouTube</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cs-cover">
+      <img src="../images/case-studies/club-rickys/cover.jpg"
+           alt="Club Ricky's Poolside Nightlife">
+    </div>
+
+    <div class="cs-body">
+
+      <div class="cs-main">
+
+        <div class="cs-section sr">
+          <span class="cs-section-label">The Challenge</span>
+          <h2>What Wasn't <em>WORKING</em></h2>
+          <p>
+            Despite offering a vibrant poolside nightlife experience in one of Goa's busiest party locations, Club Ricky's was not fully reflecting its on-ground energy online.
+          </p>
+          <p>
+            The venue had strong elements to showcase—from themed events and DJs to crowd energy, food, drinks, and the poolside atmosphere—but the content lacked a consistent direction and stronger visual storytelling. Event promotions were not being presented with a cohesive campaign-led approach.
+          </p>
+          <p>
+            Branding needed more consistency across platforms, and the absence of a dedicated website made event discovery and booking enquiries less structured, causing the brand to miss opportunities to build stronger recall.
+          </p>
+
+          <div class="cs-img-block tall">
+            <img src="../images/case-studies/club-rickys/cr1.jpg"
+                 alt="Club Ricky's previous content challenges">
+          </div>
+        </div>
+
+        <div class="cs-section sr">
+          <span class="cs-section-label">Objectives</span>
+          <h2>What They Wanted to <em>ACHIEVE</em></h2>
+          <p>
+            The objective was to strengthen Club Ricky's digital presence and position it as a leading poolside nightlife destination in Goa. The focus was to create a more consistent brand identity and improve the quality of content.
+          </p>
+          <p>
+            The goal was to increase brand visibility, drive awareness for weekly events, improve booking enquiries, and help the venue reach a wider audience of tourists, partygoers, and nightlife seekers effectively across all digital platforms.
+          </p>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:32px;">Key Performance <em>INDICATORS</em></h2>
+          <ul class="cs-list">
+            <li>Brand Visibility & Recall</li>
+            <li>Follower Community Growth</li>
+            <li>Organic Video/Reel Views</li>
+            <li>Event Awareness</li>
+            <li>Booking Enquiries</li>
+            <li>Cost Per Click (CPC) for Paid Ads</li>
+          </ul>
+
+          <div class="cs-img-block">
+            <img src="../images/case-studies/club-rickys/cr2.jpg"
+                 alt="Club Ricky's event promotion objectives">
+          </div>
+        </div>
+
+        <div class="cs-section sr">
+          <span class="cs-section-label">Strategy</span>
+          <h2>How We <em>APPROACHED IT</em></h2>
+          <p>
+            To strengthen Club Ricky's online presence, we built a strategy around its core strength: the poolside nightlife experience. We aimed to make the brand look more consistent, premium, and engaging across every digital touchpoint.
+          </p>
+          <p>
+            We created a stronger content system through regular shoots, high-quality visual assets, event-led creatives, reels, posters, motion graphics, and social media updates. Weekly events and special nights were promoted with a clearer creative direction, helping the venue build better visibility and recall online.
+          </p>
+          <p>
+            Beyond content, we established a complete digital presence. This included a dedicated website, Google Business Profile management, Facebook crowd albums, YouTube updates, and optimized WhatsApp communication, making the customer journey seamless.
+          </p>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:28px;">Channels <em>PRIORITISED</em></h2>
+          <div class="cs-tags">
+            <span class="cs-tag">Instagram</span>
+            <span class="cs-tag">Facebook</span>
+            <span class="cs-tag">YouTube</span>
+            <span class="cs-tag">Google Business Profile</span>
+            <span class="cs-tag">Paid Advertising</span>
+          </div>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:28px;">Before & <em>After</em></h2>
+          <div class="cs-img-grid">
+            <div class="cs-img-grid-item">
+              <div class="cs-img-block tall">
+                <img src="../images/case-studies/club-rickys/before.jpg"
+                     alt="Club Ricky's Instagram feed before">
+              </div>
+              <span class="cs-img-grid-caption">Before</span>
+            </div>
+            <div class="cs-img-grid-item">
+              <div class="cs-img-block tall">
+                <img src="../images/case-studies/club-rickys/after.jpg"
+                     alt="Club Ricky's Instagram feed after Flashlab management">
+              </div>
+              <span class="cs-img-grid-caption">After</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-section sr">
+          <span class="cs-section-label">Results</span>
+          <h2>What We <em>ACHIEVED</em></h2>
+          <p>
+            The new strategy helped Club Ricky's establish a stronger, more professional digital presence across Instagram and Facebook, translating into tangible community growth and engagement.
+          </p>
+
+          <div class="cs-results-grid">
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">5.6K+</div>
+              <div class="cs-stat-label">Instagram Community</div>
+              <div class="cs-stat-desc">Grew into a strong community supported by consistent content, high-quality visuals, and active platform management.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">1.63L+</div>
+              <div class="cs-stat-label">Organic Views (90 Days)</div>
+              <div class="cs-stat-desc">Non-paid content across reels, posts, and stories generated over 1.63 lakh views, proving the impact of stronger storytelling.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">₹1.07</div>
+              <div class="cs-stat-label">Average CPC</div>
+              <div class="cs-stat-desc">Maintained a highly efficient Average Cost Per Click of ₹1.07 during paid event promotion campaigns.</div>
+            </div>
+          </div>
+
+          <div class="cs-img-block">
+            <img src="../images/case-studies/club-rickys/cr3.jpg" 
+                 alt="Club Ricky's posters and event creatives">
+          </div>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:8px;">Visual <em>Highlights</em></h2>
+          <p>
+            The brand transformation was supported by comprehensive visual deliverables including before-and-after feed comparisons, food photography, customer testimonial reels, trend-based content, and highly stylized weekly event posters (Makeout Mondays, Twisted Tuesdays, Whisper Wednesdays, Thirsty Thursdays, Fever Fridays, Soulmate Saturdays, and Sweetheart Sundays).
+          </p>
+          <div class="cs-performing-grid">
+            <div class="cs-performing-item"><i class="ri-contrast-2-line"></i> Feed Layout Makeover</div>
+            <div class="cs-performing-item"><i class="ri-image-line"></i> Weekly Event Posters</div>
+            <div class="cs-performing-item"><i class="ri-restaurant-2-line"></i> Food Photography</div>
+            <div class="cs-performing-item"><i class="ri-movie-line"></i> Customer Testimonial Reels</div>
+            <div class="cs-performing-item"><i class="ri-fire-line"></i> Trend-Based Content</div>
+            <div class="cs-performing-item"><i class="ri-music-2-line"></i> Live Music Promotions</div>
+          </div>
+        </div>
+         
+        <!---Reels-->
+         <section class="reels-section">
+
+    <h2>Latest Reels</h2>
+
+    <div class="reels-container">
+
+        <a href="https://www.instagram.com/reel/DXolyfEDfIx/?igsh=MTRwenNmMDhhaXB5bA==" target="_blank">
+
+            <video autoplay muted loop playsinline preload="metadata">
+
+                <source src="../video/ricky1.mp4" type="video/mp4">
+
+            </video>
+
+        </a>
+
+        <a href="https://www.instagram.com/reel/DVqbCvQkkIa/?igsh=MXZrajI0aDdzb2s4cw==" target="_blank">
+
+            <video autoplay muted loop playsinline preload="metadata">
+
+                <source src="../video/ricky2.mp4" type="video/mp4">
+
+            </video>
+
+        </a>
+
+        <a href="https://www.instagram.com/reel/DPyg7LckmOA/?igsh=MWF0NXR0N2J5Z3lscw==" target="_blank">
+
+            <video autoplay muted loop playsinline preload="metadata">
+
+                <source src="../video/ricky3.mp4" type="video/mp4">
+
+            </video>
+
+        </a>
+
+    </div>
+
+</section>
+
+        <div class="cs-section sr">
+          <span class="cs-section-label">Client Success</span>
+          <h2>A Stronger <em>RECALL</em></h2>
+
+          <div class="cs-testimonial">
+            <p>
+              "By aligning their digital presence with the high energy of their actual on-ground events, Club Ricky's established itself not just as a location, but as a recognizable brand in Goa's competitive nightlife scene. The integrated approach of stunning visuals and structured event promotion drove tangible community growth and booking interest."
+            </p>
+            <div class="cs-testimonial-author">— Flashlab Creative Strategy Team</div>
+          </div>
+
+        </div>
+      </div><div class="cs-sidebar">
+
+        <div class="cs-sidebar-card sr">
+          <h4>Services Delivered</h4>
+          <ul class="cs-sidebar-list">
+            <li><i class="ri-instagram-line"></i> Instagram & FB Management</li>
+            <li><i class="ri-youtube-line"></i> YouTube Management</li>
+            <li><i class="ri-google-fill"></i> GMB Management</li>
+            <li><i class="ri-quill-pen-line"></i> Content Creation</li>
+            <li><i class="ri-camera-line"></i> Photography & Videography</li>
+            <li><i class="ri-movie-line"></i> Reels Production</li>
+            <li><i class="ri-pen-nib-line"></i> Graphic Design</li>
+            <li><i class="ri-calendar-event-line"></i> Event Promotions</li>
+            <li><i class="ri-bookmark-line"></i> Story & Highlight Management</li>
+            <li><i class="ri-community-line"></i> Community Management</li>
+            <li><i class="ri-megaphone-line"></i> Paid Advertising</li>
+          </ul>
+        </div>
+
+        <div class="cs-sidebar-card sr">
+          <h4>KPIs Tracked</h4>
+          <ul class="cs-sidebar-list">
+            <li><i class="ri-user-add-line"></i> Follower Growth</li>
+            <li><i class="ri-play-circle-line"></i> Organic Reel Views</li>
+            <li><i class="ri-flag-2-line"></i> Event Awareness</li>
+            <li><i class="ri-calendar-check-line"></i> Booking Enquiries</li>
+            <li><i class="ri-funds-line"></i> Campaign CPC (Cost Per Click)</li>
+          </ul>
+        </div>
+
+        <div class="cs-sidebar-card sr">
+          <h4>Work With Us</h4>
+          <p style="font-size:.82rem; color:var(--muted); line-height:1.65; margin-bottom:16px;">
+            Want results like these for your brand? Let's talk about what Flashlab can do for you.
+          </p>
+          <div class="cs-sidebar-cta">
+            <a href="../connect.html" class="btn-primary" style="justify-content:center;">Start a Project <i class="ri-arrow-right-line"></i></a>
+            <a href="../case-studies.html" class="btn-ghost" style="justify-content:center;">All Case Studies <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+      </div></div><section class="cs-similar">
+      <div style="max-width:1200px; margin:0 auto;">
+        <span class="sec-eyebrow"> More Work</span>
+        <h2 class="sec-heading">Similar <em>Case Studies</em></h2>
+
+        <div class="cs-similar-grid">
+
+          <a href="magzika.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/magzika.jpeg"
+                   alt="Magzika Beach Shack">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Restaurant & Hospitality</div>
+              <div class="cs-similar-title">Magzika Beach Shack</div>
+              <div class="cs-similar-desc">Social media overhaul achieving 15K organic views and 70K+ paid reach for a seafront venue.</div>
+            </div>
+          </a>
+
+          <a href="surf-house.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/surfhouse.jpeg"
+                   alt="Surf House Resort">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Tourism</div>
+              <div class="cs-similar-title">Surf House Resort</div>
+              <div class="cs-similar-desc">Destination branding and digital campaigns for a Goa surf resort.</div>
+            </div>
+          </a>
+
+          <a href="robins-ark.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/robinsark.jpeg"
+                   alt="Robin's Ark">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Restaurant & Hospitality</div>
+              <div class="cs-similar-title">Robin's Ark</div>
+              <div class="cs-similar-desc">Brand identity and social media strategy for a popular Goa restaurant.</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="port-section">
+      <div class="cta-band sr">
+        <h2>Ready to be<br><em>Our Next Case Study?</em></h2>
+        <p>Let's build something remarkable together — a campaign, a brand, or a digital experience your audience won't forget.</p>
+        <div class="cta-band-btns">
+          <a href="../connect.html" class="btn-primary">Start a Project <i class="ri-arrow-right-line"></i></a>
+          <a href="../case-studies.html" class="btn-ghost">Browse Case Studies <i class="ri-article-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="../index.html">
+            <img src="../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative"
+              onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'font-family:Bebas Neue,sans-serif;font-size:1.5rem;letter-spacing:2px;color:#fff\'>FLASHLAB CREATIVE</span>'">
+          </a>
+        </div>
+        <p>Goa's leading creative & digital marketing agency — where imagination meets reality. Born in Margao in 2016, we craft unforgettable digital experiences for brands that dare to stand out.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/flashlab.creative" target="_blank" rel="noopener"><i class="ri-instagram-fill"></i></a>
+          <a href="https://www.facebook.com/flashlab.creative/" target="_blank" rel="noopener"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.linkedin.com/company/flashlabcreative" target="_blank" rel="noopener"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://twitter.com/theflashlab" target="_blank" rel="noopener"><i class="ri-twitter-x-fill"></i></a>
+          <a href="https://www.youtube.com/channel/UCuFtcVt_Yp9CZ82UG6pm-pg" target="_blank" rel="noopener"><i class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="../about.html"><i class="ri-arrow-right-s-line"></i>About</a></li>
+          <li><a href="../services.html"><i class="ri-arrow-right-s-line"></i>Services</a></li>
+          <li><a href="../portfolio.html"><i class="ri-arrow-right-s-line"></i>Portfolio</a></li>
+          <li><a href="../clients.html"><i class="ri-arrow-right-s-line"></i>Clients</a></li>
+          <li><a href="../case-studies.html"><i class="ri-arrow-right-s-line"></i>Case Studies</a></li>
+          <li><a href="../team.html"><i class="ri-arrow-right-s-line"></i>Teams</a></li>
+          <li><a href="../career.html"><i class="ri-arrow-right-s-line"></i>Careers</a></li>
+          <li><a href="../connect.html"><i class="ri-arrow-right-s-line"></i>Connect</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-head">Contact</h4>
+        <div class="footer-contact">
+          <p><i class="ri-map-pin-2-fill"></i><a href="https://www.google.com/maps/search/Flashlab+Creative+Margao+Goa" target="_blank" rel="noopener">G26 Vikrant Complex,<br>Margao, Goa, India</a></p>
+          <p><i class="ri-phone-fill"></i><a href="tel:+919923580023">+91 99235 80023</a></p>
+          <p><i class="ri-mail-fill"></i><a href="mailto:contact@flashlabcreative.com">contact@flashlabcreative.com</a></p>
+          <p><i class="ri-time-fill"></i><span>Mon – Sat: 9am – 6pm IST</span></p>
+          <a href="../connect.html" class="footer-cta">Start a Project <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">Copyright © 2026 <a href="../index.html" class="flashlab-link">Flashlab Creative</a></p>
+      <p class="footer-credit">Website Crafted by <a href="https://cybercreative.in/" target="_blank" rel="noopener" class="cyber-link">Cyber Creative</a></p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

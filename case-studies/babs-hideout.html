@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Babs Hideout — Case Study | Flashlab Creative</title>
+  <link rel="icon" type="image/png" href="../images/flashlab-lightning-bolt-icon.png">
+  <meta name="description" content="How Flashlab Creative strengthened Babs Hideout's digital presence, generating 52K+ organic views and driving 1.9K+ website visits through strategic social media management.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/pages/case-studies.css">
+  <link rel="stylesheet" href="../css/pages/tikibab.css"> 
+</head>
+
+<body data-page="case-studies">
+
+  <!-- LOGO BAR -->
+  <div class="site-logo-bar">
+    <a href="../index.html">
+      <img src="../images/logos/flashlab-logo.png" alt="Flashlab Creative" class="logo-light">
+      <img src="../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative" class="logo-dark">
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About Agency</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../team.html">Team</a></li>
+        <li>
+          <a href="../services.html">Services</a>
+          <ul>
+            <li><a href="../html/services/digital-advertising.html"><i class="ri-megaphone-line"></i>Digital Advertising</a></li>
+            <li><a href="../html/services/seo-sem-marketing.html"><i class="ri-search-line"></i>SEO / SEM Marketing</a></li>
+            <li><a href="../html/services/social-media-management.html"><i class="ri-instagram-line"></i>Social Media Management</a></li>
+            <li><a href="../html/services/product-design-strategies.html"><i class="ri-pen-nib-line"></i>Product Design &amp; Strategies</a></li>
+            <li><a href="../html/services/web-app-development.html"><i class="ri-code-s-slash-line"></i>Web &amp; App Development</a></li>
+            <li><a href="../html/services/outdoor-print-ads.html"><i class="ri-image-line"></i>Outdoor &amp; Print Ads</a></li>
+            <li><a href="../html/services/ecommerce.html"><i class="ri-shopping-cart-line"></i>E-Commerce</a></li>
+            <li><a href="../html/services/trademark-registration.html"><i class="ri-shield-check-line"></i>Trademark Registration</a></li>
+            <li><a href="../html/services/photography-video.html"><i class="ri-camera-line"></i>Photography &amp; Video</a></li>
+            <li><a href="../html/services/event-production.html"><i class="ri-calendar-event-line"></i>Event Production</a></li>
+            <li><a href="../html/services/media-consulting.html"><i class="ri-chat-voice-line"></i>Media Consulting</a></li>
+            <li><a href="../html/services/animation-motion.html"><i class="ri-video-line"></i>Animation &amp; Motion</a></li>
+          </ul>
+        </li>
+        <li><a href="../clients.html">Clients</a></li>
+        <li><a href="../case-studies.html" class="nav-active">Case Studies</a></li>
+        <li>
+          <a href="../career.html">Careers</a>
+          <ul>
+            <li><a href="../html/career/internship.html"><i class="ri-user-add-line"></i>Internship</a></li>
+            <li><a href="../html/career/join-fulltime.html"><i class="ri-briefcase-4-line"></i>Join Full Time</a></li>
+            <li><a href="../html/career/freelance.html"><i class="ri-computer-line"></i>Freelance</a></li>
+            <li><a href="../html/career/influencer-signup.html"><i class="ri-star-line"></i>Influencer Sign Up</a></li>
+            <li><a href="../html/career/hr-policy.html"><i class="ri-file-list-3-line"></i>HR Policy</a></li>
+          </ul>
+        </li>
+        <li><a href="../connect.html">Connect</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="../connect.html" class="nav-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-overlay" id="mobOverlay"></div>
+  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+    <button class="mob-close" id="mobClose" aria-label="Close menu"><i class="ri-close-line"></i></button>
+    <ul class="mob-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About Agency</a></li>
+      <li><a href="../portfolio.html">Portfolio</a></li>
+      <li><a href="../team.html">Team</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-services">Services <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-services">
+          <li><a href="../html/services/social-media-management.html">Social Media Management</a></li>
+          <li><a href="../html/services/digital-advertising.html">Digital Advertising</a></li>
+          <li><a href="../html/services/seo-sem-marketing.html">SEO / SEM Marketing</a></li>
+          <li><a href="../html/services/product-design-strategies.html">Product Design &amp; Strategies</a></li>
+          <li><a href="../html/services/web-app-development.html">Web &amp; App Development</a></li>
+        </ul>
+      </li>
+      <li><a href="../clients.html">Clients</a></li>
+      <li><a href="../case-studies.html" class="nav-active">Case Studies</a></li>
+      <li>
+        <button class="mob-parent-btn" data-target="mob-sub-career">Careers <i class="ri-arrow-down-s-line mob-arrow"></i></button>
+        <ul class="mob-sub" id="mob-sub-career">
+          <li><a href="../html/career/internship.html">Internship</a></li>
+          <li><a href="../html/career/join-fulltime.html">Join Full Time</a></li>
+          <li><a href="../html/career/freelance.html">Freelance</a></li>
+        </ul>
+      </li>
+      <li><a href="../connect.html">Connect</a></li>
+    </ul>
+    <div class="mob-cta-wrap">
+      <a href="../connect.html" class="mob-cta">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="cs-hero">
+      <div class="hero-bg">
+        <div class="orb1"></div>
+        <div class="orb2"></div>
+      </div>
+      <div class="cs-hero-inner sr">
+        <!-- Breadcrumb -->
+        <div class="cs-breadcrumb">
+          <a href="../case-studies.html">Case Studies</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>Restaurant &amp; Hospitality</span>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>Babs Hideout</span>
+        </div>
+
+        <div class="cs-hero-eyebrow">
+          <span class="pulse-dot"></span>
+          Restaurant &amp; Hospitality
+        </div>
+
+        <h1>Babs<br><em>Hideout</em></h1>
+
+        <p class="cs-hero-intro">
+          Babs Hideout is a restaurant located in Benaulim, Goa, known for its relaxed ambience, quality food, cocktails, and vibrant dining experience. We were entrusted with managing the brand’s complete social media presence, helping strengthen its digital identity through strategic content creation, high-quality photography, and consistent online engagement.
+        </p>
+
+        <!-- Meta strip -->
+        <div class="cs-meta-row">
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Client</span>
+            <span class="cs-meta-value">Babs Hideout</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Industry</span>
+            <span class="cs-meta-value">Restaurant &amp; Hospitality</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Service</span>
+            <span class="cs-meta-value">Social Media Management &amp; Ads</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Channels</span>
+            <span class="cs-meta-value">Instagram, Meta Ads</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COVER IMAGE -->
+    <div class="cs-cover">
+      <img src="../images/case-studies/babs-hideout/cover.jpeg"
+           alt="Babs Hideout Restaurant Ambience and Food">
+    </div>
+
+    <!-- MAIN BODY + SIDEBAR -->
+    <div class="cs-body">
+
+      <!-- LEFT: MAIN CONTENT -->
+      <div class="cs-main">
+
+        <!-- 01 — THE CHALLENGE -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">The Challenge</span>
+          <h2>What Wasn't <em>WORKING</em></h2>
+          <p>
+            Babs Hideout had the opportunity to build a more structured and engaging digital presence. While the restaurant was well-known locally for its food, ambience, cocktails, and customer experience, these highlights were not being showcased consistently across social media.
+          </p>
+          <p>
+            The Instagram profile lacked a clear content direction, visual consistency, and organised highlights. There was an urgent need for regular promotional creatives, engaging reels, high-quality photography, and a stronger brand identity across all content formats.
+          </p>
+          <p>
+            Additionally, the brand needed to proactively improve its online visibility, attract both tourists and local audiences, increase organic reach, and strengthen overall customer engagement through creative storytelling.
+          </p>
+
+          <div class="cs-img-block tall">
+            <img src="../images/case-studies/babs-hideout/drink1.jpeg"
+                 alt="Babs Hideout previous digital presence">
+          </div>
+        </div>
+
+        <!-- 02 — THE OBJECTIVES -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Objectives</span>
+          <h2>What They Wanted to <em>ACHIEVE</em></h2>
+          <p>
+            The primary objective was to strengthen Babs Hideout’s digital presence by creating a consistent and engaging social media strategy that reflected the restaurant’s ambience, food, cocktails, and overall dining experience. 
+          </p>
+          <p>
+            The focus was on building a strong brand identity through high-quality photography, reels, and graphic creatives that resonated with both tourists and local audiences. Additional goals included establishing Babs Hideout as a recognised dining destination in South Goa by consistently showcasing its offerings, promoting special events, and creating meaningful connections through performance-driven social media marketing.
+          </p>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:32px;">Key Performance <em>INDICATORS</em></h2>
+          <ul class="cs-list">
+            <li>Follower growth</li>
+            <li>Engagement rate</li>
+            <li>Reel performance</li>
+            <li>Reach and impressions</li>
+            <li>Profile visits</li>
+            <li>Story interactions</li>
+            <li>Customer enquiries</li>
+          </ul>
+
+          <div class="cs-img-block">
+            <img src="../images/case-studies/babs-hideout/dish1.jpeg"
+                 alt="Babs Hideout objectives and strategy">
+          </div>
+        </div>
+
+        <!-- 03 — THE STRATEGY -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Strategy</span>
+          <h2>How We <em>APPROACHED IT</em></h2>
+          <p>
+            We developed and implemented a comprehensive social media strategy focused on consistency, creativity, and audience engagement. The content plan was meticulously designed to showcase Babs Hideout’s food, cocktails, ambience, customer experiences, and special events through a mix of high-quality photography, videography, reels, stories, and graphic creatives.
+          </p>
+          <p>
+            Regular content shoots ensured a steady flow of fresh visuals, while promotional campaigns and seasonal content kept the audience engaged throughout the year. We also optimised the Instagram profile with organised highlights and maintained a consistent visual identity to strengthen the brand’s online presence.
+          </p>
+          <p>
+            To expand the restaurant’s reach, we incorporated influencer collaborations and targeted Meta ad campaigns alongside our organic content output. Performance was continuously monitored to refine the content strategy, improve engagement, and maximise reach, allowing us to attract both local customers and tourists effectively.
+          </p>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:28px;">Channels <em>PRIORITISED</em></h2>
+          <div class="cs-tags">
+            <span class="cs-tag">Instagram Feed</span>
+            <span class="cs-tag">Instagram Reels &amp; Stories</span>
+            <span class="cs-tag">Influencer Collaborations</span>
+            <span class="cs-tag">Meta Paid Advertising</span>
+          </div>
+
+          <!-- BEFORE / AFTER comparison -->
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:28px;">Before &amp; <em>After</em></h2>
+          <div class="cs-img-grid">
+            <div class="cs-img-grid-item">
+              <div class="cs-img-block tall">
+                <img src="../images/case-studies/babs-hideout/before.jpeg"
+                     alt="Babs Hideout Instagram feed before Flashlab's strategy">
+              </div>
+              <span class="cs-img-grid-caption">Before</span>
+            </div>
+            <div class="cs-img-grid-item">
+              <div class="cs-img-block tall">
+                <img src="../images/case-studies/babs-hideout/after.jpeg"
+                     alt="Babs Hideout Instagram feed after Flashlab's strategy">
+              </div>
+              <span class="cs-img-grid-caption">After</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 — THE RESULTS -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Results</span>
+          <h2>What We <em>ACHIEVED</em></h2>
+          <p>
+            Our long-term strategy helped Babs Hideout establish a strong and recognisable digital presence across Instagram. Through consistent content creation, live music promotions, influencer collaborations, and campaign-based activities, the brand strengthened its online visibility and built stronger connections.
+          </p>
+
+          <!-- Stats grid -->
+          <div class="cs-results-grid">
+            <div class="cs-stat-card">
+              <div class="cs-stat-num"><i class="ri-user-add-line"></i></div>
+              <div class="cs-stat-label">2,550+</div>
+              <div class="cs-stat-desc">Followers built through consistent content and community-focused strategies.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">2.3K+</div>
+              <div class="cs-stat-label">Profile Visits</div>
+              <div class="cs-stat-desc">Driven over the last 90 days as strategic campaigns encouraged users to explore the brand.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">1.2K+</div>
+              <div class="cs-stat-label">Content Interactions</div>
+              <div class="cs-stat-desc">Strong audience engagement generated across posts, reels, and stories in the last 90 days.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">52K+</div>
+              <div class="cs-stat-label">Organic Views</div>
+              <div class="cs-stat-desc">Achieved in the last 90 days, with over 72% of views coming from non-followers.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">104+</div>
+              <div class="cs-stat-label">New Followers</div>
+              <div class="cs-stat-desc">Steady audience growth recorded over the last 90-day period.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">31K+</div>
+              <div class="cs-stat-label">Monthly Content Views</div>
+              <div class="cs-stat-desc">Maintained consistent brand visibility and reach month over month.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">24K+</div>
+              <div class="cs-stat-label">Paid Campaign Reach</div>
+              <div class="cs-stat-desc">Targeted Meta ads effectively expanded the brand’s reach to new potential customers.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">38K+</div>
+              <div class="cs-stat-label">Paid Campaign Views</div>
+              <div class="cs-stat-desc">Generated high visibility while actively driving profile visits and interactions.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num">179+</div>
+              <div class="cs-stat-label">Website Link Clicks</div>
+              <div class="cs-stat-desc">Successfully encouraged users to visit the website and learn more about the brand.</div>
+            </div>
+            <div class="cs-stat-card">
+              <div class="cs-stat-num orange">1.9K+</div>
+              <div class="cs-stat-label">Website Visits from Ads</div>
+              <div class="cs-stat-desc">Performance-driven advertising generated quality traffic directly to the site.</div>
+            </div>
+          </div>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:32px;">Monthly <em>Deliverables</em></h2>
+          <div class="cs-highlight-box">
+            <p>6 reels per month, 4 posts, creative live music stories, and one content shoot were included to maintain a highly active profile.</p>
+          </div>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:32px;">Strategic <em>Outcomes</em></h2>
+          <ul class="cs-list">
+            <li><strong>High Performing Content:</strong> Food reels, event content, live music nights, ambience videos, and experience-based reels consistently generated strong engagement and increased content shareability.</li>
+            <li><strong>Increased Reach &amp; Engagement:</strong> Regular content, seasonal campaigns, and live music promotions contributed to sustained growth in views, interactions, and overall audience engagement.</li>
+            <li><strong>Stronger Brand Visibility:</strong> Influencer collaborations, Meta ad campaigns, and co-branded content helped expand the brand's reach and introduce it to new audiences.</li>
+            <li><strong>Improved Event Awareness:</strong> Consistent promotion of live music events helped maintain customer interest and strengthen the brand's entertainment identity.</li>
+            <li><strong>Enhanced Digital Experience:</strong> Organised highlights, an improved profile structure, and consistent creative content made it easier for customers to explore the brand and stay updated with upcoming events.</li>
+          </ul>
+
+          <div class="cs-img-block">
+            <img src="../images/case-studies/babs-hideout/drink2.jpeg"
+                 alt="Babs Hideout analytics and results">
+          </div>
+
+          <h2 style="font-size:clamp(1.4rem,2.5vw,2rem); margin-top:8px;">Visual <em>Highlights</em></h2>
+          <p>
+            Explore the content mix that helped redefine Babs Hideout's digital aesthetic.
+          </p>
+          <div class="cs-performing-grid">
+            <div class="cs-performing-item"><i class="ri-restaurant-2-line"></i> <span>Premium Food Photography</span></div>
+            <div class="cs-performing-item"><i class="ri-goblet-line"></i> <span>Signature Cocktail Showcases</span></div>
+            <div class="cs-performing-item"><i class="ri-film-line"></i> <span>Experience-Based Reels</span></div>
+            <div class="cs-performing-item"><i class="ri-music-2-line"></i> <span>Live Music Event Coverage</span></div>
+            <div class="cs-performing-item"><i class="ri-vidicon-line"></i> <span>Ambience Videography</span></div>
+            <div class="cs-performing-item"><i class="ri-group-line"></i> <span>Customer Experience Spotlights</span></div>
+            <div class="cs-performing-item"><i class="ri-layout-grid-line"></i> <span>Structured Highlight Design</span></div>
+          </div>
+        </div>
+        
+        <!-- Reels -->
+        <section class="reels-section">
+
+    <h2>Latest Reels</h2>
+
+    <div class="reels-container">
+
+        <a href="https://www.instagram.com/reel/DLR-S4_y_-8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+
+            <video autoplay muted loop playsinline preload="metadata">
+
+                <source src="../video/babs1.mp4" type="video/mp4">
+
+            </video>
+
+        </a>
+
+        <a href="https://www.instagram.com/reel/DWyjUDWiKz7/?igsh=eXBkaXU0NzF0d3R5" target="_blank">
+
+            <video autoplay muted loop playsinline preload="metadata">
+
+                <source src="../video/babs2.mp4" type="video/mp4">
+
+            </video>
+
+        </a>
+
+        <a href="https://www.instagram.com/reel/DAa4AsfNgGh/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+
+            <video autoplay muted loop playsinline preload="metadata">
+
+                <source src="../video/babs3.mp4" type="video/mp4">
+
+            </video>
+
+        </a>
+
+    </div>
+
+</section>
+
+        <!-- 05 — CLIENT FEEDBACK -->
+        <div class="cs-section sr">
+          <span class="cs-section-label">Client Feedback</span>
+          <h2>What the Client <em>SAID</em></h2>
+
+          <div class="cs-testimonial" style="background: transparent; border: none; padding: 0;">
+            <a href="URL_TO_FEEDBACK_IMAGE" target="_blank" style="display: block; overflow: hidden; border-radius: 12px; border: 1px solid var(--border);">
+              <!-- Replace the src with the actual feedback image path -->
+              <img src="../images/case-studies/babs-hideout/feedback.png" alt="Client Feedback from The Origin" style="width: 100%; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+            </a>
+          </div>
+        </div>
+      </div><!-- /cs-main -->
+
+      <!-- SIDEBAR CARDS -->
+      <div class="cs-sidebar">
+
+        <!-- Services delivered -->
+        <div class="cs-sidebar-card sr">
+          <h4>Services Delivered</h4>
+          <ul class="cs-sidebar-list">
+            <li><i class="ri-instagram-line"></i> Social Media Management</li>
+            <li><i class="ri-quill-pen-line"></i> Content Creation</li>
+            <li><i class="ri-camera-line"></i> Photography</li>
+            <li><i class="ri-video-line"></i> Videography</li>
+            <li><i class="ri-movie-line"></i> Reels Production</li>
+            <li><i class="ri-pen-nib-line"></i> Graphic Design</li>
+            <li><i class="ri-bookmark-line"></i> Story &amp; Highlight Mgmt</li>
+            <li><i class="ri-calendar-todo-line"></i> Campaign Planning</li>
+            <li><i class="ri-calendar-event-line"></i> Event Promotions</li>
+            <li><i class="ri-focus-3-line"></i> Brand Positioning</li>
+            <li><i class="ri-megaphone-line"></i> Paid Advertising</li>
+          </ul>
+        </div>
+
+        <!-- KPIs tracked -->
+        <div class="cs-sidebar-card sr">
+          <h4>KPIs Tracked</h4>
+          <ul class="cs-sidebar-list">
+            <li><i class="ri-user-add-line"></i> Follower Growth</li>
+            <li><i class="ri-thumb-up-line"></i> Engagement Rate</li>
+            <li><i class="ri-play-circle-line"></i> Reel Performance</li>
+            <li><i class="ri-eye-line"></i> Reach &amp; Impressions</li>
+            <li><i class="ri-link-m"></i> Profile Visits</li>
+            <li><i class="ri-chat-3-line"></i> Story Interactions</li>
+            <li><i class="ri-message-3-line"></i> Customer Enquiries</li>
+          </ul>
+        </div>
+
+        <!-- CTA -->
+        <div class="cs-sidebar-card sr">
+          <h4>Work With Us</h4>
+          <p style="font-size:.82rem; color:var(--muted); line-height:1.65; margin-bottom:16px;">
+            Want results like these for your brand? Let's talk about what Flashlab can do for you.
+          </p>
+          <div class="cs-sidebar-cta">
+            <a href="../connect.html" class="btn-primary" style="justify-content:center;">Start a Project <i class="ri-arrow-right-line"></i></a>
+            <a href="../case-studies.html" class="btn-ghost" style="justify-content:center;">All Case Studies <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+      </div><!-- /cs-sidebar -->
+
+    </div><!-- /cs-body -->
+
+    <!-- SIMILAR WORK -->
+    <section class="cs-similar">
+      <div style="max-width:1200px; margin:0 auto;">
+        <span class="sec-eyebrow"> More Work</span>
+        <h2 class="sec-heading">Similar <em>Case Studies</em></h2>
+
+        <div class="cs-similar-grid">
+
+          <a href="tikibab.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/tikibab/cover.jpeg"
+                   alt="Tikibab Beach Shack">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Restaurant &amp; Hospitality</div>
+              <div class="cs-similar-title">Tikibab Beach Shack</div>
+              <div class="cs-similar-desc">Long-term strategy building a 5.2K+ follower community and driving 293K+ content views.</div>
+            </div>
+          </a>
+
+          <a href="the-origin.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/the-origin/cover.jpg"
+                   alt="The Origin">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Restaurant &amp; Football Bar</div>
+              <div class="cs-similar-title">The Origin</div>
+              <div class="cs-similar-desc">From scratch social media build-out and 4-year long event marketing strategy.</div>
+            </div>
+          </a>
+
+          <a href="robins-ark.html" class="cs-similar-card">
+            <div class="cs-similar-img">
+              <img src="../images/case-studies/robinsark.jpeg"
+                   alt="Robin's Ark">
+            </div>
+            <div class="cs-similar-body">
+              <div class="cs-similar-tag">Restaurant &amp; Hospitality</div>
+              <div class="cs-similar-title">Robin's Ark</div>
+              <div class="cs-similar-desc">Brand identity and social media strategy for a popular Goa restaurant.</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="port-section">
+      <div class="cta-band sr">
+        <h2>Ready to be<br><em>Our Next Case Study?</em></h2>
+        <p>Let's build something remarkable together &mdash; a campaign, a brand, or a digital experience your audience won't forget.</p>
+        <div class="cta-band-btns">
+          <a href="../connect.html" class="btn-primary">Start a Project <i class="ri-arrow-right-line"></i></a>
+          <a href="../case-studies.html" class="btn-ghost">Browse Case Studies <i class="ri-article-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="../index.html">
+            <img src="../images/logos/flashlab-logo-dark.png" alt="Flashlab Creative"
+              onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'font-family:Bebas Neue,sans-serif;font-size:1.5rem;letter-spacing:2px;color:#fff\'>FLASHLAB CREATIVE</span>'">
+          </a>
+        </div>
+        <p>Goa's leading creative &amp; digital marketing agency &mdash; where imagination meets reality. Born in Margao in 2016, we craft unforgettable digital experiences for brands that dare to stand out.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/flashlab.creative" target="_blank" rel="noopener"><i class="ri-instagram-fill"></i></a>
+          <a href="https://www.facebook.com/flashlab.creative/" target="_blank" rel="noopener"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.linkedin.com/company/flashlabcreative" target="_blank" rel="noopener"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://twitter.com/theflashlab" target="_blank" rel="noopener"><i class="ri-twitter-x-fill"></i></a>
+          <a href="https://www.youtube.com/channel/UCuFtcVt_Yp9CZ82UG6pm-pg" target="_blank" rel="noopener"><i class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="../about.html"><i class="ri-arrow-right-s-line"></i>About</a></li>
+          <li><a href="../services.html"><i class="ri-arrow-right-s-line"></i>Services</a></li>
+          <li><a href="../portfolio.html"><i class="ri-arrow-right-s-line"></i>Portfolio</a></li>
+          <li><a href="../clients.html"><i class="ri-arrow-right-s-line"></i>Clients</a></li>
+          <li><a href="../case-studies.html"><i class="ri-arrow-right-s-line"></i>Case Studies</a></li>
+          <li><a href="../team.html"><i class="ri-arrow-right-s-line"></i>Teams</a></li>
+          <li><a href="../career.html"><i class="ri-arrow-right-s-line"></i>Careers</a></li>
+          <li><a href="../connect.html"><i class="ri-arrow-right-s-line"></i>Connect</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Services</h4>
+        <ul class="footer-list">
+          <li><a href="../html/services/outdoor-print-ads.html"><i class="ri-arrow-right-s-line"></i>Outdoor &amp; Print</a></li>
+          <li><a href="../html/services/digital-advertising.html"><i class="ri-arrow-right-s-line"></i>Digital Advertising</a></li>
+          <li><a href="../html/services/seo-sem-marketing.html"><i class="ri-arrow-right-s-line"></i>SEO / SEM</a></li>
+          <li><a href="../html/services/social-media-management.html"><i class="ri-arrow-right-s-line"></i>Social Media</a></li>
+          <li><a href="../html/services/product-design-strategies.html"><i class="ri-arrow-right-s-line"></i>Product Design</a></li>
+          <li><a href="../html/services/web-app-development.html"><i class="ri-arrow-right-s-line"></i>Web &amp; App Dev</a></li>
+          <li><a href="../html/services/ecommerce.html"><i class="ri-arrow-right-s-line"></i>E-Commerce</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Join Us</h4>
+        <ul class="footer-list">
+          <li><a href="../career.html#open-positions" data-open-role="intern"><i class="ri-arrow-right-s-line"></i>Intern</a></li>
+          <li><a href="../career.html#open-positions" data-open-role="seo-expert"><i class="ri-arrow-right-s-line"></i>SEO Expert</a></li>
+          <li><a href="../career.html#open-positions" data-open-role="social-media-manager"><i class="ri-arrow-right-s-line"></i>Social Media Mgr</a></li>
+          <li><a href="../career.html#open-positions" data-open-role="graphic-designer"><i class="ri-arrow-right-s-line"></i>Graphic Designer</a></li>
+          <li><a href="../career.html#open-positions" data-open-role="web-developer"><i class="ri-arrow-right-s-line"></i>Web Developer</a></li>
+          <li><a href="../career.html#open-positions" data-open-role="animation-designer"><i class="ri-arrow-right-s-line"></i>Animation Designer</a></li>
+          <li><a href="../career.html#open-positions" data-open-role="app-developer"><i class="ri-arrow-right-s-line"></i>App Developer</a></li>
+        </ul>
+      </div>
+      <div class="hide-on-mobile">
+        <h4 class="footer-head">Service Links</h4>
+        <ul class="footer-list">
+          <li><a href="#"><i class="ri-arrow-right-s-line"></i>Team Blogs</a></li>
+          <li><a href="https://parashootstudio.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Production</a></li>
+          <li><a href="https://backstagexchange.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Event Management</a></li>
+          <li><a href="#"><i class="ri-arrow-right-s-line"></i>FNB Marketing</a></li>
+          <li><a href="https://stromenightlife.com" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Strobe Nightlife</a></li>
+          <li><a href="https://www.cybercreative.in" target="_blank" rel="noopener"><i class="ri-arrow-right-s-line"></i>Web Development &amp; IoT</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-head">Contact</h4>
+        <div class="footer-contact">
+          <p><i class="ri-map-pin-2-fill"></i><a href="https://www.google.com/maps/search/Flashlab+Creative+Margao+Goa" target="_blank" rel="noopener">G26 Vikrant Complex,<br>Margao, Goa, India</a></p>
+          <p><i class="ri-phone-fill"></i><a href="tel:+919923580023">+91 99235 80023</a></p>
+          <p><i class="ri-mail-fill"></i><a href="mailto:contact@flashlabcreative.com">contact@flashlabcreative.com</a></p>
+          <p><i class="ri-time-fill"></i><span>Mon &ndash; Sat: 9am &ndash; 6pm IST</span></p>
+          <a href="../connect.html" class="footer-cta">Start a Project <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">Copyright &copy; 2026 <a href="../index.html" class="flashlab-link">Flashlab Creative</a></p>
+      <p class="footer-credit">Website Crafted by <a href="https://cybercreative.in/" target="_blank" rel="noopener" class="cyber-link">Cyber Creative</a></p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

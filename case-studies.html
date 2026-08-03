@@ -7,7 +7,7 @@
   <title>Case Studies — Flashlab Creative</title>
   <link rel="icon" type="image/png" href="images/flashlab-lightning-bolt-icon.png">
   <meta name="description"
-    content="Explore how Flashlab Creative has helped brands across Gym &amp; Fitness, Restaurant &amp; Hospitality, and Tourism achieve their goals through creative design and digital experiences.">
+    content="Explore how Flashlab Creative has helped brands across Gym &amp; Fitness, Restaurant &amp; Hospitality, Retail &amp; Lifestyle, and Tourism achieve their goals through creative design and digital experiences.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -18,6 +18,137 @@
        identical typography, colors, animations, and responsive breakpoints. -->
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/pages/case-studies.css">
+
+   <style>
+    /* RESET & LAYOUT */
+#caseHeroNew * { box-sizing: border-box; }
+
+.case-grid-wrap {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid !important;
+    grid-template-columns: 1.2fr 0.8fr !important;
+    gap: 50px;
+    align-items: center;
+}
+
+/* THE GLASS CARD */
+.case-glass-card {
+    background: rgba(255, 255, 255, 0.03) !important;
+    backdrop-filter: blur(25px) !important;
+    -webkit-backdrop-filter: blur(25px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 35px !important;
+    padding: 60px !important;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.4);
+    animation: caseFadeUp 1s ease-out;
+}
+
+.case-tag {
+    display: block;
+    color: #b4d62a;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.case-title {
+    font-family: 'Bebas Neue', sans-serif !important;
+    font-size: clamp(50px, 6vw, 85px) !important;
+    line-height: 0.9 !important;
+    color: #ffffff !important;
+    margin: 0 0 25px 0 !important;
+}
+
+.orange-text { color: #ed7d3a !important; }
+
+.case-description {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1.6 !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    margin-bottom: 35px !important;
+    max-width: 500px;
+}
+
+.case-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #b4d62a;
+    color: #0d0e12;
+    padding: 18px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.case-btn:hover {
+    background: #ffffff;
+    transform: translateY(-5px);
+}
+
+/* THE IMAGE CARD */
+.case-image-glass {
+    width: 100%;
+    aspect-ratio: 4/5;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 20px 40px 80px rgba(0,0,0,0.5);
+    transition: transform 0.5s ease;
+}
+
+.case-visual-wrap:hover .case-image-glass {
+    transform: scale(1.02) rotateY(-5deg);
+}
+
+.case-image-glass img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* BACKGROUND BLOBS */
+.c-blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    filter: blur(130px);
+    opacity: 0.15;
+    border-radius: 50%;
+    z-index: 1;
+    animation: blobFloat 20s infinite alternate;
+}
+.cb-1 { top: -10%; left: -10%; background: #b4d62a; }
+.cb-2 { bottom: -10%; right: -10%; background: #ed7d3a; animation-delay: -5s; }
+
+@keyframes blobFloat {
+    from { transform: translate(0,0); }
+    to { transform: translate(100px, 50px); }
+}
+
+@keyframes caseFadeUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+    #caseHeroNew { padding-top: 180px !important; }
+    .case-grid-wrap { grid-template-columns: 1fr !important; text-align: center; }
+    .case-visual-wrap { display: none; }
+    .case-description { margin: 0 auto 35px; }
+}
+  </style>
 </head>
 
 <body data-page="case-studies">
@@ -128,43 +259,47 @@
 
   <main>
 
-    <!-- HERO — reusing #port-hero exactly, just swapping copy -->
-    <section id="port-hero">
-      <div class="hero-bg">
-        <div class="orb1"></div>
-        <div class="orb2"></div>
-      </div>
-      <div class="hero-layout">
-        <div class="hero-inner">
-          <div class="hero-eyebrow">
-            <span class="pulse-dot"></span>
-            Our Case Studies
-          </div>
-          <h1 class="hero-heading">
-            <span class="line1">Case</span>
-            <span class="line2">Studies.</span>
-          </h1>
-          <p class="hero-sub-text">
-            Explore how we've helped brands across different industries achieve their goals
-            through creative design and digital experiences.
-          </p>
-          <div class="hero-btns">
-            <a href="connect.html" class="btn-primary">Start a Project <i class="ri-arrow-right-line"></i></a>
-          </div>
-        </div>
-        <div class="hero-img-box">
-          <!-- TODO: replace with a dedicated Case Studies hero image -->
-          <img src="images/case.jpg" alt="Case Studies" id="caseStudiesHeroImg">
-        </div>
-      </div>
-    </section>
+   
+ <!-- ============================================
+     NEW INTERACTIVE CASE STUDIES HERO
+============================================= -->
+<section id="caseHeroNew" style="background:#0d0e12; position:relative; overflow:hidden; min-height:100vh; display:flex; align-items:center; padding: 220px 20px 80px 20px !important;">
+    
+    <!-- Background Blobs -->
+    <div class="case-blobs">
+        <div class="c-blob cb-1"></div>
+        <div class="c-blob cb-2"></div>
+    </div>
 
+    <div class="case-grid-wrap">
+        <!-- Text Content -->
+        <div class="case-glass-card">
+            <span class="case-tag">PROVEN SUCCESS</span>
+            <h1 class="case-title">CRAFTING SUCCESS.<br><span class="orange-text">REAL IMPACT.</span></h1>
+            <p class="case-description">
+                Explore how we combine data-driven strategy with bold creativity to help brands across Goa and India achieve measurable growth and unforgettable digital presence.
+            </p>
+            <div class="case-action">
+                <a href="connect.html" class="case-btn">Let's Create The Hype <i class="ri-arrow-right-up-line"></i></a>
+            </div>
+        </div>
+
+        <!-- Visual Image -->
+        <div class="case-visual-wrap">
+            <div class="case-image-glass">
+                <img src="images/c1.jpg" alt="Case Study Hero">
+            </div>
+        </div>
+    </div>
+</section>
+</section>
     <!-- MARQUEE (identical to Portfolio page) -->
     <div class="marquee-strip">
       <div class="marquee-track" id="marqueeTrack">
         <span>GYM &amp; FITNESS</span>
         <span>RESTAURANT &amp; HOSPITALITY</span>
         <span>TOURISM</span>
+        <span>RETAIL &amp; LIFESTYLE</span>
         <span>BRANDING</span>
         <span>DIGITAL STRATEGY</span>
         <span>SOCIAL MEDIA</span>
@@ -173,13 +308,6 @@
       </div>
     </div>
 
-    <!-- CASE STUDIES WORKS — exact replica of the Portfolio page's
-         "PORTFOLIO WORKS" section (same filter-bar + works-grid + wcard
-         sizing pattern). Only the filter categories and card content
-         have been swapped to Gym & Fitness / Restaurant & Hospitality /
-         Tourism. Reuses .filter-bar, .filter-btn, .works-grid, .wcard,
-         .work-card, .work-img, .work-overlay, .work-body, .wtag, etc.
-         from portfolio.css, so behavior/animations match exactly. -->
     <section class="port-section" id="port-works">
       <div class="sr">
         <span class="sec-eyebrow"> Case Studies</span>
@@ -189,208 +317,282 @@
 
       <div class="filter-bar sr">
         <button class="filter-btn active" data-filter="all"><span>All Work</span></button>
-        <button class="filter-btn" data-filter="gym-fitness"><span>Gym &amp; Fitness</span></button>
+        <button class="filter-btn" data-filter="gym-fitness"><span>Sports</span></button>
         <button class="filter-btn" data-filter="restaurant-hospitality"><span>Restaurant &amp; Hospitality</span></button>
+        <button class="filter-btn" data-filter="nightlife-entertainment"><span>Nightlife &amp; Entertainment</span></button>
+        <button class="filter-btn" data-filter="retail-lifestyle"><span>Retail &amp; Lifestyle</span></button>
         <button class="filter-btn" data-filter="tourism"><span>Tourism</span></button>
+        <button class="filter-btn" data-filter="finance"><span>Finance</span></button>
       </div>
 
       <div class="works-grid" id="worksGrid">
 
         <!-- Card 1 FEATURED — Gym & Fitness -->
-        <!-- TODO: replace bg-a / icon with a real case study image -->
         <div class="wcard" data-cats="gym-fitness">
+          <a href="./case-studies/next-level.html" class="overlay-cta">
           <div class="work-card">
             <div class="work-img">
-<div class="work-img-inner bg-a">
-  <img src="images/case-studies/nextlevel.jpeg" alt="Gym & Fitness" style="width:100%; height:100%; object-fit:cover;">
-</div>
+              <div class="work-img-inner bg-a">
+                <img src="images/case-studies/next-level/cover.jpg" alt="Gym & Fitness" style="width:100%; height:100%; object-fit:cover;">
+              </div>
               <div class="work-overlay">
                 <span class="overlay-tag">Gym &amp; Fitness</span>
-                <!-- TODO: replace placeholder title -->
-                <div class="overlay-title">Fitness &amp; Wellness &mdash; Next Level Gym & Fitness</div>
-<a href="./case-studies/next-level.html" class="overlay-cta">View Project<i class="ri-arrow-right-line"></i></a>
+                <div class="overlay-title">Next Level Gym & Fitness &mdash; Fitness &amp; Wellness</div>
               </div>
               <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
             </div>
             <div class="work-body">
               <div class="work-year">Gym &amp; Fitness</div>
-              <!-- TODO: replace placeholder title -->
-              <div class="work-title">Fitness &amp; Wellness &mdash; Next Level Gym & Fitness</div>
-              <!-- TODO: replace placeholder description -->
+              <div class="work-title">Next Level Gym & Fitness &mdash; Fitness &amp; Wellness</div>
               <div class="work-desc">Next Level Gym & Fitness had an established local presence and loyal members but lacked a consistent social media strategy. They approached us to strengthen their brand, increase visibility, attract new members, and build a more engaged online community.</div>
               <div class="work-tags"><span class="wtag">Branding</span><span class="wtag">Digital</span><span class="wtag">Social</span></div>
             </div>
           </div>
+          </a>
         </div>
 
+
+        
         <!-- Card 2 — Restaurant & Hospitality -->
-        <!-- TODO: replace bg-b / icon with a real case study image -->
         <div class="wcard" data-cats="restaurant-hospitality">
+          <a href="./case-studies/robins-ark.html" class="overlay-cta">
           <div class="work-card">
             <div class="work-img">
-<div class="work-img-inner bg-b">
-  <img src="images/case-studies/robinsark.jpeg" alt="Robin's Ark" style="width:100%; height:100%; object-fit:cover;">
-</div>
+              <div class="work-img-inner bg-b">
+                <img src="images/case-studies/robinsark.jpeg" alt="Robin's Ark" style="width:100%; height:100%; object-fit:cover;">
+              </div>
               <div class="work-overlay">
                 <span class="overlay-tag">Hospitality</span>
-                <!-- TODO: replace placeholder title -->
-                <div class="overlay-title">Restaurant &amp; Hospitality &mdash; Robin’s Ark</div>
-<a href="./case-studies/robins-ark.html" class="overlay-cta">View Project<i class="ri-arrow-right-line"></i></a>
+                <div class="overlay-title">Robin’s Ark  &mdash;  Restaurant &amp; Hospitality</div>
               </div>
               <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
             </div>
             <div class="work-body">
               <div class="work-year">Restaurant &amp; Hospitality</div>
-              <!-- TODO: replace placeholder title -->
-              <div class="work-title">Restaurant &amp; Hospitality &mdash; Robin’s Ark</div>
-              <!-- TODO: replace placeholder description -->
-              <div class="work-desc">Here's a shorter, cleaner version:
-
-> Robin's Ark is a popular dining destination known for its vibrant ambience and live experiences. For the past four years, we've managed its digital presence through Instagram, Google Business Profile optimization, and online reputation management, helping strengthen its brand and customer engagement.
-</div>
+              <div class="work-title">Robin’s Ark  &mdash;  Restaurant &amp; Hospitality</div>
+              <div class="work-desc">Robin's Ark is a popular dining destination known for its vibrant ambience and live experiences. For the past four years, we've managed its digital presence through Instagram, Google Business Profile optimization, and online reputation management, helping strengthen its brand and customer engagement.</div>
               <div class="work-tags"><span class="wtag">Branding</span><span class="wtag">Print</span></div>
             </div>
           </div>
+          </a>
         </div>
 
         <!-- Card 3 — Tourism -->
-        <!-- TODO: replace bg-c / icon with a real case study image -->
         <div class="wcard" data-cats="tourism">
+          <a href="./case-studies/surf-house.html" class="overlay-cta">
           <div class="work-card">
             <div class="work-img">
-<div class="work-img-inner bg-c">
-  <img src="images/case-studies/surfhouse.jpeg" alt="Surf House Resort" style="width:100%; height:100%; object-fit:cover;">
-</div>
+              <div class="work-img-inner bg-c">
+                <img src="images/case-studies/surfhouse.jpeg" alt="Surf House Resort" style="width:100%; height:100%; object-fit:cover;">
+              </div>
               <div class="work-overlay">
                 <span class="overlay-tag">Tourism</span>
-                <!-- TODO: replace placeholder title -->
-                <div class="overlay-title">Tourism &mdash; Case Study Title</div>
-<a href="./case-studies/surf-house.html" class="overlay-cta">View Project<i class="ri-arrow-right-line"></i></a>
+                <div class="overlay-title">Surf House Resort &mdash; Tourism </div>
               </div>
               <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
             </div>
             <div class="work-body">
               <div class="work-year">Tourism</div>
-              <!-- TODO: replace placeholder title -->
-              <div class="work-title">Tourism &amp; Hospitality &mdash; Surf House Resort</div>
-              <!-- TODO: replace placeholder description -->
+              <div class="work-title"> Surf House Resort &mdash; Tourism </div>
               <div class="work-desc">Surf House Resort approached us to strengthen its social media presence, enhance visual storytelling, and increase brand awareness. At the time, the resort had 328 followers and lacked a consistent content strategy and cohesive visual identity.</div>
               <div class="work-tags"><span class="wtag">Branding</span><span class="wtag">Digital</span></div>
             </div>
           </div>
+          </a>
         </div>
 
-        <!-- Card 4 —Restaurant and hospitality -->
-        <!-- TODO: replace bg-d / icon with a real case study image -->
+        <!-- Card 4 — Restaurant and hospitality -->
         <div class="wcard" data-cats="restaurant-hospitality">
+          <a href="./case-studies/magzika.html" class="overlay-cta">
           <div class="work-card">
             <div class="work-img">
-<div class="work-img-inner bg-d">
-  <img src="images/case-studies/magzika.jpeg" alt="Magzika Beach Shack" style="width:100%; height:100%; object-fit:cover;">
-</div>
+              <div class="work-img-inner bg-d">
+                <img src="images/case-studies/magzika.jpeg" alt="Magzika Beach Shack" style="width:100%; height:100%; object-fit:cover;">
+              </div>
               <div class="work-overlay">
                 <span class="overlay-tag">Hospitality</span>
-                <!-- TODO: replace placeholder title -->
-                <div class="overlay-title">Restaurant &amp; Hospitality &mdash; Magzika Beach Shack</div>
-<a href="./case-studies/magzika.html" class="overlay-cta">View Project<i class="ri-arrow-right-line"></i></a>
+                <div class="overlay-title">Magzika Beach Shack &mdash; Restaurant &amp; Hospitality</div>
               </div>
               <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
             </div>
             <div class="work-body">
               <div class="work-year">Restaurant &amp; Hospitality</div>
-              <!-- TODO: replace placeholder title -->
-              <div class="work-title">Restaurant &amp; Hospitality &mdash; Magzika Beach Shack</div>
-              <!-- TODO: replace placeholder description -->
+              <div class="work-title">Magzika Beach Shack &mdash; Restaurant &amp; Hospitality</div>
               <div class="work-desc">Magzika Beach Shack approached us to strengthen its social media presence, showcase its food, cocktails, and live music events, and improve overall content performance. At the time, the Instagram profile lacked consistency, highlights were incomplete, and reels had limited organic reach.</div>
               <div class="work-tags"><span class="wtag">Branding</span><span class="wtag">Print</span></div>
             </div>
           </div>
+          </a>
         </div>
 
-        <!-- Card 5 FEATURED — Restaurant & Hospitality -->
-        <!-- TODO: replace bg-e / icon with a real case study image -->
-        <!--  <div class="wcard" data-cats="restaurant-hospitality">
+
+        <!-- Card 5 — Nightlife & Entertainment -->
+        <div class="wcard" data-cats="nightlife-entertainment">
+          <a href="./case-studies/club-rickys.html" class="overlay-cta">
           <div class="work-card">
             <div class="work-img">
               <div class="work-img-inner bg-e">
-  <img src="images/case-studies/your-image.jpg" alt="Description" style="width:100%; height:100%; object-fit:cover;">
-</div>
+                <img src="images/case-studies/club-rickys.jpeg" alt="Club Ricky's" style="width:100%; height:100%; object-fit:cover;">
+              </div>
               <div class="work-overlay">
-                <span class="overlay-tag">Restaurant &amp; Hospitality</span>
-                 TODO: replace placeholder title 
-                <div class="overlay-title">Restaurant &amp; Hospitality &mdash; Case Study Title</div>
- <a href="./case-studiesyour-case-study.html" class="overlay-cta">View Project<i class="ri-arrow-right-line"></i></a>
+                <span class="overlay-tag">Nightlife</span>
+                <div class="overlay-title">Club Ricky's &mdash; Nightlife &amp; Entertainment</div>
+              </div>
+              <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
+            </div>
+            <div class="work-body">
+              <div class="work-year">Nightlife &amp; Entertainment</div>
+              <div class="work-title">Club Ricky's &mdash; Nightlife &amp; Entertainment</div>
+              <div class="work-desc">Club Ricky's, a poolside nightlife destination in Baga, Goa, approached us to build a stronger online presence through quality shoots, consistent content, sharper event promotions, and a more effective way of showcasing its nightlife experience.</div>
+              <div class="work-tags"><span class="wtag">Social</span><span class="wtag">Events</span></div>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <!-- Card 6 — Retail & Lifestyle (Susegad) -->
+        <div class="wcard" data-cats="retail-lifestyle">
+          <a href="./case-studies/susegad.html" class="overlay-cta">
+          <div class="work-card">
+            <div class="work-img">
+              <div class="work-img-inner bg-f">
+                <img src="images/case-studies/susegad/logo.jpg" alt="Susegad The Fragrance of Goa" style="width:100%; height:100%; object-fit:cover;">
+              </div>
+              <div class="work-overlay">
+                <span class="overlay-tag">Retail &amp; Lifestyle</span>
+                <div class="overlay-title">Susegad The Fragrance of Goa &mdash; Perfume &amp; Lifestyle</div>
+              </div>
+              <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
+            </div>
+            <div class="work-body">
+              <div class="work-year">Retail &amp; Lifestyle</div>
+              <div class="work-title">Susegad The Fragrance of Goa &mdash; Perfume &amp; Lifestyle</div>
+              <div class="work-desc">Susegad approached us to increase engagement, build stronger brand awareness, and showcase their full range of Goan perfumes, candles, and attars through a highly active, trend-led social media presence.</div>
+              <div class="work-tags"><span class="wtag">Social</span><span class="wtag">Ads</span></div>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <!-- Card 7 — Restaurant & Football Bar (The Origin) -->
+        <div class="wcard" data-cats="restaurant-hospitality">
+          <a href="./case-studies/the-origin.html" class="overlay-cta">
+          <div class="work-card">
+            <div class="work-img">
+              <div class="work-img-inner bg-g">
+                <img src="images/case-studies/the-origin/cover.jpg" alt="The Origin" style="width:100%; height:100%; object-fit:cover;">
+              </div>
+              <div class="work-overlay">
+                <span class="overlay-tag">Nightlife</span>
+                <div class="overlay-title">The Origin &mdash; Restaurant &amp; Football Bar</div>
+              </div>
+              <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
+            </div>
+            <div class="work-body">
+              <div class="work-year">Nightlife &amp; Entertainment</div>
+              <div class="work-title">The Origin &mdash; Restaurant &amp; Football Bar</div>
+              <div class="work-desc">We partnered with The Origin from day one, building their social media presence from scratch over a 4-year period. Our strategy focused on event coverage, live screenings, and promotional reels to establish them as a leading local football bar.</div>
+              <div class="work-tags"><span class="wtag">Social</span><span class="wtag">Events</span><span class="wtag">Ads</span></div>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <!-- Card 8 — Restaurant & Hospitality (Tikibab Beach Shack) -->
+        <div class="wcard" data-cats="restaurant-hospitality">
+          <a href="./case-studies/tikibab.html" class="overlay-cta">
+          <div class="work-card">
+            <div class="work-img">
+              <div class="work-img-inner bg-g">
+                <img src="images/case-studies/tikibab/cover.jpeg" alt="Tikibab Beach Shack" style="width:100%; height:100%; object-fit:cover;">
+              </div>
+              <div class="work-overlay">
+                <span class="overlay-tag">Hospitality</span>
+                <div class="overlay-title">Tikibab Beach Shack &mdash; Restaurant &amp; Hospitality</div>
               </div>
               <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
             </div>
             <div class="work-body">
               <div class="work-year">Restaurant &amp; Hospitality</div>
-               TODO: replace placeholder title 
-              <div class="work-title">Restaurant &amp; Hospitality &mdash; Case Study Title</div>
-               TODO: replace placeholder description 
-              <div class="work-desc">Placeholder description for a Restaurant &amp; Hospitality case study &mdash; full digital rollout and campaign results.</div>
-              <div class="work-tags"><span class="wtag">Digital</span><span class="wtag">Social</span><span class="wtag">Video</span></div>
+              <div class="work-title">Tikibab Beach Shack &mdash; Restaurant &amp; Hospitality</div>
+              <div class="work-desc">Tikibab evolved into a stronger digital brand with an engaging social media presence through our long-term strategy encompassing photography, daily event creatives, and curated experiences like the Tiki Sundowner.</div>
+              <div class="work-tags"><span class="wtag">Social</span><span class="wtag">Events</span></div>
             </div>
           </div>
+          </a>
         </div>
 
-         Card 6 — Tourism 
-         TODO: replace bg-f / icon with a real case study image 
-        <div class="wcard" data-cats="tourism">
+        <!-- Card 9 — Bab's Hideout -->
+        <div class="wcard" data-cats="restaurant-hospitality">
+          <a href="./case-studies/babs-hideout.html" class="overlay-cta">
           <div class="work-card">
             <div class="work-img">
-              <div class="work-img-inner bg-f">
-  <img src="images/case-studies/your-image.jpg" alt="Description" style="width:100%; height:100%; object-fit:cover;">
-</div>
+              <div class="work-img-inner bg-g">
+                <img src="images/case-studies/babs-hideout/cover.jpeg" alt="The Origin" style="width:100%; height:100%; object-fit:cover;">
+              </div>
               <div class="work-overlay">
-                <span class="overlay-tag">Tourism</span>
-                 TODO: replace placeholder title 
-                <div class="overlay-title">Tourism &mdash; Case Study Title</div>
-<a href="html/./case-studiesyour-case-study.html" class="overlay-cta">View Project<i class="ri-arrow-right-line"></i></a>
+                <span class="overlay-tag">Nightlife</span>
+                <div class="overlay-title">Babs Hideout &mdash; Restaurant &amp; Bar</div>
               </div>
               <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
             </div>
             <div class="work-body">
-              <div class="work-year">Tourism</div>
-               TODO: replace placeholder title 
-              <div class="work-title">Tourism &mdash; Case Study Title</div>
-               TODO: replace placeholder description 
-              <div class="work-desc">Placeholder description for a Tourism case study &mdash; identity and outdoor campaign.</div>
-              <div class="work-tags"><span class="wtag">Branding</span><span class="wtag">OOH</span></div>
+              <div class="work-year">Nightlife &amp; Entertainment</div>
+              <div class="work-title">Babs Hideout &mdash; Restaurant &amp; Bar</div>
+              <div class="work-desc">We partnered with Babs Hideout from day one, building their social media presence. Our long term strategy helped Babs hideout establish a strong and recognisable digital presence across Instagram.</div>
+              <div class="work-tags"><span class="wtag">Social</span><span class="wtag">Events</span><span class="wtag">Ads</span></div>
             </div>
           </div>
+          </a>
         </div>
 
-         Card 7 — Gym & Fitness 
-         TODO: replace bg-g / icon with a real case study image 
-        <div class="wcard" data-cats="gym-fitness">
+        <!-- NEW Card 10 — Restaurant & Hospitality (Mike's Place) -->
+        <div class="wcard" data-cats="restaurant-hospitality">
+          <a href="./case-studies/mikes-place.html" class="overlay-cta">
           <div class="work-card">
             <div class="work-img">
-<div class="work-img-inner bg-g">
-
-  <img src="images/case-studies/your-image.jpg" alt="Description" style="width:100%; height:100%; object-fit:cover;">
-</div> 
-             <div class="work-overlay">
-                <span class="overlay-tag">Gym &amp; Fitness</span>
-                 TODO: replace placeholder title 
-                <div class="overlay-title">Gym &amp; Fitness &mdash; Case Study Title</div>
-<a href="html/./case-studiesyour-case-study.html" class="overlay-cta">View Project<i class="ri-arrow-right-line"></i></a>
+              <div class="work-img-inner bg-i">
+                <img src="images/case-studies/mikes-place/cover.jpeg" alt="Mike's Place" style="width:100%; height:100%; object-fit:cover;">
+              </div>
+              <div class="work-overlay">
+                <span class="overlay-tag">Hospitality</span>
+                <div class="overlay-title">Mike's Place &mdash; Restaurant &amp; Hospitality</div>
               </div>
               <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
             </div>
             <div class="work-body">
-              <div class="work-year">Gym &amp; Fitness</div>
-               TODO: replace placeholder title 
-              <div class="work-title">Gym &amp; Fitness &mdash; Case Study Title</div>
-               TODO: replace placeholder description 
-              <div class="work-desc">Placeholder description for a Gym &amp; Fitness case study &mdash; growth-focused social management.</div>
-              <div class="work-tags"><span class="wtag">Social Media</span></div>
+              <div class="work-year">Restaurant &amp; Hospitality</div>
+              <div class="work-title">Mike's Place &mdash; Restaurant &amp; Hospitality</div>
+              <div class="work-desc">Mike's Place partnered with us to redesign their visual identity and improve their live music promotions. Through a mix of trend-based content, customer testimonials, and targeted ads, we successfully grew their followers by 33%.</div>
+              <div class="work-tags"><span class="wtag">Social</span><span class="wtag">Events</span></div>
             </div>
           </div>
-        </div> -->
+          </a>
+        </div>
 
-        <!-- TODO: add more case study cards here following the same .wcard pattern -->
-      </div>
+        <!-- NEW Card 11 — Finance (Finance with Akshay) -->
+        <div class="wcard" data-cats="finance">
+          <a href="./case-studies/finance-with-akshay.html" class="overlay-cta">
+          <div class="work-card">
+            <div class="work-img">
+              <div class="work-img-inner bg-i">
+                <img src="images/case-studies/finance-akshay/cover.jpg" alt="Mike's Place" style="width:100%; height:100%; object-fit:cover;">
+              </div>
+              <div class="work-overlay">
+                <span class="overlay-tag">Finance</span>
+                <div class="overlay-title">Finance with Akshay &mdash; Finance &amp; Income</div>
+              </div>
+              <div class="work-badge"><i class="ri-arrow-right-up-line"></i></div>
+            </div>
+            <div class="work-body">
+              <div class="work-year">Finance &amp; Income</div>
+              <div class="work-title">Finance with Akshay &mdash; Finance &amp; Income</div>
+              <div class="work-desc">To build Finance With Akshay as a credible and recognisable personal brand, we developed a strategy that combined expert-led content with a consistent visual and communication style.</div>
+              <div class="work-tags"><span class="wtag">Finance</span><span class="wtag">Income</span></div>
+            </div>
+          </div>
+          </a>
+        </div>
 
       <div class="load-more-wrap" id="caseShowMoreWrap" style="display: none;">
         <button class="btn-ghost" id="caseShowMoreBtn">Show More <i class="ri-arrow-down-s-line"></i></button>
