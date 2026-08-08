@@ -26,10 +26,24 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
   const btn     = document.getElementById('formBtn');
 
   if (!name || !mobile || !email || !enquiry) {
-    noteEl.textContent = 'Please fill in all required fields.';
-    noteEl.className   = 'form-note error';
-    return;
-  }
+  noteEl.textContent = 'Please fill in all required fields.';
+  noteEl.className   = 'form-note error';
+  return;
+}
+
+// Mobile number must contain exactly 10 digits
+if (!/^\d{10}$/.test(mobile)) {
+  noteEl.textContent = 'Please enter a valid 10-digit mobile number.';
+  noteEl.className   = 'form-note error';
+  return;
+}
+
+// Basic email format validation
+if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+  noteEl.textContent = 'Please enter a valid email address.';
+  noteEl.className   = 'form-note error';
+  return;
+}
 
   btn.disabled    = true;
   btn.innerHTML   = '<i class="ri-loader-4-line"></i> Sending…';
@@ -69,3 +83,11 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     console.error('EmailJS error:', err);
   });
 });
+/* MOBILE NUMBER INPUT VALIDATION */
+const mobileField = document.getElementById('field-mobile');
+
+if (mobileField) {
+  mobileField.addEventListener('input', function () {
+    this.value = this.value.replace(/\D/g, '').slice(0, 10);
+  });
+}
